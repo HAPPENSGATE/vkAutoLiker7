@@ -1,2 +1,2 @@
 # QuickFIX Trading Platform
-Basic C++ FIX
+Basic C++ FIX trading platform using the QuickFIX 
