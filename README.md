@@ -3,4 +3,4 @@ Basic C++ FIX trading platform using the QuickFIX Engine.
 
 ### Motivation
 I was recently involved in implementing a [FIX](http://www.fixprotocol.org/) message client.
-We ar
+We are using our own proprietary FIX engine to im
