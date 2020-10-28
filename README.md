@@ -7,4 +7,4 @@ We are using our own proprietary FIX engine to implement it, but I was urged to 
 at the QuickFIX Engine. This project is based massively on the example code that comes with
 the engine. I just removed support for the various FIX protocol versions and kept only
 FIX 5.0 SP2. Also made a few changes/additions to the matching engine to return
-a FIX 5.0 SP2 `FIX::Executio
+a FIX 5.0 SP2 `FIX::ExecutionReport` message with all the re
