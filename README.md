@@ -10,4 +10,4 @@ FIX 5.0 SP2. Also made a few changes/additions to the matching engine to return
 a FIX 5.0 SP2 `FIX::ExecutionReport` message with all the required fields.
 
 ### Description
-The project c
+The project contains two tasks, *tradeclient* and *ordermatc
