@@ -11,4 +11,4 @@ a FIX 5.0 SP2 `FIX::ExecutionReport` message with all the required fields.
 
 ### Description
 The project contains two tasks, *tradeclient* and *ordermatch*. They are both console
-based. The first sends ord
+based. The first sends orders and the latter stores them a
