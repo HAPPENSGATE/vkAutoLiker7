@@ -12,4 +12,6 @@ a FIX 5.0 SP2 `FIX::ExecutionReport` message with all the required fields.
 ### Description
 The project contains two tasks, *tradeclient* and *ordermatch*. They are both console
 based. The first sends orders and the latter stores them and tries to make a match.
-On success it sends `FIX::ExecutionReport` messages with the m
+On success it sends `FIX::ExecutionReport` messages with the matched trade details.
+
+### Implementation Deta
