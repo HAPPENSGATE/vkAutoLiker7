@@ -14,4 +14,7 @@ The project contains two tasks, *tradeclient* and *ordermatch*. They are both co
 based. The first sends orders and the latter stores them and tries to make a match.
 On success it sends `FIX::ExecutionReport` messages with the matched trade details.
 
-### Implementation Deta
+### Implementation Details
+A few implementation details:
+
+* The *ordermatch* 
