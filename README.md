@@ -17,4 +17,5 @@ On success it sends `FIX::ExecutionReport` messages with the matched trade detai
 ### Implementation Details
 A few implementation details:
 
-* The *ordermatch* task stores the orders in `Order` instances. The `O
+* The *ordermatch* task stores the orders in `Order` instances. The `Order` class holds
+two `std::multimap` con
