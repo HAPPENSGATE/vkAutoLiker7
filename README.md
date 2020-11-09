@@ -19,4 +19,5 @@ A few implementation details:
 
 * The *ordermatch* task stores the orders in `Order` instances. The `Order` class holds
 two `std::multimap` containers, one for *Buy* and one for *Sell* orders.
-* For each financial instrument we have a `Market`. The `Market`'s
+* For each financial instrument we have a `Market`. The `Market`'s name is based on
+the instrument's `FIX::Symbol`
