@@ -24,4 +24,5 @@ the instrument's `FIX::Symbol` tag value.
 * Both tasks store their incoming/outgoing FIX messages in plain text files in a
 folder named `./store/`.
 
-##
+### Task *tradeclient*
+The task displays a command lin
