@@ -25,4 +25,4 @@ the instrument's `FIX::Symbol` tag value.
 folder named `./store/`.
 
 ### Task *tradeclient*
-The task displays a command lin
+The task displays a command line menu where you can send messages to 
