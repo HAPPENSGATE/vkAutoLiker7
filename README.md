@@ -26,4 +26,6 @@ folder named `./store/`.
 
 ### Task *tradeclient*
 The task displays a command line menu where you can send messages to *ordermatch*.
-It also prints out 
+It also prints out all incoming and outgoing FIX protocol messages.
+
+#
