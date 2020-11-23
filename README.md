@@ -29,4 +29,6 @@ The task displays a command line menu where you can send messages to *ordermatch
 It also prints out all incoming and outgoing FIX protocol messages.
 
 ### Task *ordermatch*
-The task is not displaying a command line menu but it supports a few co
+The task is not displaying a command line menu but it supports a few commands.
+
+* `#symbols` - Display all the act
