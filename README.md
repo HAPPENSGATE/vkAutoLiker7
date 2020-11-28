@@ -33,4 +33,4 @@ The task is not displaying a command line menu but it supports a few commands.
 
 * `#symbols` - Display all the active `Market` instances of the `OrderMatcher`.
 * `#quit` - Disconnect any active connections and shutdown.
-* `<string>` - Display all *Bid* and *Ask* orders 
+* `<string>` - Display all *Bid* and *Ask* orders for the `Market` matching the s
