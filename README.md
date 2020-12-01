@@ -37,4 +37,6 @@ The task is not displaying a command line menu but it supports a few commands.
 A `Market`'s name is based on the financial instrument's `FIX::Symbol` tag value.
 
 ### Library Requirements
-One third party l
+One third party library needed:
+
+* [quickfix](http://www.qui
