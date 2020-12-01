@@ -36,4 +36,5 @@ The task is not displaying a command line menu but it supports a few commands.
 * `<string>` - Display all *Bid* and *Ask* orders for the `Market` matching the string.
 A `Market`'s name is based on the financial instrument's `FIX::Symbol` tag value.
 
-##
+### Library Requirements
+One third party l
