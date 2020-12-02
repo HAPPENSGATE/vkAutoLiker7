@@ -39,4 +39,6 @@ A `Market`'s name is based on the financial instrument's `FIX::Symbol` tag value
 ### Library Requirements
 One third party library needed:
 
-* [quickfix](http://www.qui
+* [quickfix](http://www.quickfixengine.org/) - The QuickFIX Engine.
+
+***NOTE***
