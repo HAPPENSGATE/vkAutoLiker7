@@ -41,4 +41,5 @@ One third party library needed:
 
 * [quickfix](http://www.quickfixengine.org/) - The QuickFIX Engine.
 
-***NOTE***: I downloaded the sources and build my own Qu
+***NOTE***: I downloaded the sources and build my own QuickFIX Engine library.
+During the `configure
