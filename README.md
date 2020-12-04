@@ -43,4 +43,4 @@ One third party library needed:
 
 ***NOTE***: I downloaded the sources and build my own QuickFIX Engine library.
 During the `configure` step the file `config.h` is generated. This file is
-included into
+included into the example code that comes with the pack
