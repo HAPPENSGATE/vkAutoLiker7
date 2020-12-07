@@ -44,4 +44,5 @@ One third party library needed:
 ***NOTE***: I downloaded the sources and build my own QuickFIX Engine library.
 During the `configure` step the file `config.h` is generated. This file is
 included into the example code that comes with the package. It contains `define`
-statements for the various tools the library was bu
+statements for the various tools the library was built to have support for. For
+example support to
