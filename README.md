@@ -45,4 +45,4 @@ One third party library needed:
 During the `configure` step the file `config.h` is generated. This file is
 included into the example code that comes with the package. It contains `define`
 statements for the various tools the library was built to have support for. For
-example support to
+example support to store the FIX messages in a database (mySQL, PostgreSQL etc
