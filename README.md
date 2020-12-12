@@ -47,4 +47,4 @@ included into the example code that comes with the package. It contains `define`
 statements for the various tools the library was built to have support for. For
 example support to store the FIX messages in a database (mySQL, PostgreSQL etc).
 I copied this header file by hand in my `include` directory. You can either do the
-same or just remove the `#
+same or just remove the `#include` line. Not sure if it's needed anyway. I
