@@ -26,3 +26,50 @@
 
 void Application::onLogon(const FIX::SessionID& sessionID)
 { }
+
+void Application::onLogout(const FIX::SessionID& sessionID)
+{ }
+
+void Application::fromApp(const FIX::Message& message,
+                          const FIX::SessionID& sessionID)
+                          throw(FIX::FieldNotFound,
+                                FIX::IncorrectDataFormat,
+                                FIX::IncorrectTagValue,
+                                FIX::UnsupportedMessageType)
+{
+  crack(message, sessionID);
+}
+
+void Application::onMessage(const FIX50::NewOrderSingle& message,
+                            const FIX::SessionID&)
+{
+    FIX::SenderCompID senderCompID;
+    FIX::TargetCompID targetCompID;
+    FIX::ClOrdID clOrdID;
+    FIX::Symbol symbol;
+    FIX::Side side;
+    FIX::OrdType ordType;
+    FIX::Price price;
+    FIX::OrderQty orderQty;
+    FIX::TimeInForce timeInForce(FIX::TimeInForce_DAY);
+
+    message.getHeader().getField(senderCompID);
+    message.getHeader().getField(targetCompID);
+    message.get(clOrdID);
+    message.get(symbol);
+    message.get(side);
+    message.get(ordType);
+    if (ordType == FIX::OrdType_LIMIT) {
+        message.get(price);
+    }
+    message.get(orderQty);
+    if (message.isSetField(timeInForce)) {
+        message.get( timeInForce );
+    }
+
+    try {
+        if (timeInForce != FIX::TimeInForce_DAY) {
+            throw std::logic_error("Unsupported TIF, use Day");
+        }
+
+        Order order(clOrdID, symbol, senderCompID, targetCompID,
