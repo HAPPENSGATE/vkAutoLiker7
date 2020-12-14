@@ -73,3 +73,29 @@ void Application::onMessage(const FIX50::NewOrderSingle& message,
         }
 
         Order order(clOrdID, symbol, senderCompID, targetCompID,
+                    convert(side), convert(ordType),
+                    price, (long)orderQty);
+
+        processOrder(order);
+    }
+    catch(std::exception & e) {
+        rejectOrder(senderCompID, targetCompID, clOrdID, symbol, side, e.what());
+    }
+}
+
+void Application::onMessage(const FIX50::OrderCancelRequest& message,
+                            const FIX::SessionID&)
+{
+    FIX::OrigClOrdID origClOrdID;
+    FIX::Symbol symbol;
+    FIX::Side side;
+
+    message.get(origClOrdID);
+    message.get(symbol);
+    message.get(side);
+
+    try {
+        processCancel(origClOrdID, symbol, convert(side));
+    }
+    catch(std::exception&) {
+    }
