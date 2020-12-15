@@ -99,3 +99,42 @@ void Application::onMessage(const FIX50::OrderCancelRequest& message,
     }
     catch(std::exception&) {
     }
+}
+
+void Application::onMessage(const FIX50::MarketDataRequest& message,
+                            const FIX::SessionID&)
+{
+    FIX::MDReqID mdReqID;
+    FIX::SubscriptionRequestType subscriptionRequestType;
+    FIX::MarketDepth marketDepth;
+    FIX::NoRelatedSym noRelatedSym;
+    FIX50::MarketDataRequest::NoRelatedSym noRelatedSymGroup;
+
+    message.get(mdReqID);
+    message.get(subscriptionRequestType);
+    if (subscriptionRequestType != FIX::SubscriptionRequestType_SNAPSHOT) {
+        throw(FIX::IncorrectTagValue(subscriptionRequestType.getField()));
+    }
+    message.get(marketDepth);
+    message.get(noRelatedSym);
+
+    for (int i = 1; i <= noRelatedSym; ++i) {
+        FIX::Symbol symbol;
+        message.getGroup(i, noRelatedSymGroup);
+        noRelatedSymGroup.get(symbol);
+    }
+}
+
+void Application::updateOrder(const Order& order,
+                              char status)
+{
+    FIX::TargetCompID targetCompID(order.getOwner());
+    FIX::SenderCompID senderCompID(order.getTarget());
+
+    FIX50::ExecutionReport fixOrder (FIX::OrderID(order.getClientID()),
+                                     FIX::ExecID(m_generator.genExecutionID()),
+                                     FIX::ExecType(status),
+                                     FIX::OrdStatus(status),
+                                     FIX::Side(convert(order.getSide())),
+                                     FIX::LeavesQty(order.getOpenQuantity()),
+                                     FIX::CumQty(order.getExecutedQuantity()));
