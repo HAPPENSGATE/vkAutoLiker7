@@ -138,3 +138,46 @@ void Application::updateOrder(const Order& order,
                                      FIX::Side(convert(order.getSide())),
                                      FIX::LeavesQty(order.getOpenQuantity()),
                                      FIX::CumQty(order.getExecutedQuantity()));
+
+    fixOrder.setField(FIX::ClOrdID(order.getClientID()));
+    fixOrder.setField(FIX::OrderQty(order.getQuantity()));
+
+    if (status == FIX::OrdStatus_FILLED ||
+        status == FIX::OrdStatus_PARTIALLY_FILLED)
+    {
+        fixOrder.setField(FIX::LastShares(order.getLastExecutedQuantity()));
+        fixOrder.setField(FIX::LastPx(order.getLastExecutedPrice()));
+        fixOrder.setField(FIX::ExecType(FIX::ExecType_TRADE));
+    }
+
+    try {
+        FIX::Session::sendToTarget(fixOrder, senderCompID, targetCompID);
+    }
+    catch(FIX::SessionNotFound&) {
+    }
+}
+
+void Application::rejectOrder(const FIX::SenderCompID& sender,
+                              const FIX::TargetCompID& target,
+                              const FIX::ClOrdID& clOrdID,
+                              const FIX::Symbol& symbol,
+                              const FIX::Side& side,
+                              const std::string& message)
+{
+    FIX::TargetCompID targetCompID(sender.getValue());
+    FIX::SenderCompID senderCompID(target.getValue());
+
+    FIX50::ExecutionReport fixOrder(FIX::OrderID(clOrdID.getValue()),
+                                    FIX::ExecID(m_generator.genExecutionID()),
+                                    FIX::ExecType(FIX::ExecType_REJECTED),
+                                    FIX::OrdStatus(FIX::ExecType_REJECTED),
+                                    side,
+                                    FIX::LeavesQty(0),
+                                    FIX::CumQty(0));
+
+    fixOrder.setField(clOrdID);
+    fixOrder.setField(FIX::Text(message));
+
+    try {
+        FIX::Session::sendToTarget( fixOrder, senderCompID, targetCompID );
+    }
