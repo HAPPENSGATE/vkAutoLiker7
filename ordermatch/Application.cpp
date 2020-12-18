@@ -181,3 +181,47 @@ void Application::rejectOrder(const FIX::SenderCompID& sender,
     try {
         FIX::Session::sendToTarget( fixOrder, senderCompID, targetCompID );
     }
+    catch(FIX::SessionNotFound&) {
+    }
+}
+
+void Application::processOrder( const Order& order )
+{
+    if (m_orderMatcher.insert(order))
+    {
+        acceptOrder(order);
+
+        std::queue <Order> orders;
+        m_orderMatcher.match(order.getSymbol(),
+                             orders);
+
+        while (orders.size()) {
+            fillOrder(orders.front());
+            orders.pop();
+        }
+    }
+    else {
+        rejectOrder(order);
+    }
+}
+
+void Application::processCancel(const std::string& id,
+                                const std::string& symbol,
+                                Order::Side side )
+{
+    Order & order = m_orderMatcher.find(symbol, side, id);
+    order.cancel();
+    cancelOrder(order);
+    m_orderMatcher.erase(order);
+}
+
+Order::Side Application::convert(const FIX::Side& side) const
+{
+    switch (side) {
+        case FIX::Side_BUY: {
+            return Order::buy;
+        }
+        break;
+        case FIX::Side_SELL: {
+            return Order::sell;
+        }
