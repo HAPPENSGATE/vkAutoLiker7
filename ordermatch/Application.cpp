@@ -261,3 +261,20 @@ FIX::Side Application::convert(Order::Side side) const
         default: {
             throw std::logic_error("Unsupported Side, use buy or sell");
         }
+        break;
+    }
+}
+
+FIX::OrdType Application::convert(Order::Type type) const
+{
+    switch (type) {
+        case Order::limit: {
+            return FIX::OrdType(FIX::OrdType_LIMIT);
+        }
+        break;
+        default: {
+            throw std::logic_error("Unsupported Order Type, use limit");
+        }
+        break;
+    }
+}
