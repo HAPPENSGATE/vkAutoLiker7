@@ -66,3 +66,37 @@ class Application : public FIX::Application,
     /*!
      *  @brief      Callback for Logout.
      *  @details    Callback function when the FIX Session receives
+     *              a FIX Logout message.
+     *  @param  param1  The FIX Session ID.
+     */
+    void onLogout(const FIX::SessionID& sessionID);
+
+    /*!
+     *  @brief
+     *  @details
+     *  @param
+     */
+    void toAdmin(FIX::Message&,
+                 const FIX::SessionID&)
+    { }
+
+    /*!
+     *  @brief
+     *  @details
+     *  @param
+     */
+    void toApp(FIX::Message&,
+               const FIX::SessionID&)
+               throw(FIX::DoNotSend)
+    { }
+
+    /*!
+     *  @brief
+     *  @details
+     *  @param
+     */
+    void fromAdmin(const FIX::Message&,
+                   const FIX::SessionID&)
+                   throw(FIX::FieldNotFound,
+                         FIX::IncorrectDataFormat,
+                         FIX::IncorrectTagValue,
