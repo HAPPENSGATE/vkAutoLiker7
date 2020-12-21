@@ -28,3 +28,41 @@
 #include "Order.h"
 #include <queue>
 #include <iostream>
+
+#include <quickfix/Application.h>
+#include <quickfix/MessageCracker.h>
+#include <quickfix/Values.h>
+#include <quickfix/Utility.h>
+#include <quickfix/Mutex.h>
+
+#include <quickfix/fix50/NewOrderSingle.h>
+#include <quickfix/fix50/OrderCancelRequest.h>
+#include <quickfix/fix50/MarketDataRequest.h>
+
+class Application : public FIX::Application,
+                    public FIX::MessageCracker
+{
+    /*!
+     *  Overload for class 'FIX::Application'.
+     */
+
+    /*!
+     *  @brief      Callback for Session create.
+     *  @details    Callback function when the FIX Session gets
+     *              created.
+     *  @param  param1  The FIX Session ID.
+     */
+    void onCreate(const FIX::SessionID&)
+    { }
+
+    /*!
+     *  @brief      Callback for Logon.
+     *  @details    Callback function when the FIX Session receives
+     *              a FIX Logon message.
+     *  @param  param1  The FIX Session ID.
+     */
+    void onLogon(const FIX::SessionID& sessionID);
+
+    /*!
+     *  @brief      Callback for Logout.
+     *  @details    Callback function when the FIX Session receives
