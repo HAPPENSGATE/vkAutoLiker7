@@ -100,3 +100,52 @@ class Application : public FIX::Application,
                    throw(FIX::FieldNotFound,
                          FIX::IncorrectDataFormat,
                          FIX::IncorrectTagValue,
+                         FIX::RejectLogon)
+    { }
+
+    /*!
+     *  @brief
+     *  @details
+     *  @param
+     */
+    void fromApp(const FIX::Message& message,
+                 const FIX::SessionID& sessionID)
+                 throw(FIX::FieldNotFound,
+                       FIX::IncorrectDataFormat,
+                       FIX::IncorrectTagValue,
+                       FIX::UnsupportedMessageType);
+
+    /*!
+     *  Overload for class 'FIX::MessageCracker'.
+     */
+
+    /*!
+     *  @brief      Callback for NewOrderSingle.
+     *  @details    Callback function when a NewOrderSingle message is
+     *              received. It extracts all the necessary fields from
+     *              the incoming message in order to fully initialize an
+     *              'Order' object and then it call a function to
+     *              process it.
+     *  @param  param1  The incoming NewOrderSingle object.
+     *  @param  param2  The FIX Session ID.
+     */
+    void onMessage(const FIX50::NewOrderSingle&,
+                   const FIX::SessionID&);
+
+    /*!
+     *  @brief
+     *  @details
+     *  @param
+     */
+    void onMessage(const FIX50::OrderCancelRequest&,
+                   const FIX::SessionID&);
+
+    /*!
+     *  @brief
+     *  @details
+     *  @param
+     */
+    void onMessage(const FIX50::MarketDataRequest&,
+                   const FIX::SessionID&);
+
+    // Order functionality
