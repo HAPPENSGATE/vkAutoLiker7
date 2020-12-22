@@ -149,3 +149,48 @@ class Application : public FIX::Application,
                    const FIX::SessionID&);
 
     // Order functionality
+
+    /*!
+     *  @brief
+     *  @details
+     *  @param
+     */
+    void processOrder(const Order&);
+
+    /*!
+     *  @brief
+     *  @details
+     *  @param
+     */
+    void processCancel(const std::string& id,
+                       const std::string& symbol,
+                       Order::Side);
+
+    /*!
+     *  @brief
+     *  @details
+     *  @param
+     */
+    void updateOrder(const Order&, char status);
+
+    /*!
+     *  @brief
+     *  @details
+     *  @param
+     */
+    void rejectOrder(const Order& order)
+    {
+        updateOrder(order,
+                    FIX::OrdStatus_REJECTED);
+    }
+
+    /*!
+     *  @brief
+     *  @details
+     *  @param
+     */
+    void acceptOrder(const Order& order)
+    {
+        updateOrder(order,
+                    FIX::OrdStatus_NEW);
+    }
