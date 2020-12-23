@@ -194,3 +194,47 @@ class Application : public FIX::Application,
         updateOrder(order,
                     FIX::OrdStatus_NEW);
     }
+    
+    /*!
+     *  @brief
+     *  @details
+     *  @param
+     */
+    void fillOrder(const Order& order)
+    {
+        updateOrder(order,
+                    order.isFilled() ? FIX::OrdStatus_FILLED
+                                     : FIX::OrdStatus_PARTIALLY_FILLED);
+    }
+
+    /*!
+     *  @brief
+     *  @details
+     *  @param
+     */
+    void cancelOrder(const Order& order)
+    {
+        updateOrder(order,
+                    FIX::OrdStatus_CANCELED);
+    }
+
+    /*!
+     *  @brief
+     *  @details
+     *  @param
+     */
+    void rejectOrder(const FIX::SenderCompID&,
+                     const FIX::TargetCompID&,
+                     const FIX::ClOrdID& clOrdID,
+                     const FIX::Symbol& symbol,
+                     const FIX::Side& side,
+                     const std::string& message);
+
+    // Type conversions
+
+    /*!
+     *  @brief      Convert FIX::Side enumeration.
+     *  @details    Convert FIX::Side enumeration to the internal
+     *              Order::Side equivalent.
+     *  @param  param1  The FIX::Side to convert.
+     *  @return The Order::Side enumeration.
