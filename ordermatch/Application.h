@@ -238,3 +238,50 @@ class Application : public FIX::Application,
      *              Order::Side equivalent.
      *  @param  param1  The FIX::Side to convert.
      *  @return The Order::Side enumeration.
+     */
+    Order::Side convert(const FIX::Side&) const;
+
+    /*!
+     *  @brief      Convert FIX::OrdType enumeration.
+     *  @details    Convert FIX::OrdType enumeration to the internal
+     *              Order::Type equivalent.
+     *  @param  param1  The FIX::OrdType to convert.
+     *  @return The Order::Type enumeration.
+     */
+    Order::Type convert(const FIX::OrdType&) const;
+
+    /*!
+     *  @brief      Convert Order::Side enumeration.
+     *  @details    Convert Order::Side enumeration to the FIX
+     *              FIX::Type equivalent.
+     *  @param  param1  The Order::Side to convert.
+     *  @return The FIX::Side enumeration.
+     */
+    FIX::Side convert(Order::Side) const;
+
+    /*!
+     *  @brief      Convert Order::Type enumeration.
+     *  @details    Convert Order::Type enumeration to the FIX
+     *              FIX::OrdType equivalent.
+     *  @param  param1  The Order::Type to convert.
+     *  @return The FIX::OrdType enumeration.
+     */
+    FIX::OrdType convert(Order::Type) const;
+
+    OrderMatcher m_orderMatcher;
+    IDGenerator m_generator;
+
+public:
+
+    /*!
+     *  @brief
+     *  @details
+     *  @param
+     */
+    const OrderMatcher& orderMatcher() const
+    {
+        return m_orderMatcher;
+    }
+};
+
+#endif
