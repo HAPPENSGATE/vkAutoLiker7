@@ -1,4 +1,6 @@
 /* -*- C++ -*- */
 
 /****************************************************************************
-** Copyright (c) quickfixengine.org  All
+** Copyright (c) quickfixengine.org  All rights reserved.
+**
+** This file is part of the Q
