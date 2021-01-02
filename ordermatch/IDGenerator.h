@@ -5,4 +5,5 @@
 **
 ** This file is part of the QuickFIX FIX Engine
 **
-** This file may be distributed und
+** This file may be distributed under the terms of the quickfixengine.org
+** 
