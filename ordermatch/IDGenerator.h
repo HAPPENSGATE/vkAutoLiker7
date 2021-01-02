@@ -3,4 +3,6 @@
 /****************************************************************************
 ** Copyright (c) quickfixengine.org  All rights reserved.
 **
-** This file is part of the Q
+** This file is part of the QuickFIX FIX Engine
+**
+** This file may be distributed und
