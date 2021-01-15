@@ -19,4 +19,7 @@
 **
 ****************************************************************************/
 
-#ifndef ORDERMATCH_IDGEN
+#ifndef ORDERMATCH_IDGENERATOR_H
+#define ORDERMATCH_IDGENERATOR_H
+
+#incl
