@@ -22,4 +22,7 @@
 #ifndef ORDERMATCH_IDGENERATOR_H
 #define ORDERMATCH_IDGENERATOR_H
 
-#incl
+#include <string>
+#include <sstream>
+
+class IDGene
