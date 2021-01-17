@@ -25,4 +25,7 @@
 #include <string>
 #include <sstream>
 
-class IDGene
+class IDGenerator
+{
+public:
+IDGenerator() : m_orderID( 
