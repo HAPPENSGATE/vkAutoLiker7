@@ -28,4 +28,6 @@
 class IDGenerator
 {
 public:
-IDGenerator() : m_orderID( 
+IDGenerator() : m_orderID( 0 ), m_executionID( 0 ) {}
+
+  std::
