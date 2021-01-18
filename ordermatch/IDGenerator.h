@@ -30,4 +30,6 @@ class IDGenerator
 public:
 IDGenerator() : m_orderID( 0 ), m_executionID( 0 ) {}
 
-  std::
+  std::string genOrderID()
+  {
+    std::stringstre
