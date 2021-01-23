@@ -37,4 +37,6 @@ IDGenerator() : m_orderID( 0 ), m_executionID( 0 ) {}
     return stream.str();
   }
 
-  std::string genExec
+  std::string genExecutionID()
+  {
+    std::strings
