@@ -46,4 +46,7 @@ IDGenerator() : m_orderID( 0 ), m_executionID( 0 ) {}
 
 private:
   long m_orderID;
-  lo
+  long m_executionID;
+};
+
+#endif
