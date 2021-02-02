@@ -4,4 +4,5 @@ MF=	Makefile
 CC=	g++
 
 CFLAGS=-I$(HOME)/local_software/include
-L
+LFLAGS=-L$(HOME)/local_software/lib -lquickfix
+PREPR
