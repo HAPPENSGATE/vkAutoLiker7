@@ -10,4 +10,8 @@ PREPROC=
 EXE=	prog
 SRC=	Application.cpp \
 		Market.cpp \
-		ordermatch.c
+		ordermatch.cpp
+
+OBJ=	$(SRC:.cpp=.o)
+
+INC=	IDGenerator.h
