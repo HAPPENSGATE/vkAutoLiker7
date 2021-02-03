@@ -8,4 +8,6 @@ LFLAGS=-L$(HOME)/local_software/lib -lquickfix
 PREPROC=
 
 EXE=	prog
-SRC=	Application.cpp
+SRC=	Application.cpp \
+		Market.cpp \
+		ordermatch.c
