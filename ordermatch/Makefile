@@ -14,4 +14,10 @@ SRC=	Application.cpp \
 
 OBJ=	$(SRC:.cpp=.o)
 
-INC=	IDGenerator.h
+INC=	IDGenerator.h \
+		Order.h \
+		OrderMatcher.h \
+
+
+.SUFFIXES:
+.SUFFI
