@@ -20,4 +20,9 @@ INC=	IDGenerator.h \
 
 
 .SUFFIXES:
-.SUFFI
+.SUFFIXES:	.cpp .o
+
+all:	$(EXE)
+
+.cpp.o:
+	$(C
