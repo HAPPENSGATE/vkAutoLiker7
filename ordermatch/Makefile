@@ -25,4 +25,6 @@ INC=	IDGenerator.h \
 all:	$(EXE)
 
 .cpp.o:
-	$(C
+	$(CC) $(CFLAGS) $(PREPROC) -c $<
+
+$(EXE):	$(OBJ)
