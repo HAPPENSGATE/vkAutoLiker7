@@ -28,3 +28,6 @@ all:	$(EXE)
 	$(CC) $(CFLAGS) $(PREPROC) -c $<
 
 $(EXE):	$(OBJ)
+	$(CC) $(CFLAGS) -o $@ $(OBJ) $(LFLAGS) 
+
+$(OBJ):	
