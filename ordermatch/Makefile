@@ -33,4 +33,7 @@ $(EXE):	$(OBJ)
 $(OBJ):	$(SRC) $(INC) $(MF)
 
 clean:
-	rm -
+	rm -f *.o $(EXE) core
+
+relink:
+	rm -f $(
