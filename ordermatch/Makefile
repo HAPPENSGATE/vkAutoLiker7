@@ -30,4 +30,7 @@ all:	$(EXE)
 $(EXE):	$(OBJ)
 	$(CC) $(CFLAGS) -o $@ $(OBJ) $(LFLAGS) 
 
-$(OBJ):	
+$(OBJ):	$(SRC) $(INC) $(MF)
+
+clean:
+	rm -
