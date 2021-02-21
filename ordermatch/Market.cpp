@@ -70,3 +70,33 @@ bool Market::match( std::queue < Order > & orders )
 
     BidOrders::iterator iBid = m_bidOrders.begin();
     AskOrders::iterator iAsk = m_askOrders.begin();
+
+    if ( iBid->second.getPrice() >= iAsk->second.getPrice() )
+    {
+      Order & bid = iBid->second;
+      Order& ask = iAsk->second;
+
+      match( bid, ask );
+      orders.push( bid );
+      orders.push( ask );
+
+      if ( bid.isClosed() ) m_bidOrders.erase( iBid );
+      if ( ask.isClosed() ) m_askOrders.erase( iAsk );
+    }
+    else
+      return orders.size() != 0;
+  }
+}
+
+Order& Market::find( Order::Side side, std::string id )
+{
+  if ( side == Order::buy )
+  {
+    BidOrders::iterator i;
+    for ( i = m_bidOrders.begin(); i != m_bidOrders.end(); ++i )
+      if ( i->second.getClientID() == id ) return i->second;
+  }
+  else if ( side == Order::sell )
+  {
+    AskOrders::iterator i;
+    for ( i = m_askOrders.begin(); i != m_askOrders.end(); ++i )
