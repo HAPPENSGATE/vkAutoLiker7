@@ -100,3 +100,39 @@ Order& Market::find( Order::Side side, std::string id )
   {
     AskOrders::iterator i;
     for ( i = m_askOrders.begin(); i != m_askOrders.end(); ++i )
+      if ( i->second.getClientID() == id ) return i->second;
+  }
+  throw std::exception();
+}
+
+void Market::match( Order& bid, Order& ask )
+{
+  double price = ask.getPrice();
+  int quantity = 0;
+
+  if ( bid.getOpenQuantity() > ask.getOpenQuantity() )
+    quantity = ask.getOpenQuantity();
+  else
+    quantity = bid.getOpenQuantity();
+
+  bid.execute( price, quantity );
+  ask.execute( price, quantity );
+}
+
+void Market::display() const
+{
+  BidOrders::const_iterator iBid;
+  AskOrders::const_iterator iAsk;
+
+  std::cout << "BIDS:" << std::endl;
+  std::cout << "-----" << std::endl << std::endl;
+  for ( iBid = m_bidOrders.begin(); iBid != m_bidOrders.end(); ++iBid )
+    std::cout << iBid->second << std::endl;
+
+  std::cout << std::endl << std::endl;
+
+  std::cout << "ASKS:" << std::endl;
+  std::cout << "-----" << std::endl << std::endl;
+  for ( iAsk = m_askOrders.begin(); iAsk != m_askOrders.end(); ++iAsk )
+    std::cout << iAsk->second << std::endl;
+}
