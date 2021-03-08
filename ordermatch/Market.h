@@ -10,4 +10,4 @@
 ** LICENSE included in the packaging of this file.
 **
 ** This file is provided AS IS with NO WARRANTY OF ANY KIND, INCLUDING THE
-** WARRANTY OF DESIGN
+** WARRANTY OF DESIGN, MERCHANTABILITY AND FITNESS FOR A PARTICU
