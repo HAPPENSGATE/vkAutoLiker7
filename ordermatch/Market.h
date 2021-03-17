@@ -19,4 +19,5 @@
 **
 ****************************************************************************/
 
-#ifndef ORDERM
+#ifndef ORDERMATCH_MARKET_H
+#define ORDERMATCH_
