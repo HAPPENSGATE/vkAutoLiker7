@@ -27,4 +27,7 @@
 #include <queue>
 #include <string>
 
-class Marke
+class Market
+{
+public:
+  bool insert( const 
