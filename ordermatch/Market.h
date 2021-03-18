@@ -30,4 +30,5 @@
 class Market
 {
 public:
-  bool insert( const 
+  bool insert( const Order& order );
+  void erase( const 
