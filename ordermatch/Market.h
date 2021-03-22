@@ -32,4 +32,5 @@ class Market
 public:
   bool insert( const Order& order );
   void erase( const Order& order );
-  Order& find( Order:
+  Order& find( Order::Side side, std::string id );
+  bool m
