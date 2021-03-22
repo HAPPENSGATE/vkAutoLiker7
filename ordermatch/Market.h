@@ -33,4 +33,5 @@ public:
   bool insert( const Order& order );
   void erase( const Order& order );
   Order& find( Order::Side side, std::string id );
-  bool m
+  bool match( std::queue < Order > & );
+  void display() co
