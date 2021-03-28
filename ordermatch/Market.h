@@ -37,4 +37,4 @@ public:
   void display() const;
 
 private:
-  typedef std::mult
+  typedef std::multimap < double, Order, std::greater < double > > BidO
