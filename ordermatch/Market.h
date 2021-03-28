@@ -34,4 +34,7 @@ public:
   void erase( const Order& order );
   Order& find( Order::Side side, std::string id );
   bool match( std::queue < Order > & );
-  void display() co
+  void display() const;
+
+private:
+  typedef std::mult
