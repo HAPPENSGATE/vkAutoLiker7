@@ -39,3 +39,7 @@ public:
 private:
   typedef std::multimap < double, Order, std::greater < double > > BidOrders;
   typedef std::multimap < double, Order, std::less < double > > AskOrders;
+
+  void match( Order& bid, Order& ask );
+
+  s
