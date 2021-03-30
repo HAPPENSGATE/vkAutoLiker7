@@ -42,4 +42,5 @@ private:
 
   void match( Order& bid, Order& ask );
 
-  s
+  std::queue < Order > m_orderUpdates;
+  BidOrders
