@@ -1,3 +1,4 @@
+
 /* -*- C++ -*- */
 
 /****************************************************************************
@@ -19,32 +20,20 @@
 **
 ****************************************************************************/
 
-#ifndef ORDERMATCH_MARKET_H
-#define ORDERMATCH_MARKET_H
+#ifndef ORDERMATCH_ORDER_H
+#define ORDERMATCH_ORDER_H
 
-#include "Order.h"
-#include <map>
-#include <queue>
 #include <string>
+#include <iomanip>
+#include <ostream>
 
-class Market
+class Order
 {
+  friend std::ostream& operator<<( std::ostream&, const Order& );
+
 public:
-  bool insert( const Order& order );
-  void erase( const Order& order );
-  Order& find( Order::Side side, std::string id );
-  bool match( std::queue < Order > & );
-  void display() const;
+  enum Side { buy, sell };
+  enum Type { market, limit };
 
-private:
-  typedef std::multimap < double, Order, std::greater < double > > BidOrders;
-  typedef std::multimap < double, Order, std::less < double > > AskOrders;
-
-  void match( Order& bid, Order& ask );
-
-  std::queue < Order > m_orderUpdates;
-  BidOrders m_bidOrders;
-  AskOrders m_askOrders;
-};
-
-#endif
+  Order( const std::string& clientId, const std::string& symbol,
+         const std::string& owner, const std::string& target,
