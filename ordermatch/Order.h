@@ -37,3 +37,42 @@ public:
 
   Order( const std::string& clientId, const std::string& symbol,
          const std::string& owner, const std::string& target,
+         Side side, Type type, double price, long quantity )
+: m_clientId( clientId ), m_symbol( symbol ), m_owner( owner ),
+  m_target( target ), m_side( side ), m_type( type ), m_price( price ),
+  m_quantity( quantity )
+  {
+    m_openQuantity = m_quantity;
+    m_executedQuantity = 0;
+    m_avgExecutedPrice = 0;
+    m_lastExecutedPrice = 0;
+    m_lastExecutedQuantity = 0;
+  }
+
+  const std::string& getClientID() const { return m_clientId; }
+  const std::string& getSymbol() const { return m_symbol; }
+  const std::string& getOwner() const { return m_owner; }
+  const std::string& getTarget() const { return m_target; }
+  Side getSide() const { return m_side; }
+  Type getType() const { return m_type; }
+  double getPrice() const { return m_price; }
+  long getQuantity() const { return m_quantity; }
+
+  long getOpenQuantity() const { return m_openQuantity; }
+  long getExecutedQuantity() const { return m_executedQuantity; }
+  double getAvgExecutedPrice() const { return m_avgExecutedPrice; }
+  double getLastExecutedPrice() const { return m_lastExecutedPrice; }
+  long getLastExecutedQuantity() const { return m_lastExecutedQuantity; }
+
+  bool isFilled() const { return m_quantity == m_executedQuantity; }
+  bool isClosed() const { return m_openQuantity == 0; }
+
+  void execute( double price, long quantity )
+  {
+    m_avgExecutedPrice =
+      ( ( quantity * price ) + ( m_avgExecutedPrice * m_executedQuantity ) )
+      / ( quantity + m_executedQuantity );
+
+    m_openQuantity -= quantity;
+    m_executedQuantity += quantity;
+    m_lastExecutedPrice = price;
