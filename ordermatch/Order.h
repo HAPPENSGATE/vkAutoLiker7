@@ -76,3 +76,37 @@ public:
     m_openQuantity -= quantity;
     m_executedQuantity += quantity;
     m_lastExecutedPrice = price;
+    m_lastExecutedQuantity = quantity;
+  }
+  void cancel()
+  {
+    m_openQuantity = 0;
+  }
+
+private:
+  std::string m_clientId;
+  std::string m_symbol;
+  std::string m_owner;
+  std::string m_target;
+  Side m_side;
+  Type m_type;
+  double m_price;
+  long m_quantity;
+
+  long m_openQuantity;
+  long m_executedQuantity;
+  double m_avgExecutedPrice;
+  double m_lastExecutedPrice;
+  long m_lastExecutedQuantity;
+};
+
+inline std::ostream& operator<<( std::ostream& ostream, const Order& order )
+{
+  return ostream
+         << "ID: " << std::setw( 10 ) << "," << order.getClientID()
+         << " OWNER: " << std::setw( 10 ) << "," << order.getOwner()
+         << " PRICE: " << std::setw( 10 ) << "," << order.getPrice()
+         << " QUANTITY: " << std::setw( 10 ) << "," << order.getQuantity();
+}
+
+#endif
