@@ -5,4 +5,4 @@
 **
 ** This file is part of the QuickFIX FIX Engine
 **
-** This f
+** This file may be distributed under the terms of the qui
