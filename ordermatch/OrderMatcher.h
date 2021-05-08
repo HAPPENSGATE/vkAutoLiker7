@@ -14,4 +14,4 @@
 **
 ** See http://www.quickfixengine.org/LICENSE for licensing information.
 **
-** Contact as
+** Contact ask@quickfixengine.org if any conditions of thi
