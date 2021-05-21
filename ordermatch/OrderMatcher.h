@@ -17,4 +17,6 @@
 ** Contact ask@quickfixengine.org if any conditions of this licensing are
 ** not clear to you.
 **
-*************************************************
+****************************************************************************/
+
+#ifndef O
