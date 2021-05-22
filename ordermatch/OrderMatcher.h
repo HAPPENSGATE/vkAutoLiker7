@@ -19,4 +19,5 @@
 **
 ****************************************************************************/
 
-#ifndef O
+#ifndef ORDERMATCH_ORDERMATCHER_H
+#define ORDERMATCH
