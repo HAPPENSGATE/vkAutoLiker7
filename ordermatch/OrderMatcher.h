@@ -20,4 +20,7 @@
 ****************************************************************************/
 
 #ifndef ORDERMATCH_ORDERMATCHER_H
-#define ORDERMATCH
+#define ORDERMATCH_ORDERMATCHER_H
+
+#include "Market.h"
+#in
