@@ -26,4 +26,6 @@
 #include <map>
 #include <iostream>
 
-class Or
+class OrderMatcher
+{
+  typedef std::map < std::string,
