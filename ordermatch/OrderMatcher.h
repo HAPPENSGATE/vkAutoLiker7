@@ -28,4 +28,6 @@
 
 class OrderMatcher
 {
-  typedef std::map < std::string,
+  typedef std::map < std::string, Market > Markets;
+public:
+  bool inser
