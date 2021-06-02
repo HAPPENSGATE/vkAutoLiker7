@@ -30,4 +30,6 @@ class OrderMatcher
 {
   typedef std::map < std::string, Market > Markets;
 public:
-  bool inser
+  bool insert( const Order& order )
+  {
+    Markets::iterator
