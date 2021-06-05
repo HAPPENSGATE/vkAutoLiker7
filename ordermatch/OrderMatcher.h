@@ -32,4 +32,5 @@ class OrderMatcher
 public:
   bool insert( const Order& order )
   {
-    Markets::iterator
+    Markets::iterator i = m_markets.find( order.getSymbol() );
+ 
