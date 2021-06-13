@@ -33,4 +33,5 @@ public:
   bool insert( const Order& order )
   {
     Markets::iterator i = m_markets.find( order.getSymbol() );
- 
+    if ( i == m_markets.end() )
+     
