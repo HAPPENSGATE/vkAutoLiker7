@@ -35,4 +35,7 @@ public:
     Markets::iterator i = m_markets.find( order.getSymbol() );
     if ( i == m_markets.end() )
       i = m_markets.insert( std::make_pair( order.getSymbol(), Market() ) ).first;
-    return i->second.in
+    return i->second.insert( order );
+  }
+
+  void erase(
