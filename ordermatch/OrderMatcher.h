@@ -40,4 +40,5 @@ public:
 
   void erase( const Order& order )
   {
-    Markets::iterator i = m_ma
+    Markets::iterator i = m_markets.find( order.getSymbol() );
+    if 
