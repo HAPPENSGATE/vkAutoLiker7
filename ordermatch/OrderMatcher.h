@@ -38,4 +38,6 @@ public:
     return i->second.insert( order );
   }
 
-  void erase(
+  void erase( const Order& order )
+  {
+    Markets::iterator i = m_ma
