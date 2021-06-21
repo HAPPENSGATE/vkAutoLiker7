@@ -42,4 +42,7 @@ public:
   {
     Markets::iterator i = m_markets.find( order.getSymbol() );
     if ( i == m_markets.end() ) return ;
-    i->sec
+    i->second.erase( order );
+  }
+
+  Order& find( std::string 
