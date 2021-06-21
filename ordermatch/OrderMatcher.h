@@ -45,4 +45,4 @@ public:
     i->second.erase( order );
   }
 
-  Order& find( std::string 
+  Order& find( std::string symbol, Order::Side side, std::string id )
