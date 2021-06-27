@@ -49,4 +49,7 @@ public:
   {
     Markets::iterator i = m_markets.find( symbol );
     if ( i == m_markets.end() ) throw std::exception();
-    return i->second.find( side, id
+    return i->second.find( side, id );
+  }
+
+  bool match( std::string symbol, std::qu
