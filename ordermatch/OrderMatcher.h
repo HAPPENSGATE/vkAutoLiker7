@@ -48,4 +48,5 @@ public:
   Order& find( std::string symbol, Order::Side side, std::string id )
   {
     Markets::iterator i = m_markets.find( symbol );
-    if ( i == m_markets.end() ) throw std::excep
+    if ( i == m_markets.end() ) throw std::exception();
+    return i->second.find( side, id
