@@ -55,4 +55,5 @@ public:
   bool match( std::string symbol, std::queue < Order > & orders )
   {
     Markets::iterator i = m_markets.find( symbol );
-    if ( i == 
+    if ( i == m_markets.end() ) return false;
+    return i->sec
