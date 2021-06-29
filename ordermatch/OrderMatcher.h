@@ -52,4 +52,6 @@ public:
     return i->second.find( side, id );
   }
 
-  bool match( std::string symbol, std::qu
+  bool match( std::string symbol, std::queue < Order > & orders )
+  {
+    Markets::iterator i = 
