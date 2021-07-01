@@ -56,4 +56,7 @@ public:
   {
     Markets::iterator i = m_markets.find( symbol );
     if ( i == m_markets.end() ) return false;
-    return i->sec
+    return i->second.match( orders );
+  }
+
+  bool match(
