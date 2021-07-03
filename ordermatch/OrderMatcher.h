@@ -61,4 +61,5 @@ public:
 
   bool match( std::queue < Order > & orders )
   {
-    Ma
+    Markets::iterator i;
+    for ( i = m_markets.begin();
