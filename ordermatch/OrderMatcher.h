@@ -64,4 +64,7 @@ public:
     Markets::iterator i;
     for ( i = m_markets.begin(); i != m_markets.end(); ++i )
       i->second.match( orders );
-    return orde
+    return orders.size() != 0;
+  }
+
+  void display( std:
