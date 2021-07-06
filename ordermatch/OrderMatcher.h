@@ -69,4 +69,5 @@ public:
 
   void display( std::string symbol ) const
   {
-    Markets::const_iterator
+    Markets::const_iterator i = m_markets.find( symbol );
+    if
