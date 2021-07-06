@@ -67,4 +67,6 @@ public:
     return orders.size() != 0;
   }
 
-  void display( std:
+  void display( std::string symbol ) const
+  {
+    Markets::const_iterator
