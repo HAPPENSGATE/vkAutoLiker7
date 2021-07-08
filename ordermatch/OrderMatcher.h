@@ -76,4 +76,5 @@ public:
 
   void display() const
   {
-    std::cout
+    std::cout << "SYMBOLS:" << std::endl;
+    std::c
