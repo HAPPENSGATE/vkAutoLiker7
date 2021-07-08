@@ -74,4 +74,6 @@ public:
     i->second.display();
   }
 
-  vo
+  void display() const
+  {
+    std::cout
