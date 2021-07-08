@@ -71,3 +71,7 @@ public:
   {
     Markets::const_iterator i = m_markets.find( symbol );
     if ( i == m_markets.end() ) return ;
+    i->second.display();
+  }
+
+  vo
