@@ -80,4 +80,4 @@ public:
     std::cout << "--------" << std::endl;
 
     Markets::const_iterator i;
-    for ( i = m_markets
+    for ( i = m_markets.begin(); i != m_markets.end(); ++
