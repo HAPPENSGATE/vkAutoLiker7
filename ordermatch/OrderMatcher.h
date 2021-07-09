@@ -77,4 +77,6 @@ public:
   void display() const
   {
     std::cout << "SYMBOLS:" << std::endl;
-    std::c
+    std::cout << "--------" << std::endl;
+
+    Markets::con
