@@ -79,4 +79,5 @@ public:
     std::cout << "SYMBOLS:" << std::endl;
     std::cout << "--------" << std::endl;
 
-    Markets::con
+    Markets::const_iterator i;
+    for ( i = m_markets
