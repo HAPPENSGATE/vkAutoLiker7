@@ -81,4 +81,8 @@ public:
 
     Markets::const_iterator i;
     for ( i = m_markets.begin(); i != m_markets.end(); ++i )
-      std::cout << i->first << std::end
+      std::cout << i->first << std::endl;
+  }
+
+private:
+  Markets m_markets;
