@@ -86,3 +86,6 @@ public:
 
 private:
   Markets m_markets;
+};
+
+#endif
