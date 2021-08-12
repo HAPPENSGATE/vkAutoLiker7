@@ -1,4 +1,6 @@
 /****************************************************************************
 ** Copyright (c) quickfixengine.org  All rights reserved.
 **
-** Th
+** This file is part of the QuickFIX FIX Engine
+**
+** 
