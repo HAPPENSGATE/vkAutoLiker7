@@ -3,4 +3,4 @@
 **
 ** This file is part of the QuickFIX FIX Engine
 **
-** 
+** This file may be distributed unde
