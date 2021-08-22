@@ -5,4 +5,5 @@
 **
 ** This file may be distributed under the terms of the quickfixengine.org
 ** license as defined by quickfixengine.org and appearing in the file
-** LICENSE included in 
+** LICENSE included in the packaging of this file.
+**
