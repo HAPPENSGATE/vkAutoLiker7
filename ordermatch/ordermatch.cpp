@@ -17,4 +17,6 @@
 **
 ****************************************************************************/
 
-#include <quickfix/config.
+#include <quickfix/config.h>
+#include <quickfix/FileStore.h>
+#include
