@@ -19,4 +19,5 @@
 
 #include <quickfix/config.h>
 #include <quickfix/FileStore.h>
-#include
+#include <quickfix/SocketAcceptor.h>
+#include <
