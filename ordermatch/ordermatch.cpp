@@ -20,4 +20,6 @@
 #include <quickfix/config.h>
 #include <quickfix/FileStore.h>
 #include <quickfix/SocketAcceptor.h>
-#include <
+#include <quickfix/SessionSettings.h>
+
+#includ
