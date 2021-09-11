@@ -22,4 +22,7 @@
 #include <quickfix/SocketAcceptor.h>
 #include <quickfix/SessionSettings.h>
 
-#includ
+#include "Application.h"
+
+#include <string>
+#inclu
