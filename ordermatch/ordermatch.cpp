@@ -36,4 +36,8 @@ int main( int argc, char** argv )
     << " FILE." << std::endl;
     return 0;
   }
-  std::string file 
+  std::string file = argv[ 1 ];
+
+  try
+  {
+    FIX::SessionS
