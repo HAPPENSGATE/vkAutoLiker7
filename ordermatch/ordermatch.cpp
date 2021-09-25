@@ -43,4 +43,5 @@ int main( int argc, char** argv )
     FIX::SessionSettings settings( file );
 
     Application application;
-    FIX::FileStoreFactory storeFactory( settings )
+    FIX::FileStoreFactory storeFactory( settings );
+    FIX::ScreenLogFactory logFa
