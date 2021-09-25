@@ -44,4 +44,5 @@ int main( int argc, char** argv )
 
     Application application;
     FIX::FileStoreFactory storeFactory( settings );
-    FIX::ScreenLogFactory logFa
+    FIX::ScreenLogFactory logFactory( settings );
+    FIX::SocketAcceptor ac
