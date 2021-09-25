@@ -40,4 +40,7 @@ int main( int argc, char** argv )
 
   try
   {
-    FIX::SessionS
+    FIX::SessionSettings settings( file );
+
+    Application application;
+ 
