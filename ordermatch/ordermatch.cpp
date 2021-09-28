@@ -48,4 +48,6 @@ int main( int argc, char** argv )
     FIX::SocketAcceptor acceptor( application, storeFactory, settings, logFactory );
 
     acceptor.start();
-    whil
+    while ( true )
+    {
+      std::string va
