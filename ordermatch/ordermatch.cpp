@@ -50,4 +50,7 @@ int main( int argc, char** argv )
     acceptor.start();
     while ( true )
     {
-      std::string va
+      std::string value;
+      std::cin >> value;
+
+   
