@@ -54,4 +54,5 @@ int main( int argc, char** argv )
       std::cin >> value;
 
       if ( value == "#symbols" )
-        applica
+        application.orderMatcher().display();
+      el
