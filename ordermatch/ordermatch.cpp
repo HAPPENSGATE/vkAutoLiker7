@@ -55,4 +55,5 @@ int main( int argc, char** argv )
 
       if ( value == "#symbols" )
         application.orderMatcher().display();
-      el
+      else if( value == "#quit" )
+        break;
