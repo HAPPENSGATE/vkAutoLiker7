@@ -57,3 +57,5 @@ int main( int argc, char** argv )
         application.orderMatcher().display();
       else if( value == "#quit" )
         break;
+      else
+        application.orderMatcher()
