@@ -58,4 +58,6 @@ int main( int argc, char** argv )
       else if( value == "#quit" )
         break;
       else
-        application.orderMatcher()
+        application.orderMatcher().display( value );
+
+      std::cout << std
