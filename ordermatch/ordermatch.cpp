@@ -65,4 +65,6 @@ int main( int argc, char** argv )
     acceptor.stop();
     return 0;
   }
-  catch ( std::exce
+  catch ( std::exception & e )
+  {
+    std::cout << e.wha
