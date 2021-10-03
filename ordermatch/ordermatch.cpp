@@ -60,4 +60,7 @@ int main( int argc, char** argv )
       else
         application.orderMatcher().display( value );
 
-      std::cout << std
+      std::cout << std::endl;
+    }
+    acceptor.stop();
+   
