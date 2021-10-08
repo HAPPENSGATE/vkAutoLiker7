@@ -1,0 +1,29 @@
+
+<fix major='5' type='FIX' servicepack='2' minor='0'>
+ <header />
+ <messages>
+  <message name='IOI' msgcat='app' msgtype='6'>
+   <field name='IOIID' required='Y' />
+   <field name='IOITransType' required='Y' />
+   <field name='IOIRefID' required='N' />
+   <component name='Instrument' required='Y' />
+   <component name='FinancingDetails' required='N' />
+   <component name='UndInstrmtGrp' required='N' />
+   <field name='Side' required='Y' />
+   <field name='QtyType' required='N' />
+   <component name='OrderQtyData' required='N' />
+   <field name='IOIQty' required='Y' />
+   <field name='Currency' required='N' />
+   <component name='Stipulations' required='N' />
+   <component name='InstrmtLegIOIGrp' required='N' />
+   <field name='PriceType' required='N' />
+   <field name='Price' required='N' />
+   <field name='ValidUntilTime' required='N' />
+   <field name='IOIQltyInd' required='N' />
+   <field name='IOINaturalFlag' required='N' />
+   <component name='IOIQualGrp' required='N' />
+   <field name='Text' required='N' />
+   <field name='EncodedTextLen' required='N' />
+   <field name='EncodedText' required='N' />
+   <field name='TransactTime' required='N' />
+   <field name='URLLink' required='N' />
