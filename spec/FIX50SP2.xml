@@ -27,3 +27,32 @@
    <field name='EncodedText' required='N' />
    <field name='TransactTime' required='N' />
    <field name='URLLink' required='N' />
+   <component name='RoutingGrp' required='N' />
+   <component name='SpreadOrBenchmarkCurveData' required='N' />
+   <component name='YieldData' required='N' />
+   <component name='Parties' required='N' />
+   <component name='ApplicationSequenceControl' required='N' />
+  </message>
+  <message name='Advertisement' msgcat='app' msgtype='7'>
+   <field name='AdvId' required='Y' />
+   <field name='AdvTransType' required='Y' />
+   <field name='AdvRefID' required='N' />
+   <component name='Instrument' required='Y' />
+   <component name='InstrmtLegGrp' required='N' />
+   <component name='UndInstrmtGrp' required='N' />
+   <field name='AdvSide' required='Y' />
+   <field name='Quantity' required='Y' />
+   <field name='QtyType' required='N' />
+   <field name='Price' required='N' />
+   <field name='Currency' required='N' />
+   <field name='TradeDate' required='N' />
+   <field name='TransactTime' required='N' />
+   <field name='Text' required='N' />
+   <field name='EncodedTextLen' required='N' />
+   <field name='EncodedText' required='N' />
+   <field name='URLLink' required='N' />
+   <field name='LastMkt' required='N' />
+   <field name='TradingSessionID' required='N' />
+   <field name='TradingSessionSubID' required='N' />
+  </message>
+  <message name='ExecutionReport' msgcat='app' msgtype='8'>
