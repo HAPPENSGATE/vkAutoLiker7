@@ -144,3 +144,44 @@
    <field name='TradeDate' required='N' />
    <field name='TransactTime' required='N' />
    <field name='ReportToExch' required='N' />
+   <component name='CommissionData' required='N' />
+   <component name='SpreadOrBenchmarkCurveData' required='N' />
+   <component name='YieldData' required='N' />
+   <field name='GrossTradeAmt' required='N' />
+   <field name='NumDaysInterest' required='N' />
+   <field name='ExDate' required='N' />
+   <field name='AccruedInterestRate' required='N' />
+   <field name='AccruedInterestAmt' required='N' />
+   <field name='InterestAtMaturity' required='N' />
+   <field name='EndAccruedInterestAmt' required='N' />
+   <field name='StartCash' required='N' />
+   <field name='EndCash' required='N' />
+   <field name='TradedFlatSwitch' required='N' />
+   <field name='BasisFeatureDate' required='N' />
+   <field name='BasisFeaturePrice' required='N' />
+   <field name='Concession' required='N' />
+   <field name='TotalTakedown' required='N' />
+   <field name='NetMoney' required='N' />
+   <field name='SettlCurrAmt' required='N' />
+   <field name='SettlCurrency' required='N' />
+   <field name='SettlCurrFxRate' required='N' />
+   <field name='SettlCurrFxRateCalc' required='N' />
+   <field name='HandlInst' required='N' />
+   <field name='MinQty' required='N' />
+   <field name='MaxFloor' required='N' />
+   <field name='PositionEffect' required='N' />
+   <field name='MaxShow' required='N' />
+   <field name='BookingType' required='N' />
+   <field name='Text' required='N' />
+   <field name='EncodedTextLen' required='N' />
+   <field name='EncodedText' required='N' />
+   <field name='SettlDate2' required='N' />
+   <field name='OrderQty2' required='N' />
+   <field name='LastForwardPoints2' required='N' />
+   <field name='MultiLegReportingType' required='N' />
+   <field name='CancellationRights' required='N' />
+   <field name='MoneyLaunderingStatus' required='N' />
+   <field name='RegistID' required='N' />
+   <field name='Designation' required='N' />
+   <field name='TransBkdTime' required='N' />
+   <field name='ExecValuationPoint' required='N' />
