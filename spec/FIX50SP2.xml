@@ -185,3 +185,47 @@
    <field name='Designation' required='N' />
    <field name='TransBkdTime' required='N' />
    <field name='ExecValuationPoint' required='N' />
+   <field name='ExecPriceType' required='N' />
+   <field name='ExecPriceAdjustment' required='N' />
+   <field name='PriorityIndicator' required='N' />
+   <field name='PriceImprovement' required='N' />
+   <field name='LastLiquidityInd' required='N' />
+   <component name='ContAmtGrp' required='N' />
+   <component name='InstrmtLegExecGrp' required='N' />
+   <field name='CopyMsgIndicator' required='N' />
+   <component name='MiscFeesGrp' required='N' />
+   <component name='StrategyParametersGrp' required='N' />
+   <field name='HostCrossID' required='N' />
+   <field name='ManualOrderIndicator' required='N' />
+   <field name='CustDirectedOrder' required='N' />
+   <field name='ReceivedDeptID' required='N' />
+   <field name='CustOrderHandlingInst' required='N' />
+   <field name='OrderHandlingInstSource' required='N' />
+   <component name='TrdRegTimestamps' required='N' />
+   <field name='AggressorIndicator' required='N' />
+   <field name='CalculatedCcyLastQty' required='N' />
+   <field name='LastSwapPoints' required='N' />
+   <field name='MatchType' required='N' />
+   <field name='OrderCategory' required='N' />
+   <field name='LotType' required='N' />
+   <field name='PriceProtectionScope' required='N' />
+   <component name='TriggeringInstruction' required='N' />
+   <field name='PeggedRefPrice' required='N' />
+   <field name='PreTradeAnonymity' required='N' />
+   <field name='MatchIncrement' required='N' />
+   <field name='MaxPriceLevels' required='N' />
+   <component name='DisplayInstruction' required='N' />
+   <field name='Volatility' required='N' />
+   <field name='TimeToExpiration' required='N' />
+   <field name='RiskFreeRate' required='N' />
+   <field name='PriceDelta' required='N' />
+   <field name='TrdMatchID' required='N' />
+   <field name='AllocID' required='N' />
+   <component name='PreAllocGrp' required='N' />
+   <field name='TotNoFills' required='N' />
+   <field name='LastFragment' required='N' />
+   <component name='FillsGrp' required='N' />
+   <field name='DividendYield' required='N' />
+   <component name='ApplicationSequenceControl' required='N' />
+   <component name='RateSource' required='N' />
+  </message>
