@@ -100,3 +100,47 @@
    <field name='QtyType' required='N' />
    <component name='OrderQtyData' required='N' />
    <field name='OrdType' required='N' />
+   <field name='PriceType' required='N' />
+   <field name='Price' required='N' />
+   <field name='StopPx' required='N' />
+   <component name='PegInstructions' required='N' />
+   <component name='DiscretionInstructions' required='N' />
+   <field name='PeggedPrice' required='N' />
+   <field name='DiscretionPrice' required='N' />
+   <field name='TargetStrategy' required='N' />
+   <field name='TargetStrategyParameters' required='N' />
+   <field name='ParticipationRate' required='N' />
+   <field name='TargetStrategyPerformance' required='N' />
+   <field name='Currency' required='N' />
+   <field name='ComplianceID' required='N' />
+   <field name='SolicitedFlag' required='N' />
+   <field name='TimeInForce' required='N' />
+   <field name='EffectiveTime' required='N' />
+   <field name='ExpireDate' required='N' />
+   <field name='ExpireTime' required='N' />
+   <field name='ExecInst' required='N' />
+   <field name='OrderCapacity' required='N' />
+   <field name='OrderRestrictions' required='N' />
+   <field name='CustOrderCapacity' required='N' />
+   <field name='LastQty' required='N' />
+   <field name='UnderlyingLastQty' required='N' />
+   <field name='LastPx' required='N' />
+   <field name='UnderlyingLastPx' required='N' />
+   <field name='LastParPx' required='N' />
+   <field name='LastSpotRate' required='N' />
+   <field name='LastForwardPoints' required='N' />
+   <field name='LastMkt' required='N' />
+   <field name='TradingSessionID' required='N' />
+   <field name='TradingSessionSubID' required='N' />
+   <field name='TimeBracket' required='N' />
+   <field name='LastCapacity' required='N' />
+   <field name='LeavesQty' required='Y' />
+   <field name='CumQty' required='Y' />
+   <field name='AvgPx' required='N' />
+   <field name='DayOrderQty' required='N' />
+   <field name='DayCumQty' required='N' />
+   <field name='DayAvgPx' required='N' />
+   <field name='GTBookingInst' required='N' />
+   <field name='TradeDate' required='N' />
+   <field name='TransactTime' required='N' />
+   <field name='ReportToExch' required='N' />
