@@ -353,3 +353,45 @@
    <field name='Text' required='N' />
    <field name='EncodedTextLen' required='N' />
    <field name='EncodedText' required='N' />
+   <field name='SettlDate2' required='N' />
+   <field name='OrderQty2' required='N' />
+   <field name='Price2' required='N' />
+   <field name='PositionEffect' required='N' />
+   <field name='CoveredOrUncovered' required='N' />
+   <field name='MaxShow' required='N' />
+   <component name='PegInstructions' required='N' />
+   <component name='DiscretionInstructions' required='N' />
+   <field name='TargetStrategy' required='N' />
+   <field name='TargetStrategyParameters' required='N' />
+   <field name='ParticipationRate' required='N' />
+   <field name='CancellationRights' required='N' />
+   <field name='MoneyLaunderingStatus' required='N' />
+   <field name='RegistID' required='N' />
+   <field name='Designation' required='N' />
+   <component name='StrategyParametersGrp' required='N' />
+   <field name='ManualOrderIndicator' required='N' />
+   <field name='CustDirectedOrder' required='N' />
+   <field name='ReceivedDeptID' required='N' />
+   <field name='CustOrderHandlingInst' required='N' />
+   <field name='OrderHandlingInstSource' required='N' />
+   <component name='TrdRegTimestamps' required='N' />
+   <field name='MatchIncrement' required='N' />
+   <field name='MaxPriceLevels' required='N' />
+   <component name='DisplayInstruction' required='N' />
+   <field name='PriceProtectionScope' required='N' />
+   <component name='TriggeringInstruction' required='N' />
+   <field name='PreTradeAnonymity' required='N' />
+   <field name='RefOrderID' required='N' />
+   <field name='RefOrderIDSource' required='N' />
+   <field name='ExDestinationIDSource' required='N' />
+  </message>
+  <message name='NewOrderList' msgcat='app' msgtype='E'>
+   <field name='ListID' required='Y' />
+   <field name='BidID' required='N' />
+   <field name='ClientBidID' required='N' />
+   <field name='ProgRptReqs' required='N' />
+   <field name='BidType' required='Y' />
+   <field name='ProgPeriodInterval' required='N' />
+   <field name='CancellationRights' required='N' />
+   <field name='MoneyLaunderingStatus' required='N' />
+   <field name='RegistID' required='N' />
