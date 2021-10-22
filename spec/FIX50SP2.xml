@@ -688,3 +688,46 @@
    <field name='EncodedText' required='N' />
   </message>
   <message name='QuoteRequest' msgcat='app' msgtype='R'>
+   <field name='QuoteReqID' required='Y' />
+   <field name='RFQReqID' required='N' />
+   <field name='ClOrdID' required='N' />
+   <field name='OrderCapacity' required='N' />
+   <component name='QuotReqGrp' required='Y' />
+   <field name='Text' required='N' />
+   <field name='EncodedTextLen' required='N' />
+   <field name='EncodedText' required='N' />
+   <component name='RootParties' required='N' />
+   <field name='PrivateQuote' required='N' />
+   <field name='RespondentType' required='N' />
+   <field name='PreTradeAnonymity' required='N' />
+   <field name='BookingType' required='N' />
+   <field name='OrderRestrictions' required='N' />
+  </message>
+  <message name='Quote' msgcat='app' msgtype='S'>
+   <field name='QuoteReqID' required='N' />
+   <field name='QuoteID' required='Y' />
+   <field name='QuoteRespID' required='N' />
+   <field name='QuoteType' required='N' />
+   <component name='QuotQualGrp' required='N' />
+   <field name='QuoteResponseLevel' required='N' />
+   <component name='Parties' required='N' />
+   <field name='TradingSessionID' required='N' />
+   <field name='TradingSessionSubID' required='N' />
+   <component name='Instrument' required='Y' />
+   <component name='FinancingDetails' required='N' />
+   <component name='UndInstrmtGrp' required='N' />
+   <field name='Side' required='N' />
+   <component name='OrderQtyData' required='N' />
+   <field name='SettlType' required='N' />
+   <field name='SettlDate' required='N' />
+   <field name='SettlDate2' required='N' />
+   <field name='OrderQty2' required='N' />
+   <field name='Currency' required='N' />
+   <component name='Stipulations' required='N' />
+   <field name='Account' required='N' />
+   <field name='AcctIDSource' required='N' />
+   <field name='AccountType' required='N' />
+   <component name='LegQuotGrp' required='N' />
+   <field name='BidPx' required='N' />
+   <field name='OfferPx' required='N' />
+   <field name='MktBidPx' required='N' />
