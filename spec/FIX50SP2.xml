@@ -650,3 +650,41 @@
    <field name='TotNoOrders' required='Y' />
    <field name='LastFragment' required='N' />
    <component name='OrdListStatGrp' required='Y' />
+   <field name='ContingencyType' required='N' />
+   <field name='ListRejectReason' required='N' />
+  </message>
+  <message name='AllocationInstructionAck' msgcat='app' msgtype='P'>
+   <field name='AllocID' required='Y' />
+   <component name='Parties' required='N' />
+   <field name='SecondaryAllocID' required='N' />
+   <field name='TradeDate' required='N' />
+   <field name='TransactTime' required='N' />
+   <field name='AllocStatus' required='Y' />
+   <field name='AllocRejCode' required='N' />
+   <field name='AllocType' required='N' />
+   <field name='AllocIntermedReqType' required='N' />
+   <field name='MatchStatus' required='N' />
+   <field name='Product' required='N' />
+   <field name='SecurityType' required='N' />
+   <field name='Text' required='N' />
+   <field name='EncodedTextLen' required='N' />
+   <field name='EncodedText' required='N' />
+   <component name='AllocAckGrp' required='N' />
+  </message>
+  <message name='DontKnowTrade' msgcat='app' msgtype='Q'>
+   <field name='OrderID' required='Y' />
+   <field name='SecondaryOrderID' required='N' />
+   <field name='ExecID' required='Y' />
+   <field name='DKReason' required='Y' />
+   <component name='Instrument' required='Y' />
+   <component name='UndInstrmtGrp' required='N' />
+   <component name='InstrmtLegGrp' required='N' />
+   <field name='Side' required='Y' />
+   <component name='OrderQtyData' required='Y' />
+   <field name='LastQty' required='N' />
+   <field name='LastPx' required='N' />
+   <field name='Text' required='N' />
+   <field name='EncodedTextLen' required='N' />
+   <field name='EncodedText' required='N' />
+  </message>
+  <message name='QuoteRequest' msgcat='app' msgtype='R'>
