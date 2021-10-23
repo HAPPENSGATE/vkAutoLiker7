@@ -759,3 +759,50 @@
    <field name='OrderCapacity' required='N' />
    <field name='PriceType' required='N' />
    <component name='SpreadOrBenchmarkCurveData' required='N' />
+   <component name='YieldData' required='N' />
+   <field name='Text' required='N' />
+   <field name='EncodedTextLen' required='N' />
+   <field name='EncodedText' required='N' />
+   <field name='BidSwapPoints' required='N' />
+   <field name='OfferSwapPoints' required='N' />
+   <field name='ExDestinationIDSource' required='N' />
+   <field name='QuoteMsgID' required='N' />
+   <field name='PrivateQuote' required='N' />
+   <field name='MinQty' required='N' />
+   <field name='BookingType' required='N' />
+   <field name='OrderRestrictions' required='N' />
+   <field name='SettlCurrency' required='N' />
+   <component name='RateSource' required='N' />
+  </message>
+  <message name='SettlementInstructions' msgcat='app' msgtype='T'>
+   <field name='SettlInstMsgID' required='Y' />
+   <field name='SettlInstReqID' required='N' />
+   <field name='SettlInstMode' required='Y' />
+   <field name='SettlInstReqRejCode' required='N' />
+   <field name='Text' required='N' />
+   <field name='EncodedTextLen' required='N' />
+   <field name='EncodedText' required='N' />
+   <field name='ClOrdID' required='N' />
+   <field name='TransactTime' required='Y' />
+   <component name='SettlInstGrp' required='N' />
+  </message>
+  <message name='MarketDataRequest' msgcat='app' msgtype='V'>
+   <field name='MDReqID' required='Y' />
+   <field name='SubscriptionRequestType' required='Y' />
+   <field name='MarketDepth' required='Y' />
+   <field name='MDUpdateType' required='N' />
+   <field name='AggregatedBook' required='N' />
+   <field name='OpenCloseSettlFlag' required='N' />
+   <field name='Scope' required='N' />
+   <field name='MDImplicitDelete' required='N' />
+   <component name='MDReqGrp' required='Y' />
+   <component name='InstrmtMDReqGrp' required='Y' />
+   <component name='TrdgSesGrp' required='N' />
+   <field name='ApplQueueAction' required='N' />
+   <field name='ApplQueueMax' required='N' />
+   <field name='MDQuoteType' required='N' />
+   <component name='Parties' required='N' />
+  </message>
+  <message name='MarketDataSnapshotFullRefresh' msgcat='app' msgtype='W'>
+   <field name='MDReqID' required='N' />
+   <component name='Instrument' required='Y' />
