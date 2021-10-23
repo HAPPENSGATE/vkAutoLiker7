@@ -847,3 +847,53 @@
    <field name='EncodedText' required='N' />
    <component name='Parties' required='N' />
   </message>
+  <message name='QuoteCancel' msgcat='app' msgtype='Z'>
+   <field name='QuoteReqID' required='N' />
+   <field name='QuoteID' required='N' />
+   <field name='QuoteCancelType' required='Y' />
+   <field name='QuoteResponseLevel' required='N' />
+   <component name='Parties' required='N' />
+   <field name='Account' required='N' />
+   <field name='AcctIDSource' required='N' />
+   <field name='AccountType' required='N' />
+   <field name='TradingSessionID' required='N' />
+   <field name='TradingSessionSubID' required='N' />
+   <component name='QuotCxlEntriesGrp' required='N' />
+   <field name='QuoteMsgID' required='N' />
+   <field name='QuoteType' required='N' />
+   <component name='TargetParties' required='N' />
+  </message>
+  <message name='QuoteStatusRequest' msgcat='app' msgtype='a'>
+   <field name='QuoteStatusReqID' required='N' />
+   <field name='QuoteID' required='N' />
+   <component name='Instrument' required='N' />
+   <component name='FinancingDetails' required='N' />
+   <component name='UndInstrmtGrp' required='N' />
+   <component name='InstrmtLegGrp' required='N' />
+   <component name='Parties' required='N' />
+   <field name='Account' required='N' />
+   <field name='AcctIDSource' required='N' />
+   <field name='AccountType' required='N' />
+   <field name='TradingSessionID' required='N' />
+   <field name='TradingSessionSubID' required='N' />
+   <field name='SubscriptionRequestType' required='N' />
+   <component name='TargetParties' required='N' />
+  </message>
+  <message name='MassQuoteAcknowledgement' msgcat='app' msgtype='b'>
+   <field name='QuoteReqID' required='N' />
+   <field name='QuoteID' required='N' />
+   <field name='QuoteStatus' required='Y' />
+   <field name='QuoteRejectReason' required='N' />
+   <field name='QuoteResponseLevel' required='N' />
+   <field name='QuoteType' required='N' />
+   <component name='Parties' required='N' />
+   <field name='Account' required='N' />
+   <field name='AcctIDSource' required='N' />
+   <field name='AccountType' required='N' />
+   <field name='Text' required='N' />
+   <field name='EncodedTextLen' required='N' />
+   <field name='EncodedText' required='N' />
+   <component name='QuotSetAckGrp' required='N' />
+   <field name='QuoteCancelType' required='N' />
+   <component name='TargetParties' required='N' />
+  </message>
