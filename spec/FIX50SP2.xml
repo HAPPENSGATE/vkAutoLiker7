@@ -806,3 +806,44 @@
   <message name='MarketDataSnapshotFullRefresh' msgcat='app' msgtype='W'>
    <field name='MDReqID' required='N' />
    <component name='Instrument' required='Y' />
+   <component name='UndInstrmtGrp' required='N' />
+   <component name='InstrmtLegGrp' required='N' />
+   <field name='FinancialStatus' required='N' />
+   <field name='CorporateAction' required='N' />
+   <field name='NetChgPrevDay' required='N' />
+   <component name='MDFullGrp' required='Y' />
+   <field name='ApplQueueDepth' required='N' />
+   <field name='ApplQueueResolution' required='N' />
+   <field name='MDReportID' required='N' />
+   <field name='ClearingBusinessDate' required='N' />
+   <field name='MDBookType' required='N' />
+   <field name='MDFeedType' required='N' />
+   <field name='TradeDate' required='N' />
+   <component name='RoutingGrp' required='N' />
+   <field name='MDSubBookType' required='N' />
+   <field name='MarketDepth' required='N' />
+   <field name='TotNumReports' required='N' />
+   <field name='RefreshIndicator' required='N' />
+   <component name='ApplicationSequenceControl' required='N' />
+   <field name='MDStreamID' required='N' />
+  </message>
+  <message name='MarketDataIncrementalRefresh' msgcat='app' msgtype='X'>
+   <field name='MDReqID' required='N' />
+   <component name='MDIncGrp' required='Y' />
+   <field name='ApplQueueDepth' required='N' />
+   <field name='ApplQueueResolution' required='N' />
+   <field name='MDBookType' required='N' />
+   <field name='MDFeedType' required='N' />
+   <field name='TradeDate' required='N' />
+   <component name='RoutingGrp' required='N' />
+   <component name='ApplicationSequenceControl' required='N' />
+  </message>
+  <message name='MarketDataRequestReject' msgcat='app' msgtype='Y'>
+   <field name='MDReqID' required='Y' />
+   <field name='MDReqRejReason' required='N' />
+   <component name='MDRjctGrp' required='N' />
+   <field name='Text' required='N' />
+   <field name='EncodedTextLen' required='N' />
+   <field name='EncodedText' required='N' />
+   <component name='Parties' required='N' />
+  </message>
