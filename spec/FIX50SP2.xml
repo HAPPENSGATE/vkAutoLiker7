@@ -897,3 +897,37 @@
    <field name='QuoteCancelType' required='N' />
    <component name='TargetParties' required='N' />
   </message>
+  <message name='SecurityDefinitionRequest' msgcat='app' msgtype='c'>
+   <field name='SecurityReqID' required='Y' />
+   <field name='SecurityRequestType' required='Y' />
+   <component name='Instrument' required='N' />
+   <component name='InstrumentExtension' required='N' />
+   <component name='UndInstrmtGrp' required='N' />
+   <field name='Currency' required='N' />
+   <field name='Text' required='N' />
+   <field name='EncodedTextLen' required='N' />
+   <field name='EncodedText' required='N' />
+   <field name='TradingSessionID' required='N' />
+   <field name='TradingSessionSubID' required='N' />
+   <component name='InstrmtLegGrp' required='N' />
+   <field name='ExpirationCycle' required='N' />
+   <field name='SubscriptionRequestType' required='N' />
+   <component name='Stipulations' required='N' />
+   <component name='SpreadOrBenchmarkCurveData' required='N' />
+   <component name='YieldData' required='N' />
+   <field name='MarketID' required='N' />
+   <field name='MarketSegmentID' required='N' />
+  </message>
+  <message name='SecurityDefinition' msgcat='app' msgtype='d'>
+   <field name='SecurityReqID' required='N' />
+   <field name='SecurityResponseID' required='N' />
+   <field name='SecurityResponseType' required='N' />
+   <component name='Instrument' required='N' />
+   <component name='InstrumentExtension' required='N' />
+   <component name='UndInstrmtGrp' required='N' />
+   <field name='Currency' required='N' />
+   <field name='Text' required='N' />
+   <field name='EncodedTextLen' required='N' />
+   <field name='EncodedText' required='N' />
+   <component name='InstrmtLegGrp' required='N' />
+   <field name='SecurityReportID' required='N' />
