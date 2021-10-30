@@ -931,3 +931,53 @@
    <field name='EncodedText' required='N' />
    <component name='InstrmtLegGrp' required='N' />
    <field name='SecurityReportID' required='N' />
+   <field name='ClearingBusinessDate' required='N' />
+   <component name='Stipulations' required='N' />
+   <component name='SpreadOrBenchmarkCurveData' required='N' />
+   <component name='YieldData' required='N' />
+   <field name='CorporateAction' required='N' />
+   <component name='MarketSegmentGrp' required='N' />
+   <component name='ApplicationSequenceControl' required='N' />
+   <field name='TransactTime' required='N' />
+  </message>
+  <message name='SecurityStatusRequest' msgcat='app' msgtype='e'>
+   <field name='SecurityStatusReqID' required='Y' />
+   <component name='Instrument' required='Y' />
+   <component name='InstrumentExtension' required='N' />
+   <component name='UndInstrmtGrp' required='N' />
+   <component name='InstrmtLegGrp' required='N' />
+   <field name='Currency' required='N' />
+   <field name='SubscriptionRequestType' required='Y' />
+   <field name='TradingSessionID' required='N' />
+   <field name='TradingSessionSubID' required='N' />
+   <field name='MarketID' required='N' />
+   <field name='MarketSegmentID' required='N' />
+  </message>
+  <message name='SecurityStatus' msgcat='app' msgtype='f'>
+   <field name='SecurityStatusReqID' required='N' />
+   <component name='Instrument' required='Y' />
+   <component name='InstrumentExtension' required='N' />
+   <component name='UndInstrmtGrp' required='N' />
+   <component name='InstrmtLegGrp' required='N' />
+   <field name='Currency' required='N' />
+   <field name='TradingSessionID' required='N' />
+   <field name='TradingSessionSubID' required='N' />
+   <field name='UnsolicitedIndicator' required='N' />
+   <field name='SecurityTradingStatus' required='N' />
+   <field name='FinancialStatus' required='N' />
+   <field name='CorporateAction' required='N' />
+   <field name='HaltReasonInt' required='N' />
+   <field name='InViewOfCommon' required='N' />
+   <field name='DueToRelated' required='N' />
+   <field name='BuyVolume' required='N' />
+   <field name='SellVolume' required='N' />
+   <field name='HighPx' required='N' />
+   <field name='LowPx' required='N' />
+   <field name='LastPx' required='N' />
+   <field name='TransactTime' required='N' />
+   <field name='Adjustment' required='N' />
+   <field name='Text' required='N' />
+   <field name='EncodedTextLen' required='N' />
+   <field name='EncodedText' required='N' />
+   <field name='FirstPx' required='N' />
+   <field name='SecurityTradingEvent' required='N' />
