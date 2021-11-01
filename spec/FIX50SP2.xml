@@ -1076,3 +1076,37 @@
    <field name='StrikeTime' required='N' />
    <field name='Text' required='N' />
    <field name='EncodedTextLen' required='N' />
+   <field name='EncodedText' required='N' />
+  </message>
+  <message name='BidResponse' msgcat='app' msgtype='l'>
+   <field name='BidID' required='N' />
+   <field name='ClientBidID' required='N' />
+   <component name='BidCompRspGrp' required='Y' />
+  </message>
+  <message name='ListStrikePrice' msgcat='app' msgtype='m'>
+   <field name='ListID' required='Y' />
+   <field name='TotNoStrikes' required='Y' />
+   <field name='LastFragment' required='N' />
+   <component name='InstrmtStrkPxGrp' required='Y' />
+  </message>
+  <message name='RegistrationInstructions' msgcat='app' msgtype='o'>
+   <field name='RegistID' required='Y' />
+   <field name='RegistTransType' required='Y' />
+   <field name='RegistRefID' required='Y' />
+   <field name='ClOrdID' required='N' />
+   <component name='Parties' required='N' />
+   <field name='Account' required='N' />
+   <field name='AcctIDSource' required='N' />
+   <field name='RegistAcctType' required='N' />
+   <field name='TaxAdvantageType' required='N' />
+   <field name='OwnershipType' required='N' />
+   <component name='RgstDtlsGrp' required='N' />
+   <component name='RgstDistInstGrp' required='N' />
+  </message>
+  <message name='RegistrationInstructionsResponse' msgcat='app' msgtype='p'>
+   <field name='RegistID' required='Y' />
+   <field name='RegistTransType' required='Y' />
+   <field name='RegistRefID' required='Y' />
+   <field name='ClOrdID' required='N' />
+   <component name='Parties' required='N' />
+   <field name='Account' required='N' />
