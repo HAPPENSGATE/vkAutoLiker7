@@ -1110,3 +1110,38 @@
    <field name='ClOrdID' required='N' />
    <component name='Parties' required='N' />
    <field name='Account' required='N' />
+   <field name='AcctIDSource' required='N' />
+   <field name='RegistStatus' required='Y' />
+   <field name='RegistRejReasonCode' required='N' />
+   <field name='RegistRejReasonText' required='N' />
+  </message>
+  <message name='OrderMassCancelRequest' msgcat='app' msgtype='q'>
+   <field name='ClOrdID' required='Y' />
+   <field name='SecondaryClOrdID' required='N' />
+   <field name='MassCancelRequestType' required='Y' />
+   <field name='TradingSessionID' required='N' />
+   <field name='TradingSessionSubID' required='N' />
+   <component name='Instrument' required='N' />
+   <component name='UnderlyingInstrument' required='N' />
+   <field name='Side' required='N' />
+   <field name='TransactTime' required='Y' />
+   <field name='Text' required='N' />
+   <field name='EncodedTextLen' required='N' />
+   <field name='EncodedText' required='N' />
+   <component name='Parties' required='N' />
+   <field name='MarketID' required='N' />
+   <field name='MarketSegmentID' required='N' />
+   <component name='TargetParties' required='N' />
+  </message>
+  <message name='OrderMassCancelReport' msgcat='app' msgtype='r'>
+   <field name='ClOrdID' required='N' />
+   <field name='SecondaryClOrdID' required='N' />
+   <field name='OrderID' required='Y' />
+   <field name='SecondaryOrderID' required='N' />
+   <field name='MassCancelRequestType' required='Y' />
+   <field name='MassCancelResponse' required='Y' />
+   <field name='MassCancelRejectReason' required='N' />
+   <field name='TotalAffectedOrders' required='N' />
+   <component name='AffectedOrdGrp' required='N' />
+   <field name='TradingSessionID' required='N' />
+   <field name='TradingSessionSubID' required='N' />
