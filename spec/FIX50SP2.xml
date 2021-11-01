@@ -1025,3 +1025,54 @@
   <message name='MassQuote' msgcat='app' msgtype='i'>
    <field name='QuoteReqID' required='N' />
    <field name='QuoteID' required='Y' />
+   <field name='QuoteType' required='N' />
+   <field name='QuoteResponseLevel' required='N' />
+   <component name='Parties' required='N' />
+   <field name='Account' required='N' />
+   <field name='AcctIDSource' required='N' />
+   <field name='AccountType' required='N' />
+   <field name='DefBidSize' required='N' />
+   <field name='DefOfferSize' required='N' />
+   <component name='QuotSetGrp' required='Y' />
+  </message>
+  <message name='BusinessMessageReject' msgcat='app' msgtype='j'>
+   <field name='RefSeqNum' required='N' />
+   <field name='RefMsgType' required='Y' />
+   <field name='BusinessRejectRefID' required='N' />
+   <field name='BusinessRejectReason' required='Y' />
+   <field name='Text' required='N' />
+   <field name='EncodedTextLen' required='N' />
+   <field name='EncodedText' required='N' />
+   <field name='RefApplVerID' required='N' />
+   <field name='RefApplExtID' required='N' />
+   <field name='RefCstmApplVerID' required='N' />
+  </message>
+  <message name='BidRequest' msgcat='app' msgtype='k'>
+   <field name='BidID' required='N' />
+   <field name='ClientBidID' required='Y' />
+   <field name='BidRequestTransType' required='Y' />
+   <field name='ListName' required='N' />
+   <field name='TotNoRelatedSym' required='Y' />
+   <field name='BidType' required='Y' />
+   <field name='NumTickets' required='N' />
+   <field name='Currency' required='N' />
+   <field name='SideValue1' required='N' />
+   <field name='SideValue2' required='N' />
+   <component name='BidDescReqGrp' required='N' />
+   <component name='BidCompReqGrp' required='N' />
+   <field name='LiquidityIndType' required='N' />
+   <field name='WtAverageLiquidity' required='N' />
+   <field name='ExchangeForPhysical' required='N' />
+   <field name='OutMainCntryUIndex' required='N' />
+   <field name='CrossPercent' required='N' />
+   <field name='ProgRptReqs' required='N' />
+   <field name='ProgPeriodInterval' required='N' />
+   <field name='IncTaxInd' required='N' />
+   <field name='ForexReq' required='N' />
+   <field name='NumBidders' required='N' />
+   <field name='TradeDate' required='N' />
+   <field name='BidTradeType' required='Y' />
+   <field name='BasisPxType' required='Y' />
+   <field name='StrikeTime' required='N' />
+   <field name='Text' required='N' />
+   <field name='EncodedTextLen' required='N' />
