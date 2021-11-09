@@ -1225,3 +1225,46 @@
    <component name='Instrument' required='Y' />
    <component name='UndInstrmtGrp' required='N' />
    <component name='InstrmtLegGrp' required='N' />
+   <field name='SettlType' required='N' />
+   <field name='SettlDate' required='N' />
+   <field name='HandlInst' required='N' />
+   <field name='ExecInst' required='N' />
+   <field name='MinQty' required='N' />
+   <field name='MaxFloor' required='N' />
+   <field name='ExDestination' required='N' />
+   <component name='TrdgSesGrp' required='N' />
+   <field name='ProcessCode' required='N' />
+   <field name='PrevClosePx' required='N' />
+   <field name='LocateReqd' required='N' />
+   <field name='TransactTime' required='Y' />
+   <component name='Stipulations' required='N' />
+   <field name='OrdType' required='Y' />
+   <field name='PriceType' required='N' />
+   <field name='Price' required='N' />
+   <field name='StopPx' required='N' />
+   <component name='SpreadOrBenchmarkCurveData' required='N' />
+   <component name='YieldData' required='N' />
+   <field name='Currency' required='N' />
+   <field name='ComplianceID' required='N' />
+   <field name='IOIID' required='N' />
+   <field name='QuoteID' required='N' />
+   <field name='TimeInForce' required='N' />
+   <field name='EffectiveTime' required='N' />
+   <field name='ExpireDate' required='N' />
+   <field name='ExpireTime' required='N' />
+   <field name='GTBookingInst' required='N' />
+   <field name='MaxShow' required='N' />
+   <component name='PegInstructions' required='N' />
+   <component name='DiscretionInstructions' required='N' />
+   <field name='TargetStrategy' required='N' />
+   <field name='TargetStrategyParameters' required='N' />
+   <field name='ParticipationRate' required='N' />
+   <field name='CancellationRights' required='N' />
+   <field name='MoneyLaunderingStatus' required='N' />
+   <field name='RegistID' required='N' />
+   <field name='Designation' required='N' />
+   <component name='StrategyParametersGrp' required='N' />
+   <field name='HostCrossID' required='N' />
+   <field name='TransBkdTime' required='N' />
+   <component name='RootParties' required='N' />
+   <field name='MatchIncrement' required='N' />
