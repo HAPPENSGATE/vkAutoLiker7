@@ -1352,3 +1352,42 @@
    <field name='MarketSegmentID' required='N' />
    <component name='ApplicationSequenceControl' required='N' />
    <field name='SecurityListID' required='N' />
+   <field name='SecurityListRefID' required='N' />
+   <field name='SecurityListDesc' required='N' />
+   <field name='EncodedSecurityListDescLen' required='N' />
+   <field name='EncodedSecurityListDesc' required='N' />
+   <field name='SecurityListType' required='N' />
+   <field name='SecurityListTypeSource' required='N' />
+   <field name='TransactTime' required='N' />
+  </message>
+  <message name='DerivativeSecurityListRequest' msgcat='app' msgtype='z'>
+   <field name='SecurityReqID' required='Y' />
+   <field name='SecurityListRequestType' required='Y' />
+   <component name='UnderlyingInstrument' required='N' />
+   <field name='SecuritySubType' required='N' />
+   <field name='Currency' required='N' />
+   <field name='Text' required='N' />
+   <field name='EncodedTextLen' required='N' />
+   <field name='EncodedText' required='N' />
+   <field name='TradingSessionID' required='N' />
+   <field name='TradingSessionSubID' required='N' />
+   <field name='SubscriptionRequestType' required='N' />
+   <field name='MarketID' required='N' />
+   <field name='MarketSegmentID' required='N' />
+   <component name='DerivativeInstrument' required='N' />
+  </message>
+  <message name='DerivativeSecurityList' msgcat='app' msgtype='AA'>
+   <field name='SecurityReqID' required='N' />
+   <field name='SecurityResponseID' required='N' />
+   <field name='SecurityRequestResult' required='N' />
+   <component name='UnderlyingInstrument' required='N' />
+   <field name='TotNoRelatedSym' required='N' />
+   <field name='LastFragment' required='N' />
+   <component name='RelSymDerivSecGrp' required='N' />
+   <component name='DerivativeSecurityDefinition' required='N' />
+   <component name='ApplicationSequenceControl' required='N' />
+   <field name='SecurityReportID' required='N' />
+   <field name='ClearingBusinessDate' required='N' />
+   <field name='TransactTime' required='N' />
+  </message>
+  <message name='NewOrderMultileg' msgcat='app' msgtype='AB'>
