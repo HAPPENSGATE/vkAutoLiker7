@@ -1391,3 +1391,42 @@
    <field name='TransactTime' required='N' />
   </message>
   <message name='NewOrderMultileg' msgcat='app' msgtype='AB'>
+   <field name='ClOrdID' required='Y' />
+   <field name='SecondaryClOrdID' required='N' />
+   <field name='ClOrdLinkID' required='N' />
+   <component name='Parties' required='N' />
+   <field name='TradeOriginationDate' required='N' />
+   <field name='TradeDate' required='N' />
+   <field name='Account' required='N' />
+   <field name='AcctIDSource' required='N' />
+   <field name='AccountType' required='N' />
+   <field name='DayBookingInst' required='N' />
+   <field name='BookingUnit' required='N' />
+   <field name='PreallocMethod' required='N' />
+   <field name='AllocID' required='N' />
+   <component name='PreAllocMlegGrp' required='N' />
+   <field name='SettlType' required='N' />
+   <field name='SettlDate' required='N' />
+   <field name='CashMargin' required='N' />
+   <field name='ClearingFeeIndicator' required='N' />
+   <field name='HandlInst' required='N' />
+   <field name='ExecInst' required='N' />
+   <field name='MinQty' required='N' />
+   <field name='MaxFloor' required='N' />
+   <field name='ExDestination' required='N' />
+   <component name='TrdgSesGrp' required='N' />
+   <field name='ProcessCode' required='N' />
+   <field name='Side' required='Y' />
+   <component name='Instrument' required='N' />
+   <component name='UndInstrmtGrp' required='N' />
+   <field name='PrevClosePx' required='N' />
+   <component name='LegOrdGrp' required='N' />
+   <field name='LocateReqd' required='N' />
+   <field name='TransactTime' required='Y' />
+   <field name='QtyType' required='N' />
+   <component name='OrderQtyData' required='N' />
+   <field name='OrdType' required='Y' />
+   <field name='PriceType' required='N' />
+   <field name='Price' required='N' />
+   <field name='StopPx' required='N' />
+   <field name='Currency' required='N' />
