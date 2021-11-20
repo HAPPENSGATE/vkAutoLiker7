@@ -1584,3 +1584,32 @@
    <field name='TrdMatchID' required='N' />
    <component name='Parties' required='N' />
    <component name='Instrument' required='N' />
+   <component name='InstrumentExtension' required='N' />
+   <component name='FinancingDetails' required='N' />
+   <component name='UndInstrmtGrp' required='N' />
+   <component name='InstrmtLegGrp' required='N' />
+   <component name='TrdCapDtGrp' required='N' />
+   <field name='ClearingBusinessDate' required='N' />
+   <field name='TradingSessionID' required='N' />
+   <field name='TradingSessionSubID' required='N' />
+   <field name='TimeBracket' required='N' />
+   <field name='Side' required='N' />
+   <field name='MultiLegReportingType' required='N' />
+   <field name='TradeInputSource' required='N' />
+   <field name='TradeInputDevice' required='N' />
+   <field name='ResponseTransportType' required='N' />
+   <field name='ResponseDestination' required='N' />
+   <field name='Text' required='N' />
+   <field name='EncodedTextLen' required='N' />
+   <field name='EncodedText' required='N' />
+   <field name='MessageEventSource' required='N' />
+   <field name='TradeID' required='N' />
+   <field name='SecondaryTradeID' required='N' />
+   <field name='FirmTradeID' required='N' />
+   <field name='SecondaryFirmTradeID' required='N' />
+   <field name='TradeHandlingInstr' required='N' />
+  </message>
+  <message name='TradeCaptureReport' msgcat='app' msgtype='AE'>
+   <field name='TradeReportID' required='N' />
+   <field name='TradeReportTransType' required='N' />
+   <field name='TradeReportType' required='N' />
