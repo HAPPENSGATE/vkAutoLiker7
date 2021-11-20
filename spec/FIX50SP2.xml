@@ -1555,3 +1555,32 @@
    <component name='StrategyParametersGrp' required='N' />
    <field name='MatchIncrement' required='N' />
    <field name='MaxPriceLevels' required='N' />
+   <component name='DisplayInstruction' required='N' />
+   <field name='PriceProtectionScope' required='N' />
+   <component name='TriggeringInstruction' required='N' />
+   <field name='PreTradeAnonymity' required='N' />
+   <field name='ExDestinationIDSource' required='N' />
+   <field name='SwapPoints' required='N' />
+   <field name='MultilegModel' required='N' />
+   <field name='MultilegPriceMethod' required='N' />
+   <field name='RiskFreeRate' required='N' />
+  </message>
+  <message name='TradeCaptureReportRequest' msgcat='app' msgtype='AD'>
+   <field name='TradeRequestID' required='Y' />
+   <field name='TradeRequestType' required='Y' />
+   <field name='SubscriptionRequestType' required='N' />
+   <field name='TradeReportID' required='N' />
+   <field name='SecondaryTradeReportID' required='N' />
+   <field name='ExecID' required='N' />
+   <field name='ExecType' required='N' />
+   <field name='OrderID' required='N' />
+   <field name='ClOrdID' required='N' />
+   <field name='MatchStatus' required='N' />
+   <field name='TrdType' required='N' />
+   <field name='TrdSubType' required='N' />
+   <field name='TransferReason' required='N' />
+   <field name='SecondaryTrdType' required='N' />
+   <field name='TradeLinkID' required='N' />
+   <field name='TrdMatchID' required='N' />
+   <component name='Parties' required='N' />
+   <component name='Instrument' required='N' />
