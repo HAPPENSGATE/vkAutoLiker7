@@ -1658,3 +1658,42 @@
    <field name='TransactTime' required='N' />
    <component name='TrdRegTimestamps' required='N' />
    <field name='SettlType' required='N' />
+   <field name='SettlDate' required='N' />
+   <field name='MatchStatus' required='N' />
+   <field name='MatchType' required='N' />
+   <component name='TrdCapRptSideGrp' required='Y' />
+   <field name='CopyMsgIndicator' required='N' />
+   <field name='PublishTrdIndicator' required='N' />
+   <field name='ShortSaleReason' required='N' />
+   <field name='TrdRptStatus' required='N' />
+   <field name='AsOfIndicator' required='N' />
+   <field name='SettlSessID' required='N' />
+   <field name='SettlSessSubID' required='N' />
+   <field name='TierCode' required='N' />
+   <field name='MessageEventSource' required='N' />
+   <field name='LastUpdateTime' required='N' />
+   <field name='RndPx' required='N' />
+   <field name='TradeID' required='N' />
+   <field name='SecondaryTradeID' required='N' />
+   <field name='FirmTradeID' required='N' />
+   <field name='SecondaryFirmTradeID' required='N' />
+   <field name='CalculatedCcyLastQty' required='N' />
+   <field name='LastSwapPoints' required='N' />
+   <field name='UnderlyingSettlementDate' required='N' />
+   <field name='GrossTradeAmt' required='N' />
+   <component name='RootParties' required='N' />
+   <field name='TradeHandlingInstr' required='N' />
+   <field name='OrigTradeHandlingInstr' required='N' />
+   <field name='OrigTradeDate' required='N' />
+   <field name='OrigTradeID' required='N' />
+   <field name='OrigSecondaryTradeID' required='N' />
+   <field name='TZTransactTime' required='N' />
+   <field name='ReportedPxDiff' required='N' />
+   <field name='Currency' required='N' />
+   <field name='SettlCurrency' required='N' />
+   <field name='RejectText' required='N' />
+   <field name='FeeMultiplier' required='N' />
+   <field name='Volatility' required='N' />
+   <field name='DividendYield' required='N' />
+   <field name='RiskFreeRate' required='N' />
+   <field name='CurrencyRatio' required='N' />
