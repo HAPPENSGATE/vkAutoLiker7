@@ -1697,3 +1697,51 @@
    <field name='DividendYield' required='N' />
    <field name='RiskFreeRate' required='N' />
    <field name='CurrencyRatio' required='N' />
+   <component name='TrdRepIndicatorsGrp' required='N' />
+   <field name='TradePublishIndicator' required='N' />
+   <component name='ApplicationSequenceControl' required='N' />
+   <field name='VenueType' required='N' />
+   <field name='MarketSegmentID' required='N' />
+   <field name='MarketID' required='N' />
+  </message>
+  <message name='OrderMassStatusRequest' msgcat='app' msgtype='AF'>
+   <field name='MassStatusReqID' required='Y' />
+   <field name='MassStatusReqType' required='Y' />
+   <component name='Parties' required='N' />
+   <field name='Account' required='N' />
+   <field name='AcctIDSource' required='N' />
+   <field name='TradingSessionID' required='N' />
+   <field name='TradingSessionSubID' required='N' />
+   <component name='Instrument' required='N' />
+   <component name='UnderlyingInstrument' required='N' />
+   <field name='Side' required='N' />
+   <component name='TargetParties' required='N' />
+  </message>
+  <message name='QuoteRequestReject' msgcat='app' msgtype='AG'>
+   <field name='QuoteReqID' required='Y' />
+   <field name='RFQReqID' required='N' />
+   <field name='QuoteRequestRejectReason' required='Y' />
+   <component name='QuotReqRjctGrp' required='Y' />
+   <field name='Text' required='N' />
+   <field name='EncodedTextLen' required='N' />
+   <field name='EncodedText' required='N' />
+   <component name='RootParties' required='N' />
+   <field name='PrivateQuote' required='N' />
+   <field name='RespondentType' required='N' />
+   <field name='PreTradeAnonymity' required='N' />
+  </message>
+  <message name='RFQRequest' msgcat='app' msgtype='AH'>
+   <field name='RFQReqID' required='Y' />
+   <component name='RFQReqGrp' required='Y' />
+   <field name='SubscriptionRequestType' required='N' />
+   <field name='PrivateQuote' required='N' />
+   <component name='Parties' required='N' />
+  </message>
+  <message name='QuoteStatusReport' msgcat='app' msgtype='AI'>
+   <field name='QuoteStatusReqID' required='N' />
+   <field name='QuoteReqID' required='N' />
+   <field name='QuoteID' required='N' />
+   <field name='QuoteRespID' required='N' />
+   <field name='QuoteType' required='N' />
+   <component name='Parties' required='N' />
+   <field name='TradingSessionID' required='N' />
