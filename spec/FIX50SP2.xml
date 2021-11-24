@@ -1797,3 +1797,52 @@
    <field name='ExDestination' required='N' />
    <field name='QuoteStatus' required='N' />
    <field name='Text' required='N' />
+   <field name='EncodedTextLen' required='N' />
+   <field name='EncodedText' required='N' />
+   <field name='ExDestinationIDSource' required='N' />
+   <field name='QuoteCancelType' required='N' />
+   <field name='QuoteMsgID' required='N' />
+   <field name='QuoteRejectReason' required='N' />
+   <field name='MinQty' required='N' />
+   <field name='BookingType' required='N' />
+   <field name='OrderCapacity' required='N' />
+   <field name='OrderRestrictions' required='N' />
+   <component name='TargetParties' required='N' />
+  </message>
+  <message name='QuoteResponse' msgcat='app' msgtype='AJ'>
+   <field name='QuoteRespID' required='Y' />
+   <field name='QuoteID' required='N' />
+   <field name='QuoteRespType' required='Y' />
+   <field name='ClOrdID' required='N' />
+   <field name='OrderCapacity' required='N' />
+   <field name='IOIID' required='N' />
+   <field name='QuoteType' required='N' />
+   <component name='QuotQualGrp' required='N' />
+   <component name='Parties' required='N' />
+   <field name='TradingSessionID' required='N' />
+   <field name='TradingSessionSubID' required='N' />
+   <component name='Instrument' required='Y' />
+   <component name='FinancingDetails' required='N' />
+   <component name='UndInstrmtGrp' required='N' />
+   <field name='Side' required='N' />
+   <component name='OrderQtyData' required='N' />
+   <field name='SettlType' required='N' />
+   <field name='SettlDate' required='N' />
+   <field name='SettlDate2' required='N' />
+   <field name='OrderQty2' required='N' />
+   <field name='Currency' required='N' />
+   <component name='Stipulations' required='N' />
+   <field name='Account' required='N' />
+   <field name='AcctIDSource' required='N' />
+   <field name='AccountType' required='N' />
+   <component name='LegQuotGrp' required='N' />
+   <field name='BidPx' required='N' />
+   <field name='OfferPx' required='N' />
+   <field name='MktBidPx' required='N' />
+   <field name='MktOfferPx' required='N' />
+   <field name='MinBidSize' required='N' />
+   <field name='BidSize' required='N' />
+   <field name='MinOfferSize' required='N' />
+   <field name='OfferSize' required='N' />
+   <field name='ValidUntilTime' required='N' />
+   <field name='BidSpotRate' required='N' />
