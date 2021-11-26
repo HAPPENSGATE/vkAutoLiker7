@@ -1937,3 +1937,47 @@
    <field name='SettlCurrFxRate' required='N' />
    <field name='SettlCurrFxRateCalc' required='N' />
    <field name='SettlType' required='N' />
+   <field name='SettlDate' required='N' />
+   <component name='SettlInstructionsData' required='N' />
+   <component name='CommissionData' required='N' />
+   <field name='SharedCommission' required='N' />
+   <component name='Stipulations' required='N' />
+   <component name='MiscFeesGrp' required='N' />
+  </message>
+  <message name='PositionMaintenanceRequest' msgcat='app' msgtype='AL'>
+   <field name='PosReqID' required='N' />
+   <field name='PosTransType' required='Y' />
+   <field name='PosMaintAction' required='Y' />
+   <field name='OrigPosReqRefID' required='N' />
+   <field name='PosMaintRptRefID' required='N' />
+   <field name='ClearingBusinessDate' required='Y' />
+   <field name='SettlSessID' required='N' />
+   <field name='SettlSessSubID' required='N' />
+   <component name='Parties' required='Y' />
+   <field name='Account' required='N' />
+   <field name='AcctIDSource' required='N' />
+   <field name='AccountType' required='N' />
+   <component name='Instrument' required='Y' />
+   <field name='Currency' required='N' />
+   <component name='InstrmtLegGrp' required='N' />
+   <component name='UndInstrmtGrp' required='N' />
+   <component name='TrdgSesGrp' required='N' />
+   <field name='TransactTime' required='N' />
+   <component name='PositionQty' required='Y' />
+   <field name='AdjustmentType' required='N' />
+   <field name='ContraryInstructionIndicator' required='N' />
+   <field name='PriorSpreadIndicator' required='N' />
+   <field name='ThresholdAmount' required='N' />
+   <field name='Text' required='N' />
+   <field name='EncodedTextLen' required='N' />
+   <field name='EncodedText' required='N' />
+   <component name='PositionAmountData' required='N' />
+   <field name='SettlCurrency' required='N' />
+  </message>
+  <message name='PositionMaintenanceReport' msgcat='app' msgtype='AM'>
+   <field name='PosMaintRptID' required='Y' />
+   <field name='PosTransType' required='Y' />
+   <field name='PosReqID' required='N' />
+   <field name='PosMaintAction' required='Y' />
+   <field name='OrigPosReqRefID' required='N' />
+   <field name='PosMaintStatus' required='Y' />
