@@ -1846,3 +1846,51 @@
    <field name='OfferSize' required='N' />
    <field name='ValidUntilTime' required='N' />
    <field name='BidSpotRate' required='N' />
+   <field name='OfferSpotRate' required='N' />
+   <field name='BidForwardPoints' required='N' />
+   <field name='OfferForwardPoints' required='N' />
+   <field name='MidPx' required='N' />
+   <field name='BidYield' required='N' />
+   <field name='MidYield' required='N' />
+   <field name='OfferYield' required='N' />
+   <field name='TransactTime' required='N' />
+   <field name='OrdType' required='N' />
+   <field name='BidForwardPoints2' required='N' />
+   <field name='OfferForwardPoints2' required='N' />
+   <field name='SettlCurrBidFxRate' required='N' />
+   <field name='SettlCurrOfferFxRate' required='N' />
+   <field name='SettlCurrFxRateCalc' required='N' />
+   <field name='Commission' required='N' />
+   <field name='CommType' required='N' />
+   <field name='CustOrderCapacity' required='N' />
+   <field name='ExDestination' required='N' />
+   <field name='Text' required='N' />
+   <field name='EncodedTextLen' required='N' />
+   <field name='EncodedText' required='N' />
+   <field name='Price' required='N' />
+   <field name='PriceType' required='N' />
+   <component name='SpreadOrBenchmarkCurveData' required='N' />
+   <component name='YieldData' required='N' />
+   <field name='ExDestinationIDSource' required='N' />
+   <field name='QuoteMsgID' required='N' />
+   <field name='PreTradeAnonymity' required='N' />
+   <field name='MinQty' required='N' />
+   <field name='OrderRestrictions' required='N' />
+  </message>
+  <message name='Confirmation' msgcat='app' msgtype='AK'>
+   <field name='ConfirmID' required='Y' />
+   <field name='ConfirmRefID' required='N' />
+   <field name='ConfirmReqID' required='N' />
+   <field name='ConfirmTransType' required='Y' />
+   <field name='ConfirmType' required='Y' />
+   <field name='CopyMsgIndicator' required='N' />
+   <field name='LegalConfirm' required='N' />
+   <field name='ConfirmStatus' required='Y' />
+   <component name='Parties' required='N' />
+   <component name='OrdAllocGrp' required='N' />
+   <field name='AllocID' required='N' />
+   <field name='SecondaryAllocID' required='N' />
+   <field name='IndividualAllocID' required='N' />
+   <field name='TransactTime' required='Y' />
+   <field name='TradeDate' required='Y' />
+   <component name='TrdRegTimestamps' required='N' />
