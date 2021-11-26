@@ -1894,3 +1894,46 @@
    <field name='TransactTime' required='Y' />
    <field name='TradeDate' required='Y' />
    <component name='TrdRegTimestamps' required='N' />
+   <component name='Instrument' required='Y' />
+   <component name='InstrumentExtension' required='N' />
+   <component name='FinancingDetails' required='N' />
+   <component name='UndInstrmtGrp' required='N' />
+   <component name='InstrmtLegGrp' required='N' />
+   <component name='YieldData' required='N' />
+   <field name='AllocQty' required='Y' />
+   <field name='QtyType' required='N' />
+   <field name='Side' required='Y' />
+   <field name='Currency' required='N' />
+   <field name='LastMkt' required='N' />
+   <component name='CpctyConfGrp' required='Y' />
+   <field name='AllocAccount' required='Y' />
+   <field name='AllocAcctIDSource' required='N' />
+   <field name='AllocAccountType' required='N' />
+   <field name='AvgPx' required='Y' />
+   <field name='AvgPxPrecision' required='N' />
+   <field name='PriceType' required='N' />
+   <field name='AvgParPx' required='N' />
+   <component name='SpreadOrBenchmarkCurveData' required='N' />
+   <field name='ReportedPx' required='N' />
+   <field name='Text' required='N' />
+   <field name='EncodedTextLen' required='N' />
+   <field name='EncodedText' required='N' />
+   <field name='ProcessCode' required='N' />
+   <field name='GrossTradeAmt' required='Y' />
+   <field name='NumDaysInterest' required='N' />
+   <field name='ExDate' required='N' />
+   <field name='AccruedInterestRate' required='N' />
+   <field name='AccruedInterestAmt' required='N' />
+   <field name='InterestAtMaturity' required='N' />
+   <field name='EndAccruedInterestAmt' required='N' />
+   <field name='StartCash' required='N' />
+   <field name='EndCash' required='N' />
+   <field name='Concession' required='N' />
+   <field name='TotalTakedown' required='N' />
+   <field name='NetMoney' required='Y' />
+   <field name='MaturityNetMoney' required='N' />
+   <field name='SettlCurrAmt' required='N' />
+   <field name='SettlCurrency' required='N' />
+   <field name='SettlCurrFxRate' required='N' />
+   <field name='SettlCurrFxRateCalc' required='N' />
+   <field name='SettlType' required='N' />
