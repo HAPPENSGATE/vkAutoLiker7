@@ -1981,3 +1981,38 @@
    <field name='PosMaintAction' required='Y' />
    <field name='OrigPosReqRefID' required='N' />
    <field name='PosMaintStatus' required='Y' />
+   <field name='PosMaintResult' required='N' />
+   <field name='ClearingBusinessDate' required='Y' />
+   <field name='SettlSessID' required='N' />
+   <field name='SettlSessSubID' required='N' />
+   <component name='Parties' required='N' />
+   <field name='Account' required='N' />
+   <field name='AcctIDSource' required='N' />
+   <field name='AccountType' required='N' />
+   <component name='Instrument' required='Y' />
+   <field name='Currency' required='N' />
+   <component name='InstrmtLegGrp' required='N' />
+   <component name='UndInstrmtGrp' required='N' />
+   <component name='TrdgSesGrp' required='N' />
+   <field name='TransactTime' required='N' />
+   <component name='PositionQty' required='Y' />
+   <component name='PositionAmountData' required='N' />
+   <field name='AdjustmentType' required='N' />
+   <field name='ThresholdAmount' required='N' />
+   <field name='Text' required='N' />
+   <field name='EncodedTextLen' required='N' />
+   <field name='EncodedText' required='N' />
+   <field name='SettlCurrency' required='N' />
+   <field name='ContraryInstructionIndicator' required='N' />
+   <field name='PriorSpreadIndicator' required='N' />
+   <field name='PosMaintRptRefID' required='N' />
+  </message>
+  <message name='RequestForPositions' msgcat='app' msgtype='AN'>
+   <field name='PosReqID' required='Y' />
+   <field name='PosReqType' required='Y' />
+   <field name='MatchStatus' required='N' />
+   <field name='SubscriptionRequestType' required='N' />
+   <component name='Parties' required='Y' />
+   <field name='Account' required='N' />
+   <field name='AcctIDSource' required='N' />
+   <field name='AccountType' required='N' />
