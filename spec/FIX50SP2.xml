@@ -2096,3 +2096,40 @@
    <component name='ApplicationSequenceControl' required='N' />
    <field name='ModelType' required='N' />
    <field name='PriceDelta' required='N' />
+  </message>
+  <message name='TradeCaptureReportRequestAck' msgcat='app' msgtype='AQ'>
+   <field name='TradeRequestID' required='Y' />
+   <field name='TradeRequestType' required='Y' />
+   <field name='SubscriptionRequestType' required='N' />
+   <field name='TotNumTradeReports' required='N' />
+   <field name='TradeRequestResult' required='Y' />
+   <field name='TradeRequestStatus' required='Y' />
+   <component name='Instrument' required='N' />
+   <component name='UndInstrmtGrp' required='N' />
+   <component name='InstrmtLegGrp' required='N' />
+   <field name='MultiLegReportingType' required='N' />
+   <field name='ResponseTransportType' required='N' />
+   <field name='ResponseDestination' required='N' />
+   <field name='Text' required='N' />
+   <field name='EncodedTextLen' required='N' />
+   <field name='EncodedText' required='N' />
+   <field name='MessageEventSource' required='N' />
+   <field name='TradeID' required='N' />
+   <field name='SecondaryTradeID' required='N' />
+   <field name='FirmTradeID' required='N' />
+   <field name='SecondaryFirmTradeID' required='N' />
+  </message>
+  <message name='TradeCaptureReportAck' msgcat='app' msgtype='AR'>
+   <field name='TradeReportID' required='N' />
+   <field name='TradeReportTransType' required='N' />
+   <field name='TradeReportType' required='N' />
+   <field name='TrdType' required='N' />
+   <field name='TrdSubType' required='N' />
+   <field name='SecondaryTrdType' required='N' />
+   <field name='TransferReason' required='N' />
+   <field name='ExecType' required='N' />
+   <field name='TradeReportRefID' required='N' />
+   <field name='SecondaryTradeReportRefID' required='N' />
+   <field name='TrdRptStatus' required='N' />
+   <field name='TradeReportRejectReason' required='N' />
+   <field name='SecondaryTradeReportID' required='N' />
