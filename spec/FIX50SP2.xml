@@ -2056,3 +2056,43 @@
    <field name='MatchStatus' required='N' />
    <field name='ClearingBusinessDate' required='N' />
    <field name='SubscriptionRequestType' required='N' />
+   <field name='SettlSessID' required='N' />
+   <field name='SettlSessSubID' required='N' />
+   <field name='SettlCurrency' required='N' />
+  </message>
+  <message name='PositionReport' msgcat='app' msgtype='AP'>
+   <field name='PosMaintRptID' required='Y' />
+   <field name='PosReqID' required='N' />
+   <field name='PosReqType' required='N' />
+   <field name='SubscriptionRequestType' required='N' />
+   <field name='TotalNumPosReports' required='N' />
+   <field name='UnsolicitedIndicator' required='N' />
+   <field name='PosReqResult' required='N' />
+   <field name='ClearingBusinessDate' required='Y' />
+   <field name='SettlSessID' required='N' />
+   <field name='SettlSessSubID' required='N' />
+   <component name='Parties' required='Y' />
+   <field name='Account' required='N' />
+   <field name='AcctIDSource' required='N' />
+   <field name='AccountType' required='N' />
+   <component name='Instrument' required='N' />
+   <field name='Currency' required='N' />
+   <field name='SettlPrice' required='N' />
+   <field name='SettlPriceType' required='N' />
+   <field name='PriorSettlPrice' required='N' />
+   <component name='InstrmtLegGrp' required='N' />
+   <component name='PosUndInstrmtGrp' required='N' />
+   <component name='PositionQty' required='N' />
+   <component name='PositionAmountData' required='N' />
+   <field name='RegistStatus' required='N' />
+   <field name='DeliveryDate' required='N' />
+   <field name='Text' required='N' />
+   <field name='EncodedTextLen' required='N' />
+   <field name='EncodedText' required='N' />
+   <field name='MatchStatus' required='N' />
+   <field name='PriceType' required='N' />
+   <field name='SettlCurrency' required='N' />
+   <field name='MessageEventSource' required='N' />
+   <component name='ApplicationSequenceControl' required='N' />
+   <field name='ModelType' required='N' />
+   <field name='PriceDelta' required='N' />
