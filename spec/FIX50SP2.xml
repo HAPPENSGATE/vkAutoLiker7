@@ -2227,3 +2227,38 @@
    <field name='PreviouslyReported' required='N' />
    <field name='ReversalIndicator' required='N' />
    <field name='MatchType' required='N' />
+   <field name='Side' required='Y' />
+   <component name='Instrument' required='Y' />
+   <component name='InstrumentExtension' required='N' />
+   <component name='FinancingDetails' required='N' />
+   <component name='UndInstrmtGrp' required='N' />
+   <component name='InstrmtLegGrp' required='N' />
+   <field name='Quantity' required='Y' />
+   <field name='QtyType' required='N' />
+   <field name='LastMkt' required='N' />
+   <field name='TradeOriginationDate' required='N' />
+   <field name='TradingSessionID' required='N' />
+   <field name='TradingSessionSubID' required='N' />
+   <field name='PriceType' required='N' />
+   <field name='AvgPx' required='Y' />
+   <field name='AvgParPx' required='N' />
+   <component name='SpreadOrBenchmarkCurveData' required='N' />
+   <field name='Currency' required='N' />
+   <field name='AvgPxPrecision' required='N' />
+   <component name='Parties' required='N' />
+   <field name='TradeDate' required='Y' />
+   <field name='TransactTime' required='N' />
+   <field name='SettlType' required='N' />
+   <field name='SettlDate' required='N' />
+   <field name='BookingType' required='N' />
+   <field name='GrossTradeAmt' required='N' />
+   <field name='Concession' required='N' />
+   <field name='TotalTakedown' required='N' />
+   <field name='NetMoney' required='N' />
+   <field name='PositionEffect' required='N' />
+   <field name='AutoAcceptIndicator' required='N' />
+   <field name='Text' required='N' />
+   <field name='EncodedTextLen' required='N' />
+   <field name='EncodedText' required='N' />
+   <field name='NumDaysInterest' required='N' />
+   <field name='AccruedInterestRate' required='N' />
