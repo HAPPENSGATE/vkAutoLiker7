@@ -2262,3 +2262,60 @@
    <field name='EncodedText' required='N' />
    <field name='NumDaysInterest' required='N' />
    <field name='AccruedInterestRate' required='N' />
+   <field name='AccruedInterestAmt' required='N' />
+   <field name='TotalAccruedInterestAmt' required='N' />
+   <field name='InterestAtMaturity' required='N' />
+   <field name='EndAccruedInterestAmt' required='N' />
+   <field name='StartCash' required='N' />
+   <field name='EndCash' required='N' />
+   <field name='LegalConfirm' required='N' />
+   <component name='Stipulations' required='N' />
+   <component name='YieldData' required='N' />
+   <field name='TotNoAllocs' required='N' />
+   <field name='LastFragment' required='N' />
+   <component name='AllocGrp' required='N' />
+   <field name='ClearingBusinessDate' required='N' />
+   <field name='TrdType' required='N' />
+   <field name='TrdSubType' required='N' />
+   <field name='MultiLegReportingType' required='N' />
+   <field name='CustOrderCapacity' required='N' />
+   <field name='TradeInputSource' required='N' />
+   <field name='RndPx' required='N' />
+   <field name='MessageEventSource' required='N' />
+   <field name='TradeInputDevice' required='N' />
+   <field name='AvgPxIndicator' required='N' />
+   <component name='PositionAmountData' required='N' />
+   <component name='RateSource' required='N' />
+  </message>
+  <message name='AllocationReportAck' msgcat='app' msgtype='AT'>
+   <field name='AllocReportID' required='Y' />
+   <field name='AllocID' required='N' />
+   <component name='Parties' required='N' />
+   <field name='SecondaryAllocID' required='N' />
+   <field name='TradeDate' required='N' />
+   <field name='TransactTime' required='N' />
+   <field name='AllocStatus' required='N' />
+   <field name='AllocRejCode' required='N' />
+   <field name='AllocReportType' required='N' />
+   <field name='AllocIntermedReqType' required='N' />
+   <field name='MatchStatus' required='N' />
+   <field name='Product' required='N' />
+   <field name='SecurityType' required='N' />
+   <field name='Text' required='N' />
+   <field name='EncodedTextLen' required='N' />
+   <field name='EncodedText' required='N' />
+   <component name='AllocAckGrp' required='N' />
+   <field name='ClearingBusinessDate' required='N' />
+   <field name='AvgPxIndicator' required='N' />
+   <field name='Quantity' required='N' />
+   <field name='AllocTransType' required='N' />
+  </message>
+  <message name='ConfirmationAck' msgcat='app' msgtype='AU'>
+   <field name='ConfirmID' required='Y' />
+   <field name='TradeDate' required='Y' />
+   <field name='TransactTime' required='Y' />
+   <field name='AffirmStatus' required='Y' />
+   <field name='ConfirmRejReason' required='N' />
+   <field name='MatchStatus' required='N' />
+   <field name='Text' required='N' />
+   <field name='EncodedTextLen' required='N' />
