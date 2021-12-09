@@ -2319,3 +2319,48 @@
    <field name='MatchStatus' required='N' />
    <field name='Text' required='N' />
    <field name='EncodedTextLen' required='N' />
+   <field name='EncodedText' required='N' />
+  </message>
+  <message name='SettlementInstructionRequest' msgcat='app' msgtype='AV'>
+   <field name='SettlInstReqID' required='Y' />
+   <field name='TransactTime' required='Y' />
+   <component name='Parties' required='N' />
+   <field name='AllocAccount' required='N' />
+   <field name='AllocAcctIDSource' required='N' />
+   <field name='Side' required='N' />
+   <field name='Product' required='N' />
+   <field name='SecurityType' required='N' />
+   <field name='CFICode' required='N' />
+   <field name='EffectiveTime' required='N' />
+   <field name='ExpireTime' required='N' />
+   <field name='LastUpdateTime' required='N' />
+   <field name='StandInstDbType' required='N' />
+   <field name='StandInstDbName' required='N' />
+   <field name='StandInstDbID' required='N' />
+   <field name='SettlCurrency' required='N' />
+  </message>
+  <message name='AssignmentReport' msgcat='app' msgtype='AW'>
+   <field name='AsgnRptID' required='Y' />
+   <field name='TotNumAssignmentReports' required='N' />
+   <field name='LastRptRequested' required='N' />
+   <component name='Parties' required='Y' />
+   <field name='Account' required='N' />
+   <field name='AccountType' required='N' />
+   <component name='Instrument' required='N' />
+   <field name='Currency' required='N' />
+   <component name='InstrmtLegGrp' required='N' />
+   <component name='UndInstrmtGrp' required='N' />
+   <component name='PositionQty' required='N' />
+   <component name='PositionAmountData' required='N' />
+   <field name='ThresholdAmount' required='N' />
+   <field name='SettlPrice' required='N' />
+   <field name='SettlPriceType' required='N' />
+   <field name='UnderlyingSettlPrice' required='N' />
+   <field name='ExpireDate' required='N' />
+   <field name='AssignmentMethod' required='N' />
+   <field name='AssignmentUnit' required='N' />
+   <field name='OpenInterest' required='N' />
+   <field name='ExerciseMethod' required='N' />
+   <field name='SettlSessID' required='N' />
+   <field name='SettlSessSubID' required='N' />
+   <field name='ClearingBusinessDate' required='Y' />
