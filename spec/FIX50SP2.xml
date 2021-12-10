@@ -2364,3 +2364,53 @@
    <field name='SettlSessID' required='N' />
    <field name='SettlSessSubID' required='N' />
    <field name='ClearingBusinessDate' required='Y' />
+   <field name='Text' required='N' />
+   <field name='EncodedTextLen' required='N' />
+   <field name='EncodedText' required='N' />
+   <field name='PriorSettlPrice' required='N' />
+   <component name='ApplicationSequenceControl' required='N' />
+   <field name='PosReqID' required='N' />
+  </message>
+  <message name='CollateralRequest' msgcat='app' msgtype='AX'>
+   <field name='CollReqID' required='Y' />
+   <field name='CollAsgnReason' required='Y' />
+   <field name='TransactTime' required='Y' />
+   <field name='ExpireTime' required='N' />
+   <component name='Parties' required='N' />
+   <field name='Account' required='N' />
+   <field name='AccountType' required='N' />
+   <field name='ClOrdID' required='N' />
+   <field name='OrderID' required='N' />
+   <field name='SecondaryOrderID' required='N' />
+   <field name='SecondaryClOrdID' required='N' />
+   <component name='ExecCollGrp' required='N' />
+   <component name='TrdCollGrp' required='N' />
+   <component name='Instrument' required='N' />
+   <component name='FinancingDetails' required='N' />
+   <field name='SettlDate' required='N' />
+   <field name='Quantity' required='N' />
+   <field name='QtyType' required='N' />
+   <field name='Currency' required='N' />
+   <component name='InstrmtLegGrp' required='N' />
+   <component name='UndInstrmtCollGrp' required='N' />
+   <field name='MarginExcess' required='N' />
+   <field name='TotalNetValue' required='N' />
+   <field name='CashOutstanding' required='N' />
+   <component name='TrdRegTimestamps' required='N' />
+   <field name='Side' required='N' />
+   <component name='MiscFeesGrp' required='N' />
+   <field name='Price' required='N' />
+   <field name='PriceType' required='N' />
+   <field name='AccruedInterestAmt' required='N' />
+   <field name='EndAccruedInterestAmt' required='N' />
+   <field name='StartCash' required='N' />
+   <field name='EndCash' required='N' />
+   <component name='SpreadOrBenchmarkCurveData' required='N' />
+   <component name='Stipulations' required='N' />
+   <field name='TradingSessionID' required='N' />
+   <field name='TradingSessionSubID' required='N' />
+   <field name='SettlSessID' required='N' />
+   <field name='SettlSessSubID' required='N' />
+   <field name='ClearingBusinessDate' required='N' />
+   <field name='Text' required='N' />
+   <field name='EncodedTextLen' required='N' />
