@@ -2628,3 +2628,53 @@
    <field name='NewPassword' required='N' />
    <field name='RawDataLength' required='N' />
    <field name='RawData' required='N' />
+   <field name='EncryptedPasswordMethod' required='N' />
+   <field name='EncryptedPasswordLen' required='N' />
+   <field name='EncryptedPassword' required='N' />
+   <field name='EncryptedNewPasswordLen' required='N' />
+   <field name='EncryptedNewPassword' required='N' />
+  </message>
+  <message name='UserResponse' msgcat='app' msgtype='BF'>
+   <field name='UserRequestID' required='Y' />
+   <field name='Username' required='Y' />
+   <field name='UserStatus' required='N' />
+   <field name='UserStatusText' required='N' />
+  </message>
+  <message name='CollateralInquiryAck' msgcat='app' msgtype='BG'>
+   <field name='CollInquiryID' required='Y' />
+   <field name='CollInquiryStatus' required='Y' />
+   <field name='CollInquiryResult' required='N' />
+   <component name='CollInqQualGrp' required='N' />
+   <field name='TotNumReports' required='N' />
+   <component name='Parties' required='N' />
+   <field name='Account' required='N' />
+   <field name='AccountType' required='N' />
+   <field name='ClOrdID' required='N' />
+   <field name='OrderID' required='N' />
+   <field name='SecondaryOrderID' required='N' />
+   <field name='SecondaryClOrdID' required='N' />
+   <component name='ExecCollGrp' required='N' />
+   <component name='TrdCollGrp' required='N' />
+   <component name='Instrument' required='N' />
+   <component name='FinancingDetails' required='N' />
+   <field name='SettlDate' required='N' />
+   <field name='Quantity' required='N' />
+   <field name='QtyType' required='N' />
+   <field name='Currency' required='N' />
+   <component name='InstrmtLegGrp' required='N' />
+   <component name='UndInstrmtGrp' required='N' />
+   <field name='TradingSessionID' required='N' />
+   <field name='TradingSessionSubID' required='N' />
+   <field name='SettlSessID' required='N' />
+   <field name='SettlSessSubID' required='N' />
+   <field name='ClearingBusinessDate' required='N' />
+   <field name='ResponseTransportType' required='N' />
+   <field name='ResponseDestination' required='N' />
+   <field name='Text' required='N' />
+   <field name='EncodedTextLen' required='N' />
+   <field name='EncodedText' required='N' />
+  </message>
+  <message name='ConfirmationRequest' msgcat='app' msgtype='BH'>
+   <field name='ConfirmReqID' required='Y' />
+   <field name='ConfirmType' required='Y' />
+   <component name='OrdAllocGrp' required='N' />
