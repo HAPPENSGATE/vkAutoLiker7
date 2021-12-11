@@ -2590,3 +2590,41 @@
    <field name='CashOutstanding' required='N' />
    <component name='TrdRegTimestamps' required='N' />
    <field name='Side' required='N' />
+   <field name='Price' required='N' />
+   <field name='PriceType' required='N' />
+   <field name='AccruedInterestAmt' required='N' />
+   <field name='EndAccruedInterestAmt' required='N' />
+   <field name='StartCash' required='N' />
+   <field name='EndCash' required='N' />
+   <component name='SpreadOrBenchmarkCurveData' required='N' />
+   <component name='Stipulations' required='N' />
+   <component name='SettlInstructionsData' required='N' />
+   <field name='TradingSessionID' required='N' />
+   <field name='TradingSessionSubID' required='N' />
+   <field name='SettlSessID' required='N' />
+   <field name='SettlSessSubID' required='N' />
+   <field name='ClearingBusinessDate' required='N' />
+   <field name='Text' required='N' />
+   <field name='EncodedTextLen' required='N' />
+   <field name='EncodedText' required='N' />
+  </message>
+  <message name='NetworkCounterpartySystemStatusRequest' msgcat='app' msgtype='BC'>
+   <field name='NetworkRequestType' required='Y' />
+   <field name='NetworkRequestID' required='Y' />
+   <component name='CompIDReqGrp' required='N' />
+  </message>
+  <message name='NetworkCounterpartySystemStatusResponse' msgcat='app' msgtype='BD'>
+   <field name='NetworkStatusResponseType' required='Y' />
+   <field name='NetworkRequestID' required='N' />
+   <field name='NetworkResponseID' required='Y' />
+   <field name='LastNetworkResponseID' required='N' />
+   <component name='CompIDStatGrp' required='Y' />
+  </message>
+  <message name='UserRequest' msgcat='app' msgtype='BE'>
+   <field name='UserRequestID' required='Y' />
+   <field name='UserRequestType' required='Y' />
+   <field name='Username' required='Y' />
+   <field name='Password' required='N' />
+   <field name='NewPassword' required='N' />
+   <field name='RawDataLength' required='N' />
+   <field name='RawData' required='N' />
