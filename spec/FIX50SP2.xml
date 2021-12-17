@@ -2728,3 +2728,43 @@
    <field name='TransactTime' required='N' />
   </message>
   <message name='SecurityListUpdateReport' msgcat='app' msgtype='BK'>
+   <field name='SecurityReportID' required='N' />
+   <field name='SecurityReqID' required='N' />
+   <field name='SecurityResponseID' required='N' />
+   <field name='SecurityRequestResult' required='N' />
+   <field name='TotNoRelatedSym' required='N' />
+   <field name='ClearingBusinessDate' required='N' />
+   <field name='SecurityUpdateAction' required='N' />
+   <field name='CorporateAction' required='N' />
+   <field name='LastFragment' required='N' />
+   <component name='SecLstUpdRelSymGrp' required='N' />
+   <field name='MarketID' required='N' />
+   <field name='MarketSegmentID' required='N' />
+   <component name='ApplicationSequenceControl' required='N' />
+   <field name='SecurityListID' required='N' />
+   <field name='SecurityListRefID' required='N' />
+   <field name='SecurityListDesc' required='N' />
+   <field name='EncodedSecurityListDescLen' required='N' />
+   <field name='EncodedSecurityListDesc' required='N' />
+   <field name='SecurityListType' required='N' />
+   <field name='SecurityListTypeSource' required='N' />
+   <field name='TransactTime' required='N' />
+  </message>
+  <message name='AdjustedPositionReport' msgcat='app' msgtype='BL'>
+   <field name='PosMaintRptID' required='Y' />
+   <field name='PosReqType' required='N' />
+   <field name='ClearingBusinessDate' required='Y' />
+   <field name='SettlSessID' required='N' />
+   <component name='Parties' required='Y' />
+   <component name='PositionQty' required='Y' />
+   <component name='InstrmtGrp' required='N' />
+   <field name='SettlPrice' required='N' />
+   <field name='PriorSettlPrice' required='N' />
+   <field name='PosMaintRptRefID' required='N' />
+  </message>
+  <message name='AllocationInstructionAlert' msgcat='app' msgtype='BM'>
+   <field name='AllocID' required='Y' />
+   <field name='AllocTransType' required='Y' />
+   <field name='AllocType' required='Y' />
+   <field name='SecondaryAllocID' required='N' />
+   <field name='RefAllocID' required='N' />
