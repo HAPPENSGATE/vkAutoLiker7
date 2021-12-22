@@ -2849,3 +2849,48 @@
    <component name='InstrmtLegGrp' required='N' />
    <field name='Side' required='Y' />
    <component name='OrderQtyData' required='Y' />
+   <field name='LastQty' required='N' />
+   <field name='LastPx' required='N' />
+   <field name='PriceType' required='N' />
+   <field name='LastParPx' required='N' />
+   <field name='CumQty' required='N' />
+   <field name='AvgPx' required='N' />
+   <field name='Text' required='N' />
+   <field name='EncodedTextLen' required='N' />
+   <field name='EncodedText' required='N' />
+  </message>
+  <message name='TradingSessionList' msgcat='app' msgtype='BJ'>
+   <field name='TradSesReqID' required='N' />
+   <component name='TrdSessLstGrp' required='Y' />
+   <component name='ApplicationSequenceControl' required='N' />
+  </message>
+  <message name='TradingSessionListRequest' msgcat='app' msgtype='BI'>
+   <field name='TradSesReqID' required='Y' />
+   <field name='TradingSessionID' required='N' />
+   <field name='TradingSessionSubID' required='N' />
+   <field name='SecurityExchange' required='N' />
+   <field name='TradSesMethod' required='N' />
+   <field name='TradSesMode' required='N' />
+   <field name='SubscriptionRequestType' required='Y' />
+   <field name='MarketID' required='N' />
+   <field name='MarketSegmentID' required='N' />
+  </message>
+  <message name='SettlementObligationReport' msgcat='app' msgtype='BQ'>
+   <field name='ClearingBusinessDate' required='N' />
+   <field name='SettlementCycleNo' required='N' />
+   <field name='SettlObligMsgID' required='Y' />
+   <field name='SettlObligMode' required='Y' />
+   <field name='Text' required='N' />
+   <field name='EncodedTextLen' required='N' />
+   <field name='EncodedText' required='N' />
+   <field name='TransactTime' required='N' />
+   <component name='SettlObligationInstructions' required='Y' />
+   <component name='ApplicationSequenceControl' required='N' />
+  </message>
+  <message name='DerivativeSecurityListUpdateReport' msgcat='app' msgtype='BR'>
+   <field name='SecurityReqID' required='N' />
+   <field name='SecurityResponseID' required='N' />
+   <field name='SecurityRequestResult' required='N' />
+   <field name='SecurityUpdateAction' required='N' />
+   <component name='UnderlyingInstrument' required='N' />
+   <component name='DerivativeSecurityDefinition' required='N' />
