@@ -2894,3 +2894,28 @@
    <field name='SecurityUpdateAction' required='N' />
    <component name='UnderlyingInstrument' required='N' />
    <component name='DerivativeSecurityDefinition' required='N' />
+   <field name='TotNoRelatedSym' required='N' />
+   <field name='LastFragment' required='N' />
+   <component name='RelSymDerivSecUpdGrp' required='N' />
+   <component name='ApplicationSequenceControl' required='N' />
+   <field name='TransactTime' required='N' />
+  </message>
+  <message name='TradingSessionListUpdateReport' msgcat='app' msgtype='BS'>
+   <field name='TradSesReqID' required='N' />
+   <component name='TrdSessLstGrp' required='Y' />
+   <component name='ApplicationSequenceControl' required='N' />
+  </message>
+  <message name='MarketDefinitionRequest' msgcat='app' msgtype='BT'>
+   <field name='MarketReqID' required='Y' />
+   <field name='SubscriptionRequestType' required='Y' />
+   <field name='MarketID' required='N' />
+   <field name='MarketSegmentID' required='N' />
+   <field name='ParentMktSegmID' required='N' />
+  </message>
+  <message name='MarketDefinition' msgcat='app' msgtype='BU'>
+   <field name='MarketReportID' required='Y' />
+   <field name='MarketReqID' required='N' />
+   <field name='MarketID' required='Y' />
+   <field name='MarketSegmentID' required='N' />
+   <field name='MarketSegmentDesc' required='N' />
+   <field name='EncodedMktSegmDescLen' required='N' />
