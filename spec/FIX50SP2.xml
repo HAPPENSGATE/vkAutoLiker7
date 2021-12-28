@@ -2969,3 +2969,52 @@
    <field name='ApplResponseType' required='N' />
    <field name='ApplTotalMessageCount' required='N' />
    <component name='ApplIDRequestAckGrp' required='N' />
+   <field name='Text' required='N' />
+   <field name='EncodedTextLen' required='N' />
+   <field name='EncodedText' required='N' />
+   <component name='Parties' required='N' />
+  </message>
+  <message name='ApplicationMessageReport' msgcat='app' msgtype='BY'>
+   <field name='ApplReportID' required='Y' />
+   <field name='ApplReportType' required='Y' />
+   <component name='ApplIDReportGrp' required='N' />
+   <field name='Text' required='N' />
+   <field name='EncodedTextLen' required='N' />
+   <field name='EncodedText' required='N' />
+   <field name='ApplReqID' required='N' />
+  </message>
+  <message name='OrderMassActionReport' msgcat='app' msgtype='BZ'>
+   <field name='ClOrdID' required='N' />
+   <field name='SecondaryClOrdID' required='N' />
+   <field name='MassActionReportID' required='Y' />
+   <field name='MassActionType' required='Y' />
+   <field name='MassActionScope' required='Y' />
+   <field name='MassActionResponse' required='Y' />
+   <field name='MassActionRejectReason' required='N' />
+   <field name='TotalAffectedOrders' required='N' />
+   <component name='AffectedOrdGrp' required='N' />
+   <field name='MarketID' required='N' />
+   <field name='MarketSegmentID' required='N' />
+   <field name='TradingSessionID' required='N' />
+   <field name='TradingSessionSubID' required='N' />
+   <component name='Parties' required='N' />
+   <component name='Instrument' required='N' />
+   <component name='UnderlyingInstrument' required='N' />
+   <field name='Side' required='N' />
+   <field name='TransactTime' required='N' />
+   <field name='Text' required='N' />
+   <field name='EncodedTextLen' required='N' />
+   <field name='EncodedText' required='N' />
+   <component name='NotAffectedOrdersGrp' required='N' />
+   <component name='TargetParties' required='N' />
+  </message>
+  <message name='OrderMassActionRequest' msgcat='app' msgtype='CA'>
+   <field name='ClOrdID' required='Y' />
+   <field name='SecondaryClOrdID' required='N' />
+   <field name='MassActionType' required='Y' />
+   <field name='MassActionScope' required='Y' />
+   <field name='MarketID' required='N' />
+   <field name='MarketSegmentID' required='N' />
+   <field name='TradingSessionID' required='N' />
+   <field name='TradingSessionSubID' required='N' />
+   <component name='Parties' required='N' />
