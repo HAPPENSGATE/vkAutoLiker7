@@ -3018,3 +3018,49 @@
    <field name='TradingSessionID' required='N' />
    <field name='TradingSessionSubID' required='N' />
    <component name='Parties' required='N' />
+   <component name='Instrument' required='N' />
+   <component name='UnderlyingInstrument' required='N' />
+   <field name='Side' required='N' />
+   <field name='TransactTime' required='Y' />
+   <field name='Text' required='N' />
+   <field name='EncodedTextLen' required='N' />
+   <field name='EncodedText' required='N' />
+   <component name='TargetParties' required='N' />
+  </message>
+  <message name='UserNotification' msgcat='app' msgtype='CB'>
+   <component name='UsernameGrp' required='N' />
+   <field name='UserStatus' required='Y' />
+   <field name='Text' required='N' />
+   <field name='EncodedTextLen' required='N' />
+   <field name='EncodedText' required='N' />
+  </message>
+  <message name='StreamAssignmentRequest' msgcat='app' msgtype='CC'>
+   <field name='StreamAsgnReqID' required='Y' />
+   <field name='StreamAsgnReqType' required='Y' />
+   <component name='StrmAsgnReqGrp' required='Y' />
+  </message>
+  <message name='StreamAssignmentReport' msgcat='app' msgtype='CD'>
+   <field name='StreamAsgnRptID' required='Y' />
+   <field name='StreamAsgnReqType' required='N' />
+   <field name='StreamAsgnReqID' required='N' />
+   <component name='StrmAsgnRptGrp' required='N' />
+  </message>
+  <message name='StreamAssignmentReportACK' msgcat='app' msgtype='CE'>
+   <field name='StreamAsgnAckType' required='Y' />
+   <field name='StreamAsgnRptID' required='Y' />
+   <field name='StreamAsgnRejReason' required='N' />
+   <field name='Text' required='N' />
+   <field name='EncodedTextLen' required='N' />
+   <field name='EncodedText' required='N' />
+  </message>
+  <message name='PartyDetailsListRequest' msgcat='app' msgtype='CF'>
+   <field name='PartyDetailsListRequestID' required='Y' />
+   <component name='PartyListResponseTypeGrp' required='Y' />
+   <component name='Parties' required='N' />
+   <component name='RequestedPartyRoleGrp' required='N' />
+   <component name='PartyRelationships' required='N' />
+   <field name='SubscriptionRequestType' required='N' />
+   <field name='Text' required='N' />
+   <field name='EncodedTextLen' required='N' />
+   <field name='EncodedText' required='N' />
+  </message>
