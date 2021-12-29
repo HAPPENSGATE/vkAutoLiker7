@@ -3064,3 +3064,59 @@
    <field name='EncodedTextLen' required='N' />
    <field name='EncodedText' required='N' />
   </message>
+  <message name='PartyDetailsListReport' msgcat='app' msgtype='CG'>
+   <component name='ApplicationSequenceControl' required='N' />
+   <field name='PartyDetailsListReportID' required='Y' />
+   <field name='PartyDetailsListRequestID' required='N' />
+   <field name='PartyDetailsRequestResult' required='N' />
+   <field name='TotNoPartyList' required='N' />
+   <field name='LastFragment' required='N' />
+   <component name='PartyListGrp' required='N' />
+   <field name='Text' required='N' />
+   <field name='EncodedTextLen' required='N' />
+   <field name='EncodedText' required='N' />
+  </message>
+ </messages>
+ <trailer />
+ <components>
+  <component name='RelatedAltPtysSubGrp'>
+   <group name='NoRelatedPartyAltSubIDs' required='N'>
+    <field name='RelatedPartyAltSubID' required='N' />
+    <field name='RelatedPartyAltSubIDType' required='N' />
+   </group>
+  </component>
+  <component name='DerivativeSecurityXML'>
+   <field name='DerivativeSecurityXMLLen' required='N' />
+   <field name='DerivativeSecurityXML' required='N' />
+   <field name='DerivativeSecurityXMLSchema' required='N' />
+  </component>
+  <component name='InstrumentLeg'>
+   <field name='LegSymbol' required='N' />
+   <field name='LegSymbolSfx' required='N' />
+   <field name='LegSecurityID' required='N' />
+   <field name='LegSecurityIDSource' required='N' />
+   <component name='LegSecAltIDGrp' required='N' />
+   <field name='LegProduct' required='N' />
+   <field name='LegCFICode' required='N' />
+   <field name='LegSecurityType' required='N' />
+   <field name='LegSecuritySubType' required='N' />
+   <field name='LegMaturityMonthYear' required='N' />
+   <field name='LegMaturityDate' required='N' />
+   <field name='LegCouponPaymentDate' required='N' />
+   <field name='LegIssueDate' required='N' />
+   <field name='LegRepoCollateralSecurityType' required='N' />
+   <field name='LegRepurchaseTerm' required='N' />
+   <field name='LegRepurchaseRate' required='N' />
+   <field name='LegFactor' required='N' />
+   <field name='LegCreditRating' required='N' />
+   <field name='LegInstrRegistry' required='N' />
+   <field name='LegCountryOfIssue' required='N' />
+   <field name='LegStateOrProvinceOfIssue' required='N' />
+   <field name='LegLocaleOfIssue' required='N' />
+   <field name='LegRedemptionDate' required='N' />
+   <field name='LegStrikePrice' required='N' />
+   <field name='LegStrikeCurrency' required='N' />
+   <field name='LegOptAttribute' required='N' />
+   <field name='LegContractMultiplier' required='N' />
+   <field name='LegCouponRate' required='N' />
+   <field name='LegSecurityExchange' required='N' />
