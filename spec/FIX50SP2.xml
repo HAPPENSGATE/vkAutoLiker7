@@ -3244,3 +3244,45 @@
   <component name='PositionAmountData'>
    <group name='NoPosAmt' required='N'>
     <field name='PosAmtType' required='N' />
+    <field name='PosAmt' required='N' />
+    <field name='PositionCurrency' required='N' />
+   </group>
+  </component>
+  <component name='ApplicationSequenceControl'>
+   <field name='ApplID' required='N' />
+   <field name='ApplSeqNum' required='N' />
+   <field name='ApplLastSeqNum' required='N' />
+   <field name='ApplResendFlag' required='N' />
+  </component>
+  <component name='Stipulations'>
+   <group name='NoStipulations' required='N'>
+    <field name='StipulationType' required='N' />
+    <field name='StipulationValue' required='N' />
+   </group>
+  </component>
+  <component name='MDReqGrp'>
+   <group name='NoMDEntryTypes' required='Y'>
+    <field name='MDEntryType' required='Y' />
+   </group>
+  </component>
+  <component name='PartyListResponseTypeGrp'>
+   <group name='NoPartyListResponseTypes' required='Y'>
+    <field name='PartyListResponseType' required='Y' />
+   </group>
+  </component>
+  <component name='TrdCapRptAckSideGrp'>
+   <group name='NoSides' required='Y'>
+    <field name='Side' required='Y' />
+    <component name='Parties' required='N' />
+    <field name='Account' required='N' />
+    <field name='AcctIDSource' required='N' />
+    <field name='AccountType' required='N' />
+    <field name='ProcessCode' required='N' />
+    <field name='OddLot' required='N' />
+    <component name='ClrInstGrp' required='N' />
+    <field name='TradeInputSource' required='N' />
+    <field name='TradeInputDevice' required='N' />
+    <field name='ComplianceID' required='N' />
+    <field name='SolicitedFlag' required='N' />
+    <field name='CustOrderCapacity' required='N' />
+    <field name='TradingSessionID' required='N' />
