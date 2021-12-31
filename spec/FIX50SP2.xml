@@ -3154,3 +3154,41 @@
     <component name='LegStipulations' required='N' />
     <field name='LegPositionEffect' required='N' />
     <field name='LegCoveredOrUncovered' required='N' />
+    <field name='LegRefID' required='N' />
+    <field name='LegSettlType' required='N' />
+    <field name='LegSettlDate' required='N' />
+    <field name='LegLastPx' required='N' />
+    <field name='LegOrderQty' required='N' />
+    <field name='LegSettlCurrency' required='N' />
+    <field name='LegLastForwardPoints' required='N' />
+    <field name='LegCalculatedCcyLastQty' required='N' />
+    <field name='LegGrossTradeAmt' required='N' />
+    <component name='NestedParties3' required='N' />
+    <field name='LegAllocID' required='N' />
+    <component name='LegPreAllocGrp' required='N' />
+    <field name='LegVolatility' required='N' />
+    <field name='LegDividendYield' required='N' />
+    <field name='LegCurrencyRatio' required='N' />
+    <field name='LegExecInst' required='N' />
+    <field name='LegLastQty' required='N' />
+   </group>
+  </component>
+  <component name='TrdCapRptSideGrp'>
+   <group name='NoSides' required='Y'>
+    <field name='Side' required='Y' />
+    <component name='Parties' required='N' />
+    <field name='Account' required='N' />
+    <field name='AcctIDSource' required='N' />
+    <field name='AccountType' required='N' />
+    <field name='ProcessCode' required='N' />
+    <field name='OddLot' required='N' />
+    <component name='ClrInstGrp' required='N' />
+    <field name='TradeInputSource' required='N' />
+    <field name='TradeInputDevice' required='N' />
+    <field name='ComplianceID' required='N' />
+    <field name='SolicitedFlag' required='N' />
+    <field name='CustOrderCapacity' required='N' />
+    <field name='TradingSessionID' required='N' />
+    <field name='TradingSessionSubID' required='N' />
+    <field name='TimeBracket' required='N' />
+    <component name='CommissionData' required='N' />
