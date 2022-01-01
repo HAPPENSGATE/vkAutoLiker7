@@ -3286,3 +3286,42 @@
     <field name='SolicitedFlag' required='N' />
     <field name='CustOrderCapacity' required='N' />
     <field name='TradingSessionID' required='N' />
+    <field name='TradingSessionSubID' required='N' />
+    <field name='TimeBracket' required='N' />
+    <component name='CommissionData' required='N' />
+    <field name='NumDaysInterest' required='N' />
+    <field name='ExDate' required='N' />
+    <field name='AccruedInterestRate' required='N' />
+    <field name='AccruedInterestAmt' required='N' />
+    <field name='InterestAtMaturity' required='N' />
+    <field name='EndAccruedInterestAmt' required='N' />
+    <field name='StartCash' required='N' />
+    <field name='EndCash' required='N' />
+    <field name='Concession' required='N' />
+    <field name='TotalTakedown' required='N' />
+    <field name='NetMoney' required='N' />
+    <field name='SettlCurrAmt' required='N' />
+    <field name='SettlCurrFxRate' required='N' />
+    <field name='SettlCurrFxRateCalc' required='N' />
+    <field name='PositionEffect' required='N' />
+    <field name='SideMultiLegReportingType' required='N' />
+    <component name='ContAmtGrp' required='N' />
+    <component name='Stipulations' required='N' />
+    <component name='MiscFeesGrp' required='N' />
+    <field name='ExchangeRule' required='N' />
+    <field name='TradeAllocIndicator' required='N' />
+    <field name='PreallocMethod' required='N' />
+    <field name='AllocID' required='N' />
+    <component name='TrdAllocGrp' required='N' />
+    <field name='SideGrossTradeAmt' required='N' />
+    <field name='AggressorIndicator' required='N' />
+    <field name='SideLastQty' required='N' />
+    <field name='SideTradeReportID' required='N' />
+    <field name='SideFillStationCd' required='N' />
+    <field name='SideReasonCd' required='N' />
+    <field name='RptSeq' required='N' />
+    <field name='SideTrdSubTyp' required='N' />
+    <component name='SideTrdRegTS' required='N' />
+    <field name='NetGrossInd' required='N' />
+    <field name='SideCurrency' required='N' />
+    <field name='SideSettlCurrency' required='N' />
