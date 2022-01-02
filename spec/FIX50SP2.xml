@@ -3325,3 +3325,46 @@
     <field name='NetGrossInd' required='N' />
     <field name='SideCurrency' required='N' />
     <field name='SideSettlCurrency' required='N' />
+    <component name='SettlDetails' required='N' />
+    <field name='SideExecID' required='N' />
+    <field name='OrderDelay' required='N' />
+    <field name='OrderDelayUnit' required='N' />
+    <field name='OrderCategory' required='N' />
+    <component name='TradeReportOrderDetail' required='N' />
+   </group>
+  </component>
+  <component name='SettlInstGrp'>
+   <group name='NoSettlInst' required='N'>
+    <field name='SettlInstID' required='N' />
+    <field name='SettlInstTransType' required='N' />
+    <field name='SettlInstRefID' required='N' />
+    <component name='Parties' required='N' />
+    <field name='Side' required='N' />
+    <field name='Product' required='N' />
+    <field name='SecurityType' required='N' />
+    <field name='CFICode' required='N' />
+    <field name='EffectiveTime' required='N' />
+    <field name='ExpireTime' required='N' />
+    <field name='LastUpdateTime' required='N' />
+    <component name='SettlInstructionsData' required='N' />
+    <field name='PaymentMethod' required='N' />
+    <field name='PaymentRef' required='N' />
+    <field name='CardHolderName' required='N' />
+    <field name='CardNumber' required='N' />
+    <field name='CardStartDate' required='N' />
+    <field name='CardExpDate' required='N' />
+    <field name='CardIssNum' required='N' />
+    <field name='PaymentDate' required='N' />
+    <field name='PaymentRemitterID' required='N' />
+    <field name='SettlCurrency' required='N' />
+   </group>
+  </component>
+  <component name='SecLstUpdRelSymGrp'>
+   <group name='NoRelatedSym' required='N'>
+    <component name='Instrument' required='N' />
+    <component name='InstrumentExtension' required='N' />
+    <component name='FinancingDetails' required='N' />
+    <component name='SecLstUpdRelSymsLegGrp' required='N' />
+    <component name='SpreadOrBenchmarkCurveData' required='N' />
+    <component name='YieldData' required='N' />
+    <field name='Text' required='N' />
