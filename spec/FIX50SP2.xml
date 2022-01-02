@@ -3368,3 +3368,47 @@
     <component name='SpreadOrBenchmarkCurveData' required='N' />
     <component name='YieldData' required='N' />
     <field name='Text' required='N' />
+    <field name='EncodedTextLen' required='N' />
+    <field name='EncodedText' required='N' />
+    <component name='UndInstrmtGrp' required='N' />
+    <field name='Currency' required='N' />
+    <component name='Stipulations' required='N' />
+    <field name='ListUpdateAction' required='N' />
+    <component name='SecurityTradingRules' required='N' />
+    <component name='StrikeRules' required='N' />
+    <field name='RelSymTransactTime' required='N' />
+   </group>
+  </component>
+  <component name='SecAltIDGrp'>
+   <group name='NoSecurityAltID' required='N'>
+    <field name='SecurityAltID' required='N' />
+    <field name='SecurityAltIDSource' required='N' />
+   </group>
+  </component>
+  <component name='DiscretionInstructions'>
+   <field name='DiscretionInst' required='N' />
+   <field name='DiscretionOffsetValue' required='N' />
+   <field name='DiscretionMoveType' required='N' />
+   <field name='DiscretionOffsetType' required='N' />
+   <field name='DiscretionLimitType' required='N' />
+   <field name='DiscretionRoundDirection' required='N' />
+   <field name='DiscretionScope' required='N' />
+  </component>
+  <component name='RiskLimits'>
+   <group name='NoRiskLimits' required='N'>
+    <field name='RiskLimitType' required='N' />
+    <field name='RiskLimitAmount' required='N' />
+    <field name='RiskLimitCurrency' required='N' />
+    <field name='RiskLimitPlatform' required='N' />
+    <component name='RiskInstrumentScope' required='N' />
+    <component name='RiskWarningLevels' required='N' />
+   </group>
+  </component>
+  <component name='AltPtysSubGrp'>
+   <group name='NoPartyAltSubIDs' required='N'>
+    <field name='PartyAltSubID' required='N' />
+    <field name='PartyAltSubIDType' required='N' />
+   </group>
+  </component>
+  <component name='PartyDetail'>
+   <field name='PartyID' required='Y' />
