@@ -3438,3 +3438,45 @@
     <field name='TradingSessionID' required='N' />
     <field name='TradingSessionSubID' required='N' />
     <field name='NetGrossInd' required='N' />
+    <field name='SettlType' required='N' />
+    <field name='SettlDate' required='N' />
+    <field name='Account' required='N' />
+    <field name='AcctIDSource' required='N' />
+   </group>
+  </component>
+  <component name='TargetParties'>
+   <group name='NoTargetPartyIDs' required='N'>
+    <field name='TargetPartyID' required='N' />
+    <field name='TargetPartyIDSource' required='N' />
+    <field name='TargetPartyRole' required='N' />
+   </group>
+  </component>
+  <component name='TimeInForceRules'>
+   <group name='NoTimeInForceRules' required='N'>
+    <field name='TimeInForce' required='N' />
+   </group>
+  </component>
+  <component name='TrdSessLstGrp'>
+   <group name='NoTradingSessions' required='Y'>
+    <field name='TradingSessionID' required='Y' />
+    <field name='TradingSessionSubID' required='N' />
+    <field name='SecurityExchange' required='N' />
+    <field name='TradSesMethod' required='N' />
+    <field name='TradSesMode' required='N' />
+    <field name='UnsolicitedIndicator' required='N' />
+    <field name='TradSesStatus' required='Y' />
+    <field name='TradSesStatusRejReason' required='N' />
+    <field name='TradSesStartTime' required='N' />
+    <field name='TradSesOpenTime' required='N' />
+    <field name='TradSesPreCloseTime' required='N' />
+    <field name='TradSesCloseTime' required='N' />
+    <field name='TradSesEndTime' required='N' />
+    <field name='TotalVolumeTraded' required='N' />
+    <field name='Text' required='N' />
+    <field name='EncodedTextLen' required='N' />
+    <field name='EncodedText' required='N' />
+    <field name='MarketID' required='N' />
+    <field name='MarketSegmentID' required='N' />
+    <field name='TradingSessionDesc' required='N' />
+    <component name='TradingSessionRules' required='N' />
+    <field name='TransactTime' required='N' />
