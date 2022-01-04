@@ -3480,3 +3480,47 @@
     <field name='TradingSessionDesc' required='N' />
     <component name='TradingSessionRules' required='N' />
     <field name='TransactTime' required='N' />
+    <field name='TradSesUpdateAction' required='N' />
+   </group>
+  </component>
+  <component name='YieldData'>
+   <field name='YieldType' required='N' />
+   <field name='Yield' required='N' />
+   <field name='YieldCalcDate' required='N' />
+   <field name='YieldRedemptionDate' required='N' />
+   <field name='YieldRedemptionPrice' required='N' />
+   <field name='YieldRedemptionPriceType' required='N' />
+  </component>
+  <component name='ApplIDRequestAckGrp'>
+   <group name='NoApplIDs' required='N'>
+    <field name='RefApplID' required='N' />
+    <field name='ApplBegSeqNum' required='N' />
+    <field name='ApplEndSeqNum' required='N' />
+    <field name='RefApplLastSeqNum' required='N' />
+    <field name='ApplResponseError' required='N' />
+    <component name='NestedParties' required='N' />
+    <field name='RefApplReqID' required='N' />
+   </group>
+  </component>
+  <component name='UsernameGrp'>
+   <field name='Username' required='N' />
+  </component>
+  <component name='FinancingDetails'>
+   <field name='AgreementDesc' required='N' />
+   <field name='AgreementID' required='N' />
+   <field name='AgreementDate' required='N' />
+   <field name='AgreementCurrency' required='N' />
+   <field name='TerminationType' required='N' />
+   <field name='StartDate' required='N' />
+   <field name='EndDate' required='N' />
+   <field name='DeliveryType' required='N' />
+   <field name='MarginRatio' required='N' />
+  </component>
+  <component name='SettlParties'>
+   <group name='NoSettlPartyIDs' required='N'>
+    <field name='SettlPartyID' required='N' />
+    <field name='SettlPartyIDSource' required='N' />
+    <field name='SettlPartyRole' required='N' />
+    <component name='SettlPtysSubGrp' required='N' />
+   </group>
+  </component>
