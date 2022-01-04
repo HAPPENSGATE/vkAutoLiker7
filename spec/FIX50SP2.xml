@@ -3565,3 +3565,48 @@
    </group>
   </component>
   <component name='BaseTradingRules'>
+   <component name='TickRules' required='N' />
+   <component name='LotTypeRules' required='N' />
+   <component name='PriceLimits' required='N' />
+   <field name='ExpirationCycle' required='N' />
+   <field name='MinTradeVol' required='N' />
+   <field name='MaxTradeVol' required='N' />
+   <field name='MaxPriceVariation' required='N' />
+   <field name='ImpliedMarketIndicator' required='N' />
+   <field name='TradingCurrency' required='N' />
+   <field name='RoundLot' required='N' />
+   <field name='MultilegModel' required='N' />
+   <field name='MultilegPriceMethod' required='N' />
+   <field name='PriceType' required='N' />
+  </component>
+  <component name='InstrumentExtension'>
+   <field name='DeliveryForm' required='N' />
+   <field name='PctAtRisk' required='N' />
+   <component name='AttrbGrp' required='N' />
+  </component>
+  <component name='LinesOfTextGrp'>
+   <group name='NoLinesOfText' required='Y'>
+    <field name='Text' required='Y' />
+    <field name='EncodedTextLen' required='N' />
+    <field name='EncodedText' required='N' />
+   </group>
+  </component>
+  <component name='BidDescReqGrp'>
+   <group name='NoBidDescriptors' required='N'>
+    <field name='BidDescriptorType' required='N' />
+    <field name='BidDescriptor' required='N' />
+    <field name='SideValueInd' required='N' />
+    <field name='LiquidityValue' required='N' />
+    <field name='LiquidityNumSecurities' required='N' />
+    <field name='LiquidityPctLow' required='N' />
+    <field name='LiquidityPctHigh' required='N' />
+    <field name='EFPTrackingError' required='N' />
+    <field name='FairValue' required='N' />
+    <field name='OutsideIndexPct' required='N' />
+    <field name='ValueOfFutures' required='N' />
+   </group>
+  </component>
+  <component name='ContextPtysSubGrp'>
+   <group name='NoContextPartySubIDs' required='N'>
+    <field name='ContextPartySubID' required='N' />
+    <field name='ContextPartySubIDType' required='N' />
