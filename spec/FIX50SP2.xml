@@ -3524,3 +3524,44 @@
     <component name='SettlPtysSubGrp' required='N' />
    </group>
   </component>
+  <component name='LegPreAllocGrp'>
+   <group name='NoLegAllocs' required='N'>
+    <field name='LegAllocAccount' required='N' />
+    <field name='LegIndividualAllocID' required='N' />
+    <field name='LegAllocQty' required='N' />
+    <field name='LegAllocAcctIDSource' required='N' />
+    <field name='LegAllocSettlCurrency' required='N' />
+    <component name='NestedParties2' required='N' />
+   </group>
+  </component>
+  <component name='RelatedPartyAltIDs'>
+   <group name='NoRelatedPartyAltIDs' required='N'>
+    <field name='RelatedPartyAltID' required='N' />
+    <field name='RelatedPartyAltIDSource' required='N' />
+    <component name='RelatedAltPtysSubGrp' required='N' />
+   </group>
+  </component>
+  <component name='PreAllocMlegGrp'>
+   <group name='NoAllocs' required='N'>
+    <field name='AllocAccount' required='N' />
+    <field name='AllocAcctIDSource' required='N' />
+    <field name='AllocSettlCurrency' required='N' />
+    <field name='IndividualAllocID' required='N' />
+    <component name='NestedParties3' required='N' />
+    <field name='AllocQty' required='N' />
+   </group>
+  </component>
+  <component name='InstrmtLegIOIGrp'>
+   <group name='NoLegs' required='N'>
+    <component name='InstrumentLeg' required='N' />
+    <field name='LegIOIQty' required='N' />
+    <component name='LegStipulations' required='N' />
+   </group>
+  </component>
+  <component name='RelationshipRiskWarningLevels'>
+   <group name='NoRelationshipRiskWarningLevels' required='N'>
+    <field name='RelationshipRiskWarningLevelPercent' required='N' />
+    <field name='RelationshipRiskWarningLevelName' required='N' />
+   </group>
+  </component>
+  <component name='BaseTradingRules'>
