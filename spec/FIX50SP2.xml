@@ -3610,3 +3610,41 @@
    <group name='NoContextPartySubIDs' required='N'>
     <field name='ContextPartySubID' required='N' />
     <field name='ContextPartySubIDType' required='N' />
+   </group>
+  </component>
+  <component name='MaturityRules'>
+   <group name='NoMaturityRules' required='N'>
+    <field name='MaturityRuleID' required='N' />
+    <field name='MaturityMonthYearFormat' required='N' />
+    <field name='MaturityMonthYearIncrementUnits' required='N' />
+    <field name='StartMaturityMonthYear' required='N' />
+    <field name='EndMaturityMonthYear' required='N' />
+    <field name='MaturityMonthYearIncrement' required='N' />
+   </group>
+  </component>
+  <component name='StrikeRules'>
+   <group name='NoStrikeRules' required='N'>
+    <field name='StrikeRuleID' required='N' />
+    <field name='StartStrikePxRange' required='N' />
+    <field name='EndStrikePxRange' required='N' />
+    <field name='StrikeIncrement' required='N' />
+    <field name='StrikeExerciseStyle' required='N' />
+    <component name='MaturityRules' required='N' />
+   </group>
+  </component>
+  <component name='QuotQualGrp'>
+   <group name='NoQuoteQualifiers' required='N'>
+    <field name='QuoteQualifier' required='N' />
+   </group>
+  </component>
+  <component name='PreAllocGrp'>
+   <group name='NoAllocs' required='N'>
+    <field name='AllocAccount' required='N' />
+    <field name='AllocAcctIDSource' required='N' />
+    <field name='AllocSettlCurrency' required='N' />
+    <field name='IndividualAllocID' required='N' />
+    <component name='NestedParties' required='N' />
+    <field name='AllocQty' required='N' />
+   </group>
+  </component>
+  <component name='MDRjctGrp'>
