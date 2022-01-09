@@ -3648,3 +3648,42 @@
    </group>
   </component>
   <component name='MDRjctGrp'>
+   <group name='NoAltMDSource' required='N'>
+    <field name='AltMDSourceID' required='N' />
+   </group>
+  </component>
+  <component name='Instrument'>
+   <field name='Symbol' required='N' />
+   <field name='SymbolSfx' required='N' />
+   <field name='SecurityID' required='N' />
+   <field name='SecurityIDSource' required='N' />
+   <component name='SecAltIDGrp' required='N' />
+   <field name='Product' required='N' />
+   <field name='CFICode' required='N' />
+   <field name='SecurityType' required='N' />
+   <field name='SecuritySubType' required='N' />
+   <field name='MaturityMonthYear' required='N' />
+   <field name='MaturityDate' required='N' />
+   <field name='CouponPaymentDate' required='N' />
+   <field name='IssueDate' required='N' />
+   <field name='RepoCollateralSecurityType' required='N' />
+   <field name='RepurchaseTerm' required='N' />
+   <field name='RepurchaseRate' required='N' />
+   <field name='Factor' required='N' />
+   <field name='CreditRating' required='N' />
+   <field name='InstrRegistry' required='N' />
+   <field name='CountryOfIssue' required='N' />
+   <field name='StateOrProvinceOfIssue' required='N' />
+   <field name='LocaleOfIssue' required='N' />
+   <field name='RedemptionDate' required='N' />
+   <field name='StrikePrice' required='N' />
+   <field name='StrikeCurrency' required='N' />
+   <field name='OptAttribute' required='N' />
+   <field name='ContractMultiplier' required='N' />
+   <field name='CouponRate' required='N' />
+   <field name='SecurityExchange' required='N' />
+   <field name='Issuer' required='N' />
+   <field name='EncodedIssuerLen' required='N' />
+   <field name='EncodedIssuer' required='N' />
+   <field name='SecurityDesc' required='N' />
+   <field name='EncodedSecurityDescLen' required='N' />
