@@ -3687,3 +3687,35 @@
    <field name='EncodedIssuer' required='N' />
    <field name='SecurityDesc' required='N' />
    <field name='EncodedSecurityDescLen' required='N' />
+   <field name='EncodedSecurityDesc' required='N' />
+   <field name='Pool' required='N' />
+   <field name='ContractSettlMonth' required='N' />
+   <field name='CPProgram' required='N' />
+   <field name='CPRegType' required='N' />
+   <component name='EvntGrp' required='N' />
+   <field name='DatedDate' required='N' />
+   <field name='InterestAccrualDate' required='N' />
+   <field name='SecurityStatus' required='N' />
+   <field name='SettleOnOpenFlag' required='N' />
+   <field name='InstrmtAssignmentMethod' required='N' />
+   <field name='StrikeMultiplier' required='N' />
+   <field name='StrikeValue' required='N' />
+   <field name='MinPriceIncrement' required='N' />
+   <field name='PositionLimit' required='N' />
+   <field name='NTPositionLimit' required='N' />
+   <component name='InstrumentParties' required='N' />
+   <field name='UnitOfMeasure' required='N' />
+   <field name='TimeUnit' required='N' />
+   <field name='MaturityTime' required='N' />
+   <field name='SecurityGroup' required='N' />
+   <field name='MinPriceIncrementAmount' required='N' />
+   <field name='UnitOfMeasureQty' required='N' />
+   <component name='SecurityXML' required='N' />
+   <field name='ProductComplex' required='N' />
+   <field name='PriceUnitOfMeasure' required='N' />
+   <field name='PriceUnitOfMeasureQty' required='N' />
+   <field name='SettlMethod' required='N' />
+   <field name='ExerciseStyle' required='N' />
+   <field name='OptPayoutAmount' required='N' />
+   <field name='PriceQuoteMethod' required='N' />
+   <field name='ListMethod' required='N' />
