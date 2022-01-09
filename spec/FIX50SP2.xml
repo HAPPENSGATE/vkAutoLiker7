@@ -3750,3 +3750,40 @@
     <field name='HopCompID' required='N' />
     <field name='HopSendingTime' required='N' />
     <field name='HopRefID' required='N' />
+   </group>
+  </component>
+  <component name='AllocAckGrp'>
+   <group name='NoAllocs' required='N'>
+    <field name='AllocAccount' required='N' />
+    <field name='AllocAcctIDSource' required='N' />
+    <field name='AllocPrice' required='N' />
+    <field name='IndividualAllocID' required='N' />
+    <field name='IndividualAllocRejCode' required='N' />
+    <field name='AllocText' required='N' />
+    <field name='EncodedAllocTextLen' required='N' />
+    <field name='EncodedAllocText' required='N' />
+    <field name='SecondaryIndividualAllocID' required='N' />
+    <field name='AllocCustomerCapacity' required='N' />
+    <field name='IndividualAllocType' required='N' />
+    <field name='AllocQty' required='N' />
+    <component name='NestedParties' required='N' />
+    <field name='AllocPositionEffect' required='N' />
+   </group>
+  </component>
+  <component name='QuotReqLegsGrp'>
+   <group name='NoLegs' required='N'>
+    <component name='InstrumentLeg' required='N' />
+    <field name='LegQty' required='N' />
+    <field name='LegSwapType' required='N' />
+    <field name='LegSettlType' required='N' />
+    <field name='LegSettlDate' required='N' />
+    <component name='LegStipulations' required='N' />
+    <component name='NestedParties' required='N' />
+    <component name='LegBenchmarkCurveData' required='N' />
+    <field name='LegOrderQty' required='N' />
+    <field name='LegRefID' required='N' />
+   </group>
+  </component>
+  <component name='NestedParties2'>
+   <group name='NoNested2PartyIDs' required='N'>
+    <field name='Nested2PartyID' required='N' />
