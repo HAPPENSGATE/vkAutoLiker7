@@ -3831,3 +3831,55 @@
     <field name='ForexReq' required='N' />
     <field name='SettlCurrency' required='N' />
     <field name='BookingType' required='N' />
+    <field name='Text' required='N' />
+    <field name='EncodedTextLen' required='N' />
+    <field name='EncodedText' required='N' />
+    <field name='PositionEffect' required='N' />
+    <field name='CoveredOrUncovered' required='N' />
+    <field name='CashMargin' required='N' />
+    <field name='ClearingFeeIndicator' required='N' />
+    <field name='SolicitedFlag' required='N' />
+    <field name='SideComplianceID' required='N' />
+    <field name='SideTimeInForce' required='N' />
+    <field name='PreTradeAnonymity' required='N' />
+    <field name='OrigClOrdID' required='N' />
+   </group>
+  </component>
+  <component name='RootSubParties'>
+   <group name='NoRootPartySubIDs' required='N'>
+    <field name='RootPartySubID' required='N' />
+    <field name='RootPartySubIDType' required='N' />
+   </group>
+  </component>
+  <component name='TrdCollGrp'>
+   <group name='NoTrades' required='N'>
+    <field name='TradeReportID' required='N' />
+    <field name='SecondaryTradeReportID' required='N' />
+   </group>
+  </component>
+  <component name='NestedParties3'>
+   <group name='NoNested3PartyIDs' required='N'>
+    <field name='Nested3PartyID' required='N' />
+    <field name='Nested3PartyIDSource' required='N' />
+    <field name='Nested3PartyRole' required='N' />
+    <component name='NstdPtys3SubGrp' required='N' />
+   </group>
+  </component>
+  <component name='StrategyParametersGrp'>
+   <group name='NoStrategyParameters' required='N'>
+    <field name='StrategyParameterName' required='N' />
+    <field name='StrategyParameterType' required='N' />
+    <field name='StrategyParameterValue' required='N' />
+   </group>
+  </component>
+  <component name='RelationshipRiskLimits'>
+   <group name='NoRelationshipRiskLimits' required='N'>
+    <field name='RelationshipRiskLimitType' required='N' />
+    <field name='RelationshipRiskLimitAmount' required='N' />
+    <field name='RelationshipRiskLimitCurrency' required='N' />
+    <field name='RelationshipRiskLimitPlatform' required='N' />
+    <component name='RelationshipRiskInstrumentScope' required='N' />
+    <component name='RelationshipRiskWarningLevels' required='N' />
+   </group>
+  </component>
+  <component name='PartyRelationships'>
