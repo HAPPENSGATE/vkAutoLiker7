@@ -3883,3 +3883,53 @@
    </group>
   </component>
   <component name='PartyRelationships'>
+   <group name='NoPartyRelationships' required='N'>
+    <field name='PartyRelationship' required='N' />
+   </group>
+  </component>
+  <component name='StrmAsgnRptInstrmtGrp'>
+   <group name='NoRelatedSym' required='N'>
+    <component name='Instrument' required='N' />
+    <field name='SettlType' required='N' />
+    <field name='StreamAsgnType' required='N' />
+    <field name='MDStreamID' required='N' />
+    <field name='StreamAsgnRejReason' required='N' />
+    <field name='Text' required='N' />
+    <field name='EncodedTextLen' required='N' />
+    <field name='EncodedText' required='N' />
+   </group>
+  </component>
+  <component name='StrmAsgnReqInstrmtGrp'>
+   <group name='NoRelatedSym' required='N'>
+    <component name='Instrument' required='N' />
+    <field name='SettlType' required='N' />
+    <field name='MDEntrySize' required='N' />
+    <field name='MDStreamID' required='N' />
+   </group>
+  </component>
+  <component name='NestedParties4'>
+   <group name='NoNested4PartyIDs' required='N'>
+    <field name='Nested4PartyID' required='N' />
+    <field name='Nested4PartyIDSource' required='N' />
+    <field name='Nested4PartyRole' required='N' />
+    <component name='NstdPtys4SubGrp' required='N' />
+   </group>
+  </component>
+  <component name='TrdRepIndicatorsGrp'>
+   <group name='NoTrdRepIndicators' required='N'>
+    <field name='TrdRepPartyRole' required='N' />
+    <field name='TrdRepIndicator' required='N' />
+   </group>
+  </component>
+  <component name='RelSymDerivSecUpdGrp'>
+   <group name='NoRelatedSym' required='N'>
+    <field name='ListUpdateAction' required='N' />
+    <component name='Instrument' required='N' />
+    <component name='InstrumentExtension' required='N' />
+    <component name='SecondaryPriceLimits' required='N' />
+    <field name='Currency' required='N' />
+    <component name='InstrmtLegGrp' required='N' />
+    <field name='Text' required='N' />
+    <field name='EncodedTextLen' required='N' />
+    <field name='EncodedText' required='N' />
+    <field name='CorporateAction' required='N' />
