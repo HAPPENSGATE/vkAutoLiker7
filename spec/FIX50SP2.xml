@@ -3933,3 +3933,49 @@
     <field name='EncodedTextLen' required='N' />
     <field name='EncodedText' required='N' />
     <field name='CorporateAction' required='N' />
+    <field name='RelSymTransactTime' required='N' />
+   </group>
+  </component>
+  <component name='DerivativeInstrumentParties'>
+   <group name='NoDerivativeInstrumentParties' required='N'>
+    <field name='DerivativeInstrumentPartyID' required='N' />
+    <field name='DerivativeInstrumentPartyIDSource' required='N' />
+    <field name='DerivativeInstrumentPartyRole' required='N' />
+    <component name='DerivativeInstrumentPartySubIDsGrp' required='N' />
+   </group>
+  </component>
+  <component name='MarketDataFeedTypes'>
+   <group name='NoMDFeedTypes' required='N'>
+    <field name='MDFeedType' required='N' />
+    <field name='MarketDepth' required='N' />
+    <field name='MDBookType' required='N' />
+   </group>
+  </component>
+  <component name='TickRules'>
+   <group name='NoTickRules' required='N'>
+    <field name='StartTickPriceRange' required='N' />
+    <field name='EndTickPriceRange' required='N' />
+    <field name='TickIncrement' required='N' />
+    <field name='TickRuleType' required='N' />
+   </group>
+  </component>
+  <component name='RootParties'>
+   <group name='NoRootPartyIDs' required='N'>
+    <field name='RootPartyID' required='N' />
+    <field name='RootPartyIDSource' required='N' />
+    <field name='RootPartyRole' required='N' />
+    <component name='RootSubParties' required='N' />
+   </group>
+  </component>
+  <component name='UnderlyingInstrument'>
+   <field name='UnderlyingSymbol' required='N' />
+   <field name='UnderlyingSymbolSfx' required='N' />
+   <field name='UnderlyingSecurityID' required='N' />
+   <field name='UnderlyingSecurityIDSource' required='N' />
+   <component name='UndSecAltIDGrp' required='N' />
+   <field name='UnderlyingProduct' required='N' />
+   <field name='UnderlyingCFICode' required='N' />
+   <field name='UnderlyingSecurityType' required='N' />
+   <field name='UnderlyingSecuritySubType' required='N' />
+   <field name='UnderlyingMaturityMonthYear' required='N' />
+   <field name='UnderlyingMaturityDate' required='N' />
