@@ -4079,3 +4079,30 @@
     <field name='AllocInterestAtMaturity' required='N' />
     <component name='MiscFeesGrp' required='N' />
     <component name='ClrInstGrp' required='N' />
+    <field name='AllocSettlInstType' required='N' />
+    <component name='SettlInstructionsData' required='N' />
+    <field name='SecondaryIndividualAllocID' required='N' />
+    <field name='AllocMethod' required='N' />
+    <field name='AllocCustomerCapacity' required='N' />
+    <field name='IndividualAllocType' required='N' />
+    <field name='AllocPositionEffect' required='N' />
+    <field name='ClearingFeeIndicator' required='N' />
+   </group>
+  </component>
+  <component name='SettlPtysSubGrp'>
+   <group name='NoSettlPartySubIDs' required='N'>
+    <field name='SettlPartySubID' required='N' />
+    <field name='SettlPartySubIDType' required='N' />
+   </group>
+  </component>
+  <component name='InstrumentPtysSubGrp'>
+   <group name='NoInstrumentPartySubIDs' required='N'>
+    <field name='InstrumentPartySubID' required='N' />
+    <field name='InstrumentPartySubIDType' required='N' />
+   </group>
+  </component>
+  <component name='SecLstUpdRelSymsLegGrp'>
+   <group name='NoLegs' required='N'>
+    <component name='InstrumentLeg' required='N' />
+    <field name='LegSwapType' required='N' />
+    <field name='LegSettlType' required='N' />
