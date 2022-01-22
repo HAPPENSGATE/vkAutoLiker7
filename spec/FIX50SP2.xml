@@ -4021,3 +4021,61 @@
    <field name='UnderlyingUnitOfMeasure' required='N' />
    <field name='UnderlyingTimeUnit' required='N' />
    <field name='UnderlyingCapValue' required='N' />
+   <component name='UndlyInstrumentParties' required='N' />
+   <field name='UnderlyingSettlMethod' required='N' />
+   <field name='UnderlyingAdjustedQuantity' required='N' />
+   <field name='UnderlyingFXRate' required='N' />
+   <field name='UnderlyingFXRateCalc' required='N' />
+   <field name='UnderlyingMaturityTime' required='N' />
+   <field name='UnderlyingPutOrCall' required='N' />
+   <field name='UnderlyingExerciseStyle' required='N' />
+   <field name='UnderlyingUnitOfMeasureQty' required='N' />
+   <field name='UnderlyingPriceUnitOfMeasure' required='N' />
+   <field name='UnderlyingPriceUnitOfMeasureQty' required='N' />
+   <field name='UnderlyingContractMultiplierUnit' required='N' />
+   <field name='UnderlyingFlowScheduleType' required='N' />
+   <field name='UnderlyingRestructuringType' required='N' />
+   <field name='UnderlyingSeniority' required='N' />
+   <field name='UnderlyingNotionalPercentageOutstanding' required='N' />
+   <field name='UnderlyingOriginalNotionalPercentageOutstanding' required='N' />
+   <field name='UnderlyingAttachmentPoint' required='N' />
+   <field name='UnderlyingDetachmentPoint' required='N' />
+  </component>
+  <component name='QuotSetGrp'>
+   <group name='NoQuoteSets' required='Y'>
+    <field name='QuoteSetID' required='Y' />
+    <component name='UnderlyingInstrument' required='N' />
+    <field name='QuoteSetValidUntilTime' required='N' />
+    <field name='TotNoQuoteEntries' required='Y' />
+    <field name='LastFragment' required='N' />
+    <component name='QuotEntryGrp' required='Y' />
+   </group>
+  </component>
+  <component name='AllocGrp'>
+   <group name='NoAllocs' required='N'>
+    <field name='AllocAccount' required='N' />
+    <field name='AllocAcctIDSource' required='N' />
+    <field name='MatchStatus' required='N' />
+    <field name='AllocPrice' required='N' />
+    <field name='AllocQty' required='N' />
+    <field name='IndividualAllocID' required='N' />
+    <field name='ProcessCode' required='N' />
+    <component name='NestedParties' required='N' />
+    <field name='NotifyBrokerOfCredit' required='N' />
+    <field name='AllocHandlInst' required='N' />
+    <field name='AllocText' required='N' />
+    <field name='EncodedAllocTextLen' required='N' />
+    <field name='EncodedAllocText' required='N' />
+    <component name='CommissionData' required='N' />
+    <field name='AllocAvgPx' required='N' />
+    <field name='AllocNetMoney' required='N' />
+    <field name='SettlCurrAmt' required='N' />
+    <field name='AllocSettlCurrAmt' required='N' />
+    <field name='SettlCurrency' required='N' />
+    <field name='AllocSettlCurrency' required='N' />
+    <field name='SettlCurrFxRate' required='N' />
+    <field name='SettlCurrFxRateCalc' required='N' />
+    <field name='AllocAccruedInterestAmt' required='N' />
+    <field name='AllocInterestAtMaturity' required='N' />
+    <component name='MiscFeesGrp' required='N' />
+    <component name='ClrInstGrp' required='N' />
