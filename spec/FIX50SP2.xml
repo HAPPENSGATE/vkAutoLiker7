@@ -4106,3 +4106,44 @@
     <component name='InstrumentLeg' required='N' />
     <field name='LegSwapType' required='N' />
     <field name='LegSettlType' required='N' />
+    <component name='LegStipulations' required='N' />
+    <component name='LegBenchmarkCurveData' required='N' />
+   </group>
+  </component>
+  <component name='QuotReqGrp'>
+   <group name='NoRelatedSym' required='Y'>
+    <component name='Instrument' required='Y' />
+    <component name='FinancingDetails' required='N' />
+    <component name='UndInstrmtGrp' required='N' />
+    <field name='PrevClosePx' required='N' />
+    <field name='QuoteRequestType' required='N' />
+    <field name='QuoteType' required='N' />
+    <field name='TradingSessionID' required='N' />
+    <field name='TradingSessionSubID' required='N' />
+    <field name='TradeOriginationDate' required='N' />
+    <field name='Side' required='N' />
+    <field name='QtyType' required='N' />
+    <component name='OrderQtyData' required='N' />
+    <field name='SettlType' required='N' />
+    <field name='SettlDate' required='N' />
+    <field name='SettlDate2' required='N' />
+    <field name='OrderQty2' required='N' />
+    <field name='Currency' required='N' />
+    <component name='Stipulations' required='N' />
+    <field name='Account' required='N' />
+    <field name='AcctIDSource' required='N' />
+    <field name='AccountType' required='N' />
+    <component name='QuotReqLegsGrp' required='N' />
+    <component name='QuotQualGrp' required='N' />
+    <field name='QuotePriceType' required='N' />
+    <field name='OrdType' required='N' />
+    <field name='ValidUntilTime' required='N' />
+    <field name='ExpireTime' required='N' />
+    <field name='TransactTime' required='N' />
+    <component name='SpreadOrBenchmarkCurveData' required='N' />
+    <field name='PriceType' required='N' />
+    <field name='Price' required='N' />
+    <field name='Price2' required='N' />
+    <component name='YieldData' required='N' />
+    <component name='Parties' required='N' />
+    <field name='MinQty' required='N' />
