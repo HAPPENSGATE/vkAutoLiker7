@@ -4147,3 +4147,51 @@
     <component name='YieldData' required='N' />
     <component name='Parties' required='N' />
     <field name='MinQty' required='N' />
+    <field name='SettlCurrency' required='N' />
+    <component name='RateSource' required='N' />
+   </group>
+  </component>
+  <component name='QuotSetAckGrp'>
+   <group name='NoQuoteSets' required='N'>
+    <field name='QuoteSetID' required='N' />
+    <component name='UnderlyingInstrument' required='N' />
+    <field name='TotNoQuoteEntries' required='N' />
+    <field name='LastFragment' required='N' />
+    <component name='QuotEntryAckGrp' required='N' />
+    <field name='TotNoCxldQuotes' required='N' />
+    <field name='TotNoAccQuotes' required='N' />
+    <field name='TotNoRejQuotes' required='N' />
+    <field name='QuoteSetValidUntilTime' required='N' />
+   </group>
+  </component>
+  <component name='RFQReqGrp'>
+   <group name='NoRelatedSym' required='Y'>
+    <component name='Instrument' required='Y' />
+    <component name='UndInstrmtGrp' required='N' />
+    <component name='InstrmtLegGrp' required='N' />
+    <field name='PrevClosePx' required='N' />
+    <field name='QuoteRequestType' required='N' />
+    <field name='QuoteType' required='N' />
+    <field name='TradingSessionID' required='N' />
+    <field name='TradingSessionSubID' required='N' />
+   </group>
+  </component>
+  <component name='ApplIDReportGrp'>
+   <group name='NoApplIDs' required='N'>
+    <field name='RefApplID' required='N' />
+    <field name='ApplNewSeqNum' required='N' />
+    <field name='RefApplLastSeqNum' required='N' />
+   </group>
+  </component>
+  <component name='CpctyConfGrp'>
+   <group name='NoCapacities' required='Y'>
+    <field name='OrderCapacity' required='Y' />
+    <field name='OrderRestrictions' required='N' />
+    <field name='OrderCapacityQty' required='Y' />
+   </group>
+  </component>
+  <component name='UndInstrmtGrp'>
+   <group name='NoUnderlyings' required='N'>
+    <component name='UnderlyingInstrument' required='N' />
+   </group>
+  </component>
