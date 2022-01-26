@@ -4195,3 +4195,49 @@
     <component name='UnderlyingInstrument' required='N' />
    </group>
   </component>
+  <component name='Parties'>
+   <group name='NoPartyIDs' required='N'>
+    <field name='PartyID' required='N' />
+    <field name='PartyIDSource' required='N' />
+    <field name='PartyRole' required='N' />
+    <component name='PtysSubGrp' required='N' />
+   </group>
+  </component>
+  <component name='RequestedPartyRoleGrp'>
+   <group name='NoRequestedPartyRoles' required='N'>
+    <field name='RequestedPartyRole' required='N' />
+   </group>
+  </component>
+  <component name='TradingSessionRulesGrp'>
+   <group name='NoTradingSessionRules' required='N'>
+    <field name='TradingSessionID' required='N' />
+    <field name='TradingSessionSubID' required='N' />
+    <component name='TradingSessionRules' required='N' />
+   </group>
+  </component>
+  <component name='UndlyInstrumentPtysSubGrp'>
+   <group name='NoUndlyInstrumentPartySubIDs' required='N'>
+    <field name='UnderlyingInstrumentPartySubID' required='N' />
+    <field name='UnderlyingInstrumentPartySubIDType' required='N' />
+   </group>
+  </component>
+  <component name='NestedParties'>
+   <group name='NoNestedPartyIDs' required='N'>
+    <field name='NestedPartyID' required='N' />
+    <field name='NestedPartyIDSource' required='N' />
+    <field name='NestedPartyRole' required='N' />
+    <component name='NstdPtysSubGrp' required='N' />
+   </group>
+  </component>
+  <component name='TrdgSesGrp'>
+   <group name='NoTradingSessions' required='N'>
+    <field name='TradingSessionID' required='N' />
+    <field name='TradingSessionSubID' required='N' />
+   </group>
+  </component>
+  <component name='AffectedOrdGrp'>
+   <group name='NoAffectedOrders' required='N'>
+    <field name='OrigClOrdID' required='N' />
+    <field name='AffectedOrderID' required='N' />
+    <field name='AffectedSecondaryOrderID' required='N' />
+   </group>
