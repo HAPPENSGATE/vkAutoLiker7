@@ -4241,3 +4241,52 @@
     <field name='AffectedOrderID' required='N' />
     <field name='AffectedSecondaryOrderID' required='N' />
    </group>
+  </component>
+  <component name='CommissionData'>
+   <field name='Commission' required='N' />
+   <field name='CommType' required='N' />
+   <field name='CommCurrency' required='N' />
+   <field name='FundRenewWaiv' required='N' />
+  </component>
+  <component name='RelationshipRiskSecAltIDGrp'>
+   <group name='NoRelationshipRiskSecurityAltID' required='N'>
+    <field name='RelationshipRiskSecurityAltID' required='N' />
+    <field name='RelationshipRiskSecurityAltIDSource' required='N' />
+   </group>
+  </component>
+  <component name='FillsGrp'>
+   <group name='NoFills' required='N'>
+    <field name='FillExecID' required='N' />
+    <field name='FillPx' required='N' />
+    <field name='FillQty' required='N' />
+    <component name='NestedParties4' required='N' />
+    <field name='FillLiquidityInd' required='N' />
+   </group>
+  </component>
+  <component name='NotAffectedOrdersGrp'>
+   <group name='NoNotAffectedOrders' required='N'>
+    <field name='NotAffOrigClOrdID' required='N' />
+    <field name='NotAffectedOrderID' required='N' />
+   </group>
+  </component>
+  <component name='DerivativeInstrument'>
+   <field name='DerivativeSymbol' required='N' />
+   <field name='DerivativeSymbolSfx' required='N' />
+   <field name='DerivativeSecurityID' required='N' />
+   <field name='DerivativeSecurityIDSource' required='N' />
+   <component name='DerivativeSecurityAltIDGrp' required='N' />
+   <field name='DerivativeProduct' required='N' />
+   <field name='DerivativeProductComplex' required='N' />
+   <field name='DerivFlexProductEligibilityIndicator' required='N' />
+   <field name='DerivativeSecurityGroup' required='N' />
+   <field name='DerivativeCFICode' required='N' />
+   <field name='DerivativeSecurityType' required='N' />
+   <field name='DerivativeSecuritySubType' required='N' />
+   <field name='DerivativeMaturityMonthYear' required='N' />
+   <field name='DerivativeMaturityDate' required='N' />
+   <field name='DerivativeMaturityTime' required='N' />
+   <field name='DerivativeSettleOnOpenFlag' required='N' />
+   <field name='DerivativeInstrmtAssignmentMethod' required='N' />
+   <field name='DerivativeSecurityStatus' required='N' />
+   <field name='DerivativeIssueDate' required='N' />
+   <field name='DerivativeInstrRegistry' required='N' />
