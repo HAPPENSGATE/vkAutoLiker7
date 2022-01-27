@@ -4290,3 +4290,50 @@
    <field name='DerivativeSecurityStatus' required='N' />
    <field name='DerivativeIssueDate' required='N' />
    <field name='DerivativeInstrRegistry' required='N' />
+   <field name='DerivativeCountryOfIssue' required='N' />
+   <field name='DerivativeStateOrProvinceOfIssue' required='N' />
+   <field name='DerivativeStrikePrice' required='N' />
+   <field name='DerivativeLocaleOfIssue' required='N' />
+   <field name='DerivativeStrikeCurrency' required='N' />
+   <field name='DerivativeStrikeMultiplier' required='N' />
+   <field name='DerivativeStrikeValue' required='N' />
+   <field name='DerivativeOptAttribute' required='N' />
+   <field name='DerivativeContractMultiplier' required='N' />
+   <field name='DerivativeMinPriceIncrement' required='N' />
+   <field name='DerivativeMinPriceIncrementAmount' required='N' />
+   <field name='DerivativeUnitOfMeasure' required='N' />
+   <field name='DerivativeUnitOfMeasureQty' required='N' />
+   <field name='DerivativePriceUnitOfMeasure' required='N' />
+   <field name='DerivativePriceUnitOfMeasureQty' required='N' />
+   <field name='DerivativeExerciseStyle' required='N' />
+   <field name='DerivativeOptPayAmount' required='N' />
+   <field name='DerivativeTimeUnit' required='N' />
+   <field name='DerivativeSecurityExchange' required='N' />
+   <field name='DerivativePositionLimit' required='N' />
+   <field name='DerivativeNTPositionLimit' required='N' />
+   <field name='DerivativeIssuer' required='N' />
+   <field name='DerivativeEncodedIssuerLen' required='N' />
+   <field name='DerivativeEncodedIssuer' required='N' />
+   <field name='DerivativeSecurityDesc' required='N' />
+   <field name='DerivativeEncodedSecurityDescLen' required='N' />
+   <field name='DerivativeEncodedSecurityDesc' required='N' />
+   <field name='DerivativeContractSettlMonth' required='N' />
+   <component name='DerivativeEventsGrp' required='N' />
+   <component name='DerivativeInstrumentParties' required='N' />
+   <field name='DerivativeSettlMethod' required='N' />
+   <field name='DerivativePriceQuoteMethod' required='N' />
+   <field name='DerivativeValuationMethod' required='N' />
+   <field name='DerivativeListMethod' required='N' />
+   <field name='DerivativeCapPrice' required='N' />
+   <field name='DerivativeFloorPrice' required='N' />
+   <field name='DerivativePutOrCall' required='N' />
+   <component name='DerivativeSecurityXML' required='N' />
+   <field name='DerivativeContractMultiplierUnit' required='N' />
+   <field name='DerivativeFlowScheduleType' required='N' />
+  </component>
+  <component name='LegOrdGrp'>
+   <group name='NoLegs' required='Y'>
+    <component name='InstrumentLeg' required='N' />
+    <field name='LegQty' required='N' />
+    <field name='LegSwapType' required='N' />
+    <component name='LegStipulations' required='N' />
