@@ -4381,3 +4381,51 @@
     <field name='PrevClosePx' required='N' />
     <field name='ClOrdID' required='N' />
     <field name='SecondaryClOrdID' required='N' />
+    <field name='Side' required='N' />
+    <field name='Price' required='N' />
+    <field name='Currency' required='N' />
+    <field name='Text' required='N' />
+    <field name='EncodedTextLen' required='N' />
+    <field name='EncodedText' required='N' />
+   </group>
+  </component>
+  <component name='ContraGrp'>
+   <group name='NoContraBrokers' required='N'>
+    <field name='ContraBroker' required='N' />
+    <field name='ContraTrader' required='N' />
+    <field name='ContraTradeQty' required='N' />
+    <field name='ContraTradeTime' required='N' />
+    <field name='ContraLegRefID' required='N' />
+   </group>
+  </component>
+  <component name='RelatedPartyGrp'>
+   <group name='NoRelatedPartyIDs' required='N'>
+    <component name='RelatedPartyDetail' required='N' />
+    <component name='PartyRelationships' required='N' />
+   </group>
+  </component>
+  <component name='DerivativeSecurityDefinition'>
+   <component name='DerivativeInstrument' required='N' />
+   <component name='DerivativeInstrumentAttribute' required='N' />
+   <component name='MarketSegmentGrp' required='N' />
+  </component>
+  <component name='PriceLimits'>
+   <field name='PriceLimitType' required='N' />
+   <field name='LowLimitPrice' required='N' />
+   <field name='HighLimitPrice' required='N' />
+   <field name='TradingReferencePrice' required='N' />
+  </component>
+  <component name='InstrmtGrp'>
+   <group name='NoRelatedSym' required='N'>
+    <component name='Instrument' required='N' />
+   </group>
+  </component>
+  <component name='SecListGrp'>
+   <group name='NoRelatedSym' required='N'>
+    <component name='Instrument' required='N' />
+    <component name='InstrumentExtension' required='N' />
+    <component name='FinancingDetails' required='N' />
+    <component name='UndInstrmtGrp' required='N' />
+    <field name='Currency' required='N' />
+    <component name='Stipulations' required='N' />
+    <component name='InstrmtLegSecListGrp' required='N' />
