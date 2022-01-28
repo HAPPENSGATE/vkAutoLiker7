@@ -4429,3 +4429,40 @@
     <field name='Currency' required='N' />
     <component name='Stipulations' required='N' />
     <component name='InstrmtLegSecListGrp' required='N' />
+    <component name='SpreadOrBenchmarkCurveData' required='N' />
+    <component name='YieldData' required='N' />
+    <field name='Text' required='N' />
+    <field name='EncodedTextLen' required='N' />
+    <field name='EncodedText' required='N' />
+    <component name='SecurityTradingRules' required='N' />
+    <component name='StrikeRules' required='N' />
+    <field name='RelSymTransactTime' required='N' />
+   </group>
+  </component>
+  <component name='UndInstrmtCollGrp'>
+   <group name='NoUnderlyings' required='N'>
+    <component name='UnderlyingInstrument' required='N' />
+    <field name='CollAction' required='N' />
+   </group>
+  </component>
+  <component name='CollInqQualGrp'>
+   <group name='NoCollInquiryQualifier' required='N'>
+    <field name='CollInquiryQualifier' required='N' />
+   </group>
+  </component>
+  <component name='RateSource'>
+   <group name='NoRateSources' required='N'>
+    <field name='RateSource' required='N' />
+    <field name='RateSourceType' required='N' />
+    <field name='ReferencePage' required='N' />
+   </group>
+  </component>
+  <component name='TradeReportOrderDetail'>
+   <field name='OrderID' required='N' />
+   <field name='SecondaryOrderID' required='N' />
+   <field name='ClOrdID' required='N' />
+   <field name='SecondaryClOrdID' required='N' />
+   <field name='ListID' required='N' />
+   <field name='RefOrderID' required='N' />
+   <field name='RefOrderIDSource' required='N' />
+   <field name='RefOrdIDReason' required='N' />
