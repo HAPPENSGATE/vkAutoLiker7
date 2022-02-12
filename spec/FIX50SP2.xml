@@ -4507,3 +4507,56 @@
     <field name='ComplexEventStartTime' required='N' />
     <field name='ComplexEventEndTime' required='N' />
    </group>
+  </component>
+  <component name='SpreadOrBenchmarkCurveData'>
+   <field name='Spread' required='N' />
+   <field name='BenchmarkCurveCurrency' required='N' />
+   <field name='BenchmarkCurveName' required='N' />
+   <field name='BenchmarkCurvePoint' required='N' />
+   <field name='BenchmarkPrice' required='N' />
+   <field name='BenchmarkPriceType' required='N' />
+   <field name='BenchmarkSecurityID' required='N' />
+   <field name='BenchmarkSecurityIDSource' required='N' />
+  </component>
+  <component name='QuotCxlEntriesGrp'>
+   <group name='NoQuoteEntries' required='N'>
+    <component name='Instrument' required='N' />
+    <component name='FinancingDetails' required='N' />
+    <component name='UndInstrmtGrp' required='N' />
+    <component name='InstrmtLegGrp' required='N' />
+   </group>
+  </component>
+  <component name='ContAmtGrp'>
+   <group name='NoContAmts' required='N'>
+    <field name='ContAmtType' required='N' />
+    <field name='ContAmtValue' required='N' />
+    <field name='ContAmtCurr' required='N' />
+   </group>
+  </component>
+  <component name='MDFullGrp'>
+   <group name='NoMDEntries' required='Y'>
+    <field name='MDEntryType' required='Y' />
+    <field name='MDEntryPx' required='N' />
+    <field name='Currency' required='N' />
+    <field name='MDEntrySize' required='N' />
+    <field name='MDEntryDate' required='N' />
+    <field name='MDEntryTime' required='N' />
+    <field name='TickDirection' required='N' />
+    <field name='MDMkt' required='N' />
+    <field name='TradingSessionID' required='N' />
+    <field name='TradingSessionSubID' required='N' />
+    <field name='QuoteCondition' required='N' />
+    <field name='TradeCondition' required='N' />
+    <field name='MDEntryOriginator' required='N' />
+    <field name='LocationID' required='N' />
+    <field name='DeskID' required='N' />
+    <field name='OpenCloseSettlFlag' required='N' />
+    <field name='TimeInForce' required='N' />
+    <field name='ExpireDate' required='N' />
+    <field name='ExpireTime' required='N' />
+    <field name='MinQty' required='N' />
+    <field name='ExecInst' required='N' />
+    <field name='SellerDays' required='N' />
+    <field name='OrderID' required='N' />
+    <field name='QuoteEntryID' required='N' />
+    <field name='MDEntryBuyer' required='N' />
