@@ -4560,3 +4560,54 @@
     <field name='OrderID' required='N' />
     <field name='QuoteEntryID' required='N' />
     <field name='MDEntryBuyer' required='N' />
+    <field name='MDEntrySeller' required='N' />
+    <field name='NumberOfOrders' required='N' />
+    <field name='MDEntryPositionNo' required='N' />
+    <field name='Scope' required='N' />
+    <field name='PriceDelta' required='N' />
+    <field name='Text' required='N' />
+    <field name='EncodedTextLen' required='N' />
+    <field name='EncodedText' required='N' />
+    <field name='MDPriceLevel' required='N' />
+    <field name='OrderCapacity' required='N' />
+    <field name='MDOriginType' required='N' />
+    <field name='HighPx' required='N' />
+    <field name='LowPx' required='N' />
+    <field name='TradeVolume' required='N' />
+    <field name='SettlType' required='N' />
+    <field name='SettlDate' required='N' />
+    <field name='MDQuoteType' required='N' />
+    <field name='RptSeq' required='N' />
+    <field name='DealingCapacity' required='N' />
+    <field name='MDEntrySpotRate' required='N' />
+    <field name='MDEntryForwardPoints' required='N' />
+    <field name='MDEntryID' required='N' />
+    <component name='Parties' required='N' />
+    <field name='SecondaryOrderID' required='N' />
+    <field name='OrdType' required='N' />
+    <field name='PriceType' required='N' />
+    <component name='YieldData' required='N' />
+    <component name='SpreadOrBenchmarkCurveData' required='N' />
+    <component name='SecSizesGrp' required='N' />
+    <field name='LotType' required='N' />
+    <field name='SecurityTradingStatus' required='N' />
+    <field name='HaltReasonInt' required='N' />
+    <field name='SettlCurrency' required='N' />
+    <component name='RateSource' required='N' />
+    <field name='TrdType' required='N' />
+    <field name='FirstPx' required='N' />
+    <field name='LastPx' required='N' />
+   </group>
+  </component>
+  <component name='RiskInstrumentScope'>
+   <group name='NoRiskInstruments' required='N'>
+    <field name='RiskInstrumentOperator' required='N' />
+    <field name='RiskSymbol' required='N' />
+    <field name='RiskSymbolSfx' required='N' />
+    <field name='RiskSecurityID' required='N' />
+    <field name='RiskSecurityIDSource' required='N' />
+    <component name='RiskSecAltIDGrp' required='N' />
+    <field name='RiskProduct' required='N' />
+    <field name='RiskProductComplex' required='N' />
+    <field name='RiskSecurityGroup' required='N' />
+    <field name='RiskCFICode' required='N' />
