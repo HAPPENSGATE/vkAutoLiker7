@@ -4611,3 +4611,45 @@
     <field name='RiskProductComplex' required='N' />
     <field name='RiskSecurityGroup' required='N' />
     <field name='RiskCFICode' required='N' />
+    <field name='RiskSecurityType' required='N' />
+    <field name='RiskSecuritySubType' required='N' />
+    <field name='RiskMaturityMonthYear' required='N' />
+    <field name='RiskMaturityTime' required='N' />
+    <field name='RiskRestructuringType' required='N' />
+    <field name='RiskSeniority' required='N' />
+    <field name='RiskPutOrCall' required='N' />
+    <field name='RiskFlexibleIndicator' required='N' />
+    <field name='RiskCouponRate' required='N' />
+    <field name='RiskSecurityExchange' required='N' />
+    <field name='RiskSecurityDesc' required='N' />
+    <field name='RiskEncodedSecurityDescLen' required='N' />
+    <field name='RiskEncodedSecurityDesc' required='N' />
+    <field name='RiskInstrumentSettlType' required='N' />
+    <field name='RiskInstrumentMultiplier' required='N' />
+   </group>
+  </component>
+  <component name='ContextParties'>
+   <group name='NoContextPartyIDs' required='N'>
+    <field name='ContextPartyID' required='N' />
+    <field name='ContextPartyIDSource' required='N' />
+    <field name='ContextPartyRole' required='N' />
+    <component name='ContextPtysSubGrp' required='N' />
+   </group>
+  </component>
+  <component name='NstdPtys4SubGrp'>
+   <group name='NoNested4PartySubIDs' required='N'>
+    <field name='Nested4PartySubID' required='N' />
+    <field name='Nested4PartySubIDType' required='N' />
+   </group>
+  </component>
+  <component name='MDIncGrp'>
+   <group name='NoMDEntries' required='Y'>
+    <field name='MDUpdateAction' required='Y' />
+    <field name='DeleteReason' required='N' />
+    <field name='MDEntryType' required='N' />
+    <field name='MDEntryID' required='N' />
+    <field name='MDEntryRefID' required='N' />
+    <component name='Instrument' required='N' />
+    <component name='UndInstrmtGrp' required='N' />
+    <component name='InstrmtLegGrp' required='N' />
+    <field name='FinancialStatus' required='N' />
