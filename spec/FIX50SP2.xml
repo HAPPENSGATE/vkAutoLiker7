@@ -4731,3 +4731,47 @@
     <field name='UnderlyingCollectAmount' required='N' />
     <field name='UnderlyingSettlementDate' required='N' />
     <field name='UnderlyingSettlementStatus' required='N' />
+   </group>
+  </component>
+  <component name='TrdRegTimestamps'>
+   <group name='NoTrdRegTimestamps' required='N'>
+    <field name='TrdRegTimestamp' required='N' />
+    <field name='TrdRegTimestampType' required='N' />
+    <field name='TrdRegTimestampOrigin' required='N' />
+    <field name='DeskType' required='N' />
+    <field name='DeskTypeSource' required='N' />
+    <field name='DeskOrderHandlingInst' required='N' />
+   </group>
+  </component>
+  <component name='ComplexEvents'>
+   <group name='NoComplexEvents' required='N'>
+    <field name='ComplexEventType' required='N' />
+    <field name='ComplexOptPayoutAmount' required='N' />
+    <field name='ComplexEventPrice' required='N' />
+    <field name='ComplexEventPriceBoundaryMethod' required='N' />
+    <field name='ComplexEventPriceBoundaryPrecision' required='N' />
+    <field name='ComplexEventPriceTimeType' required='N' />
+    <field name='ComplexEventCondition' required='N' />
+    <component name='ComplexEventDates' required='N' />
+   </group>
+  </component>
+  <component name='DerivativeInstrumentAttribute'>
+   <group name='NoDerivativeInstrAttrib' required='N'>
+    <field name='DerivativeInstrAttribType' required='N' />
+    <field name='DerivativeInstrAttribValue' required='N' />
+   </group>
+  </component>
+  <component name='MarketSegmentGrp'>
+   <group name='NoMarketSegments' required='N'>
+    <field name='MarketID' required='N' />
+    <field name='MarketSegmentID' required='N' />
+    <component name='SecurityTradingRules' required='N' />
+    <component name='StrikeRules' required='N' />
+   </group>
+  </component>
+  <component name='LegQuotStatGrp'>
+   <group name='NoLegs' required='N'>
+    <component name='InstrumentLeg' required='N' />
+    <field name='LegQty' required='N' />
+    <field name='LegSwapType' required='N' />
+    <field name='LegSettlType' required='N' />
