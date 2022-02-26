@@ -4881,3 +4881,55 @@
     <component name='InstrumentLeg' required='N' />
     <field name='LegQty' required='N' />
     <field name='LegSwapType' required='N' />
+    <field name='LegSettlType' required='N' />
+    <field name='LegSettlDate' required='N' />
+    <component name='LegStipulations' required='N' />
+    <component name='NestedParties' required='N' />
+    <field name='LegPriceType' required='N' />
+    <field name='LegBidPx' required='N' />
+    <field name='LegOfferPx' required='N' />
+    <component name='LegBenchmarkCurveData' required='N' />
+    <field name='LegOrderQty' required='N' />
+    <field name='LegRefID' required='N' />
+    <field name='LegBidForwardPoints' required='N' />
+    <field name='LegOfferForwardPoints' required='N' />
+   </group>
+  </component>
+  <component name='ExecAllocGrp'>
+   <group name='NoExecs' required='N'>
+    <field name='LastQty' required='N' />
+    <field name='ExecID' required='N' />
+    <field name='SecondaryExecID' required='N' />
+    <field name='LastPx' required='N' />
+    <field name='LastParPx' required='N' />
+    <field name='LastCapacity' required='N' />
+    <field name='TradeID' required='N' />
+    <field name='FirmTradeID' required='N' />
+   </group>
+  </component>
+  <component name='TrdCapDtGrp'>
+   <group name='NoDates' required='N'>
+    <field name='TradeDate' required='N' />
+    <field name='TransactTime' required='N' />
+    <field name='LastUpdateTime' required='N' />
+   </group>
+  </component>
+  <component name='ExecInstRules'>
+   <group name='NoExecInstRules' required='N'>
+    <field name='ExecInstValue' required='N' />
+   </group>
+  </component>
+  <component name='TriggeringInstruction'>
+   <field name='TriggerType' required='N' />
+   <field name='TriggerAction' required='N' />
+   <field name='TriggerPrice' required='N' />
+   <field name='TriggerSymbol' required='N' />
+   <field name='TriggerSecurityID' required='N' />
+   <field name='TriggerSecurityIDSource' required='N' />
+   <field name='TriggerSecurityDesc' required='N' />
+   <field name='TriggerPriceType' required='N' />
+   <field name='TriggerPriceTypeScope' required='N' />
+   <field name='TriggerPriceDirection' required='N' />
+   <field name='TriggerNewPrice' required='N' />
+   <field name='TriggerOrderType' required='N' />
+   <field name='TriggerNewQty' required='N' />
