@@ -4838,3 +4838,46 @@
   </component>
   <component name='InstrumentParties'>
    <group name='NoInstrumentParties' required='N'>
+    <field name='InstrumentPartyID' required='N' />
+    <field name='InstrumentPartyIDSource' required='N' />
+    <field name='InstrumentPartyRole' required='N' />
+    <component name='InstrumentPtysSubGrp' required='N' />
+   </group>
+  </component>
+  <component name='RiskSecAltIDGrp'>
+   <group name='NoRiskSecurityAltID' required='N'>
+    <field name='RiskSecurityAltID' required='N' />
+    <field name='RiskSecurityAltIDSource' required='N' />
+   </group>
+  </component>
+  <component name='DerivativeSecurityAltIDGrp'>
+   <group name='NoDerivativeSecurityAltID' required='N'>
+    <field name='DerivativeSecurityAltID' required='N' />
+    <field name='DerivativeSecurityAltIDSource' required='N' />
+   </group>
+  </component>
+  <component name='SettlObligationInstructions'>
+   <group name='NoSettlOblig' required='N'>
+    <field name='NetGrossInd' required='N' />
+    <field name='SettlObligID' required='N' />
+    <field name='SettlObligTransType' required='N' />
+    <field name='SettlObligRefID' required='N' />
+    <field name='CcyAmt' required='N' />
+    <field name='SettlCurrAmt' required='N' />
+    <field name='Currency' required='N' />
+    <field name='SettlCurrency' required='N' />
+    <field name='SettlCurrFxRate' required='N' />
+    <field name='SettlDate' required='N' />
+    <component name='Instrument' required='N' />
+    <component name='Parties' required='N' />
+    <field name='EffectiveTime' required='N' />
+    <field name='ExpireTime' required='N' />
+    <field name='LastUpdateTime' required='N' />
+    <component name='SettlDetails' required='N' />
+   </group>
+  </component>
+  <component name='LegQuotGrp'>
+   <group name='NoLegs' required='N'>
+    <component name='InstrumentLeg' required='N' />
+    <field name='LegQty' required='N' />
+    <field name='LegSwapType' required='N' />
