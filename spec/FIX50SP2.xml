@@ -4933,3 +4933,49 @@
    <field name='TriggerNewPrice' required='N' />
    <field name='TriggerOrderType' required='N' />
    <field name='TriggerNewQty' required='N' />
+   <field name='TriggerTradingSessionID' required='N' />
+   <field name='TriggerTradingSessionSubID' required='N' />
+  </component>
+  <component name='IOIQualGrp'>
+   <group name='NoIOIQualifiers' required='N'>
+    <field name='IOIQualifier' required='N' />
+   </group>
+  </component>
+  <component name='NstdPtysSubGrp'>
+   <group name='NoNestedPartySubIDs' required='N'>
+    <field name='NestedPartySubID' required='N' />
+    <field name='NestedPartySubIDType' required='N' />
+   </group>
+  </component>
+  <component name='RelationshipRiskInstrumentScope'>
+   <group name='NoRelationshipRiskInstruments' required='N'>
+    <field name='RelationshipRiskInstrumentOperator' required='N' />
+    <field name='RelationshipRiskSymbol' required='N' />
+    <field name='RelationshipRiskSymbolSfx' required='N' />
+    <field name='RelationshipRiskSecurityID' required='N' />
+    <field name='RelationshipRiskSecurityIDSource' required='N' />
+    <component name='RelationshipRiskSecAltIDGrp' required='N' />
+    <field name='RelationshipRiskProduct' required='N' />
+    <field name='RelationshipRiskProductComplex' required='N' />
+    <field name='RelationshipRiskSecurityGroup' required='N' />
+    <field name='RelationshipRiskCFICode' required='N' />
+    <field name='RelationshipRiskSecurityType' required='N' />
+    <field name='RelationshipRiskSecuritySubType' required='N' />
+    <field name='RelationshipRiskMaturityMonthYear' required='N' />
+    <field name='RelationshipRiskMaturityTime' required='N' />
+    <field name='RelationshipRiskRestructuringType' required='N' />
+    <field name='RelationshipRiskSeniority' required='N' />
+    <field name='RelationshipRiskPutOrCall' required='N' />
+    <field name='RelationshipRiskFlexibleIndicator' required='N' />
+    <field name='RelationshipRiskCouponRate' required='N' />
+    <field name='RelationshipRiskSecurityExchange' required='N' />
+    <field name='RelationshipRiskSecurityDesc' required='N' />
+    <field name='RelationshipRiskEncodedSecurityDescLen' required='N' />
+    <field name='RelationshipRiskEncodedSecurityDesc' required='N' />
+    <field name='RelationshipRiskInstrumentSettlType' required='N' />
+    <field name='RelationshipRiskInstrumentMultiplier' required='N' />
+   </group>
+  </component>
+  <component name='PartyAltIDs'>
+   <group name='NoPartyAltIDs' required='N'>
+    <field name='PartyAltID' required='N' />
