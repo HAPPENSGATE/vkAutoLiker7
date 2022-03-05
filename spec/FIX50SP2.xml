@@ -4979,3 +4979,44 @@
   <component name='PartyAltIDs'>
    <group name='NoPartyAltIDs' required='N'>
     <field name='PartyAltID' required='N' />
+    <field name='PartyAltIDSource' required='N' />
+    <component name='AltPtysSubGrp' required='N' />
+   </group>
+  </component>
+  <component name='PositionQty'>
+   <group name='NoPositions' required='N'>
+    <field name='PosType' required='N' />
+    <field name='LongQty' required='N' />
+    <field name='ShortQty' required='N' />
+    <field name='PosQtyStatus' required='N' />
+    <component name='NestedParties' required='N' />
+    <field name='QuantityDate' required='N' />
+   </group>
+  </component>
+  <component name='NstdPtys2SubGrp'>
+   <group name='NoNested2PartySubIDs' required='N'>
+    <field name='Nested2PartySubID' required='N' />
+    <field name='Nested2PartySubIDType' required='N' />
+   </group>
+  </component>
+  <component name='PosUndInstrmtGrp'>
+   <group name='NoUnderlyings' required='N'>
+    <component name='UnderlyingInstrument' required='N' />
+    <field name='UnderlyingSettlPrice' required='N' />
+    <field name='UnderlyingSettlPriceType' required='N' />
+    <component name='UnderlyingAmount' required='N' />
+    <field name='UnderlyingDeliveryAmount' required='N' />
+   </group>
+  </component>
+  <component name='SettlInstructionsData'>
+   <field name='SettlDeliveryType' required='N' />
+   <field name='StandInstDbType' required='N' />
+   <field name='StandInstDbName' required='N' />
+   <field name='StandInstDbID' required='N' />
+   <component name='DlvyInstGrp' required='N' />
+  </component>
+  <component name='SideTrdRegTS'>
+   <group name='NoSideTrdRegTS' required='N'>
+    <field name='SideTrdRegTimestamp' required='N' />
+    <field name='SideTrdRegTimestampType' required='N' />
+    <field name='SideTrdRegTimestampSrc' required='N' />
