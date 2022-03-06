@@ -5020,3 +5020,41 @@
     <field name='SideTrdRegTimestamp' required='N' />
     <field name='SideTrdRegTimestampType' required='N' />
     <field name='SideTrdRegTimestampSrc' required='N' />
+   </group>
+  </component>
+  <component name='StrmAsgnRptGrp'>
+   <group name='NoAsgnReqs' required='N'>
+    <component name='Parties' required='N' />
+    <component name='StrmAsgnRptInstrmtGrp' required='N' />
+   </group>
+  </component>
+  <component name='TradingSessionRules'>
+   <component name='OrdTypeRules' required='N' />
+   <component name='TimeInForceRules' required='N' />
+   <component name='ExecInstRules' required='N' />
+   <component name='MatchRules' required='N' />
+   <component name='MarketDataFeedTypes' required='N' />
+  </component>
+  <component name='MsgTypeGrp'>
+   <group name='NoMsgTypes' required='N'>
+    <field name='RefMsgType' required='N' />
+    <field name='MsgDirection' required='N' />
+    <field name='RefApplVerID' required='N' />
+    <field name='RefCstmApplVerID' required='N' />
+    <field name='RefApplExtID' required='N' />
+    <field name='DefaultVerIndicator' required='N' />
+   </group>
+  </component>
+  <component name='UndSecAltIDGrp'>
+   <group name='NoUnderlyingSecurityAltID' required='N'>
+    <field name='UnderlyingSecurityAltID' required='N' />
+    <field name='UnderlyingSecurityAltIDSource' required='N' />
+   </group>
+  </component>
+  <component name='ExecCollGrp'>
+   <group name='NoExecs' required='N'>
+    <field name='ExecID' required='N' />
+   </group>
+  </component>
+  <component name='RelatedContextPtysSubGrp'>
+   <group name='NoRelatedContextPartySubIDs' required='N'>
