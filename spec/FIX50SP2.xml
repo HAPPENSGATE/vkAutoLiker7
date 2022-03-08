@@ -5105,3 +5105,33 @@
     <field name='OrderQty2' required='N' />
     <field name='BidForwardPoints2' required='N' />
     <field name='OfferForwardPoints2' required='N' />
+    <field name='Currency' required='N' />
+    <field name='BookingType' required='N' />
+    <field name='OrderCapacity' required='N' />
+    <field name='OrderRestrictions' required='N' />
+   </group>
+  </component>
+  <component name='RgstDtlsGrp'>
+   <group name='NoRegistDtls' required='N'>
+    <field name='RegistDtls' required='N' />
+    <field name='RegistEmail' required='N' />
+    <field name='MailingDtls' required='N' />
+    <field name='MailingInst' required='N' />
+    <component name='NestedParties' required='N' />
+    <field name='OwnerType' required='N' />
+    <field name='DateOfBirth' required='N' />
+    <field name='InvestorCountryOfResidence' required='N' />
+   </group>
+  </component>
+  <component name='NstdPtys3SubGrp'>
+   <group name='NoNested3PartySubIDs' required='N'>
+    <field name='Nested3PartySubID' required='N' />
+    <field name='Nested3PartySubIDType' required='N' />
+   </group>
+  </component>
+  <component name='RelatedPartyDetail'>
+   <field name='RelatedPartyID' required='N' />
+   <field name='RelatedPartyIDSource' required='N' />
+   <field name='RelatedPartyRole' required='N' />
+   <component name='RelatedPtysSubGrp' required='N' />
+   <component name='RelatedPartyAltIDs' required='N' />
