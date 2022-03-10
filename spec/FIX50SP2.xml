@@ -5135,3 +5135,33 @@
    <field name='RelatedPartyRole' required='N' />
    <component name='RelatedPtysSubGrp' required='N' />
    <component name='RelatedPartyAltIDs' required='N' />
+   <component name='RelatedContextParties' required='N' />
+   <component name='RelationshipRiskLimits' required='N' />
+  </component>
+  <component name='DerivativeEventsGrp'>
+   <group name='NoDerivativeEvents' required='N'>
+    <field name='DerivativeEventType' required='N' />
+    <field name='DerivativeEventDate' required='N' />
+    <field name='DerivativeEventTime' required='N' />
+    <field name='DerivativeEventPx' required='N' />
+    <field name='DerivativeEventText' required='N' />
+   </group>
+  </component>
+  <component name='NestedInstrumentAttribute'>
+   <group name='NoNestedInstrAttrib' required='N'>
+    <field name='NestedInstrAttribType' required='N' />
+    <field name='NestedInstrAttribValue' required='N' />
+   </group>
+  </component>
+  <component name='SecondaryPriceLimits'>
+   <field name='SecondaryPriceLimitType' required='N' />
+   <field name='SecondaryLowLimitPrice' required='N' />
+   <field name='SecondaryHighLimitPrice' required='N' />
+   <field name='SecondaryTradingReferencePrice' required='N' />
+  </component>
+  <component name='SecurityXML'>
+   <field name='SecurityXMLLen' required='N' />
+   <field name='SecurityXML' required='N' />
+   <field name='SecurityXMLSchema' required='N' />
+  </component>
+  <component name='EvntGrp'>
