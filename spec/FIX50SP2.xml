@@ -5165,3 +5165,39 @@
    <field name='SecurityXMLSchema' required='N' />
   </component>
   <component name='EvntGrp'>
+   <group name='NoEvents' required='N'>
+    <field name='EventType' required='N' />
+    <field name='EventDate' required='N' />
+    <field name='EventPx' required='N' />
+    <field name='EventText' required='N' />
+    <field name='EventTime' required='N' />
+   </group>
+  </component>
+  <component name='CompIDReqGrp'>
+   <group name='NoCompIDs' required='N'>
+    <field name='RefCompID' required='N' />
+    <field name='RefSubID' required='N' />
+    <field name='LocationID' required='N' />
+    <field name='DeskID' required='N' />
+   </group>
+  </component>
+  <component name='UnderlyingLegInstrument'>
+   <field name='UnderlyingLegSymbol' required='N' />
+   <field name='UnderlyingLegSymbolSfx' required='N' />
+   <field name='UnderlyingLegSecurityID' required='N' />
+   <field name='UnderlyingLegSecurityIDSource' required='N' />
+   <component name='UnderlyingLegSecurityAltIDGrp' required='N' />
+   <field name='UnderlyingLegCFICode' required='N' />
+   <field name='UnderlyingLegSecurityType' required='N' />
+   <field name='UnderlyingLegSecuritySubType' required='N' />
+   <field name='UnderlyingLegMaturityMonthYear' required='N' />
+   <field name='UnderlyingLegMaturityDate' required='N' />
+   <field name='UnderlyingLegMaturityTime' required='N' />
+   <field name='UnderlyingLegStrikePrice' required='N' />
+   <field name='UnderlyingLegOptAttribute' required='N' />
+   <field name='UnderlyingLegPutOrCall' required='N' />
+   <field name='UnderlyingLegSecurityExchange' required='N' />
+   <field name='UnderlyingLegSecurityDesc' required='N' />
+  </component>
+  <component name='SecSizesGrp'>
+   <group name='NoOfSecSizes' required='N'>
