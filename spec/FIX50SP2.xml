@@ -5201,3 +5201,48 @@
   </component>
   <component name='SecSizesGrp'>
    <group name='NoOfSecSizes' required='N'>
+    <field name='MDSecSizeType' required='N' />
+    <field name='MDSecSize' required='N' />
+   </group>
+  </component>
+  <component name='SecTypesGrp'>
+   <group name='NoSecurityTypes' required='N'>
+    <field name='SecurityType' required='N' />
+    <field name='SecuritySubType' required='N' />
+    <field name='Product' required='N' />
+    <field name='CFICode' required='N' />
+    <field name='TransactTime' required='N' />
+   </group>
+  </component>
+  <component name='AttrbGrp'>
+   <group name='NoInstrAttrib' required='N'>
+    <field name='InstrAttribType' required='N' />
+    <field name='InstrAttribValue' required='N' />
+   </group>
+  </component>
+  <component name='UnderlyingStipulations'>
+   <group name='NoUnderlyingStips' required='N'>
+    <field name='UnderlyingStipType' required='N' />
+    <field name='UnderlyingStipValue' required='N' />
+   </group>
+  </component>
+  <component name='RelatedPtysSubGrp'>
+   <group name='NoRelatedPartySubIDs' required='N'>
+    <field name='RelatedPartySubID' required='N' />
+    <field name='RelatedPartySubIDType' required='N' />
+   </group>
+  </component>
+  <component name='ComplexEventDates'>
+   <group name='NoComplexEventDates' required='N'>
+    <field name='ComplexEventStartDate' required='N' />
+    <field name='ComplexEventEndDate' required='N' />
+    <component name='ComplexEventTimes' required='N' />
+   </group>
+  </component>
+  <component name='MiscFeesGrp'>
+   <group name='NoMiscFees' required='N'>
+    <field name='MiscFeeAmt' required='N' />
+    <field name='MiscFeeCurr' required='N' />
+    <field name='MiscFeeType' required='N' />
+    <field name='MiscFeeBasis' required='N' />
+   </group>
