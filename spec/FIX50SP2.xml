@@ -5246,3 +5246,47 @@
     <field name='MiscFeeType' required='N' />
     <field name='MiscFeeBasis' required='N' />
    </group>
+  </component>
+  <component name='RoutingGrp'>
+   <group name='NoRoutingIDs' required='N'>
+    <field name='RoutingType' required='N' />
+    <field name='RoutingID' required='N' />
+   </group>
+  </component>
+  <component name='PartyListGrp'>
+   <group name='NoPartyList' required='N'>
+    <component name='PartyDetail' required='N' />
+    <component name='RelatedPartyGrp' required='N' />
+   </group>
+  </component>
+  <component name='RgstDistInstGrp'>
+   <group name='NoDistribInsts' required='N'>
+    <field name='DistribPaymentMethod' required='N' />
+    <field name='DistribPercentage' required='N' />
+    <field name='CashDistribCurr' required='N' />
+    <field name='CashDistribAgentName' required='N' />
+    <field name='CashDistribAgentCode' required='N' />
+    <field name='CashDistribAgentAcctNumber' required='N' />
+    <field name='CashDistribPayRef' required='N' />
+    <field name='CashDistribAgentAcctName' required='N' />
+   </group>
+  </component>
+  <component name='OrderQtyData'>
+   <field name='OrderQty' required='N' />
+   <field name='CashOrderQty' required='N' />
+   <field name='OrderPercent' required='N' />
+   <field name='RoundingDirection' required='N' />
+   <field name='RoundingModulus' required='N' />
+  </component>
+  <component name='ListOrdGrp'>
+   <group name='NoOrders' required='Y'>
+    <field name='ClOrdID' required='Y' />
+    <field name='SecondaryClOrdID' required='N' />
+    <field name='ListSeqNo' required='Y' />
+    <field name='ClOrdLinkID' required='N' />
+    <field name='SettlInstMode' required='N' />
+    <component name='Parties' required='N' />
+    <field name='TradeOriginationDate' required='N' />
+    <field name='TradeDate' required='N' />
+    <field name='Account' required='N' />
+    <field name='AcctIDSource' required='N' />
