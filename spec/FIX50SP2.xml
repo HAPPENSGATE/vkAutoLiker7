@@ -5368,3 +5368,39 @@
    </group>
   </component>
   <component name='PtysSubGrp'>
+   <group name='NoPartySubIDs' required='N'>
+    <field name='PartySubID' required='N' />
+    <field name='PartySubIDType' required='N' />
+   </group>
+  </component>
+  <component name='TrdInstrmtLegGrp'>
+   <group name='NoLegs' required='N'>
+    <component name='InstrumentLeg' required='N' />
+    <field name='LegQty' required='N' />
+    <field name='LegSwapType' required='N' />
+    <component name='LegStipulations' required='N' />
+    <field name='LegPositionEffect' required='N' />
+    <field name='LegCoveredOrUncovered' required='N' />
+    <component name='NestedParties' required='N' />
+    <field name='LegRefID' required='N' />
+    <field name='LegSettlType' required='N' />
+    <field name='LegSettlDate' required='N' />
+    <field name='LegLastPx' required='N' />
+    <field name='LegReportID' required='N' />
+    <field name='LegSettlCurrency' required='N' />
+    <field name='LegLastForwardPoints' required='N' />
+    <field name='LegCalculatedCcyLastQty' required='N' />
+    <field name='LegGrossTradeAmt' required='N' />
+    <field name='LegNumber' required='N' />
+    <component name='TradeCapLegUnderlyingsGrp' required='N' />
+    <field name='LegVolatility' required='N' />
+    <field name='LegDividendYield' required='N' />
+    <field name='LegCurrencyRatio' required='N' />
+    <field name='LegExecInst' required='N' />
+    <field name='LegLastQty' required='N' />
+   </group>
+  </component>
+  <component name='TrdAllocGrp'>
+   <group name='NoAllocs' required='N'>
+    <field name='AllocAccount' required='N' />
+    <field name='AllocAcctIDSource' required='N' />
