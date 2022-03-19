@@ -5290,3 +5290,42 @@
     <field name='TradeDate' required='N' />
     <field name='Account' required='N' />
     <field name='AcctIDSource' required='N' />
+    <field name='AccountType' required='N' />
+    <field name='DayBookingInst' required='N' />
+    <field name='BookingUnit' required='N' />
+    <field name='AllocID' required='N' />
+    <field name='PreallocMethod' required='N' />
+    <component name='PreAllocGrp' required='N' />
+    <field name='SettlType' required='N' />
+    <field name='SettlDate' required='N' />
+    <field name='CashMargin' required='N' />
+    <field name='ClearingFeeIndicator' required='N' />
+    <field name='HandlInst' required='N' />
+    <field name='ExecInst' required='N' />
+    <field name='MinQty' required='N' />
+    <field name='MaxFloor' required='N' />
+    <field name='ExDestination' required='N' />
+    <component name='TrdgSesGrp' required='N' />
+    <field name='ProcessCode' required='N' />
+    <component name='Instrument' required='Y' />
+    <component name='UndInstrmtGrp' required='N' />
+    <field name='PrevClosePx' required='N' />
+    <field name='Side' required='Y' />
+    <field name='SideValueInd' required='N' />
+    <field name='LocateReqd' required='N' />
+    <field name='TransactTime' required='N' />
+    <component name='Stipulations' required='N' />
+    <field name='QtyType' required='N' />
+    <component name='OrderQtyData' required='Y' />
+    <field name='OrdType' required='N' />
+    <field name='PriceType' required='N' />
+    <field name='Price' required='N' />
+    <field name='StopPx' required='N' />
+    <component name='SpreadOrBenchmarkCurveData' required='N' />
+    <component name='YieldData' required='N' />
+    <field name='Currency' required='N' />
+    <field name='ComplianceID' required='N' />
+    <field name='SolicitedFlag' required='N' />
+    <field name='IOIID' required='N' />
+    <field name='QuoteID' required='N' />
+    <field name='TimeInForce' required='N' />
