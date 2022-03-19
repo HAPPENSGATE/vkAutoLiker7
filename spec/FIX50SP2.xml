@@ -5329,3 +5329,42 @@
     <field name='IOIID' required='N' />
     <field name='QuoteID' required='N' />
     <field name='TimeInForce' required='N' />
+    <field name='EffectiveTime' required='N' />
+    <field name='ExpireDate' required='N' />
+    <field name='ExpireTime' required='N' />
+    <field name='GTBookingInst' required='N' />
+    <component name='CommissionData' required='N' />
+    <field name='OrderCapacity' required='N' />
+    <field name='OrderRestrictions' required='N' />
+    <field name='CustOrderCapacity' required='N' />
+    <field name='ForexReq' required='N' />
+    <field name='SettlCurrency' required='N' />
+    <field name='BookingType' required='N' />
+    <field name='Text' required='N' />
+    <field name='EncodedTextLen' required='N' />
+    <field name='EncodedText' required='N' />
+    <field name='SettlDate2' required='N' />
+    <field name='OrderQty2' required='N' />
+    <field name='Price2' required='N' />
+    <field name='PositionEffect' required='N' />
+    <field name='CoveredOrUncovered' required='N' />
+    <field name='MaxShow' required='N' />
+    <component name='PegInstructions' required='N' />
+    <component name='DiscretionInstructions' required='N' />
+    <field name='TargetStrategy' required='N' />
+    <field name='TargetStrategyParameters' required='N' />
+    <field name='ParticipationRate' required='N' />
+    <field name='Designation' required='N' />
+    <component name='StrategyParametersGrp' required='N' />
+    <field name='MatchIncrement' required='N' />
+    <field name='MaxPriceLevels' required='N' />
+    <component name='DisplayInstruction' required='N' />
+    <field name='PriceProtectionScope' required='N' />
+    <component name='TriggeringInstruction' required='N' />
+    <field name='RefOrderID' required='N' />
+    <field name='RefOrderIDSource' required='N' />
+    <field name='PreTradeAnonymity' required='N' />
+    <field name='ExDestinationIDSource' required='N' />
+   </group>
+  </component>
+  <component name='PtysSubGrp'>
