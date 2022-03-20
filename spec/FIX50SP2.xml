@@ -5449,3 +5449,52 @@
     <field name='SecondaryClOrdID' required='N' />
     <field name='ListID' required='N' />
     <component name='NestedParties2' required='N' />
+    <field name='OrderQty' required='N' />
+    <field name='OrderAvgPx' required='N' />
+    <field name='OrderBookingQty' required='N' />
+   </group>
+  </component>
+  <component name='RiskWarningLevels'>
+   <group name='NoRiskWarningLevels' required='N'>
+    <field name='RiskWarningLevelPercent' required='N' />
+    <field name='RiskWarningLevelName' required='N' />
+   </group>
+  </component>
+  <component name='NewsRefGrp'>
+   <group name='NoNewsRefIDs' required='N'>
+    <field name='NewsRefID' required='N' />
+    <field name='NewsRefType' required='N' />
+   </group>
+  </component>
+  <component name='SettlDetails'>
+   <group name='NoSettlDetails' required='N'>
+    <field name='SettlObligSource' required='N' />
+    <component name='SettlParties' required='N' />
+   </group>
+  </component>
+  <component name='OrdListStatGrp'>
+   <group name='NoOrders' required='Y'>
+    <field name='ClOrdID' required='N' />
+    <field name='SecondaryClOrdID' required='N' />
+    <field name='CumQty' required='Y' />
+    <field name='OrdStatus' required='Y' />
+    <field name='WorkingIndicator' required='N' />
+    <field name='LeavesQty' required='Y' />
+    <field name='CxlQty' required='Y' />
+    <field name='AvgPx' required='Y' />
+    <field name='OrdRejReason' required='N' />
+    <field name='Text' required='N' />
+    <field name='EncodedTextLen' required='N' />
+    <field name='EncodedText' required='N' />
+    <field name='OrderID' required='N' />
+   </group>
+  </component>
+  <component name='BidCompRspGrp'>
+   <group name='NoBidComponents' required='Y'>
+    <component name='CommissionData' required='Y' />
+    <field name='ListID' required='N' />
+    <field name='Country' required='N' />
+    <field name='Side' required='N' />
+    <field name='Price' required='N' />
+    <field name='PriceType' required='N' />
+    <field name='FairValue' required='N' />
