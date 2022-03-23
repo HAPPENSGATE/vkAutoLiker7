@@ -5533,3 +5533,48 @@
   </component>
   <component name='RelatedContextParties'>
    <group name='NoRelatedContextPartyIDs' required='N'>
+    <field name='RelatedContextPartyID' required='N' />
+    <field name='RelatedContextPartyIDSource' required='N' />
+    <field name='RelatedContextPartyRole' required='N' />
+    <component name='RelatedContextPtysSubGrp' required='N' />
+   </group>
+  </component>
+  <component name='ExpirationQty'>
+   <group name='NoExpiration' required='N'>
+    <field name='ExpirationQtyType' required='N' />
+    <field name='ExpQty' required='N' />
+   </group>
+  </component>
+  <component name='QuotEntryAckGrp'>
+   <group name='NoQuoteEntries' required='N'>
+    <field name='QuoteEntryID' required='N' />
+    <component name='Instrument' required='N' />
+    <component name='InstrmtLegGrp' required='N' />
+    <field name='BidPx' required='N' />
+    <field name='OfferPx' required='N' />
+    <field name='BidSize' required='N' />
+    <field name='OfferSize' required='N' />
+    <field name='ValidUntilTime' required='N' />
+    <field name='BidSpotRate' required='N' />
+    <field name='OfferSpotRate' required='N' />
+    <field name='BidForwardPoints' required='N' />
+    <field name='OfferForwardPoints' required='N' />
+    <field name='MidPx' required='N' />
+    <field name='BidYield' required='N' />
+    <field name='MidYield' required='N' />
+    <field name='OfferYield' required='N' />
+    <field name='TransactTime' required='N' />
+    <field name='TradingSessionID' required='N' />
+    <field name='TradingSessionSubID' required='N' />
+    <field name='SettlDate' required='N' />
+    <field name='OrdType' required='N' />
+    <field name='SettlDate2' required='N' />
+    <field name='OrderQty2' required='N' />
+    <field name='BidForwardPoints2' required='N' />
+    <field name='OfferForwardPoints2' required='N' />
+    <field name='Currency' required='N' />
+    <field name='QuoteEntryRejectReason' required='N' />
+    <field name='QuoteEntryStatus' required='N' />
+    <field name='BookingType' required='N' />
+    <field name='OrderCapacity' required='N' />
+    <field name='OrderRestrictions' required='N' />
