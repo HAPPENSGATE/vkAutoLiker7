@@ -5671,3 +5671,43 @@
    <value enum='b' description='STRICT_LIMIT' />
    <value enum='c' description='IGNORE_PRICE_VALIDITY_CHECKS' />
    <value enum='C' description='CALL_FIRST' />
+   <value enum='d' description='PEG_TO_LIMIT_PRICE' />
+   <value enum='D' description='PERCENT_OF_VOLUME' />
+   <value enum='E' description='DO_NOT_INCREASE' />
+   <value enum='e' description='WORK_TO_TARGET_STRATEGY' />
+   <value enum='F' description='DO_NOT_REDUCE' />
+   <value enum='G' description='ALL_OR_NONE' />
+   <value enum='H' description='REINSTATE_ON_SYSTEM_FAILURE' />
+   <value enum='I' description='INSTITUTIONS_ONLY' />
+   <value enum='J' description='REINSTATE_ON_TRADING_HALT' />
+   <value enum='K' description='CANCEL_ON_TRADING_HALT' />
+   <value enum='L' description='LAST_PEG' />
+   <value enum='M' description='MID_PRICE_PEG' />
+   <value enum='N' description='NON_NEGOTIABLE' />
+   <value enum='O' description='OPENING_PEG' />
+   <value enum='P' description='MARKET_PEG' />
+   <value enum='Q' description='CANCEL_ON_SYSTEM_FAILURE' />
+   <value enum='R' description='PRIMARY_PEG' />
+   <value enum='S' description='SUSPEND' />
+   <value enum='U' description='CUSTOMER_DISPLAY_INSTRUCTION' />
+   <value enum='V' description='NETTING' />
+   <value enum='W' description='PEG_TO_VWAP' />
+   <value enum='X' description='TRADE_ALONG' />
+   <value enum='Y' description='TRY_TO_STOP' />
+   <value enum='Z' description='CANCEL_IF_NOT_BEST' />
+   <value enum='f' description='INTERMARKET_SWEEP' />
+   <value enum='j' description='SINGLE_EXECUTION_REQUESTED_FOR_BLOCK_TRADE' />
+   <value enum='g' description='EXTERNAL_ROUTING_ALLOWED' />
+   <value enum='h' description='EXTERNAL_ROUTING_NOT_ALLOWED' />
+   <value enum='i' description='IMBALANCE_ONLY' />
+   <value enum='T' description='FIXED_PEG_TO_LOCAL_BEST_BID_OR_OFFER_AT_TIME_OF_ORDER' />
+   <value enum='k' description='BEST_EXECUTION' />
+   <value enum='l' description='SUSPEND_ON_SYSTEM_FAILURE' />
+   <value enum='m' description='SUSPEND_ON_TRADING_HALT' />
+   <value enum='n' description='REINSTATE_ON_CONNECTION_LOSS' />
+   <value enum='o' description='CANCEL_ON_CONNECTION_LOSS' />
+   <value enum='p' description='SUSPEND_ON_CONNECTION_LOSS' />
+   <value enum='q' description='RELEASE_FROM_SUSPENSION' />
+   <value enum='r' description='EXECUTE_AS_DELTA_NEUTRAL_USING_VOLATILITY_PROVIDED' />
+   <value enum='s' description='EXECUTE_AS_DURATION_NEUTRAL' />
+   <value enum='t' description='EXECUTE_AS_FX_NEUTRAL' />
