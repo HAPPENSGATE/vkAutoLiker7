@@ -5629,3 +5629,45 @@
    <value enum='S' description='SELL' />
    <value enum='T' description='TRADE' />
    <value enum='X' description='CROSS' />
+  </field>
+  <field number='5' name='AdvTransType' type='STRING'>
+   <value enum='C' description='CANCEL' />
+   <value enum='N' description='NEW' />
+   <value enum='R' description='REPLACE' />
+  </field>
+  <field number='6' name='AvgPx' type='PRICE' />
+  <field number='7' name='BeginSeqNo' type='SEQNUM' />
+  <field number='8' name='BeginString' type='STRING' />
+  <field number='9' name='BodyLength' type='LENGTH' />
+  <field number='10' name='CheckSum' type='STRING' />
+  <field number='11' name='ClOrdID' type='STRING' />
+  <field number='12' name='Commission' type='AMT' />
+  <field number='13' name='CommType' type='CHAR'>
+   <value enum='1' description='PER_UNIT' />
+   <value enum='2' description='PERCENT' />
+   <value enum='3' description='ABSOLUTE' />
+   <value enum='4' description='PERCENTAGE_WAIVED_4' />
+   <value enum='5' description='PERCENTAGE_WAIVED_5' />
+   <value enum='6' description='POINTS_PER_BOND_OR_CONTRACT' />
+  </field>
+  <field number='14' name='CumQty' type='QTY' />
+  <field number='15' name='Currency' type='CURRENCY' />
+  <field number='16' name='EndSeqNo' type='SEQNUM' />
+  <field number='17' name='ExecID' type='STRING' />
+  <field number='18' name='ExecInst' type='MULTIPLECHARVALUE'>
+   <value enum='0' description='STAY_ON_OFFER_SIDE' />
+   <value enum='1' description='NOT_HELD' />
+   <value enum='2' description='WORK' />
+   <value enum='3' description='GO_ALONG' />
+   <value enum='4' description='OVER_THE_DAY' />
+   <value enum='5' description='HELD' />
+   <value enum='6' description='PARTICIPANT_DONT_INITIATE' />
+   <value enum='7' description='STRICT_SCALE' />
+   <value enum='8' description='TRY_TO_SCALE' />
+   <value enum='9' description='STAY_ON_BID_SIDE' />
+   <value enum='A' description='NO_CROSS' />
+   <value enum='a' description='TRAILING_STOP_PEG' />
+   <value enum='B' description='OK_TO_CROSS' />
+   <value enum='b' description='STRICT_LIMIT' />
+   <value enum='c' description='IGNORE_PRICE_VALIDITY_CHECKS' />
+   <value enum='C' description='CALL_FIRST' />
