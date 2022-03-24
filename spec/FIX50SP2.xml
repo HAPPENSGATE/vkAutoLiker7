@@ -5578,3 +5578,54 @@
     <field name='BookingType' required='N' />
     <field name='OrderCapacity' required='N' />
     <field name='OrderRestrictions' required='N' />
+   </group>
+  </component>
+  <component name='DerivativeInstrumentPartySubIDsGrp'>
+   <group name='NoDerivativeInstrumentPartySubIDs' required='N'>
+    <field name='DerivativeInstrumentPartySubID' required='N' />
+    <field name='DerivativeInstrumentPartySubIDType' required='N' />
+   </group>
+  </component>
+  <component name='SecurityTradingRules'>
+   <component name='BaseTradingRules' required='N' />
+   <component name='TradingSessionRulesGrp' required='N' />
+   <component name='NestedInstrumentAttribute' required='N' />
+  </component>
+  <component name='LegSecAltIDGrp'>
+   <group name='NoLegSecurityAltID' required='N'>
+    <field name='LegSecurityAltID' required='N' />
+    <field name='LegSecurityAltIDSource' required='N' />
+   </group>
+  </component>
+  <component name='StatsIndGrp'>
+   <group name='NoStatsIndicators' required='N'>
+    <field name='StatsType' required='N' />
+   </group>
+  </component>
+  <component name='InstrmtLegSecListGrp'>
+   <group name='NoLegs' required='N'>
+    <component name='InstrumentLeg' required='N' />
+    <field name='LegSwapType' required='N' />
+    <field name='LegSettlType' required='N' />
+    <component name='LegStipulations' required='N' />
+    <component name='LegBenchmarkCurveData' required='N' />
+   </group>
+  </component>
+  <component name='UndlyInstrumentParties'>
+   <group name='NoUndlyInstrumentParties' required='N'>
+    <field name='UnderlyingInstrumentPartyID' required='N' />
+    <field name='UnderlyingInstrumentPartyIDSource' required='N' />
+    <field name='UnderlyingInstrumentPartyRole' required='N' />
+    <component name='UndlyInstrumentPtysSubGrp' required='N' />
+   </group>
+  </component>
+ </components>
+ <fields>
+  <field number='1' name='Account' type='STRING' />
+  <field number='2' name='AdvId' type='STRING' />
+  <field number='3' name='AdvRefID' type='STRING' />
+  <field number='4' name='AdvSide' type='CHAR'>
+   <value enum='B' description='BUY' />
+   <value enum='S' description='SELL' />
+   <value enum='T' description='TRADE' />
+   <value enum='X' description='CROSS' />
