@@ -5818,3 +5818,41 @@
    <value enum='AY' description='COLLATERALASSIGNMENT' />
    <value enum='AZ' description='COLLATERALRESPONSE' />
    <value enum='B' description='NEWS' />
+   <value enum='BA' description='COLLATERALREPORT' />
+   <value enum='BB' description='COLLATERALINQUIRY' />
+   <value enum='BC' description='NETWORKCOUNTERPARTYSYSTEMSTATUSREQUEST' />
+   <value enum='BD' description='NETWORKCOUNTERPARTYSYSTEMSTATUSRESPONSE' />
+   <value enum='BE' description='USERREQUEST' />
+   <value enum='BF' description='USERRESPONSE' />
+   <value enum='BG' description='COLLATERALINQUIRYACK' />
+   <value enum='BH' description='CONFIRMATIONREQUEST' />
+   <value enum='BI' description='TRADINGSESSIONLISTREQUEST' />
+   <value enum='BJ' description='TRADINGSESSIONLIST' />
+   <value enum='BK' description='SECURITYLISTUPDATEREPORT' />
+   <value enum='BL' description='ADJUSTEDPOSITIONREPORT' />
+   <value enum='BM' description='ALLOCATIONINSTRUCTIONALERT' />
+   <value enum='BN' description='EXECUTIONACKNOWLEDGEMENT' />
+   <value enum='BO' description='CONTRARYINTENTIONREPORT' />
+   <value enum='BP' description='SECURITYDEFINITIONUPDATEREPORT' />
+   <value enum='BQ' description='SETTLEMENTOBLIGATIONREPORT' />
+   <value enum='BR' description='DERIVATIVESECURITYLISTUPDATEREPORT' />
+   <value enum='BS' description='TRADINGSESSIONLISTUPDATEREPORT' />
+   <value enum='BT' description='MARKETDEFINITIONREQUEST' />
+   <value enum='BU' description='MARKETDEFINITION' />
+   <value enum='BV' description='MARKETDEFINITIONUPDATEREPORT' />
+   <value enum='BW' description='APPLICATIONMESSAGEREQUEST' />
+   <value enum='BX' description='APPLICATIONMESSAGEREQUESTACK' />
+   <value enum='BY' description='APPLICATIONMESSAGEREPORT' />
+   <value enum='BZ' description='ORDERMASSACTIONREPORT' />
+   <value enum='C' description='EMAIL' />
+   <value enum='CA' description='ORDERMASSACTIONREQUEST' />
+   <value enum='CB' description='USERNOTIFICATION' />
+   <value enum='CC' description='STREAMASSIGNMENTREQUEST' />
+   <value enum='CD' description='STREAMASSIGNMENTREPORT' />
+   <value enum='CE' description='STREAMASSIGNMENTREPORTACK' />
+   <value enum='CF' description='PARTYDETAILSLISTREQUEST' />
+   <value enum='CG' description='PARTYDETAILSLISTREPORT' />
+   <value enum='D' description='NEWORDERSINGLE' />
+   <value enum='E' description='NEWORDERLIST' />
+   <value enum='F' description='ORDERCANCELREQUEST' />
+   <value enum='G' description='ORDERCANCELREPLACEREQUEST' />
