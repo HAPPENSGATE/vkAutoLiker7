@@ -5770,3 +5770,51 @@
   </field>
   <field number='29' name='LastCapacity' type='CHAR'>
    <value enum='1' description='AGENT' />
+   <value enum='2' description='CROSS_AS_AGENT' />
+   <value enum='3' description='CROSS_AS_PRINCIPAL' />
+   <value enum='4' description='PRINCIPAL' />
+  </field>
+  <field number='30' name='LastMkt' type='EXCHANGE' />
+  <field number='31' name='LastPx' type='PRICE' />
+  <field number='32' name='LastQty' type='QTY' />
+  <field number='33' name='NoLinesOfText' type='NUMINGROUP' />
+  <field number='34' name='MsgSeqNum' type='SEQNUM' />
+  <field number='35' name='MsgType' type='STRING'>
+   <value enum='0' description='HEARTBEAT' />
+   <value enum='1' description='TESTREQUEST' />
+   <value enum='2' description='RESENDREQUEST' />
+   <value enum='3' description='REJECT' />
+   <value enum='4' description='SEQUENCERESET' />
+   <value enum='5' description='LOGOUT' />
+   <value enum='6' description='IOI' />
+   <value enum='7' description='ADVERTISEMENT' />
+   <value enum='8' description='EXECUTIONREPORT' />
+   <value enum='9' description='ORDERCANCELREJECT' />
+   <value enum='A' description='LOGON' />
+   <value enum='AA' description='DERIVATIVESECURITYLIST' />
+   <value enum='AB' description='NEWORDERMULTILEG' />
+   <value enum='AC' description='MULTILEGORDERCANCELREPLACE' />
+   <value enum='AD' description='TRADECAPTUREREPORTREQUEST' />
+   <value enum='AE' description='TRADECAPTUREREPORT' />
+   <value enum='AF' description='ORDERMASSSTATUSREQUEST' />
+   <value enum='AG' description='QUOTEREQUESTREJECT' />
+   <value enum='AH' description='RFQREQUEST' />
+   <value enum='AI' description='QUOTESTATUSREPORT' />
+   <value enum='AJ' description='QUOTERESPONSE' />
+   <value enum='AK' description='CONFIRMATION' />
+   <value enum='AL' description='POSITIONMAINTENANCEREQUEST' />
+   <value enum='AM' description='POSITIONMAINTENANCEREPORT' />
+   <value enum='AN' description='REQUESTFORPOSITIONS' />
+   <value enum='AO' description='REQUESTFORPOSITIONSACK' />
+   <value enum='AP' description='POSITIONREPORT' />
+   <value enum='AQ' description='TRADECAPTUREREPORTREQUESTACK' />
+   <value enum='AR' description='TRADECAPTUREREPORTACK' />
+   <value enum='AS' description='ALLOCATIONREPORT' />
+   <value enum='AT' description='ALLOCATIONREPORTACK' />
+   <value enum='AU' description='CONFIRMATION_ACK' />
+   <value enum='AV' description='SETTLEMENTINSTRUCTIONREQUEST' />
+   <value enum='AW' description='ASSIGNMENTREPORT' />
+   <value enum='AX' description='COLLATERALREQUEST' />
+   <value enum='AY' description='COLLATERALASSIGNMENT' />
+   <value enum='AZ' description='COLLATERALRESPONSE' />
+   <value enum='B' description='NEWS' />
