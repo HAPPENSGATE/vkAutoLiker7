@@ -5856,3 +5856,37 @@
    <value enum='E' description='NEWORDERLIST' />
    <value enum='F' description='ORDERCANCELREQUEST' />
    <value enum='G' description='ORDERCANCELREPLACEREQUEST' />
+   <value enum='H' description='ORDERSTATUSREQUEST' />
+   <value enum='J' description='ALLOCATIONINSTRUCTION' />
+   <value enum='K' description='LISTCANCELREQUEST' />
+   <value enum='L' description='LISTEXECUTE' />
+   <value enum='M' description='LISTSTATUSREQUEST' />
+   <value enum='N' description='LISTSTATUS' />
+   <value enum='P' description='ALLOCATIONINSTRUCTIONACK' />
+   <value enum='Q' description='DONTKNOWTRADEDK' />
+   <value enum='R' description='QUOTEREQUEST' />
+   <value enum='S' description='QUOTE' />
+   <value enum='T' description='SETTLEMENTINSTRUCTIONS' />
+   <value enum='V' description='MARKETDATAREQUEST' />
+   <value enum='W' description='MARKETDATASNAPSHOTFULLREFRESH' />
+   <value enum='X' description='MARKETDATAINCREMENTALREFRESH' />
+   <value enum='Y' description='MARKETDATAREQUESTREJECT' />
+   <value enum='Z' description='QUOTECANCEL' />
+   <value enum='a' description='QUOTESTATUSREQUEST' />
+   <value enum='b' description='MASSQUOTEACKNOWLEDGEMENT' />
+   <value enum='c' description='SECURITYDEFINITIONREQUEST' />
+   <value enum='d' description='SECURITYDEFINITION' />
+   <value enum='e' description='SECURITYSTATUSREQUEST' />
+   <value enum='f' description='SECURITYSTATUS' />
+   <value enum='g' description='TRADINGSESSIONSTATUSREQUEST' />
+   <value enum='h' description='TRADINGSESSIONSTATUS' />
+   <value enum='i' description='MASSQUOTE' />
+   <value enum='j' description='BUSINESSMESSAGEREJECT' />
+   <value enum='k' description='BIDREQUEST' />
+   <value enum='l' description='BIDRESPONSE' />
+   <value enum='m' description='LISTSTRIKEPRICE' />
+   <value enum='n' description='XML_NON_FIX' />
+   <value enum='o' description='REGISTRATIONINSTRUCTIONS' />
+   <value enum='p' description='REGISTRATIONINSTRUCTIONSRESPONSE' />
+   <value enum='q' description='ORDERMASSCANCELREQUEST' />
+   <value enum='r' description='ORDERMASSCANCELREPORT' />
