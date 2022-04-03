@@ -5967,3 +5967,42 @@
    <value enum='K' description='AGENCY_ALGORITHMIC_PROGRAM_TRADING' />
    <value enum='L' description='SHORT_EXEMPT_TRANSACTION_FOR_MEMBER_COMPETING_MARKET_MAKER_AFFLIATED_WITH_THE_FIRM_CLEARING_THE_TRADE' />
    <value enum='M' description='PROGRAM_ORDER_INDEX_ARB_FOR_OTHER_MEMBER' />
+   <value enum='N' description='AGENT_FOR_OTHER_MEMBER_NON_ALGORITHMIC_PROGRAM_TRADE' />
+   <value enum='O' description='PROPRIETARY_TRANSACTIONS_FOR_COMPETING_MARKET_MAKER_THAT_IS_AFFILIATED_WITH_THE_CLEARING_MEMBER' />
+   <value enum='P' description='PRINCIPAL' />
+   <value enum='R' description='TRANSACTIONS_FOR_THE_ACCOUNT_OF_A_NON_MEMBER_COMPTING_MARKET_MAKER' />
+   <value enum='S' description='SPECIALIST_TRADES' />
+   <value enum='T' description='TRANSACTIONS_FOR_THE_ACCOUNT_OF_AN_UNAFFILIATED_MEMBERS_COMPETING_MARKET_MAKER' />
+   <value enum='U' description='AGENCY_INDEX_ARBITRAGE' />
+   <value enum='W' description='ALL_OTHER_ORDERS_AS_AGENT_FOR_OTHER_MEMBER' />
+   <value enum='X' description='SHORT_EXEMPT_TRANSACTION_FOR_MEMBER_COMPETING_MARKET_MAKER_NOT_AFFILIATED_WITH_THE_FIRM_CLEARING_THE_TRADE' />
+   <value enum='Y' description='AGENCY_NON_ALGORITHMIC_PROGRAM_TRADE' />
+   <value enum='Z' description='SHORT_EXEMPT_TRANSACTION_FOR_NON_MEMBER_COMPETING_MARKET_MAKER' />
+  </field>
+  <field number='48' name='SecurityID' type='STRING' />
+  <field number='49' name='SenderCompID' type='STRING' />
+  <field number='50' name='SenderSubID' type='STRING' />
+  <field number='51' name='SendingDate' type='LOCALMKTDATE' />
+  <field number='52' name='SendingTime' type='UTCTIMESTAMP' />
+  <field number='53' name='Quantity' type='QTY' />
+  <field number='54' name='Side' type='CHAR'>
+   <value enum='1' description='BUY' />
+   <value enum='2' description='SELL' />
+   <value enum='3' description='BUY_MINUS' />
+   <value enum='4' description='SELL_PLUS' />
+   <value enum='5' description='SELL_SHORT' />
+   <value enum='6' description='SELL_SHORT_EXEMPT' />
+   <value enum='7' description='UNDISCLOSED' />
+   <value enum='8' description='CROSS' />
+   <value enum='9' description='CROSS_SHORT' />
+   <value enum='A' description='CROSS_SHORT_EXEMPT' />
+   <value enum='B' description='AS_DEFINED' />
+   <value enum='C' description='OPPOSITE' />
+   <value enum='D' description='SUBSCRIBE' />
+   <value enum='E' description='REDEEM' />
+   <value enum='F' description='LEND' />
+   <value enum='G' description='BORROW' />
+  </field>
+  <field number='55' name='Symbol' type='STRING' />
+  <field number='56' name='TargetCompID' type='STRING' />
+  <field number='57' name='TargetSubID' type='STRING' />
