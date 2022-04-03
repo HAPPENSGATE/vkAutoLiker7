@@ -5927,3 +5927,43 @@
    <value enum='5' description='MARKET_ON_CLOSE' />
    <value enum='6' description='WITH_OR_WITHOUT' />
    <value enum='7' description='LIMIT_OR_BETTER' />
+   <value enum='8' description='LIMIT_WITH_OR_WITHOUT' />
+   <value enum='9' description='ON_BASIS' />
+   <value enum='A' description='ON_CLOSE' />
+   <value enum='B' description='LIMIT_ON_CLOSE' />
+   <value enum='C' description='FOREX_MARKET' />
+   <value enum='D' description='PREVIOUSLY_QUOTED' />
+   <value enum='E' description='PREVIOUSLY_INDICATED' />
+   <value enum='F' description='FOREX_LIMIT' />
+   <value enum='G' description='FOREX_SWAP' />
+   <value enum='H' description='FOREX_PREVIOUSLY_QUOTED' />
+   <value enum='I' description='FUNARI' />
+   <value enum='J' description='MARKET_IF_TOUCHED' />
+   <value enum='K' description='MARKET_WITH_LEFT_OVER_AS_LIMIT' />
+   <value enum='L' description='PREVIOUS_FUND_VALUATION_POINT' />
+   <value enum='M' description='NEXT_FUND_VALUATION_POINT' />
+   <value enum='P' description='PEGGED' />
+   <value enum='Q' description='COUNTER_ORDER_SELECTION' />
+  </field>
+  <field number='41' name='OrigClOrdID' type='STRING' />
+  <field number='42' name='OrigTime' type='UTCTIMESTAMP' />
+  <field number='43' name='PossDupFlag' type='BOOLEAN'>
+   <value enum='N' description='NO' />
+   <value enum='Y' description='YES' />
+  </field>
+  <field number='44' name='Price' type='PRICE' />
+  <field number='45' name='RefSeqNum' type='SEQNUM' />
+  <field number='46' name='RelatdSym' type='STRING' />
+  <field number='47' name='Rule80A' type='CHAR'>
+   <value enum='A' description='AGENCY_SINGLE_ORDER' />
+   <value enum='B' description='SHORT_EXEMPT_TRANSACTION_B' />
+   <value enum='C' description='PROPRIETARY_NON_ALGORITHMIC_PROGRAM_TRADE' />
+   <value enum='D' description='PROGRAM_ORDER_INDEX_ARB_FOR_MEMBER_FIRM_ORG' />
+   <value enum='E' description='SHORT_EXEMPT_TRANSACTION_FOR_PRINCIPAL' />
+   <value enum='F' description='SHORT_EXEMPT_TRANSACTION_F' />
+   <value enum='H' description='SHORT_EXEMPT_TRANSACTION_H' />
+   <value enum='I' description='INDIVIDUAL_INVESTOR_SINGLE_ORDER' />
+   <value enum='J' description='PROPRIETARY_ALGORITHMIC_PROGRAM_TRADING' />
+   <value enum='K' description='AGENCY_ALGORITHMIC_PROGRAM_TRADING' />
+   <value enum='L' description='SHORT_EXEMPT_TRANSACTION_FOR_MEMBER_COMPETING_MARKET_MAKER_AFFLIATED_WITH_THE_FIRM_CLEARING_THE_TRADE' />
+   <value enum='M' description='PROGRAM_ORDER_INDEX_ARB_FOR_OTHER_MEMBER' />
