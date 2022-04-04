@@ -6088,3 +6088,44 @@
   <field number='83' name='RptSeq' type='INT' />
   <field number='84' name='CxlQty' type='QTY' />
   <field number='85' name='NoDlvyInst' type='NUMINGROUP' />
+  <field number='86' name='DlvyInst' type='STRING' />
+  <field number='87' name='AllocStatus' type='INT'>
+   <value enum='0' description='ACCEPTED' />
+   <value enum='1' description='BLOCK_LEVEL_REJECT' />
+   <value enum='2' description='ACCOUNT_LEVEL_REJECT' />
+   <value enum='3' description='RECEIVED' />
+   <value enum='4' description='INCOMPLETE' />
+   <value enum='5' description='REJECTED_BY_INTERMEDIARY' />
+   <value enum='6' description='ALLOCATION_PENDING' />
+   <value enum='7' description='REVERSED' />
+  </field>
+  <field number='88' name='AllocRejCode' type='INT'>
+   <value enum='0' description='UNKNOWN_ACCOUNT' />
+   <value enum='1' description='INCORRECT_QUANTITY' />
+   <value enum='10' description='UNKNOWN_OR_STALE_EXECID' />
+   <value enum='11' description='MISMATCHED_DATA' />
+   <value enum='12' description='UNKNOWN_CLORDID' />
+   <value enum='13' description='WAREHOUSE_REQUEST_REJECTED' />
+   <value enum='2' description='INCORRECT_AVERAGEG_PRICE' />
+   <value enum='3' description='UNKNOWN_EXECUTING_BROKER_MNEMONIC' />
+   <value enum='4' description='COMMISSION_DIFFERENCE' />
+   <value enum='5' description='UNKNOWN_ORDERID' />
+   <value enum='6' description='UNKNOWN_LISTID' />
+   <value enum='7' description='OTHER_7' />
+   <value enum='8' description='INCORRECT_ALLOCATED_QUANTITY' />
+   <value enum='9' description='CALCULATION_DIFFERENCE' />
+   <value enum='99' description='OTHER_99' />
+  </field>
+  <field number='89' name='Signature' type='DATA' />
+  <field number='90' name='SecureDataLen' type='LENGTH' />
+  <field number='91' name='SecureData' type='DATA' />
+  <field number='92' name='BrokerOfCredit' type='STRING' />
+  <field number='93' name='SignatureLength' type='LENGTH' />
+  <field number='94' name='EmailType' type='CHAR'>
+   <value enum='0' description='NEW' />
+   <value enum='1' description='REPLY' />
+   <value enum='2' description='ADMIN_REPLY' />
+  </field>
+  <field number='95' name='RawDataLength' type='LENGTH' />
+  <field number='96' name='RawData' type='DATA' />
+  <field number='97' name='PossResend' type='BOOLEAN'>
