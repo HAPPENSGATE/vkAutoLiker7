@@ -6162,3 +6162,45 @@
    <value enum='10' description='INVALID_INVESTOR_ID' />
    <value enum='11' description='UNSUPPORTED_ORDER_CHARACTERISTIC' />
    <value enum='12' description='SURVEILLENCE_OPTION' />
+   <value enum='13' description='INCORRECT_QUANTITY' />
+   <value enum='14' description='INCORRECT_ALLOCATED_QUANTITY' />
+   <value enum='15' description='UNKNOWN_ACCOUNT' />
+   <value enum='2' description='EXCHANGE_CLOSED' />
+   <value enum='3' description='ORDER_EXCEEDS_LIMIT' />
+   <value enum='4' description='TOO_LATE_TO_ENTER' />
+   <value enum='5' description='UNKNOWN_ORDER' />
+   <value enum='6' description='DUPLICATE_ORDER' />
+   <value enum='7' description='DUPLICATE_OF_A_VERBALLY_COMMUNICATED_ORDER' />
+   <value enum='8' description='STALE_ORDER' />
+   <value enum='9' description='TRADE_ALONG_REQUIRED' />
+   <value enum='99' description='OTHER' />
+   <value enum='18' description='INVALID_PRICE_INCREMENT' />
+   <value enum='16' description='PRICE_EXCEEDS_CURRENT_PRICE_BAND' />
+  </field>
+  <field number='104' name='IOIQualifier' type='CHAR'>
+   <value enum='A' description='ALL_OR_NONE' />
+   <value enum='B' description='MARKET_ON_CLOSE' />
+   <value enum='C' description='AT_THE_CLOSE' />
+   <value enum='D' description='VWAP' />
+   <value enum='I' description='IN_TOUCH_WITH' />
+   <value enum='L' description='LIMIT' />
+   <value enum='M' description='MORE_BEHIND' />
+   <value enum='O' description='AT_THE_OPEN' />
+   <value enum='P' description='TAKING_A_POSITION' />
+   <value enum='Q' description='AT_THE_MARKET' />
+   <value enum='R' description='READY_TO_TRADE' />
+   <value enum='S' description='PORTFOLIO_SHOWN' />
+   <value enum='T' description='THROUGH_THE_DAY' />
+   <value enum='V' description='VERSUS' />
+   <value enum='W' description='INDICATION' />
+   <value enum='X' description='CROSSING_OPPORTUNITY' />
+   <value enum='Y' description='AT_THE_MIDPOINT' />
+   <value enum='Z' description='PRE_OPEN' />
+  </field>
+  <field number='105' name='WaveNo' type='STRING' />
+  <field number='106' name='Issuer' type='STRING' />
+  <field number='107' name='SecurityDesc' type='STRING' />
+  <field number='108' name='HeartBtInt' type='INT' />
+  <field number='109' name='ClientID' type='STRING' />
+  <field number='110' name='MinQty' type='QTY' />
+  <field number='111' name='MaxFloor' type='QTY' />
