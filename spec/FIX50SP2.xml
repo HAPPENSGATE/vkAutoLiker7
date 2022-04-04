@@ -6044,3 +6044,47 @@
   <field number='65' name='SymbolSfx' type='STRING'>
    <value enum='CD' description='EUCP_WITH_LUMP_SUM_INTEREST_RATHER_THAN_DISCOUNT_PRICE' />
    <value enum='WI' description='WHEN_ISSUED_FOR_A_SECURITY_TO_BE_REISSUED_UNDER_AN_OLD_CUSIP_OR_ISIN' />
+  </field>
+  <field number='66' name='ListID' type='STRING' />
+  <field number='67' name='ListSeqNo' type='INT' />
+  <field number='68' name='TotNoOrders' type='INT' />
+  <field number='69' name='ListExecInst' type='STRING' />
+  <field number='70' name='AllocID' type='STRING' />
+  <field number='71' name='AllocTransType' type='CHAR'>
+   <value enum='0' description='NEW' />
+   <value enum='1' description='REPLACE' />
+   <value enum='2' description='CANCEL' />
+   <value enum='3' description='PRELIMINARY' />
+   <value enum='4' description='CALCULATED' />
+   <value enum='5' description='CALCULATED_WITHOUT_PRELIMINARY' />
+   <value enum='6' description='REVERSAL' />
+  </field>
+  <field number='72' name='RefAllocID' type='STRING' />
+  <field number='73' name='NoOrders' type='NUMINGROUP' />
+  <field number='74' name='AvgPxPrecision' type='INT' />
+  <field number='75' name='TradeDate' type='LOCALMKTDATE' />
+  <field number='76' name='ExecBroker' type='STRING' />
+  <field number='77' name='PositionEffect' type='CHAR'>
+   <value enum='C' description='CLOSE' />
+   <value enum='F' description='FIFO' />
+   <value enum='O' description='OPEN' />
+   <value enum='R' description='ROLLED' />
+   <value enum='N' description='CLOSE_BUT_NOTIFY_ON_OPEN' />
+   <value enum='D' description='DEFAULT' />
+  </field>
+  <field number='78' name='NoAllocs' type='NUMINGROUP' />
+  <field number='79' name='AllocAccount' type='STRING' />
+  <field number='80' name='AllocQty' type='QTY' />
+  <field number='81' name='ProcessCode' type='CHAR'>
+   <value enum='0' description='REGULAR' />
+   <value enum='1' description='SOFT_DOLLAR' />
+   <value enum='2' description='STEP_IN' />
+   <value enum='3' description='STEP_OUT' />
+   <value enum='4' description='SOFT_DOLLAR_STEP_IN' />
+   <value enum='5' description='SOFT_DOLLAR_STEP_OUT' />
+   <value enum='6' description='PLAN_SPONSOR' />
+  </field>
+  <field number='82' name='NoRpts' type='INT' />
+  <field number='83' name='RptSeq' type='INT' />
+  <field number='84' name='CxlQty' type='QTY' />
+  <field number='85' name='NoDlvyInst' type='NUMINGROUP' />
