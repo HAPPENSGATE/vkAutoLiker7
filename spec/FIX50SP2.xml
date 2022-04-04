@@ -6129,3 +6129,36 @@
   <field number='95' name='RawDataLength' type='LENGTH' />
   <field number='96' name='RawData' type='DATA' />
   <field number='97' name='PossResend' type='BOOLEAN'>
+   <value enum='N' description='NO' />
+   <value enum='Y' description='YES' />
+  </field>
+  <field number='98' name='EncryptMethod' type='INT'>
+   <value enum='0' description='NONE' />
+   <value enum='1' description='PKCS_1' />
+   <value enum='2' description='DES' />
+   <value enum='3' description='PKCS_3' />
+   <value enum='4' description='PGP_4' />
+   <value enum='5' description='PGP_5' />
+   <value enum='6' description='PEM' />
+  </field>
+  <field number='99' name='StopPx' type='PRICE' />
+  <field number='100' name='ExDestination' type='EXCHANGE' />
+  <field number='102' name='CxlRejReason' type='INT'>
+   <value enum='0' description='TOO_LATE_TO_CANCEL' />
+   <value enum='1' description='UNKNOWN_ORDER' />
+   <value enum='2' description='BROKER' />
+   <value enum='3' description='ORDER_ALREADY_IN_PENDING_CANCEL_OR_PENDING_REPLACE_STATUS' />
+   <value enum='4' description='UNABLE_TO_PROCESS_ORDER_MASS_CANCEL_REQUEST' />
+   <value enum='5' description='ORIGORDMODTIME' />
+   <value enum='6' description='DUPLICATE_CLORDID' />
+   <value enum='99' description='OTHER' />
+   <value enum='18' description='INVALID_PRICE_INCREMENT' />
+   <value enum='7' description='PRICE_EXCEEDS_CURRENT_PRICE' />
+   <value enum='8' description='PRICE_EXCEEDS_CURRENT_PRICE_BAND' />
+  </field>
+  <field number='103' name='OrdRejReason' type='INT'>
+   <value enum='0' description='BROKER' />
+   <value enum='1' description='UNKNOWN_SYMBOL' />
+   <value enum='10' description='INVALID_INVESTOR_ID' />
+   <value enum='11' description='UNSUPPORTED_ORDER_CHARACTERISTIC' />
+   <value enum='12' description='SURVEILLENCE_OPTION' />
