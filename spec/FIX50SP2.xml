@@ -6237,3 +6237,40 @@
    <value enum='C' description='QUANTITY_EXCEEDS_ORDER' />
    <value enum='D' description='NO_MATCHING_ORDER' />
    <value enum='E' description='PRICE_EXCEEDS_LIMIT' />
+   <value enum='F' description='CALCULATION_DIFFERENCE' />
+   <value enum='Z' description='OTHER' />
+  </field>
+  <field number='128' name='DeliverToCompID' type='STRING' />
+  <field number='129' name='DeliverToSubID' type='STRING' />
+  <field number='130' name='IOINaturalFlag' type='BOOLEAN'>
+   <value enum='N' description='NO' />
+   <value enum='Y' description='YES' />
+  </field>
+  <field number='131' name='QuoteReqID' type='STRING' />
+  <field number='132' name='BidPx' type='PRICE' />
+  <field number='133' name='OfferPx' type='PRICE' />
+  <field number='134' name='BidSize' type='QTY' />
+  <field number='135' name='OfferSize' type='QTY' />
+  <field number='136' name='NoMiscFees' type='NUMINGROUP' />
+  <field number='137' name='MiscFeeAmt' type='AMT' />
+  <field number='138' name='MiscFeeCurr' type='CURRENCY' />
+  <field number='139' name='MiscFeeType' type='STRING'>
+   <value enum='1' description='REGULATORY' />
+   <value enum='10' description='PER_TRANSACTION' />
+   <value enum='11' description='CONVERSION' />
+   <value enum='12' description='AGENT' />
+   <value enum='2' description='TAX' />
+   <value enum='3' description='LOCAL_COMMISSION' />
+   <value enum='4' description='EXCHANGE_FEES' />
+   <value enum='5' description='STAMP' />
+   <value enum='6' description='LEVY' />
+   <value enum='7' description='OTHER' />
+   <value enum='8' description='MARKUP' />
+   <value enum='9' description='CONSUMPTION_TAX' />
+   <value enum='13' description='TRANSFER_FEE' />
+   <value enum='14' description='SECURITY_LENDING' />
+  </field>
+  <field number='140' name='PrevClosePx' type='PRICE' />
+  <field number='141' name='ResetSeqNumFlag' type='BOOLEAN'>
+   <value enum='N' description='NO' />
+   <value enum='Y' description='YES' />
