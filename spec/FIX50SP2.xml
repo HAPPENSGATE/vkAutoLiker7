@@ -6204,3 +6204,36 @@
   <field number='109' name='ClientID' type='STRING' />
   <field number='110' name='MinQty' type='QTY' />
   <field number='111' name='MaxFloor' type='QTY' />
+  <field number='112' name='TestReqID' type='STRING' />
+  <field number='113' name='ReportToExch' type='BOOLEAN'>
+   <value enum='N' description='NO' />
+   <value enum='Y' description='YES' />
+  </field>
+  <field number='114' name='LocateReqd' type='BOOLEAN'>
+   <value enum='N' description='NO' />
+   <value enum='Y' description='YES' />
+  </field>
+  <field number='115' name='OnBehalfOfCompID' type='STRING' />
+  <field number='116' name='OnBehalfOfSubID' type='STRING' />
+  <field number='117' name='QuoteID' type='STRING' />
+  <field number='118' name='NetMoney' type='AMT' />
+  <field number='119' name='SettlCurrAmt' type='AMT' />
+  <field number='120' name='SettlCurrency' type='CURRENCY' />
+  <field number='121' name='ForexReq' type='BOOLEAN'>
+   <value enum='N' description='NO' />
+   <value enum='Y' description='YES' />
+  </field>
+  <field number='122' name='OrigSendingTime' type='UTCTIMESTAMP' />
+  <field number='123' name='GapFillFlag' type='BOOLEAN'>
+   <value enum='N' description='NO' />
+   <value enum='Y' description='YES' />
+  </field>
+  <field number='124' name='NoExecs' type='NUMINGROUP' />
+  <field number='125' name='CxlType' type='CHAR' />
+  <field number='126' name='ExpireTime' type='UTCTIMESTAMP' />
+  <field number='127' name='DKReason' type='CHAR'>
+   <value enum='A' description='UNKNOWN_SYMBOL' />
+   <value enum='B' description='WRONG_SIDE' />
+   <value enum='C' description='QUANTITY_EXCEEDS_ORDER' />
+   <value enum='D' description='NO_MATCHING_ORDER' />
+   <value enum='E' description='PRICE_EXCEEDS_LIMIT' />
