@@ -6319,3 +6319,42 @@
   <field number='159' name='AccruedInterestAmt' type='AMT' />
   <field number='160' name='SettlInstMode' type='CHAR'>
    <value enum='0' description='DEFAULT' />
+   <value enum='1' description='STANDING_INSTRUCTIONS_PROVIDED' />
+   <value enum='2' description='SPECIFIC_ALLOCATION_ACCOUNT_OVERRIDING' />
+   <value enum='3' description='SPECIFIC_ALLOCATION_ACCOUNT_STANDING' />
+   <value enum='4' description='SPECIFIC_ORDER_FOR_A_SINGLE_ACCOUNT' />
+   <value enum='5' description='REQUEST_REJECT' />
+  </field>
+  <field number='161' name='AllocText' type='STRING' />
+  <field number='162' name='SettlInstID' type='STRING' />
+  <field number='163' name='SettlInstTransType' type='CHAR'>
+   <value enum='C' description='CANCEL' />
+   <value enum='N' description='NEW' />
+   <value enum='R' description='REPLACE' />
+   <value enum='T' description='RESTATE' />
+  </field>
+  <field number='164' name='EmailThreadID' type='STRING' />
+  <field number='165' name='SettlInstSource' type='CHAR'>
+   <value enum='1' description='BROKERS_INSTRUCTIONS' />
+   <value enum='2' description='INSTITUTIONS_INSTRUCTIONS' />
+   <value enum='3' description='INVESTOR' />
+  </field>
+  <field number='166' name='SettlLocation' type='STRING'>
+   <value enum='CED' description='CEDEL' />
+   <value enum='DTC' description='DEPOSITORY_TRUST_COMPANY' />
+   <value enum='EUR' description='EURO_CLEAR' />
+   <value enum='FED' description='FEDERAL_BOOK_ENTRY' />
+   <value enum='ISO_Country_Code' description='LOCAL_MARKET_SETTLE_LOCATION' />
+   <value enum='PNY' description='PHYSICAL' />
+   <value enum='PTC' description='PARTICIPANT_TRUST_COMPANY' />
+  </field>
+  <field number='167' name='SecurityType' type='STRING'>
+   <value enum='ABS' description='ASSET_BACKED_SECURITIES' />
+   <value enum='AMENDED' description='AMENDED_RESTATED' />
+   <value enum='AN' description='OTHER_ANTICIPATION_NOTES' />
+   <value enum='BA' description='BANKERS_ACCEPTANCE' />
+   <value enum='BN' description='BANK_NOTES' />
+   <value enum='BOX' description='BILL_OF_EXCHANGES' />
+   <value enum='BRADY' description='BRADY_BOND' />
+   <value enum='BRIDGE' description='BRIDGE_LOAN' />
+   <value enum='BUYSELL' description='BUY_SELLBACK' />
