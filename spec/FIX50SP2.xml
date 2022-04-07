@@ -6274,3 +6274,48 @@
   <field number='141' name='ResetSeqNumFlag' type='BOOLEAN'>
    <value enum='N' description='NO' />
    <value enum='Y' description='YES' />
+  </field>
+  <field number='142' name='SenderLocationID' type='STRING' />
+  <field number='143' name='TargetLocationID' type='STRING' />
+  <field number='144' name='OnBehalfOfLocationID' type='STRING' />
+  <field number='145' name='DeliverToLocationID' type='STRING' />
+  <field number='146' name='NoRelatedSym' type='NUMINGROUP' />
+  <field number='147' name='Subject' type='STRING' />
+  <field number='148' name='Headline' type='STRING' />
+  <field number='149' name='URLLink' type='STRING' />
+  <field number='150' name='ExecType' type='CHAR'>
+   <value enum='0' description='NEW' />
+   <value enum='3' description='DONE_FOR_DAY' />
+   <value enum='4' description='CANCELED' />
+   <value enum='5' description='REPLACED' />
+   <value enum='6' description='PENDING_CANCEL' />
+   <value enum='7' description='STOPPED' />
+   <value enum='8' description='REJECTED' />
+   <value enum='9' description='SUSPENDED' />
+   <value enum='A' description='PENDING_NEW' />
+   <value enum='B' description='CALCULATED' />
+   <value enum='C' description='EXPIRED' />
+   <value enum='D' description='RESTATED' />
+   <value enum='E' description='PENDING_REPLACE' />
+   <value enum='F' description='TRADE' />
+   <value enum='G' description='TRADE_CORRECT' />
+   <value enum='H' description='TRADE_CANCEL' />
+   <value enum='I' description='ORDER_STATUS' />
+   <value enum='J' description='TRADE_IN_A_CLEARING_HOLD' />
+   <value enum='K' description='TRADE_HAS_BEEN_RELEASED_TO_CLEARING' />
+   <value enum='L' description='TRIGGERED_OR_ACTIVATED_BY_SYSTEM' />
+  </field>
+  <field number='151' name='LeavesQty' type='QTY' />
+  <field number='152' name='CashOrderQty' type='QTY' />
+  <field number='153' name='AllocAvgPx' type='PRICE' />
+  <field number='154' name='AllocNetMoney' type='AMT' />
+  <field number='155' name='SettlCurrFxRate' type='FLOAT' />
+  <field number='156' name='SettlCurrFxRateCalc' type='CHAR'>
+   <value enum='M' description='MULTIPLY' />
+   <value enum='D' description='DIVIDE' />
+  </field>
+  <field number='157' name='NumDaysInterest' type='INT' />
+  <field number='158' name='AccruedInterestRate' type='PERCENTAGE' />
+  <field number='159' name='AccruedInterestAmt' type='AMT' />
+  <field number='160' name='SettlInstMode' type='CHAR'>
+   <value enum='0' description='DEFAULT' />
