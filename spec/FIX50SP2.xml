@@ -6358,3 +6358,45 @@
    <value enum='BRADY' description='BRADY_BOND' />
    <value enum='BRIDGE' description='BRIDGE_LOAN' />
    <value enum='BUYSELL' description='BUY_SELLBACK' />
+   <value enum='CB' description='CONVERTIBLE_BOND' />
+   <value enum='CD' description='CERTIFICATE_OF_DEPOSIT' />
+   <value enum='CL' description='CALL_LOANS' />
+   <value enum='CMBS' description='CORP_MORTGAGE_BACKED_SECURITIES' />
+   <value enum='CMO' description='COLLATERALIZED_MORTGAGE_OBLIGATION' />
+   <value enum='COFO' description='CERTIFICATE_OF_OBLIGATION' />
+   <value enum='COFP' description='CERTIFICATE_OF_PARTICIPATION' />
+   <value enum='CORP' description='CORPORATE_BOND' />
+   <value enum='CP' description='COMMERCIAL_PAPER' />
+   <value enum='CPP' description='CORPORATE_PRIVATE_PLACEMENT' />
+   <value enum='CS' description='COMMON_STOCK' />
+   <value enum='DEFLTED' description='DEFAULTED' />
+   <value enum='DINP' description='DEBTOR_IN_POSSESSION' />
+   <value enum='DN' description='DEPOSIT_NOTES' />
+   <value enum='DUAL' description='DUAL_CURRENCY' />
+   <value enum='EUCD' description='EURO_CERTIFICATE_OF_DEPOSIT' />
+   <value enum='EUCORP' description='EURO_CORPORATE_BOND' />
+   <value enum='EUCP' description='EURO_COMMERCIAL_PAPER' />
+   <value enum='EUSOV' description='EURO_SOVEREIGNS' />
+   <value enum='EUSUPRA' description='EURO_SUPRANATIONAL_COUPONS' />
+   <value enum='FAC' description='FEDERAL_AGENCY_COUPON' />
+   <value enum='FADN' description='FEDERAL_AGENCY_DISCOUNT_NOTE' />
+   <value enum='FOR' description='FOREIGN_EXCHANGE_CONTRACT' />
+   <value enum='FORWARD' description='FORWARD' />
+   <value enum='FUT' description='FUTURE' />
+   <value enum='GO' description='GENERAL_OBLIGATION_BONDS' />
+   <value enum='IET' description='IOETTE_MORTGAGE' />
+   <value enum='LOFC' description='LETTER_OF_CREDIT' />
+   <value enum='LQN' description='LIQUIDITY_NOTE' />
+   <value enum='MATURED' description='MATURED' />
+   <value enum='MBS' description='MORTGAGE_BACKED_SECURITIES' />
+   <value enum='MF' description='MUTUAL_FUND' />
+   <value enum='MIO' description='MORTGAGE_INTEREST_ONLY' />
+   <value enum='MLEG' description='MULTILEG_INSTRUMENT' />
+   <value enum='MPO' description='MORTGAGE_PRINCIPAL_ONLY' />
+   <value enum='MPP' description='MORTGAGE_PRIVATE_PLACEMENT' />
+   <value enum='MPT' description='MISCELLANEOUS_PASS_THROUGH' />
+   <value enum='MT' description='MANDATORY_TENDER' />
+   <value enum='MTN' description='MEDIUM_TERM_NOTES' />
+   <value enum='NONE' description='NO_SECURITY_TYPE' />
+   <value enum='ONITE' description='OVERNIGHT' />
+   <value enum='OPT' description='OPTION' />
