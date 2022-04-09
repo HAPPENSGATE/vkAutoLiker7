@@ -6524,3 +6524,45 @@
    <value enum='0' description='COVERED' />
    <value enum='1' description='UNCOVERED' />
   </field>
+  <field number='204' name='CustomerOrFirm' type='INT'>
+   <value enum='0' description='CUSTOMER' />
+   <value enum='1' description='FIRM' />
+  </field>
+  <field number='205' name='MaturityDay' type='DAYOFMONTH' />
+  <field number='206' name='OptAttribute' type='CHAR' />
+  <field number='207' name='SecurityExchange' type='EXCHANGE' />
+  <field number='208' name='NotifyBrokerOfCredit' type='BOOLEAN'>
+   <value enum='N' description='NO' />
+   <value enum='Y' description='YES' />
+  </field>
+  <field number='209' name='AllocHandlInst' type='INT'>
+   <value enum='1' description='MATCH' />
+   <value enum='2' description='FORWARD' />
+   <value enum='3' description='FORWARD_AND_MATCH' />
+  </field>
+  <field number='210' name='MaxShow' type='QTY' />
+  <field number='211' name='PegOffsetValue' type='FLOAT' />
+  <field number='212' name='XmlDataLen' type='LENGTH' />
+  <field number='213' name='XmlData' type='DATA' />
+  <field number='214' name='SettlInstRefID' type='STRING' />
+  <field number='215' name='NoRoutingIDs' type='NUMINGROUP' />
+  <field number='216' name='RoutingType' type='INT'>
+   <value enum='1' description='TARGET_FIRM' />
+   <value enum='2' description='TARGET_LIST' />
+   <value enum='3' description='BLOCK_FIRM' />
+   <value enum='4' description='BLOCK_LIST' />
+  </field>
+  <field number='217' name='RoutingID' type='STRING' />
+  <field number='218' name='Spread' type='PRICEOFFSET' />
+  <field number='219' name='Benchmark' type='CHAR'>
+   <value enum='1' description='CURVE' />
+   <value enum='2' description='5YR' />
+   <value enum='3' description='OLD5' />
+   <value enum='4' description='10YR' />
+   <value enum='5' description='OLD10' />
+   <value enum='6' description='30YR' />
+   <value enum='7' description='OLD30' />
+   <value enum='8' description='3MOLIBOR' />
+   <value enum='9' description='6MOLIBOR' />
+  </field>
+  <field number='220' name='BenchmarkCurveCurrency' type='CURRENCY' />
