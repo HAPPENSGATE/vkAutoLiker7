@@ -6757,3 +6757,50 @@
   <field number='268' name='NoMDEntries' type='NUMINGROUP' />
   <field number='269' name='MDEntryType' type='CHAR'>
    <value enum='0' description='BID' />
+   <value enum='1' description='OFFER' />
+   <value enum='2' description='TRADE' />
+   <value enum='3' description='INDEX_VALUE' />
+   <value enum='4' description='OPENING_PRICE' />
+   <value enum='5' description='CLOSING_PRICE' />
+   <value enum='6' description='SETTLEMENT_PRICE' />
+   <value enum='7' description='TRADING_SESSION_HIGH_PRICE' />
+   <value enum='8' description='TRADING_SESSION_LOW_PRICE' />
+   <value enum='9' description='TRADING_SESSION_VWAP_PRICE' />
+   <value enum='A' description='IMBALANCE' />
+   <value enum='B' description='TRADE_VOLUME' />
+   <value enum='C' description='OPEN_INTEREST' />
+   <value enum='D' description='COMPOSITE_UNDERLYING_PRICE' />
+   <value enum='E' description='SIMULATED_SELL_PRICE' />
+   <value enum='F' description='SIMULATED_BUY_PRICE' />
+   <value enum='G' description='MARGIN_RATE' />
+   <value enum='H' description='MID_PRICE' />
+   <value enum='J' description='EMPTY_BOOK' />
+   <value enum='K' description='SETTLE_HIGH_PRICE' />
+   <value enum='L' description='SETTLE_LOW_PRICE' />
+   <value enum='M' description='PRIOR_SETTLE_PRICE' />
+   <value enum='N' description='SESSION_HIGH_BID' />
+   <value enum='O' description='SESSION_LOW_OFFER' />
+   <value enum='P' description='EARLY_PRICES' />
+   <value enum='Q' description='AUCTION_CLEARING_PRICE' />
+   <value enum='S' description='SWAP_VALUE_FACTOR' />
+   <value enum='R' description='DAILY_VALUE_ADJUSTMENT_FOR_LONG_POSITIONS' />
+   <value enum='T' description='CUMULATIVE_VALUE_ADJUSTMENT_FOR_LONG_POSITIONS' />
+   <value enum='U' description='DAILY_VALUE_ADJUSTMENT_FOR_SHORT_POSITIONS' />
+   <value enum='V' description='CUMULATIVE_VALUE_ADJUSTMENT_FOR_SHORT_POSITIONS' />
+   <value enum='Y' description='RECOVERY_RATE' />
+   <value enum='Z' description='RECOVERY_RATE_FOR_LONG' />
+   <value enum='a' description='RECOVERY_RATE_FOR_SHORT' />
+   <value enum='W' description='FIXING_PRICE' />
+   <value enum='X' description='CASH_RATE' />
+  </field>
+  <field number='270' name='MDEntryPx' type='PRICE' />
+  <field number='271' name='MDEntrySize' type='QTY' />
+  <field number='272' name='MDEntryDate' type='UTCDATEONLY' />
+  <field number='273' name='MDEntryTime' type='UTCTIMEONLY' />
+  <field number='274' name='TickDirection' type='CHAR'>
+   <value enum='0' description='PLUS_TICK' />
+   <value enum='1' description='ZERO_PLUS_TICK' />
+   <value enum='2' description='MINUS_TICK' />
+   <value enum='3' description='ZERO_MINUS_TICK' />
+  </field>
+  <field number='275' name='MDMkt' type='EXCHANGE' />
