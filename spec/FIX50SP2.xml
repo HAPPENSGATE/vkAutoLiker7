@@ -6655,3 +6655,62 @@
    <value enum='AVFICO' description='AVERAGE_FICO_SCORE' />
    <value enum='AVSIZE' description='AVERAGE_LOAN_SIZE' />
    <value enum='MAXBAL' description='MAXIMUM_LOAN_BALANCE' />
+   <value enum='POOL' description='POOL_IDENTIFIER' />
+   <value enum='ROLLTYPE' description='TYPE_OF_ROLL_TRADE' />
+   <value enum='REFTRADE' description='REFERENCE_TO_ROLLING_OR_CLOSING_TRADE' />
+   <value enum='REFPRIN' description='PRINCIPAL_OF_ROLLING_OR_CLOSING_TRADE' />
+   <value enum='REFINT' description='INTEREST_OF_ROLLING_OR_CLOSING_TRADE' />
+   <value enum='AVAILQTY' description='AVAILABLE_OFFER_QUANTITY_TO_BE_SHOWN_TO_THE_STREET' />
+   <value enum='BROKERCREDIT' description='BROKERS_SALES_CREDIT' />
+   <value enum='INTERNALPX' description='OFFER_PRICE_TO_BE_SHOWN_TO_INTERNAL_BROKERS' />
+   <value enum='INTERNALQTY' description='OFFER_QUANTITY_TO_BE_SHOWN_TO_INTERNAL_BROKERS' />
+   <value enum='LEAVEQTY' description='THE_MINIMUM_RESIDUAL_OFFER_QUANTITY' />
+   <value enum='MAXORDQTY' description='MAXIMUM_ORDER_SIZE' />
+   <value enum='ORDRINCR' description='ORDER_QUANTITY_INCREMENT' />
+   <value enum='PRIMARY' description='PRIMARY_OR_SECONDARY_MARKET_INDICATOR' />
+   <value enum='SALESCREDITOVR' description='BROKER_SALES_CREDIT_OVERRIDE' />
+   <value enum='TRADERCREDIT' description='TRADERS_CREDIT' />
+   <value enum='DISCOUNT' description='DISCOUNT_RATE' />
+   <value enum='YTM' description='YIELD_TO_MATURITY' />
+  </field>
+  <field number='234' name='StipulationValue' type='STRING' />
+  <field number='235' name='YieldType' type='STRING'>
+   <value enum='AFTERTAX' description='AFTER_TAX_YIELD' />
+   <value enum='ANNUAL' description='ANNUAL_YIELD' />
+   <value enum='ATISSUE' description='YIELD_AT_ISSUE' />
+   <value enum='AVGMATURITY' description='YIELD_TO_AVG_MATURITY' />
+   <value enum='BOOK' description='BOOK_YIELD' />
+   <value enum='CALL' description='YIELD_TO_NEXT_CALL' />
+   <value enum='CHANGE' description='YIELD_CHANGE_SINCE_CLOSE' />
+   <value enum='CLOSE' description='CLOSING_YIELD' />
+   <value enum='COMPOUND' description='COMPOUND_YIELD' />
+   <value enum='CURRENT' description='CURRENT_YIELD' />
+   <value enum='GOVTEQUIV' description='GVNT_EQUIVALENT_YIELD' />
+   <value enum='GROSS' description='TRUE_GROSS_YIELD' />
+   <value enum='INFLATION' description='YIELD_WITH_INFLATION_ASSUMPTION' />
+   <value enum='INVERSEFLOATER' description='INVERSE_FLOATER_BOND_YIELD' />
+   <value enum='LASTCLOSE' description='MOST_RECENT_CLOSING_YIELD' />
+   <value enum='LASTMONTH' description='CLOSING_YIELD_MOST_RECENT_MONTH' />
+   <value enum='LASTQUARTER' description='CLOSING_YIELD_MOST_RECENT_QUARTER' />
+   <value enum='LASTYEAR' description='CLOSING_YIELD_MOST_RECENT_YEAR' />
+   <value enum='LONGAVGLIFE' description='YIELD_TO_LONGEST_AVERAGE_LIFE' />
+   <value enum='MARK' description='MARK_TO_MARKET_YIELD' />
+   <value enum='MATURITY' description='YIELD_TO_MATURITY' />
+   <value enum='NEXTREFUND' description='YIELD_TO_NEXT_REFUND' />
+   <value enum='OPENAVG' description='OPEN_AVERAGE_YIELD' />
+   <value enum='PREVCLOSE' description='PREVIOUS_CLOSE_YIELD' />
+   <value enum='PROCEEDS' description='PROCEEDS_YIELD' />
+   <value enum='PUT' description='YIELD_TO_NEXT_PUT' />
+   <value enum='SEMIANNUAL' description='SEMI_ANNUAL_YIELD' />
+   <value enum='SHORTAVGLIFE' description='YIELD_TO_SHORTEST_AVERAGE_LIFE' />
+   <value enum='SIMPLE' description='SIMPLE_YIELD' />
+   <value enum='TAXEQUIV' description='TAX_EQUIVALENT_YIELD' />
+   <value enum='TENDER' description='YIELD_TO_TENDER_DATE' />
+   <value enum='TRUE' description='TRUE_YIELD' />
+   <value enum='VALUE1_32' description='YIELD_VALUE_OF_1_32' />
+   <value enum='WORST' description='YIELD_TO_WORST' />
+  </field>
+  <field number='236' name='Yield' type='PERCENTAGE' />
+  <field number='237' name='TotalTakedown' type='AMT' />
+  <field number='238' name='Concession' type='AMT' />
+  <field number='239' name='RepoCollateralSecurityType' type='INT' />
