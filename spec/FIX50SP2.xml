@@ -6847,3 +6847,41 @@
    <value enum='n' description='TRADING_RESUME' />
    <value enum='o' description='OUT_OF_SEQUENCE' />
    <value enum='p' description='BID_SPECIALIST' />
+   <value enum='q' description='OFFER_SPECIALIST' />
+   <value enum='r' description='BID_OFFER_SPECIALIST' />
+   <value enum='s' description='END_OF_DAY_SAM' />
+   <value enum='t' description='FORBIDDEN_SAM' />
+   <value enum='u' description='FROZEN_SAM' />
+   <value enum='v' description='PREOPENING_SAM' />
+   <value enum='w' description='OPENING_SAM' />
+   <value enum='x' description='OPEN_SAM' />
+   <value enum='y' description='SURVEILLANCE_SAM' />
+   <value enum='z' description='SUSPENDED_SAM' />
+   <value enum='0' description='RESERVED_SAM' />
+   <value enum='1' description='NO_ACTIVE_SAM' />
+   <value enum='2' description='RESTRICTED' />
+   <value enum='3' description='REST_OF_BOOK_VWAP' />
+   <value enum='4' description='BETTER_PRICES_IN_CONDITIONAL_ORDERS' />
+   <value enum='5' description='MEDIAN_PRICE' />
+   <value enum='6' description='FULL_CURVE' />
+   <value enum='7' description='FLAT_CURVE' />
+  </field>
+  <field number='277' name='TradeCondition' type='MULTIPLESTRINGVALUE'>
+   <value enum='A' description='CASH' />
+   <value enum='B' description='AVERAGE_PRICE_TRADE' />
+   <value enum='C' description='CASH_TRADE' />
+   <value enum='D' description='NEXT_DAY' />
+   <value enum='E' description='OPENING_REOPENING_TRADE_DETAIL' />
+   <value enum='F' description='INTRADAY_TRADE_DETAIL' />
+   <value enum='G' description='RULE_127_TRADE' />
+   <value enum='H' description='RULE_155_TRADE' />
+   <value enum='I' description='SOLD_LAST' />
+   <value enum='J' description='NEXT_DAY_TRADE' />
+   <value enum='K' description='OPENED' />
+   <value enum='L' description='SELLER' />
+   <value enum='M' description='SOLD' />
+   <value enum='N' description='STOPPED_STOCK' />
+   <value enum='P' description='IMBALANCE_MORE_BUYERS' />
+   <value enum='Q' description='IMBALANCE_MORE_SELLERS' />
+   <value enum='R' description='OPENING_PRICE' />
+   <value enum='Y' description='TRADES_RESULTING_FROM_MANUAL_SLOW_QUOTE' />
