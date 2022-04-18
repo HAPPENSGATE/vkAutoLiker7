@@ -6961,3 +6961,41 @@
    <value enum='2' description='INSUFFICIENT_BANDWIDTH' />
    <value enum='3' description='INSUFFICIENT_PERMISSIONS' />
    <value enum='4' description='UNSUPPORTED_SUBSCRIPTIONREQUESTTYPE' />
+   <value enum='5' description='UNSUPPORTED_MARKETDEPTH' />
+   <value enum='6' description='UNSUPPORTED_MDUPDATETYPE' />
+   <value enum='7' description='UNSUPPORTED_AGGREGATEDBOOK' />
+   <value enum='8' description='UNSUPPORTED_MDENTRYTYPE' />
+   <value enum='9' description='UNSUPPORTED_TRADINGSESSIONID' />
+   <value enum='A' description='UNSUPPORTED_SCOPE' />
+   <value enum='B' description='UNSUPPORTED_OPENCLOSESETTLEFLAG' />
+   <value enum='C' description='UNSUPPORTED_MDIMPLICITDELETE' />
+   <value enum='D' description='INSUFFICIENT_CREDIT' />
+  </field>
+  <field number='282' name='MDEntryOriginator' type='STRING' />
+  <field number='283' name='LocationID' type='STRING' />
+  <field number='284' name='DeskID' type='STRING' />
+  <field number='285' name='DeleteReason' type='CHAR'>
+   <value enum='0' description='CANCELLATION' />
+   <value enum='1' description='ERROR' />
+  </field>
+  <field number='286' name='OpenCloseSettlFlag' type='MULTIPLECHARVALUE'>
+   <value enum='0' description='DAILY_OPEN' />
+   <value enum='1' description='SESSION_OPEN' />
+   <value enum='2' description='DELIVERY_SETTLEMENT_ENTRY' />
+   <value enum='3' description='EXPECTED_ENTRY' />
+   <value enum='4' description='ENTRY_FROM_PREVIOUS_BUSINESS_DAY' />
+   <value enum='5' description='THEORETICAL_PRICE_VALUE' />
+  </field>
+  <field number='287' name='SellerDays' type='INT' />
+  <field number='288' name='MDEntryBuyer' type='STRING' />
+  <field number='289' name='MDEntrySeller' type='STRING' />
+  <field number='290' name='MDEntryPositionNo' type='INT' />
+  <field number='291' name='FinancialStatus' type='MULTIPLECHARVALUE'>
+   <value enum='1' description='BANKRUPT' />
+   <value enum='2' description='PENDING_DELISTING' />
+   <value enum='3' description='RESTRICTED' />
+  </field>
+  <field number='292' name='CorporateAction' type='MULTIPLECHARVALUE'>
+   <value enum='A' description='EX_DIVIDEND' />
+   <value enum='B' description='EX_DISTRIBUTION' />
+   <value enum='C' description='EX_RIGHTS' />
