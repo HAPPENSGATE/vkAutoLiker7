@@ -6918,3 +6918,46 @@
    <value enum='w' description='REOPEN' />
    <value enum='x' description='REOPEN_ETH' />
    <value enum='y' description='ADJUSTED' />
+   <value enum='z' description='ADJUSTED_ETH' />
+   <value enum='AA' description='SPREAD' />
+   <value enum='AB' description='SPREAD_ETH' />
+   <value enum='AC' description='STRADDLE' />
+   <value enum='AD' description='STRADDLE_ETH' />
+   <value enum='AE' description='STOPPED' />
+   <value enum='AF' description='STOPPED_ETH' />
+   <value enum='AG' description='REGULAR_ETH' />
+   <value enum='AH' description='COMBO' />
+   <value enum='AI' description='COMBO_ETH' />
+   <value enum='AJ' description='OFFICIAL_CLOSING_PRICE' />
+   <value enum='AK' description='PRIOR_REFERENCE_PRICE' />
+   <value enum='AL' description='STOPPED_SOLD_LAST' />
+   <value enum='AM' description='STOPPED_OUT_OF_SEQUENCE' />
+   <value enum='AN' description='OFFICAL_CLOSING_PRICE' />
+   <value enum='AO' description='CROSSED_AO' />
+   <value enum='AP' description='FAST_MARKET' />
+   <value enum='AQ' description='AUTOMATIC_EXECUTION' />
+   <value enum='AR' description='FORM_T' />
+   <value enum='AS' description='BASKET_INDEX' />
+   <value enum='AT' description='BURST_BASKET' />
+   <value enum='1' description='IMPLIED_TRADE' />
+   <value enum='AV' description='OUTSIDE_SPREAD' />
+   <value enum='2' description='MARKETPLACE_ENTERED_TRADE' />
+   <value enum='3' description='MULT_ASSET_CLASS_MULTILEG_TRADE' />
+   <value enum='4' description='MULTILEG_TO_MULTILEG_TRADE' />
+  </field>
+  <field number='278' name='MDEntryID' type='STRING' />
+  <field number='279' name='MDUpdateAction' type='CHAR'>
+   <value enum='0' description='NEW' />
+   <value enum='1' description='CHANGE' />
+   <value enum='2' description='DELETE' />
+   <value enum='3' description='DELETE_THRU' />
+   <value enum='4' description='DELETE_FROM' />
+   <value enum='5' description='OVERLAY' />
+  </field>
+  <field number='280' name='MDEntryRefID' type='STRING' />
+  <field number='281' name='MDReqRejReason' type='CHAR'>
+   <value enum='0' description='UNKNOWN_SYMBOL' />
+   <value enum='1' description='DUPLICATE_MDREQID' />
+   <value enum='2' description='INSUFFICIENT_BANDWIDTH' />
+   <value enum='3' description='INSUFFICIENT_PERMISSIONS' />
+   <value enum='4' description='UNSUPPORTED_SUBSCRIPTIONREQUESTTYPE' />
