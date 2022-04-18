@@ -6885,3 +6885,36 @@
    <value enum='Q' description='IMBALANCE_MORE_SELLERS' />
    <value enum='R' description='OPENING_PRICE' />
    <value enum='Y' description='TRADES_RESULTING_FROM_MANUAL_SLOW_QUOTE' />
+   <value enum='Z' description='TRADES_RESULTING_FROM_INTERMARKET_SWEEP' />
+   <value enum='S' description='BARGAIN_CONDITION' />
+   <value enum='T' description='CONVERTED_PRICE_INDICATOR' />
+   <value enum='U' description='EXCHANGE_LAST' />
+   <value enum='V' description='FINAL_PRICE_OF_SESSION' />
+   <value enum='W' description='EX_PIT' />
+   <value enum='X' description='CROSSED_X' />
+   <value enum='0' description='CANCEL' />
+   <value enum='a' description='VOLUME_ONLY' />
+   <value enum='b' description='DIRECT_PLUS' />
+   <value enum='c' description='ACQUISITION' />
+   <value enum='d' description='BUNCHED' />
+   <value enum='e' description='DISTRIBUTION' />
+   <value enum='f' description='BUNCHED_SALE' />
+   <value enum='g' description='SPLIT_TRADE' />
+   <value enum='h' description='CANCEL_STOPPED' />
+   <value enum='i' description='CANCEL_ETH' />
+   <value enum='j' description='CANCEL_STOPPED_ETH' />
+   <value enum='k' description='OUT_OF_SEQUENCE_ETH' />
+   <value enum='l' description='CANCEL_LAST_ETH' />
+   <value enum='m' description='SOLD_LAST_SALE_ETH' />
+   <value enum='n' description='CANCEL_LAST' />
+   <value enum='o' description='SOLD_LAST_SALE' />
+   <value enum='p' description='CANCEL_OPEN' />
+   <value enum='q' description='CANCEL_OPEN_ETH' />
+   <value enum='r' description='OPENED_SALE_ETH' />
+   <value enum='s' description='CANCEL_ONLY' />
+   <value enum='t' description='CANCEL_ONLY_ETH' />
+   <value enum='u' description='LATE_OPEN_ETH' />
+   <value enum='v' description='AUTO_EXECUTION_ETH' />
+   <value enum='w' description='REOPEN' />
+   <value enum='x' description='REOPEN_ETH' />
+   <value enum='y' description='ADJUSTED' />
