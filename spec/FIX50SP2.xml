@@ -6999,3 +6999,30 @@
    <value enum='A' description='EX_DIVIDEND' />
    <value enum='B' description='EX_DISTRIBUTION' />
    <value enum='C' description='EX_RIGHTS' />
+   <value enum='D' description='NEW' />
+   <value enum='E' description='EX_INTEREST' />
+   <value enum='F' description='CASH_DIVIDEND' />
+   <value enum='G' description='STOCK_DIVIDEND' />
+   <value enum='H' description='NON_INTEGER_STOCK_SPLIT' />
+   <value enum='I' description='REVERSE_STOCK_SPLIT' />
+   <value enum='J' description='STANDARD_INTEGER_STOCK_SPLIT' />
+   <value enum='K' description='POSITION_CONSOLIDATION' />
+   <value enum='L' description='LIQUIDATION_REORGANIZATION' />
+   <value enum='M' description='MERGER_REORGANIZATION' />
+   <value enum='N' description='RIGHTS_OFFERING' />
+   <value enum='O' description='SHAREHOLDER_MEETING' />
+   <value enum='P' description='SPINOFF' />
+   <value enum='Q' description='TENDER_OFFER' />
+   <value enum='R' description='WARRANT' />
+   <value enum='S' description='SPECIAL_ACTION' />
+   <value enum='T' description='SYMBOL_CONVERSION' />
+   <value enum='U' description='CUSIP' />
+   <value enum='V' description='LEAP_ROLLOVER' />
+   <value enum='W' description='SUCCESSION_EVENT' />
+  </field>
+  <field number='293' name='DefBidSize' type='QTY' />
+  <field number='294' name='DefOfferSize' type='QTY' />
+  <field number='295' name='NoQuoteEntries' type='NUMINGROUP' />
+  <field number='296' name='NoQuoteSets' type='NUMINGROUP' />
+  <field number='297' name='QuoteStatus' type='INT'>
+   <value enum='0' description='ACCEPTED' />
