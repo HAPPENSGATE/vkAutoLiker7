@@ -7026,3 +7026,35 @@
   <field number='296' name='NoQuoteSets' type='NUMINGROUP' />
   <field number='297' name='QuoteStatus' type='INT'>
    <value enum='0' description='ACCEPTED' />
+   <value enum='1' description='CANCEL_FOR_SYMBOL' />
+   <value enum='10' description='PENDING' />
+   <value enum='11' description='PASS' />
+   <value enum='12' description='LOCKED_MARKET_WARNING' />
+   <value enum='13' description='CROSS_MARKET_WARNING' />
+   <value enum='14' description='CANCELED_DUE_TO_LOCK_MARKET' />
+   <value enum='15' description='CANCELED_DUE_TO_CROSS_MARKET' />
+   <value enum='2' description='CANCELED_FOR_SECURITY_TYPE' />
+   <value enum='3' description='CANCELED_FOR_UNDERLYING' />
+   <value enum='4' description='CANCELED_ALL' />
+   <value enum='5' description='REJECTED' />
+   <value enum='6' description='REMOVED_FROM_MARKET' />
+   <value enum='7' description='EXPIRED' />
+   <value enum='8' description='QUERY' />
+   <value enum='9' description='QUOTE_NOT_FOUND' />
+   <value enum='16' description='ACTIVE' />
+   <value enum='17' description='CANCELED' />
+   <value enum='18' description='UNSOLICITED_QUOTE_REPLENISHMENT' />
+   <value enum='19' description='PENDING_END_TRADE' />
+   <value enum='20' description='TOO_LATE_TO_END' />
+  </field>
+  <field number='298' name='QuoteCancelType' type='INT'>
+   <value enum='1' description='CANCEL_FOR_ONE_OR_MORE_SECURITIES' />
+   <value enum='2' description='CANCEL_FOR_SECURITY_TYPE' />
+   <value enum='3' description='CANCEL_FOR_UNDERLYING_SECURITY' />
+   <value enum='4' description='CANCEL_ALL_QUOTES' />
+   <value enum='5' description='CANCEL_QUOTE_SPECIFIED_IN_QUOTEID' />
+   <value enum='6' description='CANCEL_BY_QUOTETYPE' />
+   <value enum='7' description='CANCEL_FOR_SECURITY_ISSUER' />
+   <value enum='8' description='CANCEL_FOR_ISSUER_OF_UNDERLYING_SECURITY' />
+  </field>
+  <field number='299' name='QuoteEntryID' type='STRING' />
