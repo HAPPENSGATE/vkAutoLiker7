@@ -7058,3 +7058,55 @@
    <value enum='8' description='CANCEL_FOR_ISSUER_OF_UNDERLYING_SECURITY' />
   </field>
   <field number='299' name='QuoteEntryID' type='STRING' />
+  <field number='300' name='QuoteRejectReason' type='INT'>
+   <value enum='1' description='UNKNOWN_SYMBOL' />
+   <value enum='2' description='EXCHANGE' />
+   <value enum='3' description='QUOTE_REQUEST_EXCEEDS_LIMIT' />
+   <value enum='4' description='TOO_LATE_TO_ENTER' />
+   <value enum='5' description='UNKNOWN_QUOTE' />
+   <value enum='6' description='DUPLICATE_QUOTE' />
+   <value enum='7' description='INVALID_BID_ASK_SPREAD' />
+   <value enum='8' description='INVALID_PRICE' />
+   <value enum='9' description='NOT_AUTHORIZED_TO_QUOTE_SECURITY' />
+   <value enum='99' description='OTHER' />
+   <value enum='10' description='PRICE_EXCEEDS_CURRENT_PRICE_BAND' />
+   <value enum='11' description='QUOTE_LOCKED' />
+   <value enum='12' description='INVALID_OR_UNKNOWN_SECURITY_ISSUER' />
+   <value enum='13' description='INVALID_OR_UNKNOWN_ISSUER_OF_UNDERLYING_SECURITY' />
+  </field>
+  <field number='301' name='QuoteResponseLevel' type='INT'>
+   <value enum='0' description='NO_ACKNOWLEDGEMENT' />
+   <value enum='1' description='ACKNOWLEDGE_ONLY_NEGATIVE_OR_ERRONEOUS_QUOTES' />
+   <value enum='2' description='ACKNOWLEDGE_EACH_QUOTE_MESSAGE' />
+   <value enum='3' description='SUMMARY_ACKNOWLEDGEMENT' />
+  </field>
+  <field number='302' name='QuoteSetID' type='STRING' />
+  <field number='303' name='QuoteRequestType' type='INT'>
+   <value enum='1' description='MANUAL' />
+   <value enum='2' description='AUTOMATIC' />
+  </field>
+  <field number='304' name='TotNoQuoteEntries' type='INT' />
+  <field number='305' name='UnderlyingSecurityIDSource' type='STRING' />
+  <field number='306' name='UnderlyingIssuer' type='STRING' />
+  <field number='307' name='UnderlyingSecurityDesc' type='STRING' />
+  <field number='308' name='UnderlyingSecurityExchange' type='EXCHANGE' />
+  <field number='309' name='UnderlyingSecurityID' type='STRING' />
+  <field number='310' name='UnderlyingSecurityType' type='STRING' />
+  <field number='311' name='UnderlyingSymbol' type='STRING' />
+  <field number='312' name='UnderlyingSymbolSfx' type='STRING' />
+  <field number='313' name='UnderlyingMaturityMonthYear' type='MONTHYEAR' />
+  <field number='314' name='UnderlyingMaturityDay' type='DAYOFMONTH' />
+  <field number='315' name='UnderlyingPutOrCall' type='INT' />
+  <field number='316' name='UnderlyingStrikePrice' type='PRICE' />
+  <field number='317' name='UnderlyingOptAttribute' type='CHAR' />
+  <field number='318' name='UnderlyingCurrency' type='CURRENCY' />
+  <field number='319' name='RatioQty' type='QTY' />
+  <field number='320' name='SecurityReqID' type='STRING' />
+  <field number='321' name='SecurityRequestType' type='INT'>
+   <value enum='0' description='REQUEST_SECURITY_IDENTITY_AND_SPECIFICATIONS' />
+   <value enum='1' description='REQUEST_SECURITY_IDENTITY_FOR_THE_SPECIFICATIONS_PROVIDED' />
+   <value enum='2' description='REQUEST_LIST_SECURITY_TYPES' />
+   <value enum='3' description='REQUEST_LIST_SECURITIES' />
+   <value enum='4' description='SYMBOL' />
+   <value enum='5' description='SECURITYTYPE_AND_OR_CFICODE' />
+   <value enum='6' description='PRODUCT' />
