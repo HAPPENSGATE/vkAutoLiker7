@@ -7110,3 +7110,49 @@
    <value enum='4' description='SYMBOL' />
    <value enum='5' description='SECURITYTYPE_AND_OR_CFICODE' />
    <value enum='6' description='PRODUCT' />
+   <value enum='7' description='TRADINGSESSIONID' />
+   <value enum='8' description='ALL_SECURITIES' />
+   <value enum='9' description='MARKETID_OR_MARKETID_PLUS_MARKETSEGMENTID' />
+  </field>
+  <field number='322' name='SecurityResponseID' type='STRING' />
+  <field number='323' name='SecurityResponseType' type='INT'>
+   <value enum='1' description='ACCEPT_SECURITY_PROPOSAL_AS_IS' />
+   <value enum='2' description='ACCEPT_SECURITY_PROPOSAL_WITH_REVISIONS_AS_INDICATED_IN_THE_MESSAGE' />
+   <value enum='3' description='LIST_OF_SECURITY_TYPES_RETURNED_PER_REQUEST' />
+   <value enum='4' description='LIST_OF_SECURITIES_RETURNED_PER_REQUEST' />
+   <value enum='5' description='REJECT_SECURITY_PROPOSAL' />
+   <value enum='6' description='CANNOT_MATCH_SELECTION_CRITERIA' />
+  </field>
+  <field number='324' name='SecurityStatusReqID' type='STRING' />
+  <field number='325' name='UnsolicitedIndicator' type='BOOLEAN'>
+   <value enum='N' description='NO' />
+   <value enum='Y' description='YES' />
+  </field>
+  <field number='326' name='SecurityTradingStatus' type='INT'>
+   <value enum='1' description='OPENING_DELAY' />
+   <value enum='10' description='MARKET_ON_CLOSE_IMBALANCE_SELL' />
+   <value enum='11' description='11' />
+   <value enum='12' description='NO_MARKET_IMBALANCE' />
+   <value enum='13' description='NO_MARKET_ON_CLOSE_IMBALANCE' />
+   <value enum='14' description='ITS_PRE_OPENING' />
+   <value enum='15' description='NEW_PRICE_INDICATION' />
+   <value enum='16' description='TRADE_DISSEMINATION_TIME' />
+   <value enum='17' description='READY_TO_TRADE' />
+   <value enum='18' description='NOT_AVAILABLE_FOR_TRADING' />
+   <value enum='19' description='NOT_TRADED_ON_THIS_MARKET' />
+   <value enum='2' description='TRADING_HALT' />
+   <value enum='20' description='UNKNOWN_OR_INVALID' />
+   <value enum='21' description='PRE_OPEN' />
+   <value enum='22' description='OPENING_ROTATION' />
+   <value enum='23' description='FAST_MARKET' />
+   <value enum='3' description='RESUME' />
+   <value enum='4' description='NO_OPEN' />
+   <value enum='5' description='PRICE_INDICATION' />
+   <value enum='6' description='TRADING_RANGE_INDICATION' />
+   <value enum='7' description='MARKET_IMBALANCE_BUY' />
+   <value enum='8' description='MARKET_IMBALANCE_SELL' />
+   <value enum='9' description='MARKET_ON_CLOSE_IMBALANCE_BUY' />
+   <value enum='24' description='PRE_CROSS' />
+   <value enum='25' description='CROSS' />
+   <value enum='26' description='POST_CLOSE' />
+  </field>
