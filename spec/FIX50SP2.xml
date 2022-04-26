@@ -7190,3 +7190,37 @@
    <value enum='5' description='EVENING' />
    <value enum='6' description='AFTER_HOURS' />
   </field>
+  <field number='337' name='ContraTrader' type='STRING' />
+  <field number='338' name='TradSesMethod' type='INT'>
+   <value enum='1' description='ELECTRONIC' />
+   <value enum='2' description='OPEN_OUTCRY' />
+   <value enum='3' description='TWO_PARTY' />
+  </field>
+  <field number='339' name='TradSesMode' type='INT'>
+   <value enum='1' description='TESTING' />
+   <value enum='2' description='SIMULATED' />
+   <value enum='3' description='PRODUCTION' />
+  </field>
+  <field number='340' name='TradSesStatus' type='INT'>
+   <value enum='0' description='UNKNOWN' />
+   <value enum='1' description='HALTED' />
+   <value enum='2' description='OPEN' />
+   <value enum='3' description='CLOSED' />
+   <value enum='4' description='PRE_OPEN' />
+   <value enum='5' description='PRE_CLOSE' />
+   <value enum='6' description='REQUEST_REJECTED' />
+  </field>
+  <field number='341' name='TradSesStartTime' type='UTCTIMESTAMP' />
+  <field number='342' name='TradSesOpenTime' type='UTCTIMESTAMP' />
+  <field number='343' name='TradSesPreCloseTime' type='UTCTIMESTAMP' />
+  <field number='344' name='TradSesCloseTime' type='UTCTIMESTAMP' />
+  <field number='345' name='TradSesEndTime' type='UTCTIMESTAMP' />
+  <field number='346' name='NumberOfOrders' type='INT' />
+  <field number='347' name='MessageEncoding' type='STRING' />
+  <field number='348' name='EncodedIssuerLen' type='LENGTH' />
+  <field number='349' name='EncodedIssuer' type='DATA' />
+  <field number='350' name='EncodedSecurityDescLen' type='LENGTH' />
+  <field number='351' name='EncodedSecurityDesc' type='DATA' />
+  <field number='352' name='EncodedListExecInstLen' type='LENGTH' />
+  <field number='353' name='EncodedListExecInst' type='DATA' />
+  <field number='354' name='EncodedTextLen' type='LENGTH' />
