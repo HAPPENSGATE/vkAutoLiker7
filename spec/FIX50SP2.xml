@@ -7156,3 +7156,37 @@
    <value enum='25' description='CROSS' />
    <value enum='26' description='POST_CLOSE' />
   </field>
+  <field number='327' name='HaltReasonInt' type='INT'>
+   <value enum='0' description='NEWS_DISSEMINATION' />
+   <value enum='1' description='ORDER_INFLUX' />
+   <value enum='2' description='ORDER_IMBALANCE' />
+   <value enum='3' description='ADDITIONAL_INFORMATION' />
+   <value enum='4' description='NEWS_PENDING' />
+   <value enum='5' description='EQUIPMENT_CHANGEOVER' />
+  </field>
+  <field number='328' name='InViewOfCommon' type='BOOLEAN'>
+   <value enum='N' description='NO' />
+   <value enum='Y' description='YES' />
+  </field>
+  <field number='329' name='DueToRelated' type='BOOLEAN'>
+   <value enum='N' description='NO' />
+   <value enum='Y' description='YES' />
+  </field>
+  <field number='330' name='BuyVolume' type='QTY' />
+  <field number='331' name='SellVolume' type='QTY' />
+  <field number='332' name='HighPx' type='PRICE' />
+  <field number='333' name='LowPx' type='PRICE' />
+  <field number='334' name='Adjustment' type='INT'>
+   <value enum='1' description='CANCEL' />
+   <value enum='2' description='ERROR' />
+   <value enum='3' description='CORRECTION' />
+  </field>
+  <field number='335' name='TradSesReqID' type='STRING' />
+  <field number='336' name='TradingSessionID' type='STRING'>
+   <value enum='1' description='DAY' />
+   <value enum='2' description='HALFDAY' />
+   <value enum='3' description='MORNING' />
+   <value enum='4' description='AFTERNOON' />
+   <value enum='5' description='EVENING' />
+   <value enum='6' description='AFTER_HOURS' />
+  </field>
