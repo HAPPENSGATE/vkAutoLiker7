@@ -7272,3 +7272,46 @@
   <field number='376' name='ComplianceID' type='STRING' />
   <field number='377' name='SolicitedFlag' type='BOOLEAN'>
    <value enum='N' description='NO' />
+   <value enum='Y' description='YES' />
+  </field>
+  <field number='378' name='ExecRestatementReason' type='INT'>
+   <value enum='0' description='GT_CORPORATE_ACTION' />
+   <value enum='1' description='GT_RENEWAL' />
+   <value enum='10' description='WAREHOUSE_RECAP' />
+   <value enum='2' description='VERBAL_CHANGE' />
+   <value enum='3' description='REPRICING_OF_ORDER' />
+   <value enum='4' description='BROKER_OPTION' />
+   <value enum='5' description='PARTIAL_DECLINE_OF_ORDERQTY' />
+   <value enum='6' description='CANCEL_ON_TRADING_HALT' />
+   <value enum='7' description='CANCEL_ON_SYSTEM_FAILURE' />
+   <value enum='8' description='MARKET' />
+   <value enum='9' description='CANCELED_NOT_BEST' />
+   <value enum='99' description='OTHER' />
+   <value enum='11' description='PEG_REFRESH' />
+  </field>
+  <field number='379' name='BusinessRejectRefID' type='STRING' />
+  <field number='380' name='BusinessRejectReason' type='INT'>
+   <value enum='0' description='OTHER' />
+   <value enum='1' description='UNKNOWN_ID' />
+   <value enum='2' description='UNKNOWN_SECURITY' />
+   <value enum='3' description='UNSUPPORTED_MESSAGE_TYPE' />
+   <value enum='4' description='APPLICATION_NOT_AVAILABLE' />
+   <value enum='5' description='CONDITIONALLY_REQUIRED_FIELD_MISSING' />
+   <value enum='6' description='NOT_AUTHORIZED' />
+   <value enum='7' description='DELIVERTO_FIRM_NOT_AVAILABLE_AT_THIS_TIME' />
+   <value enum='18' description='INVALID_PRICE_INCREMENT' />
+  </field>
+  <field number='381' name='GrossTradeAmt' type='AMT' />
+  <field number='382' name='NoContraBrokers' type='NUMINGROUP' />
+  <field number='383' name='MaxMessageSize' type='LENGTH' />
+  <field number='384' name='NoMsgTypes' type='NUMINGROUP' />
+  <field number='385' name='MsgDirection' type='CHAR'>
+   <value enum='R' description='RECEIVE' />
+   <value enum='S' description='SEND' />
+  </field>
+  <field number='386' name='NoTradingSessions' type='NUMINGROUP' />
+  <field number='387' name='TotalVolumeTraded' type='QTY' />
+  <field number='388' name='DiscretionInst' type='CHAR'>
+   <value enum='0' description='RELATED_TO_DISPLAYED_PRICE' />
+   <value enum='1' description='RELATED_TO_MARKET_PRICE' />
+   <value enum='2' description='RELATED_TO_PRIMARY_PRICE' />
