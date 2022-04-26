@@ -7224,3 +7224,51 @@
   <field number='352' name='EncodedListExecInstLen' type='LENGTH' />
   <field number='353' name='EncodedListExecInst' type='DATA' />
   <field number='354' name='EncodedTextLen' type='LENGTH' />
+  <field number='355' name='EncodedText' type='DATA' />
+  <field number='356' name='EncodedSubjectLen' type='LENGTH' />
+  <field number='357' name='EncodedSubject' type='DATA' />
+  <field number='358' name='EncodedHeadlineLen' type='LENGTH' />
+  <field number='359' name='EncodedHeadline' type='DATA' />
+  <field number='360' name='EncodedAllocTextLen' type='LENGTH' />
+  <field number='361' name='EncodedAllocText' type='DATA' />
+  <field number='362' name='EncodedUnderlyingIssuerLen' type='LENGTH' />
+  <field number='363' name='EncodedUnderlyingIssuer' type='DATA' />
+  <field number='364' name='EncodedUnderlyingSecurityDescLen' type='LENGTH' />
+  <field number='365' name='EncodedUnderlyingSecurityDesc' type='DATA' />
+  <field number='366' name='AllocPrice' type='PRICE' />
+  <field number='367' name='QuoteSetValidUntilTime' type='UTCTIMESTAMP' />
+  <field number='368' name='QuoteEntryRejectReason' type='INT' />
+  <field number='369' name='LastMsgSeqNumProcessed' type='SEQNUM' />
+  <field number='370' name='OnBehalfOfSendingTime' type='UTCTIMESTAMP' />
+  <field number='371' name='RefTagID' type='INT' />
+  <field number='372' name='RefMsgType' type='STRING' />
+  <field number='373' name='SessionRejectReason' type='INT'>
+   <value enum='0' description='INVALID_TAG_NUMBER' />
+   <value enum='1' description='REQUIRED_TAG_MISSING' />
+   <value enum='10' description='SENDINGTIME_ACCURACY_PROBLEM' />
+   <value enum='11' description='INVALID_MSGTYPE' />
+   <value enum='12' description='XML_VALIDATION_ERROR' />
+   <value enum='13' description='TAG_APPEARS_MORE_THAN_ONCE' />
+   <value enum='14' description='TAG_SPECIFIED_OUT_OF_REQUIRED_ORDER' />
+   <value enum='15' description='REPEATING_GROUP_FIELDS_OUT_OF_ORDER' />
+   <value enum='16' description='INCORRECT_NUMINGROUP_COUNT_FOR_REPEATING_GROUP' />
+   <value enum='17' description='NON_DATA_VALUE_INCLUDES_FIELD_DELIMITER' />
+   <value enum='2' description='TAG_NOT_DEFINED_FOR_THIS_MESSAGE_TYPE' />
+   <value enum='3' description='UNDEFINED_TAG' />
+   <value enum='4' description='TAG_SPECIFIED_WITHOUT_A_VALUE' />
+   <value enum='5' description='VALUE_IS_INCORRECT' />
+   <value enum='6' description='INCORRECT_DATA_FORMAT_FOR_VALUE' />
+   <value enum='7' description='DECRYPTION_PROBLEM' />
+   <value enum='8' description='SIGNATURE_PROBLEM' />
+   <value enum='9' description='COMPID_PROBLEM' />
+   <value enum='99' description='OTHER' />
+   <value enum='18' description='INVALID_UNSUPPORTED_APPLICATION_VERSION' />
+  </field>
+  <field number='374' name='BidRequestTransType' type='CHAR'>
+   <value enum='C' description='CANCEL' />
+   <value enum='N' description='NO' />
+  </field>
+  <field number='375' name='ContraBroker' type='STRING' />
+  <field number='376' name='ComplianceID' type='STRING' />
+  <field number='377' name='SolicitedFlag' type='BOOLEAN'>
+   <value enum='N' description='NO' />
