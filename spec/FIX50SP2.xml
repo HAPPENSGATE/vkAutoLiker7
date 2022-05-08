@@ -7414,3 +7414,41 @@
    <value enum='9' description='YIELD' />
    <value enum='13' description='PRODUCT_TICKS_IN_HALFS' />
    <value enum='14' description='PRODUCT_TICKS_IN_FOURTHS' />
+   <value enum='15' description='PRODUCT_TICKS_IN_EIGHTS' />
+   <value enum='16' description='PRODUCT_TICKS_IN_SIXTEENTHS' />
+   <value enum='17' description='PRODUCT_TICKS_IN_THIRTY_SECONDS' />
+   <value enum='18' description='PRODUCT_TICKS_IN_SIXTY_FORTHS' />
+   <value enum='19' description='PRODUCT_TICKS_IN_ONE_TWENTY_EIGHTS' />
+  </field>
+  <field number='424' name='DayOrderQty' type='QTY' />
+  <field number='425' name='DayCumQty' type='QTY' />
+  <field number='426' name='DayAvgPx' type='PRICE' />
+  <field number='427' name='GTBookingInst' type='INT'>
+   <value enum='0' description='BOOK_OUT_ALL_TRADES_ON_DAY_OF_EXECUTION' />
+   <value enum='1' description='ACCUMULATE_EXECTUIONS_UNTIL_FORDER_IS_FILLED_OR_EXPIRES' />
+   <value enum='2' description='ACCUMULATE_UNTIL_VERBALLLY_NOTIFIED_OTHERWISE' />
+  </field>
+  <field number='428' name='NoStrikes' type='NUMINGROUP' />
+  <field number='429' name='ListStatusType' type='INT'>
+   <value enum='1' description='ACK' />
+   <value enum='2' description='RESPONSE' />
+   <value enum='3' description='TIMED' />
+   <value enum='4' description='EXEC_STARTED' />
+   <value enum='5' description='ALL_DONE' />
+   <value enum='6' description='ALERT' />
+  </field>
+  <field number='430' name='NetGrossInd' type='INT'>
+   <value enum='1' description='NET' />
+   <value enum='2' description='GROSS' />
+  </field>
+  <field number='431' name='ListOrderStatus' type='INT'>
+   <value enum='1' description='IN_BIDDING_PROCESS' />
+   <value enum='2' description='RECEIVED_FOR_EXECUTION' />
+   <value enum='3' description='EXECUTING' />
+   <value enum='4' description='CANCELLING' />
+   <value enum='5' description='ALERT' />
+   <value enum='6' description='ALL_DONE' />
+   <value enum='7' description='REJECT' />
+  </field>
+  <field number='432' name='ExpireDate' type='LOCALMKTDATE' />
+  <field number='433' name='ListExecInstType' type='CHAR'>
