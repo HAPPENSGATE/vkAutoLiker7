@@ -7493,3 +7493,42 @@
    <value enum='C' description='GENERALLY_ACCEPTED_MARKET_PARTICIPANT_IDENTIFIER' />
    <value enum='D' description='PROPRIETARY' />
    <value enum='E' description='ISO_COUNTRY_CODE' />
+   <value enum='F' description='SETTLEMENT_ENTITY_LOCATION' />
+   <value enum='G' description='MIC' />
+   <value enum='H' description='CSD_PARTICIPANT_MEMBER_CODE' />
+   <value enum='I' description='DIRECTED_BROKER_THREE_CHARACTER_ACRONYM_AS_DEFINED_IN_ISITC_ETC_BEST_PRACTICE_GUIDELINES_DOCUMENT' />
+  </field>
+  <field number='448' name='PartyID' type='STRING' />
+  <field number='449' name='TotalVolumeTradedDate' type='UTCDATEONLY' />
+  <field number='450' name='TotalVolumeTradedTime' type='UTCTIMEONLY' />
+  <field number='451' name='NetChgPrevDay' type='PRICEOFFSET' />
+  <field number='452' name='PartyRole' type='INT'>
+   <value enum='1' description='EXECUTING_FIRM' />
+   <value enum='10' description='SETTLEMENT_LOCATION' />
+   <value enum='11' description='ORDER_ORIGINATION_TRADER' />
+   <value enum='12' description='EXECUTING_TRADER' />
+   <value enum='13' description='ORDER_ORIGINATION_FIRM' />
+   <value enum='14' description='GIVEUP_CLEARING_FIRM' />
+   <value enum='15' description='CORRESPONDANT_CLEARING_FIRM' />
+   <value enum='16' description='EXECUTING_SYSTEM' />
+   <value enum='17' description='CONTRA_FIRM' />
+   <value enum='18' description='CONTRA_CLEARING_FIRM' />
+   <value enum='19' description='SPONSORING_FIRM' />
+   <value enum='2' description='BROKER_OF_CREDIT' />
+   <value enum='20' description='UNDERLYING_CONTRA_FIRM' />
+   <value enum='21' description='CLEARING_ORGANIZATION' />
+   <value enum='22' description='EXCHANGE' />
+   <value enum='24' description='CUSTOMER_ACCOUNT' />
+   <value enum='25' description='CORRESPONDENT_CLEARING_ORGANIZATION' />
+   <value enum='26' description='CORRESPONDENT_BROKER' />
+   <value enum='27' description='BUYER_SELLER' />
+   <value enum='28' description='CUSTODIAN' />
+   <value enum='29' description='INTERMEDIARY' />
+   <value enum='3' description='CLIENT_ID' />
+   <value enum='30' description='AGENT' />
+   <value enum='31' description='SUB_CUSTODIAN' />
+   <value enum='32' description='BENEFICIARY' />
+   <value enum='33' description='INTERESTED_PARTY' />
+   <value enum='34' description='REGULATORY_BODY' />
+   <value enum='35' description='LIQUIDITY_PROVIDER' />
+   <value enum='36' description='ENTERING_TRADER' />
