@@ -7452,3 +7452,44 @@
   </field>
   <field number='432' name='ExpireDate' type='LOCALMKTDATE' />
   <field number='433' name='ListExecInstType' type='CHAR'>
+   <value enum='1' description='IMMEDIATE' />
+   <value enum='2' description='WAIT_FOR_EXECUT_INSTRUCTION' />
+   <value enum='3' description='EXCHANGE_SWITCH_CIV_ORDER_3' />
+   <value enum='4' description='EXCHANGE_SWITCH_CIV_ORDER_4' />
+   <value enum='5' description='EXCHANGE_SWITCH_CIV_ORDER_5' />
+  </field>
+  <field number='434' name='CxlRejResponseTo' type='CHAR'>
+   <value enum='1' description='ORDER_CANCEL_REQUEST' />
+   <value enum='2' description='ORDER_CANCEL_REPLACE_REQUEST' />
+  </field>
+  <field number='435' name='UnderlyingCouponRate' type='PERCENTAGE' />
+  <field number='436' name='UnderlyingContractMultiplier' type='FLOAT' />
+  <field number='437' name='ContraTradeQty' type='QTY' />
+  <field number='438' name='ContraTradeTime' type='UTCTIMESTAMP' />
+  <field number='439' name='ClearingFirm' type='STRING' />
+  <field number='440' name='ClearingAccount' type='STRING' />
+  <field number='441' name='LiquidityNumSecurities' type='INT' />
+  <field number='442' name='MultiLegReportingType' type='CHAR'>
+   <value enum='1' description='SINGLE_SECURITY' />
+   <value enum='2' description='INDIVIDUAL_LEG_OF_A_MULTI_LEG_SECURITY' />
+   <value enum='3' description='MULTI_LEG_SECURITY' />
+  </field>
+  <field number='443' name='StrikeTime' type='UTCTIMESTAMP' />
+  <field number='444' name='ListStatusText' type='STRING' />
+  <field number='445' name='EncodedListStatusTextLen' type='LENGTH' />
+  <field number='446' name='EncodedListStatusText' type='DATA' />
+  <field number='447' name='PartyIDSource' type='CHAR'>
+   <value enum='1' description='KOREAN_INVESTOR_ID' />
+   <value enum='2' description='TAIWANESE_QUALIFIED_FOREIGN_INVESTOR_ID_QFII_FID' />
+   <value enum='3' description='TAIWANESE_TRADING_ACCT' />
+   <value enum='4' description='MALAYSIAN_CENTRAL_DEPOSITORY' />
+   <value enum='5' description='CHINESE_INVESTOR_ID' />
+   <value enum='6' description='UK_NATIONAL_INSURANCE_OR_PENSION_NUMBER' />
+   <value enum='7' description='US_SOCIAL_SECURITY_NUMBER' />
+   <value enum='8' description='US_EMPLOYER_OR_TAX_ID_NUMBER' />
+   <value enum='9' description='AUSTRALIAN_BUSINESS_NUMBER' />
+   <value enum='A' description='AUSTRALIAN_TAX_FILE_NUMBER' />
+   <value enum='B' description='BIC' />
+   <value enum='C' description='GENERALLY_ACCEPTED_MARKET_PARTICIPANT_IDENTIFIER' />
+   <value enum='D' description='PROPRIETARY' />
+   <value enum='E' description='ISO_COUNTRY_CODE' />
