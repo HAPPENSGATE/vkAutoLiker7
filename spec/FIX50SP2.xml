@@ -7532,3 +7532,43 @@
    <value enum='34' description='REGULATORY_BODY' />
    <value enum='35' description='LIQUIDITY_PROVIDER' />
    <value enum='36' description='ENTERING_TRADER' />
+   <value enum='37' description='CONTRA_TRADER' />
+   <value enum='38' description='POSITION_ACCOUNT' />
+   <value enum='4' description='CLEARING_FIRM' />
+   <value enum='5' description='INVESTOR_ID' />
+   <value enum='6' description='INTRODUCING_FIRM' />
+   <value enum='7' description='ENTERING_FIRM' />
+   <value enum='8' description='LOCATE' />
+   <value enum='9' description='FUND_MANAGER_CLIENT_ID' />
+   <value enum='60' description='INTRODUCING_BROKER' />
+   <value enum='41' description='CONTRA_POSITION_ACCOUNT' />
+   <value enum='42' description='CONTRA_EXCHANGE' />
+   <value enum='43' description='INTERNAL_CARRY_ACCOUNT' />
+   <value enum='44' description='ORDER_ENTRY_OPERATOR_ID' />
+   <value enum='45' description='SECONDARY_ACCOUNT_NUMBER' />
+   <value enum='46' description='FOREIGN_FIRM' />
+   <value enum='47' description='THIRD_PARTY_ALLOCATION_FIRM' />
+   <value enum='48' description='CLAIMING_ACCOUNT' />
+   <value enum='49' description='ASSET_MANAGER' />
+   <value enum='50' description='PLEDGOR_ACCOUNT' />
+   <value enum='51' description='PLEDGEE_ACCOUNT' />
+   <value enum='52' description='LARGE_TRADER_REPORTABLE_ACCOUNT' />
+   <value enum='53' description='TRADER_MNEMONIC' />
+   <value enum='54' description='SENDER_LOCATION' />
+   <value enum='55' description='SESSION_ID' />
+   <value enum='56' description='ACCEPTABLE_COUNTERPARTY' />
+   <value enum='57' description='UNACCEPTABLE_COUNTERPARTY' />
+   <value enum='58' description='ENTERING_UNIT' />
+   <value enum='59' description='EXECUTING_UNIT' />
+   <value enum='39' description='CONTRA_INVESTOR_ID' />
+   <value enum='40' description='TRANSFER_TO_FIRM' />
+   <value enum='61' description='QUOTE_ORIGINATOR' />
+   <value enum='62' description='REPORT_ORIGINATOR' />
+   <value enum='63' description='SYSTEMATIC_INTERNALISER' />
+   <value enum='64' description='MULTILATERAL_TRADING_FACILITY' />
+   <value enum='65' description='REGULATED_MARKET' />
+   <value enum='66' description='MARKET_MAKER' />
+   <value enum='67' description='INVESTMENT_FIRM' />
+   <value enum='68' description='HOST_COMPETENT_AUTHORITY' />
+   <value enum='69' description='HOME_COMPETENT_AUTHORITY' />
+   <value enum='70' description='COMPETENT_AUTHORITY_OF_THE_MOST_RELEVANT_MARKET_IN_TERMS_OF_LIQUIDITY' />
