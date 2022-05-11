@@ -7572,3 +7572,45 @@
    <value enum='68' description='HOST_COMPETENT_AUTHORITY' />
    <value enum='69' description='HOME_COMPETENT_AUTHORITY' />
    <value enum='70' description='COMPETENT_AUTHORITY_OF_THE_MOST_RELEVANT_MARKET_IN_TERMS_OF_LIQUIDITY' />
+   <value enum='71' description='COMPETENT_AUTHORITY_OF_THE_TRANSACTION' />
+   <value enum='72' description='REPORTING_INTERMEDIARY' />
+   <value enum='73' description='EXECUTION_VENUE' />
+   <value enum='74' description='MARKET_DATA_ENTRY_ORIGINATOR' />
+   <value enum='75' description='LOCATION_ID' />
+   <value enum='76' description='DESK_ID' />
+   <value enum='77' description='MARKET_DATA_MARKET' />
+   <value enum='78' description='ALLOCATION_ENTITY' />
+   <value enum='79' description='PRIME_BROKER_PROVIDING_GENERAL_TRADE_SERVICES' />
+   <value enum='80' description='STEP_OUT_FIRM' />
+   <value enum='81' description='BROKERCLEARINGID' />
+   <value enum='82' description='CENTRAL_REGISTRATION_DEPOSITORY' />
+   <value enum='83' description='CLEARING_ACCOUNT' />
+   <value enum='84' description='ACCEPTABLE_SETTLING_COUNTERPARTY' />
+   <value enum='85' description='UNACCEPTABLE_SETTLING_COUNTERPARTY' />
+  </field>
+  <field number='453' name='NoPartyIDs' type='NUMINGROUP' />
+  <field number='454' name='NoSecurityAltID' type='NUMINGROUP' />
+  <field number='455' name='SecurityAltID' type='STRING' />
+  <field number='456' name='SecurityAltIDSource' type='STRING' />
+  <field number='457' name='NoUnderlyingSecurityAltID' type='NUMINGROUP' />
+  <field number='458' name='UnderlyingSecurityAltID' type='STRING' />
+  <field number='459' name='UnderlyingSecurityAltIDSource' type='STRING' />
+  <field number='460' name='Product' type='INT'>
+   <value enum='1' description='AGENCY' />
+   <value enum='10' description='MORTGAGE' />
+   <value enum='11' description='MUNICIPAL' />
+   <value enum='12' description='OTHER' />
+   <value enum='13' description='FINANCING' />
+   <value enum='2' description='COMMODITY' />
+   <value enum='3' description='CORPORATE' />
+   <value enum='4' description='CURRENCY' />
+   <value enum='5' description='EQUITY' />
+   <value enum='6' description='GOVERNMENT' />
+   <value enum='7' description='INDEX' />
+   <value enum='8' description='LOAN' />
+   <value enum='9' description='MONEYMARKET' />
+  </field>
+  <field number='461' name='CFICode' type='STRING' />
+  <field number='462' name='UnderlyingProduct' type='INT' />
+  <field number='463' name='UnderlyingCFICode' type='STRING' />
+  <field number='464' name='TestMessageIndicator' type='BOOLEAN'>
