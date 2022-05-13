@@ -7715,3 +7715,35 @@
    <value enum='9' description='DIRECT_DEBIT' />
   </field>
   <field number='493' name='RegistAcctType' type='STRING' />
+  <field number='494' name='Designation' type='STRING' />
+  <field number='495' name='TaxAdvantageType' type='INT'>
+   <value enum='0' description='NONE_NOT_APPLICABLE' />
+   <value enum='1' description='MAXI_ISA' />
+   <value enum='10' description='EMPLOYEE_10' />
+   <value enum='11' description='EMPLOYER_11' />
+   <value enum='12' description='EMPLOYER_12' />
+   <value enum='13' description='NON_FUND_PROTOTYPE_IRA' />
+   <value enum='14' description='NON_FUND_QUALIFIED_PLAN' />
+   <value enum='15' description='DEFINED_CONTRIBUTION_PLAN' />
+   <value enum='16' description='INDIVIDUAL_RETIREMENT_ACCOUNT_16' />
+   <value enum='17' description='INDIVIDUAL_RETIREMENT_ACCOUNT_17' />
+   <value enum='18' description='KEOGH' />
+   <value enum='19' description='PROFIT_SHARING_PLAN' />
+   <value enum='2' description='TESSA' />
+   <value enum='20' description='401' />
+   <value enum='21' description='SELF_DIRECTED_IRA' />
+   <value enum='22' description='403' />
+   <value enum='23' description='457' />
+   <value enum='24' description='ROTH_IRA_24' />
+   <value enum='25' description='ROTH_IRA_25' />
+   <value enum='26' description='ROTH_CONVERSION_IRA_26' />
+   <value enum='27' description='ROTH_CONVERSION_IRA_27' />
+   <value enum='28' description='EDUCATION_IRA_28' />
+   <value enum='29' description='EDUCATION_IRA_29' />
+   <value enum='3' description='MINI_CASH_ISA' />
+   <value enum='4' description='MINI_STOCKS_AND_SHARES_ISA' />
+   <value enum='5' description='MINI_INSURANCE_ISA' />
+   <value enum='6' description='CURRENT_YEAR_PAYMENT' />
+   <value enum='7' description='PRIOR_YEAR_PAYMENT' />
+   <value enum='8' description='ASSET_TRANSFER' />
+   <value enum='9' description='EMPLOYEE_9' />
