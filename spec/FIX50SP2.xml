@@ -7747,3 +7747,40 @@
    <value enum='7' description='PRIOR_YEAR_PAYMENT' />
    <value enum='8' description='ASSET_TRANSFER' />
    <value enum='9' description='EMPLOYEE_9' />
+   <value enum='999' description='OTHER' />
+  </field>
+  <field number='496' name='RegistRejReasonText' type='STRING' />
+  <field number='497' name='FundRenewWaiv' type='CHAR'>
+   <value enum='N' description='NO' />
+   <value enum='Y' description='YES' />
+  </field>
+  <field number='498' name='CashDistribAgentName' type='STRING' />
+  <field number='499' name='CashDistribAgentCode' type='STRING' />
+  <field number='500' name='CashDistribAgentAcctNumber' type='STRING' />
+  <field number='501' name='CashDistribPayRef' type='STRING' />
+  <field number='502' name='CashDistribAgentAcctName' type='STRING' />
+  <field number='503' name='CardStartDate' type='LOCALMKTDATE' />
+  <field number='504' name='PaymentDate' type='LOCALMKTDATE' />
+  <field number='505' name='PaymentRemitterID' type='STRING' />
+  <field number='506' name='RegistStatus' type='CHAR'>
+   <value enum='A' description='ACCEPTED' />
+   <value enum='H' description='HELD' />
+   <value enum='N' description='REMINDER' />
+   <value enum='R' description='REJECTED' />
+  </field>
+  <field number='507' name='RegistRejReasonCode' type='INT'>
+   <value enum='1' description='INVALID_UNACCEPTABLE_ACCOUNT_TYPE' />
+   <value enum='10' description='INVALID_UNACEEPTABLE_INVESTOR_ID_SOURCE' />
+   <value enum='11' description='INVALID_UNACCEPTABLE_DATE_OF_BIRTH' />
+   <value enum='12' description='INVALID_UNACCEPTABLE_INVESTOR_COUNTRY_OF_RESIDENCE' />
+   <value enum='13' description='INVALID_UNACCEPTABLE_NO_DISTRIB_INSTNS' />
+   <value enum='14' description='INVALID_UNACCEPTABLE_DISTRIB_PERCENTAGE' />
+   <value enum='15' description='INVALID_UNACCEPTABLE_DISTRIB_PAYMENT_METHOD' />
+   <value enum='16' description='INVALID_UNACCEPTABLE_CASH_DISTRIB_AGENT_ACCT_NAME' />
+   <value enum='17' description='INVALID_UNACCEPTABLE_CASH_DISTRIB_AGENT_CODE' />
+   <value enum='18' description='INVALID_UNACCEPTABLE_CASH_DISTRIB_AGENT_ACCT_NUM' />
+   <value enum='2' description='INVALID_UNACCEPTABLE_TAX_EXEMPT_TYPE' />
+   <value enum='3' description='INVALID_UNACCEPTABLE_OWNERSHIP_TYPE' />
+   <value enum='4' description='INVALID_UNACCEPTABLE_NO_REG_DETAILS' />
+   <value enum='5' description='INVALID_UNACCEPTABLE_REG_SEQ_NO' />
+   <value enum='6' description='INVALID_UNACCEPTABLE_REG_DETAILS' />
