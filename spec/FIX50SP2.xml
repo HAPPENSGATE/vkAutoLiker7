@@ -7784,3 +7784,61 @@
    <value enum='4' description='INVALID_UNACCEPTABLE_NO_REG_DETAILS' />
    <value enum='5' description='INVALID_UNACCEPTABLE_REG_SEQ_NO' />
    <value enum='6' description='INVALID_UNACCEPTABLE_REG_DETAILS' />
+   <value enum='7' description='INVALID_UNACCEPTABLE_MAILING_DETAILS' />
+   <value enum='8' description='INVALID_UNACCEPTABLE_MAILING_INSTRUCTIONS' />
+   <value enum='9' description='INVALID_UNACCEPTABLE_INVESTOR_ID' />
+   <value enum='99' description='OTHER' />
+  </field>
+  <field number='508' name='RegistRefID' type='STRING' />
+  <field number='509' name='RegistDtls' type='STRING' />
+  <field number='510' name='NoDistribInsts' type='NUMINGROUP' />
+  <field number='511' name='RegistEmail' type='STRING' />
+  <field number='512' name='DistribPercentage' type='PERCENTAGE' />
+  <field number='513' name='RegistID' type='STRING' />
+  <field number='514' name='RegistTransType' type='CHAR'>
+   <value enum='0' description='NEW' />
+   <value enum='1' description='REPLACE' />
+   <value enum='2' description='CANCEL' />
+  </field>
+  <field number='515' name='ExecValuationPoint' type='UTCTIMESTAMP' />
+  <field number='516' name='OrderPercent' type='PERCENTAGE' />
+  <field number='517' name='OwnershipType' type='CHAR'>
+   <value enum='2' description='JOINT_TRUSTEES' />
+   <value enum='J' description='JOINT_INVESTORS' />
+   <value enum='T' description='TENANTS_IN_COMMON' />
+  </field>
+  <field number='518' name='NoContAmts' type='NUMINGROUP' />
+  <field number='519' name='ContAmtType' type='INT'>
+   <value enum='1' description='COMMISSION_AMOUNT' />
+   <value enum='10' description='EXIT_CHARGE_PERCENT' />
+   <value enum='11' description='FUND_BASED_RENEWAL_COMMISSION_PERCENT' />
+   <value enum='12' description='PROJECTED_FUND_VALUE' />
+   <value enum='13' description='FUND_BASED_RENEWAL_COMMISSION_AMOUNT_13' />
+   <value enum='14' description='FUND_BASED_RENEWAL_COMMISSION_AMOUNT_14' />
+   <value enum='15' description='NET_SETTLEMENT_AMOUNT' />
+   <value enum='2' description='COMMISSION_PERCENT' />
+   <value enum='3' description='INITIAL_CHARGE_AMOUNT' />
+   <value enum='4' description='INITIAL_CHARGE_PERCENT' />
+   <value enum='5' description='DISCOUNT_AMOUNT' />
+   <value enum='6' description='DISCOUNT_PERCENT' />
+   <value enum='7' description='DILUTION_LEVY_AMOUNT' />
+   <value enum='8' description='DILUTION_LEVY_PERCENT' />
+   <value enum='9' description='EXIT_CHARGE_AMOUNT' />
+  </field>
+  <field number='520' name='ContAmtValue' type='FLOAT' />
+  <field number='521' name='ContAmtCurr' type='CURRENCY' />
+  <field number='522' name='OwnerType' type='INT'>
+   <value enum='1' description='INDIVIDUAL_INVESTOR' />
+   <value enum='10' description='NETWORKING_SUB_ACCOUNT' />
+   <value enum='11' description='NON_PROFIT_ORGANIZATION' />
+   <value enum='12' description='CORPORATE_BODY' />
+   <value enum='13' description='NOMINEE' />
+   <value enum='2' description='PUBLIC_COMPANY' />
+   <value enum='3' description='PRIVATE_COMPANY' />
+   <value enum='4' description='INDIVIDUAL_TRUSTEE' />
+   <value enum='5' description='COMPANY_TRUSTEE' />
+   <value enum='6' description='PENSION_PLAN' />
+   <value enum='7' description='CUSTODIAN_UNDER_GIFTS_TO_MINORS_ACT' />
+   <value enum='8' description='TRUSTS' />
+   <value enum='9' description='FIDUCIARIES' />
+  </field>
