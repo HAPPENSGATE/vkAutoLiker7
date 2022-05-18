@@ -7842,3 +7842,46 @@
    <value enum='8' description='TRUSTS' />
    <value enum='9' description='FIDUCIARIES' />
   </field>
+  <field number='523' name='PartySubID' type='STRING' />
+  <field number='524' name='NestedPartyID' type='STRING' />
+  <field number='525' name='NestedPartyIDSource' type='CHAR' />
+  <field number='526' name='SecondaryClOrdID' type='STRING' />
+  <field number='527' name='SecondaryExecID' type='STRING' />
+  <field number='528' name='OrderCapacity' type='CHAR'>
+   <value enum='A' description='AGENCY' />
+   <value enum='G' description='PROPRIETARY' />
+   <value enum='I' description='INDIVIDUAL' />
+   <value enum='P' description='PRINCIPAL' />
+   <value enum='R' description='RISKLESS_PRINCIPAL' />
+   <value enum='W' description='AGENT_FOR_OTHER_MEMBER' />
+  </field>
+  <field number='529' name='OrderRestrictions' type='MULTIPLECHARVALUE'>
+   <value enum='1' description='PROGRAM_TRADE' />
+   <value enum='2' description='INDEX_ARBITRAGE' />
+   <value enum='3' description='NON_INDEX_ARBITRAGE' />
+   <value enum='4' description='COMPETING_MARKET_MAKER' />
+   <value enum='5' description='ACTING_AS_MARKET_MAKER_OR_SPECIALIST_IN_THE_SECURITY' />
+   <value enum='6' description='ACTING_AS_MARKET_MAKER_OR_SPECIALIST_IN_THE_UNDERLYING_SECURITY_OF_A_DERIVATIVE_SECURITY' />
+   <value enum='7' description='FOREIGN_ENTITY' />
+   <value enum='8' description='EXTERNAL_MARKET_PARTICIPANT' />
+   <value enum='9' description='EXTERNAL_INTER_CONNECTED_MARKET_LINKAGE' />
+   <value enum='A' description='RISKLESS_ARBITRAGE' />
+   <value enum='B' description='ISSUER_HOLDING' />
+   <value enum='C' description='ISSUE_PRICE_STABILIZATION' />
+   <value enum='D' description='NON_ALGORITHMIC' />
+   <value enum='E' description='ALGORITHMIC' />
+   <value enum='F' description='CROSS' />
+  </field>
+  <field number='530' name='MassCancelRequestType' type='CHAR'>
+   <value enum='1' description='CANCEL_ORDERS_FOR_A_SECURITY' />
+   <value enum='2' description='CANCEL_ORDERS_FOR_AN_UNDERLYING_SECURITY' />
+   <value enum='3' description='CANCEL_ORDERS_FOR_A_PRODUCT' />
+   <value enum='4' description='CANCEL_ORDERS_FOR_A_CFICODE' />
+   <value enum='5' description='CANCEL_ORDERS_FOR_A_SECURITYTYPE' />
+   <value enum='6' description='CANCEL_ORDERS_FOR_A_TRADING_SESSION' />
+   <value enum='7' description='CANCEL_ALL_ORDERS' />
+   <value enum='8' description='CANCEL_ORDERS_FOR_A_MARKET' />
+   <value enum='9' description='CANCEL_ORDERS_FOR_A_MARKET_SEGMENT' />
+   <value enum='A' description='CANCEL_ORDERS_FOR_A_SECURITY_GROUP' />
+   <value enum='B' description='CANCEL_FOR_SECURITY_ISSUER' />
+   <value enum='C' description='CANCEL_FOR_ISSUER_OF_UNDERLYING_SECURITY' />
