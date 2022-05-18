@@ -7885,3 +7885,39 @@
    <value enum='A' description='CANCEL_ORDERS_FOR_A_SECURITY_GROUP' />
    <value enum='B' description='CANCEL_FOR_SECURITY_ISSUER' />
    <value enum='C' description='CANCEL_FOR_ISSUER_OF_UNDERLYING_SECURITY' />
+  </field>
+  <field number='531' name='MassCancelResponse' type='CHAR'>
+   <value enum='0' description='CANCEL_REQUEST_REJECTED' />
+   <value enum='1' description='CANCEL_ORDERS_FOR_A_SECURITY' />
+   <value enum='2' description='CANCEL_ORDERS_FOR_AN_UNDERLYING_SECURITY' />
+   <value enum='3' description='CANCEL_ORDERS_FOR_A_PRODUCT' />
+   <value enum='4' description='CANCEL_ORDERS_FOR_A_CFICODE' />
+   <value enum='5' description='CANCEL_ORDERS_FOR_A_SECURITYTYPE' />
+   <value enum='6' description='CANCEL_ORDERS_FOR_A_TRADING_SESSION' />
+   <value enum='7' description='CANCEL_ALL_ORDERS' />
+   <value enum='8' description='CANCEL_ORDERS_FOR_A_MARKET' />
+   <value enum='9' description='CANCEL_ORDERS_FOR_A_MARKET_SEGMENT' />
+   <value enum='A' description='CANCEL_ORDERS_FOR_A_SECURITY_GROUP' />
+   <value enum='B' description='CANCEL_ORDERS_FOR_A_SECURITIES_ISSUER' />
+   <value enum='C' description='CANCEL_ORDERS_FOR_ISSUER_OF_UNDERLYING_SECURITY' />
+  </field>
+  <field number='532' name='MassCancelRejectReason' type='INT'>
+   <value enum='0' description='MASS_CANCEL_NOT_SUPPORTED' />
+   <value enum='1' description='INVALID_OR_UNKNOWN_SECURITY' />
+   <value enum='2' description='INVALID_OR_UNKOWN_UNDERLYING_SECURITY' />
+   <value enum='3' description='INVALID_OR_UNKNOWN_PRODUCT' />
+   <value enum='4' description='INVALID_OR_UNKNOWN_CFICODE' />
+   <value enum='5' description='INVALID_OR_UNKNOWN_SECURITYTYPE' />
+   <value enum='6' description='INVALID_OR_UNKNOWN_TRADING_SESSION' />
+   <value enum='99' description='OTHER' />
+   <value enum='7' description='INVALID_OR_UNKNOWN_MARKET' />
+   <value enum='8' description='INVALID_OR_UNKOWN_MARKET_SEGMENT' />
+   <value enum='9' description='INVALID_OR_UNKNOWN_SECURITY_GROUP' />
+   <value enum='10' description='INVALID_OR_UNKNOWN_SECURITY_ISSUER' />
+   <value enum='11' description='INVALID_OR_UNKNOWN_ISSUER_OF_UNDERLYING_SECURITY' />
+  </field>
+  <field number='533' name='TotalAffectedOrders' type='INT' />
+  <field number='534' name='NoAffectedOrders' type='NUMINGROUP' />
+  <field number='535' name='AffectedOrderID' type='STRING' />
+  <field number='536' name='AffectedSecondaryOrderID' type='STRING' />
+  <field number='537' name='QuoteType' type='INT'>
