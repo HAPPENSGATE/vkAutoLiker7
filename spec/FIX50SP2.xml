@@ -7921,3 +7921,46 @@
   <field number='535' name='AffectedOrderID' type='STRING' />
   <field number='536' name='AffectedSecondaryOrderID' type='STRING' />
   <field number='537' name='QuoteType' type='INT'>
+   <value enum='0' description='INDICATIVE' />
+   <value enum='1' description='TRADEABLE' />
+   <value enum='2' description='RESTRICTED_TRADEABLE' />
+   <value enum='3' description='COUNTER' />
+  </field>
+  <field number='538' name='NestedPartyRole' type='INT' />
+  <field number='539' name='NoNestedPartyIDs' type='NUMINGROUP' />
+  <field number='540' name='TotalAccruedInterestAmt' type='AMT' />
+  <field number='541' name='MaturityDate' type='LOCALMKTDATE' />
+  <field number='542' name='UnderlyingMaturityDate' type='LOCALMKTDATE' />
+  <field number='543' name='InstrRegistry' type='STRING' />
+  <field number='544' name='CashMargin' type='CHAR'>
+   <value enum='1' description='CASH' />
+   <value enum='2' description='MARGIN_OPEN' />
+   <value enum='3' description='MARGIN_CLOSE' />
+  </field>
+  <field number='545' name='NestedPartySubID' type='STRING' />
+  <field number='546' name='Scope' type='MULTIPLECHARVALUE'>
+   <value enum='1' description='LOCAL_MARKET' />
+   <value enum='2' description='NATIONAL' />
+   <value enum='3' description='GLOBAL' />
+  </field>
+  <field number='547' name='MDImplicitDelete' type='BOOLEAN'>
+   <value enum='N' description='NO' />
+   <value enum='Y' description='YES' />
+  </field>
+  <field number='548' name='CrossID' type='STRING' />
+  <field number='549' name='CrossType' type='INT'>
+   <value enum='1' description='CROSS_AON' />
+   <value enum='2' description='CROSS_IOC' />
+   <value enum='3' description='CROSS_ONE_SIDE' />
+   <value enum='4' description='CROSS_SAME_PRICE' />
+  </field>
+  <field number='550' name='CrossPrioritization' type='INT'>
+   <value enum='0' description='NONE' />
+   <value enum='1' description='BUY_SIDE_IS_PRIORITIZED' />
+   <value enum='2' description='SELL_SIDE_IS_PRIORITIZED' />
+  </field>
+  <field number='551' name='OrigCrossID' type='STRING' />
+  <field number='552' name='NoSides' type='NUMINGROUP'>
+   <value enum='1' description='ONE_SIDE' />
+   <value enum='2' description='BOTH_SIDES' />
+  </field>
