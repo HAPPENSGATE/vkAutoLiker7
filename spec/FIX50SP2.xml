@@ -7964,3 +7964,46 @@
    <value enum='1' description='ONE_SIDE' />
    <value enum='2' description='BOTH_SIDES' />
   </field>
+  <field number='553' name='Username' type='STRING' />
+  <field number='554' name='Password' type='STRING' />
+  <field number='555' name='NoLegs' type='NUMINGROUP' />
+  <field number='556' name='LegCurrency' type='CURRENCY' />
+  <field number='557' name='TotNoSecurityTypes' type='INT' />
+  <field number='558' name='NoSecurityTypes' type='NUMINGROUP' />
+  <field number='559' name='SecurityListRequestType' type='INT'>
+   <value enum='0' description='SYMBOL' />
+   <value enum='1' description='SECURITYTYPE_AND_OR_CFICODE' />
+   <value enum='2' description='PRODUCT' />
+   <value enum='3' description='TRADINGSESSIONID' />
+   <value enum='4' description='ALL_SECURITIES' />
+   <value enum='5' description='MARKETID_OR_MARKETID_PLUS_MARKETSEGMENTID' />
+  </field>
+  <field number='560' name='SecurityRequestResult' type='INT'>
+   <value enum='0' description='VALID_REQUEST' />
+   <value enum='1' description='INVALID_OR_UNSUPPORTED_REQUEST' />
+   <value enum='2' description='NO_INSTRUMENTS_FOUND_THAT_MATCH_SELECTION_CRITERIA' />
+   <value enum='3' description='NOT_AUTHORIZED_TO_RETRIEVE_INSTRUMENT_DATA' />
+   <value enum='4' description='INSTRUMENT_DATA_TEMPORARILY_UNAVAILABLE' />
+   <value enum='5' description='REQUEST_FOR_INSTRUMENT_DATA_NOT_SUPPORTED' />
+  </field>
+  <field number='561' name='RoundLot' type='QTY' />
+  <field number='562' name='MinTradeVol' type='QTY' />
+  <field number='563' name='MultiLegRptTypeReq' type='INT'>
+   <value enum='0' description='REPORT_BY_MULITLEG_SECURITY_ONLY' />
+   <value enum='1' description='REPORT_BY_MULTILEG_SECURITY_AND_BY_INSTRUMENT_LEGS_BELONGING_TO_THE_MULTILEG_SECURITY' />
+   <value enum='2' description='REPORT_BY_INSTRUMENT_LEGS_BELONGING_TO_THE_MULTILEG_SECURITY_ONLY' />
+  </field>
+  <field number='564' name='LegPositionEffect' type='CHAR' />
+  <field number='565' name='LegCoveredOrUncovered' type='INT' />
+  <field number='566' name='LegPrice' type='PRICE' />
+  <field number='567' name='TradSesStatusRejReason' type='INT'>
+   <value enum='1' description='UNKNOWN_OR_INVALID_TRADINGSESSIONID' />
+   <value enum='99' description='OTHER' />
+  </field>
+  <field number='568' name='TradeRequestID' type='STRING' />
+  <field number='569' name='TradeRequestType' type='INT'>
+   <value enum='0' description='ALL_TRADES' />
+   <value enum='1' description='MATCHED_TRADES_MATCHING_CRITERIA_PROVIDED_ON_REQUEST' />
+   <value enum='2' description='UNMATCHED_TRADES_THAT_MATCH_CRITERIA' />
+   <value enum='3' description='UNREPORTED_TRADES_THAT_MATCH_CRITERIA' />
+   <value enum='4' description='ADVISORIES_THAT_MATCH_CRITERIA' />
