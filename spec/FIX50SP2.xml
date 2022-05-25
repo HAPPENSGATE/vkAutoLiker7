@@ -8056,3 +8056,47 @@
    <value enum='0' description='PROCESS_NORMALLY' />
    <value enum='1' description='EXCLUDE_FROM_ALL_NETTING' />
    <value enum='10' description='AUTOMATIC_GIVE_UP_MODE' />
+   <value enum='11' description='QUALIFIED_SERVICE_REPRESENTATIVE_QSR' />
+   <value enum='12' description='CUSTOMER_TRADE' />
+   <value enum='13' description='SELF_CLEARING' />
+   <value enum='2' description='BILATERAL_NETTING_ONLY' />
+   <value enum='3' description='EX_CLEARING' />
+   <value enum='4' description='SPECIAL_TRADE' />
+   <value enum='5' description='MULTILATERAL_NETTING' />
+   <value enum='6' description='CLEAR_AGAINST_CENTRAL_COUNTERPARTY' />
+   <value enum='7' description='EXCLUDE_FROM_CENTRAL_COUNTERPARTY' />
+   <value enum='8' description='MANUAL_MODE' />
+   <value enum='9' description='AUTOMATIC_POSTING_MODE' />
+  </field>
+  <field number='578' name='TradeInputSource' type='STRING' />
+  <field number='579' name='TradeInputDevice' type='STRING' />
+  <field number='580' name='NoDates' type='INT' />
+  <field number='581' name='AccountType' type='INT'>
+   <value enum='1' description='ACCOUNT_IS_CARRIED_ON_CUSTOMER_SIDE_OF_THE_BOOKS' />
+   <value enum='2' description='ACCOUNT_IS_CARRIED_ON_NON_CUSTOMER_SIDE_OF_BOOKS' />
+   <value enum='3' description='HOUSE_TRADER' />
+   <value enum='4' description='FLOOR_TRADER' />
+   <value enum='6' description='ACCOUNT_IS_CARRIED_ON_NON_CUSTOMER_SIDE_OF_BOOKS_AND_IS_CROSS_MARGINED' />
+   <value enum='7' description='ACCOUNT_IS_HOUSE_TRADER_AND_IS_CROSS_MARGINED' />
+   <value enum='8' description='JOINT_BACK_OFFICE_ACCOUNT' />
+  </field>
+  <field number='582' name='CustOrderCapacity' type='INT'>
+   <value enum='1' description='MEMBER_TRADING_FOR_THEIR_OWN_ACCOUNT' />
+   <value enum='2' description='CLEARING_FIRM_TRADING_FOR_ITS_PROPRIETARY_ACCOUNT' />
+   <value enum='3' description='MEMBER_TRADING_FOR_ANOTHER_MEMBER' />
+   <value enum='4' description='ALL_OTHER' />
+  </field>
+  <field number='583' name='ClOrdLinkID' type='STRING' />
+  <field number='584' name='MassStatusReqID' type='STRING' />
+  <field number='585' name='MassStatusReqType' type='INT'>
+   <value enum='1' description='STATUS_FOR_ORDERS_FOR_A_SECURITY' />
+   <value enum='2' description='STATUS_FOR_ORDERS_FOR_AN_UNDERLYING_SECURITY' />
+   <value enum='3' description='STATUS_FOR_ORDERS_FOR_A_PRODUCT' />
+   <value enum='4' description='STATUS_FOR_ORDERS_FOR_A_CFICODE' />
+   <value enum='5' description='STATUS_FOR_ORDERS_FOR_A_SECURITYTYPE' />
+   <value enum='6' description='STATUS_FOR_ORDERS_FOR_A_TRADING_SESSION' />
+   <value enum='7' description='STATUS_FOR_ALL_ORDERS' />
+   <value enum='8' description='STATUS_FOR_ORDERS_FOR_A_PARTYID' />
+   <value enum='9' description='STATUS_FOR_SECURITY_ISSUER' />
+   <value enum='10' description='STATUS_FOR_ISSUER_OF_UNDERLYING_SECURITY' />
+  </field>
