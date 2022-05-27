@@ -8100,3 +8100,37 @@
    <value enum='9' description='STATUS_FOR_SECURITY_ISSUER' />
    <value enum='10' description='STATUS_FOR_ISSUER_OF_UNDERLYING_SECURITY' />
   </field>
+  <field number='586' name='OrigOrdModTime' type='UTCTIMESTAMP' />
+  <field number='587' name='LegSettlType' type='CHAR' />
+  <field number='588' name='LegSettlDate' type='LOCALMKTDATE' />
+  <field number='589' name='DayBookingInst' type='CHAR'>
+   <value enum='0' description='CAN_TRIGGER_BOOKING_WITHOUT_REFERENCE_TO_THE_ORDER_INITIATOR' />
+   <value enum='1' description='SPEAK_WITH_ORDER_INITIATOR_BEFORE_BOOKING' />
+   <value enum='2' description='ACCUMULATE' />
+  </field>
+  <field number='590' name='BookingUnit' type='CHAR'>
+   <value enum='0' description='EACH_PARTIAL_EXECUTION_IS_A_BOOKABLE_UNIT' />
+   <value enum='1' description='AGGREGATE_PARTIAL_EXECUTIONS_ON_THIS_ORDER_AND_BOOK_ONE_TRADE_PER_ORDER' />
+   <value enum='2' description='AGGREGATE_EXECUTIONS_FOR_THIS_SYMBOL_SIDE_AND_SETTLEMENT_DATE' />
+  </field>
+  <field number='591' name='PreallocMethod' type='CHAR'>
+   <value enum='0' description='PRO_RATA' />
+   <value enum='1' description='DO_NOT_PRO_RATA' />
+  </field>
+  <field number='592' name='UnderlyingCountryOfIssue' type='COUNTRY' />
+  <field number='593' name='UnderlyingStateOrProvinceOfIssue' type='STRING' />
+  <field number='594' name='UnderlyingLocaleOfIssue' type='STRING' />
+  <field number='595' name='UnderlyingInstrRegistry' type='STRING' />
+  <field number='596' name='LegCountryOfIssue' type='COUNTRY' />
+  <field number='597' name='LegStateOrProvinceOfIssue' type='STRING' />
+  <field number='598' name='LegLocaleOfIssue' type='STRING' />
+  <field number='599' name='LegInstrRegistry' type='STRING' />
+  <field number='600' name='LegSymbol' type='STRING' />
+  <field number='601' name='LegSymbolSfx' type='STRING' />
+  <field number='602' name='LegSecurityID' type='STRING' />
+  <field number='603' name='LegSecurityIDSource' type='STRING' />
+  <field number='604' name='NoLegSecurityAltID' type='STRING' />
+  <field number='605' name='LegSecurityAltID' type='STRING' />
+  <field number='606' name='LegSecurityAltIDSource' type='STRING' />
+  <field number='607' name='LegProduct' type='INT' />
+  <field number='608' name='LegCFICode' type='STRING' />
