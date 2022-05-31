@@ -8212,3 +8212,39 @@
   <field number='640' name='Price2' type='PRICE' />
   <field number='641' name='LastForwardPoints2' type='PRICEOFFSET' />
   <field number='642' name='BidForwardPoints2' type='PRICEOFFSET' />
+  <field number='643' name='OfferForwardPoints2' type='PRICEOFFSET' />
+  <field number='644' name='RFQReqID' type='STRING' />
+  <field number='645' name='MktBidPx' type='PRICE' />
+  <field number='646' name='MktOfferPx' type='PRICE' />
+  <field number='647' name='MinBidSize' type='QTY' />
+  <field number='648' name='MinOfferSize' type='QTY' />
+  <field number='649' name='QuoteStatusReqID' type='STRING' />
+  <field number='650' name='LegalConfirm' type='BOOLEAN'>
+   <value enum='N' description='NO' />
+   <value enum='Y' description='YES' />
+  </field>
+  <field number='651' name='UnderlyingLastPx' type='PRICE' />
+  <field number='652' name='UnderlyingLastQty' type='QTY' />
+  <field number='653' name='SecDefStatus' type='INT'>
+   <value enum='0' description='PENDING_APPROVAL' />
+   <value enum='1' description='APPROVED' />
+   <value enum='2' description='REJECTED' />
+   <value enum='3' description='UNAUTHORIZED_REQUEST' />
+   <value enum='4' description='INVALID_DEFINITION_REQUEST' />
+  </field>
+  <field number='654' name='LegRefID' type='STRING' />
+  <field number='655' name='ContraLegRefID' type='STRING' />
+  <field number='656' name='SettlCurrBidFxRate' type='FLOAT' />
+  <field number='657' name='SettlCurrOfferFxRate' type='FLOAT' />
+  <field number='658' name='QuoteRequestRejectReason' type='INT'>
+   <value enum='1' description='UNKNOWN_SYMBOL' />
+   <value enum='10' description='PASS' />
+   <value enum='2' description='EXCHANGE' />
+   <value enum='3' description='QUOTE_REQUEST_EXCEEDS_LIMIT' />
+   <value enum='4' description='TOO_LATE_TO_ENTER' />
+   <value enum='5' description='INVALID_PRICE' />
+   <value enum='6' description='NOT_AUTHORIZED_TO_REQUEST_QUOTE' />
+   <value enum='7' description='NO_MATCH_FOR_INQUIRY' />
+   <value enum='8' description='NO_MARKET_FOR_INSTRUMENT' />
+   <value enum='9' description='NO_INVENTORY' />
+   <value enum='99' description='OTHER' />
