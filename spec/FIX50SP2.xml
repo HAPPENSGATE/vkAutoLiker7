@@ -8165,3 +8165,50 @@
    <value enum='3' description='SELLSIDE_CALCULATED_USING_PRELIMINARY' />
    <value enum='4' description='SELLSIDE_CALCULATED_WITHOUT_PRELIMINARY' />
    <value enum='5' description='READY_TO_BOOK' />
+   <value enum='6' description='BUYSIDE_READY_TO_BOOK' />
+   <value enum='7' description='WAREHOUSE_INSTRUCTION' />
+   <value enum='8' description='REQUEST_TO_INTERMEDIARY' />
+   <value enum='9' description='ACCEPT' />
+   <value enum='10' description='REJECT' />
+   <value enum='11' description='ACCEPT_PENDING' />
+   <value enum='12' description='INCOMPLETE_GROUP' />
+   <value enum='13' description='COMPLETE_GROUP' />
+   <value enum='14' description='REVERSAL_PENDING' />
+  </field>
+  <field number='627' name='NoHops' type='NUMINGROUP' />
+  <field number='628' name='HopCompID' type='STRING' />
+  <field number='629' name='HopSendingTime' type='UTCTIMESTAMP' />
+  <field number='630' name='HopRefID' type='SEQNUM' />
+  <field number='631' name='MidPx' type='PRICE' />
+  <field number='632' name='BidYield' type='PERCENTAGE' />
+  <field number='633' name='MidYield' type='PERCENTAGE' />
+  <field number='634' name='OfferYield' type='PERCENTAGE' />
+  <field number='635' name='ClearingFeeIndicator' type='STRING'>
+   <value enum='1' description='1ST_YEAR_DELEGATE_TRADING_FOR_OWN_ACCOUNT' />
+   <value enum='2' description='2ND_YEAR_DELEGATE_TRADING_FOR_OWN_ACCOUNT' />
+   <value enum='3' description='3RD_YEAR_DELEGATE_TRADING_FOR_OWN_ACCOUNT' />
+   <value enum='4' description='4TH_YEAR_DELEGATE_TRADING_FOR_OWN_ACCOUNT' />
+   <value enum='5' description='5TH_YEAR_DELEGATE_TRADING_FOR_OWN_ACCOUNT' />
+   <value enum='9' description='6TH_YEAR_DELEGATE_TRADING_FOR_OWN_ACCOUNT' />
+   <value enum='B' description='CBOE_MEMBER' />
+   <value enum='C' description='NON_MEMBER_AND_CUSTOMER' />
+   <value enum='E' description='EQUITY_MEMBER_AND_CLEARING_MEMBER' />
+   <value enum='F' description='FULL_AND_ASSOCIATE_MEMBER_TRADING_FOR_OWN_ACCOUNT_AND_AS_FLOOR_BROKERS' />
+   <value enum='H' description='106H_AND_106J_FIRMS' />
+   <value enum='I' description='GIM_IDEM_AND_COM_MEMBERSHIP_INTEREST_HOLDERS' />
+   <value enum='L' description='LESSEE_106F_EMPLOYEES' />
+   <value enum='M' description='ALL_OTHER_OWNERSHIP_TYPES' />
+  </field>
+  <field number='636' name='WorkingIndicator' type='BOOLEAN'>
+   <value enum='N' description='NO' />
+   <value enum='Y' description='YES' />
+  </field>
+  <field number='637' name='LegLastPx' type='PRICE' />
+  <field number='638' name='PriorityIndicator' type='INT'>
+   <value enum='0' description='PRIORITY_UNCHANGED' />
+   <value enum='1' description='LOST_PRIORITY_AS_RESULT_OF_ORDER_CHANGE' />
+  </field>
+  <field number='639' name='PriceImprovement' type='PRICEOFFSET' />
+  <field number='640' name='Price2' type='PRICE' />
+  <field number='641' name='LastForwardPoints2' type='PRICEOFFSET' />
+  <field number='642' name='BidForwardPoints2' type='PRICEOFFSET' />
