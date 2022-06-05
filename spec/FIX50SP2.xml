@@ -8248,3 +8248,46 @@
    <value enum='8' description='NO_MARKET_FOR_INSTRUMENT' />
    <value enum='9' description='NO_INVENTORY' />
    <value enum='99' description='OTHER' />
+   <value enum='11' description='INSUFFICIENT_CREDIT' />
+  </field>
+  <field number='659' name='SideComplianceID' type='STRING' />
+  <field number='660' name='AcctIDSource' type='INT'>
+   <value enum='1' description='BIC' />
+   <value enum='2' description='SID_CODE' />
+   <value enum='3' description='TFM' />
+   <value enum='4' description='OMGEO' />
+   <value enum='5' description='DTCC_CODE' />
+   <value enum='99' description='OTHER' />
+  </field>
+  <field number='661' name='AllocAcctIDSource' type='INT' />
+  <field number='662' name='BenchmarkPrice' type='PRICE' />
+  <field number='663' name='BenchmarkPriceType' type='INT' />
+  <field number='664' name='ConfirmID' type='STRING' />
+  <field number='665' name='ConfirmStatus' type='INT'>
+   <value enum='1' description='RECEIVED' />
+   <value enum='2' description='MISMATCHED_ACCOUNT' />
+   <value enum='3' description='MISSING_SETTLEMENT_INSTRUCTIONS' />
+   <value enum='4' description='CONFIRMED' />
+   <value enum='5' description='REQUEST_REJECTED' />
+  </field>
+  <field number='666' name='ConfirmTransType' type='INT'>
+   <value enum='0' description='NEW' />
+   <value enum='1' description='REPLACE' />
+   <value enum='2' description='CANCEL' />
+  </field>
+  <field number='667' name='ContractSettlMonth' type='MONTHYEAR' />
+  <field number='668' name='DeliveryForm' type='INT'>
+   <value enum='1' description='BOOK_ENTRY' />
+   <value enum='2' description='BEARER' />
+  </field>
+  <field number='669' name='LastParPx' type='PRICE' />
+  <field number='670' name='NoLegAllocs' type='NUMINGROUP' />
+  <field number='671' name='LegAllocAccount' type='STRING' />
+  <field number='672' name='LegIndividualAllocID' type='STRING' />
+  <field number='673' name='LegAllocQty' type='QTY' />
+  <field number='674' name='LegAllocAcctIDSource' type='STRING' />
+  <field number='675' name='LegSettlCurrency' type='CURRENCY' />
+  <field number='676' name='LegBenchmarkCurveCurrency' type='CURRENCY' />
+  <field number='677' name='LegBenchmarkCurveName' type='STRING' />
+  <field number='678' name='LegBenchmarkCurvePoint' type='STRING' />
+  <field number='679' name='LegBenchmarkPrice' type='PRICE' />
