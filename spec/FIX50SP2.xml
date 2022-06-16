@@ -8371,3 +8371,51 @@
   <field number='704' name='LongQty' type='QTY' />
   <field number='705' name='ShortQty' type='QTY' />
   <field number='706' name='PosQtyStatus' type='INT'>
+   <value enum='0' description='SUBMITTED' />
+   <value enum='1' description='ACCEPTED' />
+   <value enum='2' description='REJECTED' />
+  </field>
+  <field number='707' name='PosAmtType' type='STRING'>
+   <value enum='CASH' description='CASH_AMOUNT' />
+   <value enum='CRES' description='CASH_RESIDUAL_AMOUNT' />
+   <value enum='FMTM' description='FINAL_MARK_TO_MARKET_AMOUNT' />
+   <value enum='IMTM' description='INCREMENTAL_MARK_TO_MARKET_AMOUNT' />
+   <value enum='PREM' description='PREMIUM_AMOUNT' />
+   <value enum='SMTM' description='START_OF_DAY_MARK_TO_MARKET_AMOUNT' />
+   <value enum='TVAR' description='TRADE_VARIATION_AMOUNT' />
+   <value enum='VADJ' description='VALUE_ADJUSTED_AMOUNT' />
+   <value enum='SETL' description='SETTLEMENT_VALUE' />
+   <value enum='ICPN' description='INITIAL_TRADE_COUPON_AMOUNT' />
+   <value enum='ACPN' description='ACCRUED_COUPON_AMOUNT' />
+   <value enum='CPN' description='COUPON_AMOUNT' />
+   <value enum='IACPN' description='INCREMENTAL_ACCRUED_COUPON' />
+   <value enum='CMTM' description='COLLATERALIZED_MARK_TO_MARKET' />
+   <value enum='ICMTM' description='INCREMENTAL_COLLATERALIZED_MARK_TO_MARKET' />
+   <value enum='DLV' description='COMPENSATION_AMOUNT' />
+   <value enum='BANK' description='TOTAL_BANKED_AMOUNT' />
+   <value enum='COLAT' description='TOTAL_COLLATERALIZED_AMOUNT' />
+  </field>
+  <field number='708' name='PosAmt' type='AMT' />
+  <field number='709' name='PosTransType' type='INT'>
+   <value enum='1' description='EXERCISE' />
+   <value enum='2' description='DO_NOT_EXERCISE' />
+   <value enum='3' description='POSITION_ADJUSTMENT' />
+   <value enum='4' description='POSITION_CHANGE_SUBMISSION_MARGIN_DISPOSITION' />
+   <value enum='5' description='PLEDGE' />
+   <value enum='6' description='LARGE_TRADER_SUBMISSION' />
+  </field>
+  <field number='710' name='PosReqID' type='STRING' />
+  <field number='711' name='NoUnderlyings' type='NUMINGROUP' />
+  <field number='712' name='PosMaintAction' type='INT'>
+   <value enum='1' description='NEW' />
+   <value enum='2' description='REPLACE' />
+   <value enum='3' description='CANCEL' />
+   <value enum='4' description='REVERSE' />
+  </field>
+  <field number='713' name='OrigPosReqRefID' type='STRING' />
+  <field number='714' name='PosMaintRptRefID' type='STRING' />
+  <field number='715' name='ClearingBusinessDate' type='LOCALMKTDATE' />
+  <field number='716' name='SettlSessID' type='STRING'>
+   <value enum='ITD' description='INTRADAY' />
+   <value enum='RTH' description='REGULAR_TRADING_HOURS' />
+   <value enum='ETH' description='ELECTRONIC_TRADING_HOURS' />
