@@ -8330,3 +8330,44 @@
    <value enum='6' description='PASS' />
    <value enum='7' description='END_TRADE' />
    <value enum='8' description='TIMED_OUT' />
+  </field>
+  <field number='695' name='QuoteQualifier' type='CHAR' />
+  <field number='696' name='YieldRedemptionDate' type='LOCALMKTDATE' />
+  <field number='697' name='YieldRedemptionPrice' type='PRICE' />
+  <field number='698' name='YieldRedemptionPriceType' type='INT' />
+  <field number='699' name='BenchmarkSecurityID' type='STRING' />
+  <field number='700' name='ReversalIndicator' type='BOOLEAN' />
+  <field number='701' name='YieldCalcDate' type='LOCALMKTDATE' />
+  <field number='702' name='NoPositions' type='NUMINGROUP' />
+  <field number='703' name='PosType' type='STRING'>
+   <value enum='ALC' description='ALLOCATION_TRADE_QTY' />
+   <value enum='AS' description='OPTION_ASSIGNMENT' />
+   <value enum='ASF' description='AS_OF_TRADE_QTY' />
+   <value enum='DLV' description='DELIVERY_QTY' />
+   <value enum='ETR' description='ELECTRONIC_TRADE_QTY' />
+   <value enum='EX' description='OPTION_EXERCISE_QTY' />
+   <value enum='FIN' description='END_OF_DAY_QTY' />
+   <value enum='IAS' description='INTRA_SPREAD_QTY' />
+   <value enum='IES' description='INTER_SPREAD_QTY' />
+   <value enum='PA' description='ADJUSTMENT_QTY' />
+   <value enum='PIT' description='PIT_TRADE_QTY' />
+   <value enum='SOD' description='START_OF_DAY_QTY' />
+   <value enum='SPL' description='INTEGRAL_SPLIT' />
+   <value enum='TA' description='TRANSACTION_FROM_ASSIGNMENT' />
+   <value enum='TOT' description='TOTAL_TRANSACTION_QTY' />
+   <value enum='TQ' description='TRANSACTION_QUANTITY' />
+   <value enum='TRF' description='TRANSFER_TRADE_QTY' />
+   <value enum='TX' description='TRANSACTION_FROM_EXERCISE' />
+   <value enum='XM' description='CROSS_MARGIN_QTY' />
+   <value enum='RCV' description='RECEIVE_QUANTITY' />
+   <value enum='CAA' description='CORPORATE_ACTION_ADJUSTMENT' />
+   <value enum='DN' description='DELIVERY_NOTICE_QTY' />
+   <value enum='EP' description='EXCHANGE_FOR_PHYSICAL_QTY' />
+   <value enum='PNTN' description='PRIVATELY_NEGOTIATED_TRADE_QTY' />
+   <value enum='DLT' description='NET_DELTA_QTY' />
+   <value enum='CEA' description='CREDIT_EVENT_ADJUSTMENT' />
+   <value enum='SEA' description='SUCCESSION_EVENT_ADJUSTMENT' />
+  </field>
+  <field number='704' name='LongQty' type='QTY' />
+  <field number='705' name='ShortQty' type='QTY' />
+  <field number='706' name='PosQtyStatus' type='INT'>
