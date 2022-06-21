@@ -8505,3 +8505,35 @@
    <value enum='2' description='INVALID_TYPE_OF_TRADE_REQUESTED' />
    <value enum='3' description='INVALID_PARTIES' />
    <value enum='4' description='INVALID_TRANSPORT_TYPE_REQUESTED' />
+   <value enum='5' description='INVALID_DESTINATION_REQUESTED' />
+   <value enum='8' description='TRADEREQUESTTYPE_NOT_SUPPORTED' />
+   <value enum='9' description='NOT_AUTHORIZED' />
+   <value enum='99' description='OTHER' />
+  </field>
+  <field number='750' name='TradeRequestStatus' type='INT'>
+   <value enum='0' description='ACCEPTED' />
+   <value enum='1' description='COMPLETED' />
+   <value enum='2' description='REJECTED' />
+  </field>
+  <field number='751' name='TradeReportRejectReason' type='INT'>
+   <value enum='0' description='SUCCESSFUL' />
+   <value enum='1' description='INVALID_PARTY_ONFORMATION' />
+   <value enum='2' description='UNKNOWN_INSTRUMENT' />
+   <value enum='3' description='UNAUTHORIZED_TO_REPORT_TRADES' />
+   <value enum='4' description='INVALID_TRADE_TYPE' />
+   <value enum='99' description='OTHER' />
+  </field>
+  <field number='752' name='SideMultiLegReportingType' type='INT'>
+   <value enum='1' description='SINGLE_SECURITY' />
+   <value enum='2' description='INDIVIDUAL_LEG_OF_A_MULTILEG_SECURITY' />
+   <value enum='3' description='MULTILEG_SECURITY' />
+  </field>
+  <field number='753' name='NoPosAmt' type='NUMINGROUP' />
+  <field number='754' name='AutoAcceptIndicator' type='BOOLEAN' />
+  <field number='755' name='AllocReportID' type='STRING' />
+  <field number='756' name='NoNested2PartyIDs' type='NUMINGROUP' />
+  <field number='757' name='Nested2PartyID' type='STRING' />
+  <field number='758' name='Nested2PartyIDSource' type='CHAR' />
+  <field number='759' name='Nested2PartyRole' type='INT' />
+  <field number='760' name='Nested2PartySubID' type='STRING' />
+  <field number='761' name='BenchmarkSecurityIDSource' type='STRING' />
