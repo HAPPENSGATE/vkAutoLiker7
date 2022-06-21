@@ -8419,3 +8419,45 @@
    <value enum='ITD' description='INTRADAY' />
    <value enum='RTH' description='REGULAR_TRADING_HOURS' />
    <value enum='ETH' description='ELECTRONIC_TRADING_HOURS' />
+   <value enum='EOD' description='END_OF_DAY' />
+  </field>
+  <field number='717' name='SettlSessSubID' type='STRING' />
+  <field number='718' name='AdjustmentType' type='INT'>
+   <value enum='0' description='PROCESS_REQUEST_AS_MARGIN_DISPOSITION' />
+   <value enum='1' description='DELTA_PLUS' />
+   <value enum='2' description='DELTA_MINUS' />
+   <value enum='3' description='FINAL' />
+  </field>
+  <field number='719' name='ContraryInstructionIndicator' type='BOOLEAN' />
+  <field number='720' name='PriorSpreadIndicator' type='BOOLEAN' />
+  <field number='721' name='PosMaintRptID' type='STRING' />
+  <field number='722' name='PosMaintStatus' type='INT'>
+   <value enum='0' description='ACCEPTED' />
+   <value enum='1' description='ACCEPTED_WITH_WARNINGS' />
+   <value enum='2' description='REJECTED' />
+   <value enum='3' description='COMPLETED' />
+   <value enum='4' description='COMPLETED_WITH_WARNINGS' />
+  </field>
+  <field number='723' name='PosMaintResult' type='INT'>
+   <value enum='0' description='SUCCESSFUL_COMPLETION' />
+   <value enum='1' description='REJECTED' />
+   <value enum='99' description='OTHER' />
+  </field>
+  <field number='724' name='PosReqType' type='INT'>
+   <value enum='0' description='POSITIONS' />
+   <value enum='1' description='TRADES' />
+   <value enum='2' description='EXERCISES' />
+   <value enum='3' description='ASSIGNMENTS' />
+   <value enum='4' description='SETTLEMENT_ACTIVITY' />
+   <value enum='5' description='BACKOUT_MESSAGE' />
+   <value enum='6' description='DELTA_POSITIONS' />
+  </field>
+  <field number='725' name='ResponseTransportType' type='INT'>
+   <value enum='0' description='INBAND' />
+   <value enum='1' description='OUT_OF_BAND' />
+  </field>
+  <field number='726' name='ResponseDestination' type='STRING' />
+  <field number='727' name='TotalNumPosReports' type='INT' />
+  <field number='728' name='PosReqResult' type='INT'>
+   <value enum='0' description='VALID_REQUEST' />
+   <value enum='1' description='INVALID_OR_UNSUPPORTED_REQUEST' />
