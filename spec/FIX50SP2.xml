@@ -8461,3 +8461,47 @@
   <field number='728' name='PosReqResult' type='INT'>
    <value enum='0' description='VALID_REQUEST' />
    <value enum='1' description='INVALID_OR_UNSUPPORTED_REQUEST' />
+   <value enum='2' description='NO_POSITIONS_FOUND_THAT_MATCH_CRITERIA' />
+   <value enum='3' description='NOT_AUTHORIZED_TO_REQUEST_POSITIONS' />
+   <value enum='4' description='REQUEST_FOR_POSITION_NOT_SUPPORTED' />
+   <value enum='99' description='OTHER' />
+  </field>
+  <field number='729' name='PosReqStatus' type='INT'>
+   <value enum='0' description='COMPLETED' />
+   <value enum='1' description='COMPLETED_WITH_WARNINGS' />
+   <value enum='2' description='REJECTED' />
+  </field>
+  <field number='730' name='SettlPrice' type='PRICE' />
+  <field number='731' name='SettlPriceType' type='INT'>
+   <value enum='1' description='FINAL' />
+   <value enum='2' description='THEORETICAL' />
+  </field>
+  <field number='732' name='UnderlyingSettlPrice' type='PRICE' />
+  <field number='733' name='UnderlyingSettlPriceType' type='INT' />
+  <field number='734' name='PriorSettlPrice' type='PRICE' />
+  <field number='735' name='NoQuoteQualifiers' type='NUMINGROUP' />
+  <field number='736' name='AllocSettlCurrency' type='CURRENCY' />
+  <field number='737' name='AllocSettlCurrAmt' type='AMT' />
+  <field number='738' name='InterestAtMaturity' type='AMT' />
+  <field number='739' name='LegDatedDate' type='LOCALMKTDATE' />
+  <field number='740' name='LegPool' type='STRING' />
+  <field number='741' name='AllocInterestAtMaturity' type='AMT' />
+  <field number='742' name='AllocAccruedInterestAmt' type='AMT' />
+  <field number='743' name='DeliveryDate' type='LOCALMKTDATE' />
+  <field number='744' name='AssignmentMethod' type='CHAR'>
+   <value enum='P' description='PRO_RATA' />
+   <value enum='R' description='RANDOM' />
+  </field>
+  <field number='745' name='AssignmentUnit' type='QTY' />
+  <field number='746' name='OpenInterest' type='AMT' />
+  <field number='747' name='ExerciseMethod' type='CHAR'>
+   <value enum='A' description='AUTOMATIC' />
+   <value enum='M' description='MANUAL' />
+  </field>
+  <field number='748' name='TotNumTradeReports' type='INT' />
+  <field number='749' name='TradeRequestResult' type='INT'>
+   <value enum='0' description='SUCCESSFUL' />
+   <value enum='1' description='INVALID_OR_UNKNOWN_INSTRUMENT' />
+   <value enum='2' description='INVALID_TYPE_OF_TRADE_REQUESTED' />
+   <value enum='3' description='INVALID_PARTIES' />
+   <value enum='4' description='INVALID_TRANSPORT_TYPE_REQUESTED' />
