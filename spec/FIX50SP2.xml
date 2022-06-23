@@ -8575,3 +8575,51 @@
   <field number='777' name='SettlInstMsgID' type='STRING' />
   <field number='778' name='NoSettlInst' type='NUMINGROUP' />
   <field number='779' name='LastUpdateTime' type='UTCTIMESTAMP' />
+  <field number='780' name='AllocSettlInstType' type='INT'>
+   <value enum='0' description='USE_DEFAULT_INSTRUCTIONS' />
+   <value enum='1' description='DERIVE_FROM_PARAMETERS_PROVIDED' />
+   <value enum='2' description='FULL_DETAILS_PROVIDED' />
+   <value enum='3' description='SSI_DB_IDS_PROVIDED' />
+   <value enum='4' description='PHONE_FOR_INSTRUCTIONS' />
+  </field>
+  <field number='781' name='NoSettlPartyIDs' type='NUMINGROUP' />
+  <field number='782' name='SettlPartyID' type='STRING' />
+  <field number='783' name='SettlPartyIDSource' type='CHAR' />
+  <field number='784' name='SettlPartyRole' type='INT' />
+  <field number='785' name='SettlPartySubID' type='STRING' />
+  <field number='786' name='SettlPartySubIDType' type='INT' />
+  <field number='787' name='DlvyInstType' type='CHAR'>
+   <value enum='C' description='CASH' />
+   <value enum='S' description='SECURITIES' />
+  </field>
+  <field number='788' name='TerminationType' type='INT'>
+   <value enum='1' description='OVERNIGHT' />
+   <value enum='2' description='TERM' />
+   <value enum='3' description='FLEXIBLE' />
+   <value enum='4' description='OPEN' />
+  </field>
+  <field number='789' name='NextExpectedMsgSeqNum' type='SEQNUM' />
+  <field number='790' name='OrdStatusReqID' type='STRING' />
+  <field number='791' name='SettlInstReqID' type='STRING' />
+  <field number='792' name='SettlInstReqRejCode' type='INT'>
+   <value enum='0' description='UNABLE_TO_PROCESS_REQUEST' />
+   <value enum='1' description='UNKNOWN_ACCOUNT' />
+   <value enum='2' description='NO_MATCHING_SETTLEMENT_INSTRUCTIONS_FOUND' />
+   <value enum='99' description='OTHER' />
+  </field>
+  <field number='793' name='SecondaryAllocID' type='STRING' />
+  <field number='794' name='AllocReportType' type='INT'>
+   <value enum='3' description='SELLSIDE_CALCULATED_USING_PRELIMINARY' />
+   <value enum='4' description='SELLSIDE_CALCULATED_WITHOUT_PRELIMINARY' />
+   <value enum='5' description='WAREHOUSE_RECAP' />
+   <value enum='8' description='REQUEST_TO_INTERMEDIARY' />
+   <value enum='2' description='PRELIMINARY_REQUEST_TO_INTERMEDIARY' />
+   <value enum='9' description='ACCEPT' />
+   <value enum='10' description='REJECT' />
+   <value enum='11' description='ACCEPT_PENDING' />
+   <value enum='12' description='COMPLETE' />
+   <value enum='14' description='REVERSE_PENDING' />
+  </field>
+  <field number='795' name='AllocReportRefID' type='STRING' />
+  <field number='796' name='AllocCancReplaceReason' type='INT'>
+   <value enum='1' description='ORIGINAL_DETAILS_INCOMPLETE_INCORRECT' />
