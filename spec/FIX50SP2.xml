@@ -8623,3 +8623,40 @@
   <field number='795' name='AllocReportRefID' type='STRING' />
   <field number='796' name='AllocCancReplaceReason' type='INT'>
    <value enum='1' description='ORIGINAL_DETAILS_INCOMPLETE_INCORRECT' />
+   <value enum='2' description='CHANGE_IN_UNDERLYING_ORDER_DETAILS' />
+   <value enum='99' description='OTHER' />
+  </field>
+  <field number='797' name='CopyMsgIndicator' type='BOOLEAN' />
+  <field number='798' name='AllocAccountType' type='INT'>
+   <value enum='1' description='ACCOUNT_IS_CARRIED_PN_CUSTOMER_SIDE_OF_BOOKS' />
+   <value enum='2' description='ACCOUNT_IS_CARRIED_ON_NON_CUSTOMER_SIDE_OF_BOOKS' />
+   <value enum='3' description='HOUSE_TRADER' />
+   <value enum='4' description='FLOOR_TRADER' />
+   <value enum='6' description='ACCOUNT_IS_CARRIED_ON_NON_CUSTOMER_SIDE_OF_BOOKS_AND_IS_CROSS_MARGINED' />
+   <value enum='7' description='ACCOUNT_IS_HOUSE_TRADER_AND_IS_CROSS_MARGINED' />
+   <value enum='8' description='JOINT_BACK_OFFICE_ACCOUNT' />
+  </field>
+  <field number='799' name='OrderAvgPx' type='PRICE' />
+  <field number='800' name='OrderBookingQty' type='QTY' />
+  <field number='801' name='NoSettlPartySubIDs' type='NUMINGROUP' />
+  <field number='802' name='NoPartySubIDs' type='NUMINGROUP' />
+  <field number='803' name='PartySubIDType' type='INT'>
+   <value enum='1' description='FIRM' />
+   <value enum='10' description='SECURITIES_ACCOUNT_NUMBER' />
+   <value enum='11' description='REGISTRATION_NUMBER' />
+   <value enum='12' description='REGISTERED_ADDRESS_12' />
+   <value enum='13' description='REGULATORY_STATUS' />
+   <value enum='14' description='REGISTRATION_NAME' />
+   <value enum='15' description='CASH_ACCOUNT_NUMBER' />
+   <value enum='16' description='BIC' />
+   <value enum='17' description='CSD_PARTICIPANT_MEMBER_CODE' />
+   <value enum='18' description='REGISTERED_ADDRESS_18' />
+   <value enum='19' description='FUND_ACCOUNT_NAME' />
+   <value enum='2' description='PERSON' />
+   <value enum='20' description='TELEX_NUMBER' />
+   <value enum='21' description='FAX_NUMBER' />
+   <value enum='22' description='SECURITIES_ACCOUNT_NAME' />
+   <value enum='23' description='CASH_ACCOUNT_NAME' />
+   <value enum='24' description='DEPARTMENT' />
+   <value enum='25' description='LOCATION_DESK' />
+   <value enum='26' description='POSITION_ACCOUNT_TYPE' />
