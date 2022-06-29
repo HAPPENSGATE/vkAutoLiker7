@@ -8660,3 +8660,52 @@
    <value enum='24' description='DEPARTMENT' />
    <value enum='25' description='LOCATION_DESK' />
    <value enum='26' description='POSITION_ACCOUNT_TYPE' />
+   <value enum='3' description='SYSTEM' />
+   <value enum='4' description='APPLICATION' />
+   <value enum='5' description='FULL_LEGAL_NAME_OF_FIRM' />
+   <value enum='6' description='POSTAL_ADDRESS' />
+   <value enum='7' description='PHONE_NUMBER' />
+   <value enum='8' description='EMAIL_ADDRESS' />
+   <value enum='9' description='CONTACT_NAME' />
+   <value enum='27' description='SECURITY_LOCATE_ID' />
+   <value enum='28' description='MARKET_MAKER' />
+   <value enum='29' description='ELIGIBLE_COUNTERPARTY' />
+   <value enum='30' description='PROFESSIONAL_CLIENT' />
+   <value enum='31' description='LOCATION' />
+   <value enum='32' description='EXECUTION_VENUE' />
+   <value enum='33' description='CURRENCY_DELIVERY_IDENTIFIER' />
+  </field>
+  <field number='804' name='NoNestedPartySubIDs' type='NUMINGROUP' />
+  <field number='805' name='NestedPartySubIDType' type='INT' />
+  <field number='806' name='NoNested2PartySubIDs' type='NUMINGROUP' />
+  <field number='807' name='Nested2PartySubIDType' type='INT' />
+  <field number='808' name='AllocIntermedReqType' type='INT'>
+   <value enum='1' description='PENDING_ACCEPT' />
+   <value enum='2' description='PENDING_RELEASE' />
+   <value enum='3' description='PENDING_REVERSAL' />
+   <value enum='4' description='ACCEPT' />
+   <value enum='5' description='BLOCK_LEVEL_REJECT' />
+   <value enum='6' description='ACCOUNT_LEVEL_REJECT' />
+  </field>
+  <field number='810' name='UnderlyingPx' type='PRICE' />
+  <field number='811' name='PriceDelta' type='FLOAT' />
+  <field number='812' name='ApplQueueMax' type='INT' />
+  <field number='813' name='ApplQueueDepth' type='INT' />
+  <field number='814' name='ApplQueueResolution' type='INT'>
+   <value enum='0' description='NO_ACTION_TAKEN' />
+   <value enum='1' description='QUEUE_FLUSHED' />
+   <value enum='2' description='OVERLAY_LAST' />
+   <value enum='3' description='END_SESSION' />
+  </field>
+  <field number='815' name='ApplQueueAction' type='INT'>
+   <value enum='0' description='NO_ACTION_TAKEN' />
+   <value enum='1' description='QUEUE_FLUSHED' />
+   <value enum='2' description='OVERLAY_LAST' />
+   <value enum='3' description='END_SESSION' />
+  </field>
+  <field number='816' name='NoAltMDSource' type='NUMINGROUP' />
+  <field number='817' name='AltMDSourceID' type='STRING' />
+  <field number='818' name='SecondaryTradeReportID' type='STRING' />
+  <field number='819' name='AvgPxIndicator' type='INT'>
+   <value enum='0' description='NO_AVERAGE_PRICING' />
+   <value enum='1' description='TRADE_IS_PART_OF_AN_AVERAGE_PRICE_GROUP_IDENTIFIED_BY_THE_TRADELINKID' />
