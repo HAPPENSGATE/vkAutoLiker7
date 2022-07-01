@@ -8798,3 +8798,55 @@
    <value enum='7' description='DIFFERENTIAL_SPREAD' />
    <value enum='8' description='IMPLIED_SPREAD_LEG_EXECUTED_AGAINST_AN_OUTRIGHT' />
    <value enum='9' description='TRANSACTION_FROM_EXERCISE' />
+   <value enum='10' description='TRANSACTION_FROM_ASSIGNMENT' />
+   <value enum='11' description='ACATS' />
+   <value enum='14' description='AI' />
+   <value enum='15' description='B' />
+   <value enum='16' description='K' />
+   <value enum='17' description='LC' />
+   <value enum='18' description='M' />
+   <value enum='19' description='N' />
+   <value enum='20' description='NM' />
+   <value enum='21' description='NR' />
+   <value enum='22' description='P' />
+   <value enum='23' description='PA' />
+   <value enum='24' description='PC' />
+   <value enum='25' description='PN' />
+   <value enum='26' description='R' />
+   <value enum='27' description='RO' />
+   <value enum='28' description='RT' />
+   <value enum='29' description='SW' />
+   <value enum='30' description='T' />
+   <value enum='31' description='WN' />
+   <value enum='32' description='WT' />
+   <value enum='33' description='OFF_HOURS_TRADE' />
+   <value enum='34' description='ON_HOURS_TRADE' />
+   <value enum='35' description='OTC_QUOTE' />
+   <value enum='36' description='CONVERTED_SWAP' />
+   <value enum='37' description='CROSSED_TRADE' />
+   <value enum='38' description='INTERIM_PROTECTED_TRADE' />
+   <value enum='39' description='LARGE_IN_SCALE' />
+  </field>
+  <field number='830' name='TransferReason' type='STRING' />
+  <field number='831' name='AsgnReqID' type='STRING' />
+  <field number='832' name='TotNumAssignmentReports' type='INT' />
+  <field number='833' name='AsgnRptID' type='STRING' />
+  <field number='834' name='ThresholdAmount' type='PRICEOFFSET' />
+  <field number='835' name='PegMoveType' type='INT'>
+   <value enum='0' description='FLOATING' />
+   <value enum='1' description='FIXED' />
+  </field>
+  <field number='836' name='PegOffsetType' type='INT'>
+   <value enum='0' description='PRICE' />
+   <value enum='1' description='BASIS_POINTS' />
+   <value enum='2' description='TICKS' />
+   <value enum='3' description='PRICE_TIER' />
+  </field>
+  <field number='837' name='PegLimitType' type='INT'>
+   <value enum='0' description='OR_BETTER' />
+   <value enum='1' description='STRICT' />
+   <value enum='2' description='OR_WORSE' />
+  </field>
+  <field number='838' name='PegRoundDirection' type='INT'>
+   <value enum='1' description='MORE_AGGRESSIVE' />
+   <value enum='2' description='MORE_PASSIVE' />
