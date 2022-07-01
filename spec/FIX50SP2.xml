@@ -8752,3 +8752,49 @@
    <value enum='18' description='EXCHANGE_OF_FUTURES_FOR_FUTURES' />
    <value enum='19' description='OPTION_INTERIM_TRADE' />
    <value enum='20' description='OPTION_CABINET_TRADE' />
+   <value enum='22' description='PRIVATELY_NEGOTIATED_TRADES' />
+   <value enum='23' description='SUBSTITUTION_OF_FUTURES_FOR_FORWARDS' />
+   <value enum='24' description='ERROR_TRADE' />
+   <value enum='25' description='SPECIAL_CUM_DIVIDEND' />
+   <value enum='26' description='SPECIAL_EX_DIVIDEND' />
+   <value enum='27' description='SPECIAL_CUM_COUPON' />
+   <value enum='28' description='SPECIAL_EX_COUPON' />
+   <value enum='29' description='CASH_SETTLEMENT' />
+   <value enum='30' description='SPECIAL_PRICE' />
+   <value enum='31' description='GUARANTEED_DELIVERY' />
+   <value enum='32' description='SPECIAL_CUM_RIGHTS' />
+   <value enum='33' description='SPECIAL_EX_RIGHTS' />
+   <value enum='34' description='SPECIAL_CUM_CAPITAL_REPAYMENTS' />
+   <value enum='35' description='SPECIAL_EX_CAPITAL_REPAYMENTS' />
+   <value enum='36' description='SPECIAL_CUM_BONUS' />
+   <value enum='37' description='SPECIAL_EX_BONUS' />
+   <value enum='38' description='BLOCK_TRADE_38' />
+   <value enum='39' description='WORKED_PRINCIPAL_TRADE' />
+   <value enum='40' description='BLOCK_TRADES' />
+   <value enum='41' description='NAME_CHANGE' />
+   <value enum='42' description='PORTFOLIO_TRANSFER' />
+   <value enum='43' description='PROROGATION_BUY' />
+   <value enum='44' description='PROROGATION_SELL' />
+   <value enum='45' description='OPTION_EXERCISE' />
+   <value enum='46' description='DELTA_NEUTRAL_TRANSACTION' />
+   <value enum='47' description='FINANCING_TRANSACTION' />
+   <value enum='48' description='NON_STANDARD_SETTLEMENT' />
+   <value enum='49' description='DERIVATIVE_RELATED_TRANSACTION' />
+   <value enum='50' description='PORTFOLIO_TRADE' />
+   <value enum='51' description='VOLUME_WEIGHTED_AVERAGE_TRADE' />
+   <value enum='52' description='EXCHANGE_GRANTED_TRADE' />
+   <value enum='53' description='REPURCHASE_AGREEMENT' />
+   <value enum='54' description='OTC' />
+   <value enum='55' description='EXCHANGE_BASIS_FACILITY' />
+  </field>
+  <field number='829' name='TrdSubType' type='INT'>
+   <value enum='0' description='CMTA' />
+   <value enum='1' description='INTERNAL_TRANSFER_OR_ADJUSTMENT' />
+   <value enum='2' description='EXTERNAL_TRANSFER_OR_TRANSFER_OF_ACCOUNT' />
+   <value enum='3' description='REJECT_FOR_SUBMITTING_SIDE' />
+   <value enum='4' description='ADVISORY_FOR_CONTRA_SIDE' />
+   <value enum='5' description='OFFSET_DUE_TO_AN_ALLOCATION' />
+   <value enum='6' description='ONSET_DUE_TO_AN_ALLOCATION' />
+   <value enum='7' description='DIFFERENTIAL_SPREAD' />
+   <value enum='8' description='IMPLIED_SPREAD_LEG_EXECUTED_AGAINST_AN_OUTRIGHT' />
+   <value enum='9' description='TRANSACTION_FROM_EXERCISE' />
