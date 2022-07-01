@@ -8709,3 +8709,46 @@
   <field number='819' name='AvgPxIndicator' type='INT'>
    <value enum='0' description='NO_AVERAGE_PRICING' />
    <value enum='1' description='TRADE_IS_PART_OF_AN_AVERAGE_PRICE_GROUP_IDENTIFIED_BY_THE_TRADELINKID' />
+   <value enum='2' description='LAST_TRADE_IS_THE_AVERAGE_PRICE_GROUP_IDENTIFIED_BY_THE_TRADELINKID' />
+  </field>
+  <field number='820' name='TradeLinkID' type='STRING' />
+  <field number='821' name='OrderInputDevice' type='STRING' />
+  <field number='822' name='UnderlyingTradingSessionID' type='STRING' />
+  <field number='823' name='UnderlyingTradingSessionSubID' type='STRING' />
+  <field number='824' name='TradeLegRefID' type='STRING' />
+  <field number='825' name='ExchangeRule' type='STRING' />
+  <field number='826' name='TradeAllocIndicator' type='INT'>
+   <value enum='0' description='ALLOCATION_NOT_REQUIRED' />
+   <value enum='1' description='ALLOCATION_REQUIRED' />
+   <value enum='2' description='USE_ALLOCATION_PROVIDED_WITH_THE_TRADE' />
+   <value enum='3' description='ALLOCATION_GIVE_UP_EXECUTOR' />
+   <value enum='4' description='ALLOCATION_FROM_EXECUTOR' />
+   <value enum='5' description='ALLOCATION_TO_CLAIM_ACCOUNT' />
+  </field>
+  <field number='827' name='ExpirationCycle' type='INT'>
+   <value enum='0' description='EXPIRE_ON_TRADING_SESSION_CLOSE' />
+   <value enum='1' description='EXPIRE_ON_TRADING_SESSION_OPEN' />
+   <value enum='2' description='TRADING_ELIGIBILITY_EXPIRATION_SPECIFIED_IN_THE_DATE_AND_TIME_FIELDS_EVENTDATE' />
+  </field>
+  <field number='828' name='TrdType' type='INT'>
+   <value enum='0' description='REGULAR_TRADE' />
+   <value enum='1' description='BLOCK_TRADE_1' />
+   <value enum='10' description='AFTER_HOURS_TRADE' />
+   <value enum='2' description='EFP' />
+   <value enum='3' description='TRANSFER' />
+   <value enum='4' description='LATE_TRADE' />
+   <value enum='5' description='T_TRADE' />
+   <value enum='6' description='WEIGHTED_AVERAGE_PRICE_TRADE' />
+   <value enum='7' description='BUNCHED_TRADE' />
+   <value enum='8' description='LATE_BUNCHED_TRADE' />
+   <value enum='9' description='PRIOR_REFERENCE_PRICE_TRADE' />
+   <value enum='11' description='EXCHANGE_FOR_RISK' />
+   <value enum='12' description='EXCHANGE_FOR_SWAP' />
+   <value enum='13' description='EXCHANGE_OF_FUTURES_FOR' />
+   <value enum='14' description='EXCHANGE_OF_OPTIONS_FOR_OPTIONS' />
+   <value enum='15' description='TRADING_AT_SETTLEMENT' />
+   <value enum='16' description='ALL_OR_NONE' />
+   <value enum='17' description='FUTURES_LARGE_ORDER_EXECUTION' />
+   <value enum='18' description='EXCHANGE_OF_FUTURES_FOR_FUTURES' />
+   <value enum='19' description='OPTION_INTERIM_TRADE' />
+   <value enum='20' description='OPTION_CABINET_TRADE' />
