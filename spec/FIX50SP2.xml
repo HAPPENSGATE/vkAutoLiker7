@@ -8850,3 +8850,30 @@
   <field number='838' name='PegRoundDirection' type='INT'>
    <value enum='1' description='MORE_AGGRESSIVE' />
    <value enum='2' description='MORE_PASSIVE' />
+  </field>
+  <field number='839' name='PeggedPrice' type='PRICE' />
+  <field number='840' name='PegScope' type='INT'>
+   <value enum='1' description='LOCAL' />
+   <value enum='2' description='NATIONAL' />
+   <value enum='3' description='GLOBAL' />
+   <value enum='4' description='NATIONAL_EXCLUDING_LOCAL' />
+  </field>
+  <field number='841' name='DiscretionMoveType' type='INT'>
+   <value enum='0' description='FLOATING' />
+   <value enum='1' description='FIXED' />
+  </field>
+  <field number='842' name='DiscretionOffsetType' type='INT'>
+   <value enum='0' description='PRICE' />
+   <value enum='1' description='BASIS_POINTS' />
+   <value enum='2' description='TICKS' />
+   <value enum='3' description='PRICE_TIER' />
+  </field>
+  <field number='843' name='DiscretionLimitType' type='INT'>
+   <value enum='0' description='OR_BETTER' />
+   <value enum='1' description='STRICT' />
+   <value enum='2' description='OR_WORSE' />
+  </field>
+  <field number='844' name='DiscretionRoundDirection' type='INT'>
+   <value enum='1' description='MORE_AGGRESSIVE' />
+   <value enum='2' description='MORE_PASSIVE' />
+  </field>
