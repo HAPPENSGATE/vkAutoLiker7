@@ -8877,3 +8877,56 @@
    <value enum='1' description='MORE_AGGRESSIVE' />
    <value enum='2' description='MORE_PASSIVE' />
   </field>
+  <field number='845' name='DiscretionPrice' type='PRICE' />
+  <field number='846' name='DiscretionScope' type='INT'>
+   <value enum='1' description='LOCAL' />
+   <value enum='2' description='NATIONAL' />
+   <value enum='3' description='GLOBAL' />
+   <value enum='4' description='NATIONAL_EXCLUDING_LOCAL' />
+  </field>
+  <field number='847' name='TargetStrategy' type='INT'>
+   <value enum='1' description='VWAP' />
+   <value enum='2' description='PARTICIPATE' />
+   <value enum='3' description='MININIZE_MARKET_IMPACT' />
+  </field>
+  <field number='848' name='TargetStrategyParameters' type='STRING' />
+  <field number='849' name='ParticipationRate' type='PERCENTAGE' />
+  <field number='850' name='TargetStrategyPerformance' type='FLOAT' />
+  <field number='851' name='LastLiquidityInd' type='INT'>
+   <value enum='1' description='ADDED_LIQUIDITY' />
+   <value enum='2' description='REMOVED_LIQUIDITY' />
+   <value enum='3' description='LIQUIDITY_ROUTED_OUT' />
+   <value enum='4' description='AUCTION' />
+  </field>
+  <field number='852' name='PublishTrdIndicator' type='BOOLEAN'>
+   <value enum='N' description='NO' />
+   <value enum='Y' description='YES' />
+  </field>
+  <field number='853' name='ShortSaleReason' type='INT'>
+   <value enum='0' description='DEALER_SOLD_SHORT' />
+   <value enum='1' description='DEALER_SOLD_SHORT_EXEMPT' />
+   <value enum='2' description='SELLING_CUSTOMER_SOLD_SHORT' />
+   <value enum='3' description='SELLING_CUSTOMER_SOLD_SHORT_EXEMPT' />
+   <value enum='4' description='QUALIFIED_SERVICE_REPRESENTATIVE' />
+   <value enum='5' description='QSR_OR_AGU_CONTRA_SIDE_SOLD_SHORT_EXEMPT' />
+  </field>
+  <field number='854' name='QtyType' type='INT'>
+   <value enum='0' description='UNITS' />
+   <value enum='1' description='CONTRACTS' />
+   <value enum='2' description='UNITS_OF_MEASURE_PER_TIME_UNIT' />
+  </field>
+  <field number='855' name='SecondaryTrdType' type='INT' />
+  <field number='856' name='TradeReportType' type='INT'>
+   <value enum='0' description='SUBMIT' />
+   <value enum='1' description='ALLEGED_1' />
+   <value enum='2' description='ACCEPT' />
+   <value enum='3' description='DECLINE' />
+   <value enum='4' description='ADDENDUM' />
+   <value enum='5' description='NO_WAS' />
+   <value enum='6' description='TRADE_REPORT_CANCEL' />
+   <value enum='7' description='7' />
+   <value enum='8' description='DEFAULTED' />
+   <value enum='9' description='INVALID_CMTA' />
+   <value enum='10' description='PENDED' />
+   <value enum='11' description='ALLEGED_NEW' />
+   <value enum='12' description='ALLEGED_ADDENDUM' />
