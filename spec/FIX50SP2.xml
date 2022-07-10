@@ -9000,3 +9000,54 @@
    <value enum='24' description='TRADE_TYPE_ELIGIBILITY_DETAILS_FOR_SECURITY' />
    <value enum='25' description='INSTRUMENT_DENOMINATOR' />
    <value enum='26' description='INSTRUMENT_NUMERATOR' />
+   <value enum='27' description='INSTRUMENT_PRICE_PRECISION' />
+   <value enum='28' description='INSTRUMENT_STRIKE_PRICE' />
+   <value enum='29' description='TRADEABLE_INDICATOR' />
+  </field>
+  <field number='872' name='InstrAttribValue' type='STRING' />
+  <field number='873' name='DatedDate' type='LOCALMKTDATE' />
+  <field number='874' name='InterestAccrualDate' type='LOCALMKTDATE' />
+  <field number='875' name='CPProgram' type='INT'>
+   <value enum='1' description='3' />
+   <value enum='2' description='4' />
+   <value enum='99' description='OTHER' />
+  </field>
+  <field number='876' name='CPRegType' type='STRING' />
+  <field number='877' name='UnderlyingCPProgram' type='STRING' />
+  <field number='878' name='UnderlyingCPRegType' type='STRING' />
+  <field number='879' name='UnderlyingQty' type='QTY' />
+  <field number='880' name='TrdMatchID' type='STRING' />
+  <field number='881' name='SecondaryTradeReportRefID' type='STRING' />
+  <field number='882' name='UnderlyingDirtyPrice' type='PRICE' />
+  <field number='883' name='UnderlyingEndPrice' type='PRICE' />
+  <field number='884' name='UnderlyingStartValue' type='AMT' />
+  <field number='885' name='UnderlyingCurrentValue' type='AMT' />
+  <field number='886' name='UnderlyingEndValue' type='AMT' />
+  <field number='887' name='NoUnderlyingStips' type='NUMINGROUP' />
+  <field number='888' name='UnderlyingStipType' type='STRING' />
+  <field number='889' name='UnderlyingStipValue' type='STRING' />
+  <field number='890' name='MaturityNetMoney' type='AMT' />
+  <field number='891' name='MiscFeeBasis' type='INT'>
+   <value enum='0' description='ABSOLUTE' />
+   <value enum='1' description='PER_UNIT' />
+   <value enum='2' description='PERCENTAGE' />
+  </field>
+  <field number='892' name='TotNoAllocs' type='INT' />
+  <field number='893' name='LastFragment' type='BOOLEAN'>
+   <value enum='N' description='NO' />
+   <value enum='Y' description='YES' />
+  </field>
+  <field number='894' name='CollReqID' type='STRING' />
+  <field number='895' name='CollAsgnReason' type='INT'>
+   <value enum='0' description='INITIAL' />
+   <value enum='1' description='SCHEDULED' />
+   <value enum='2' description='TIME_WARNING' />
+   <value enum='3' description='MARGIN_DEFICIENCY' />
+   <value enum='4' description='MARGIN_EXCESS' />
+   <value enum='5' description='FORWARD_COLLATERAL_DEMAND' />
+   <value enum='6' description='EVENT_OF_DEFAULT' />
+   <value enum='7' description='ADVERSE_TAX_EVENT' />
+  </field>
+  <field number='896' name='CollInquiryQualifier' type='INT'>
+   <value enum='0' description='TRADE_DATE' />
+   <value enum='1' description='GC_INSTRUMENT' />
