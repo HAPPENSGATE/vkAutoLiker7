@@ -8967,3 +8967,36 @@
    <value enum='18' description='LAST_INTENT_DATE' />
    <value enum='19' description='POSITION_REMOVAL_DATE' />
   </field>
+  <field number='866' name='EventDate' type='LOCALMKTDATE' />
+  <field number='867' name='EventPx' type='PRICE' />
+  <field number='868' name='EventText' type='STRING' />
+  <field number='869' name='PctAtRisk' type='PERCENTAGE' />
+  <field number='870' name='NoInstrAttrib' type='NUMINGROUP' />
+  <field number='871' name='InstrAttribType' type='INT'>
+   <value enum='1' description='FLAT' />
+   <value enum='10' description='ORIGINAL_ISSUE_DISCOUNT' />
+   <value enum='11' description='CALLABLE_PUTTABLE' />
+   <value enum='12' description='ESCROWED_TO_MATURITY' />
+   <value enum='13' description='ESCROWED_TO_REDEMPTION_DATE' />
+   <value enum='14' description='PRE_REFUNDED' />
+   <value enum='15' description='IN_DEFAULT' />
+   <value enum='16' description='UNRATED' />
+   <value enum='17' description='TAXABLE' />
+   <value enum='18' description='INDEXED' />
+   <value enum='19' description='SUBJECT_TO_ALTERNATIVE_MINIMUM_TAX' />
+   <value enum='2' description='ZERO_COUPON' />
+   <value enum='20' description='ORIGINAL_ISSUE_DISCOUNT_PRICE_SUPPLY_PRICE_IN_THE_INSTRATTRIBVALUE' />
+   <value enum='21' description='CALLABLE_BELOW_MATURITY_VALUE' />
+   <value enum='22' description='CALLABLE_WITHOUT_NOTICE_BY_MAIL_TO_HOLDER_UNLESS_REGISTERED' />
+   <value enum='3' description='INTEREST_BEARING' />
+   <value enum='4' description='NO_PERIODIC_PAYMENTS' />
+   <value enum='5' description='VARIABLE_RATE' />
+   <value enum='6' description='LESS_FEE_FOR_PUT' />
+   <value enum='7' description='STEPPED_COUPON' />
+   <value enum='8' description='COUPON_PERIOD' />
+   <value enum='9' description='WHEN_AND_IF_ISSUED' />
+   <value enum='99' description='TEXT_SUPPLY_THE_TEXT_OF_THE_ATTRIBUTE_OR_DISCLAIMER_IN_THE_INSTRATTRIBVALUE' />
+   <value enum='23' description='PRICE_TICK_RULES_FOR_SECURITY' />
+   <value enum='24' description='TRADE_TYPE_ELIGIBILITY_DETAILS_FOR_SECURITY' />
+   <value enum='25' description='INSTRUMENT_DENOMINATOR' />
+   <value enum='26' description='INSTRUMENT_NUMERATOR' />
