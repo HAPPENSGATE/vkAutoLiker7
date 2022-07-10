@@ -8930,3 +8930,40 @@
    <value enum='10' description='PENDED' />
    <value enum='11' description='ALLEGED_NEW' />
    <value enum='12' description='ALLEGED_ADDENDUM' />
+   <value enum='13' description='ALLEGED_NO_WAS' />
+   <value enum='14' description='ALLEGED_TRADE_REPORT_CANCEL' />
+   <value enum='15' description='ALLEGED_15' />
+  </field>
+  <field number='857' name='AllocNoOrdersType' type='INT'>
+   <value enum='0' description='NOT_SPECIFIED' />
+   <value enum='1' description='EXPLICIT_LIST_PROVIDED' />
+  </field>
+  <field number='858' name='SharedCommission' type='AMT' />
+  <field number='859' name='ConfirmReqID' type='STRING' />
+  <field number='860' name='AvgParPx' type='PRICE' />
+  <field number='861' name='ReportedPx' type='PRICE' />
+  <field number='862' name='NoCapacities' type='NUMINGROUP' />
+  <field number='863' name='OrderCapacityQty' type='QTY' />
+  <field number='864' name='NoEvents' type='NUMINGROUP' />
+  <field number='865' name='EventType' type='INT'>
+   <value enum='1' description='PUT' />
+   <value enum='2' description='CALL' />
+   <value enum='3' description='TENDER' />
+   <value enum='4' description='SINKING_FUND_CALL' />
+   <value enum='99' description='OTHER' />
+   <value enum='5' description='ACTIVATION' />
+   <value enum='6' description='INACTIVIATION' />
+   <value enum='7' description='LAST_ELIGIBLE_TRADE_DATE' />
+   <value enum='8' description='SWAP_START_DATE' />
+   <value enum='9' description='SWAP_END_DATE' />
+   <value enum='11' description='SWAP_NEXT_START_DATE' />
+   <value enum='10' description='SWAP_ROLL_DATE' />
+   <value enum='12' description='SWAP_NEXT_ROLL_DATE' />
+   <value enum='13' description='FIRST_DELIVERY_DATE' />
+   <value enum='14' description='LAST_DELIVERY_DATE' />
+   <value enum='15' description='INITIAL_INVENTORY_DUE_DATE' />
+   <value enum='16' description='FINAL_INVENTORY_DUE_DATE' />
+   <value enum='17' description='FIRST_INTENT_DATE' />
+   <value enum='18' description='LAST_INTENT_DATE' />
+   <value enum='19' description='POSITION_REMOVAL_DATE' />
+  </field>
