@@ -9051,3 +9051,62 @@
   <field number='896' name='CollInquiryQualifier' type='INT'>
    <value enum='0' description='TRADE_DATE' />
    <value enum='1' description='GC_INSTRUMENT' />
+   <value enum='2' description='COLLATERAL_INSTRUMENT' />
+   <value enum='3' description='SUBSTITUTION_ELIGIBLE' />
+   <value enum='4' description='NOT_ASSIGNED' />
+   <value enum='5' description='PARTIALLY_ASSIGNED' />
+   <value enum='6' description='FULLY_ASSIGNED' />
+   <value enum='7' description='OUTSTANDING_TRADES' />
+  </field>
+  <field number='897' name='NoTrades' type='NUMINGROUP' />
+  <field number='898' name='MarginRatio' type='PERCENTAGE' />
+  <field number='899' name='MarginExcess' type='AMT' />
+  <field number='900' name='TotalNetValue' type='AMT' />
+  <field number='901' name='CashOutstanding' type='AMT' />
+  <field number='902' name='CollAsgnID' type='STRING' />
+  <field number='903' name='CollAsgnTransType' type='INT'>
+   <value enum='0' description='NEW' />
+   <value enum='1' description='REPLACE' />
+   <value enum='2' description='CANCEL' />
+   <value enum='3' description='RELEASE' />
+   <value enum='4' description='REVERSE' />
+  </field>
+  <field number='904' name='CollRespID' type='STRING' />
+  <field number='905' name='CollAsgnRespType' type='INT'>
+   <value enum='0' description='RECEIVED' />
+   <value enum='1' description='ACCEPTED' />
+   <value enum='2' description='DECLINED' />
+   <value enum='3' description='REJECTED' />
+  </field>
+  <field number='906' name='CollAsgnRejectReason' type='INT'>
+   <value enum='0' description='UNKNOWN_DEAL' />
+   <value enum='1' description='UNKNOWN_OR_INVALID_INSTRUMENT' />
+   <value enum='2' description='UNAUTHORIZED_TRANSACTION' />
+   <value enum='3' description='INSUFFICIENT_COLLATERAL' />
+   <value enum='4' description='INVALID_TYPE_OF_COLLATERAL' />
+   <value enum='5' description='EXCESSIVE_SUBSTITUTION' />
+   <value enum='99' description='OTHER' />
+  </field>
+  <field number='907' name='CollAsgnRefID' type='STRING' />
+  <field number='908' name='CollRptID' type='STRING' />
+  <field number='909' name='CollInquiryID' type='STRING' />
+  <field number='910' name='CollStatus' type='INT'>
+   <value enum='0' description='UNASSIGNED' />
+   <value enum='1' description='PARTIALLY_ASSIGNED' />
+   <value enum='2' description='ASSIGNMENT_PROPOSED' />
+   <value enum='3' description='ASSIGNED' />
+   <value enum='4' description='CHALLENGED' />
+  </field>
+  <field number='911' name='TotNumReports' type='INT' />
+  <field number='912' name='LastRptRequested' type='BOOLEAN'>
+   <value enum='N' description='NO' />
+   <value enum='Y' description='YES' />
+  </field>
+  <field number='913' name='AgreementDesc' type='STRING' />
+  <field number='914' name='AgreementID' type='STRING' />
+  <field number='915' name='AgreementDate' type='LOCALMKTDATE' />
+  <field number='916' name='StartDate' type='LOCALMKTDATE' />
+  <field number='917' name='EndDate' type='LOCALMKTDATE' />
+  <field number='918' name='AgreementCurrency' type='CURRENCY' />
+  <field number='919' name='DeliveryType' type='INT'>
+   <value enum='0' description='VERSUS_PAYMENT_DELIVER' />
