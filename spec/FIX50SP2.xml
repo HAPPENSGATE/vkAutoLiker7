@@ -9110,3 +9110,48 @@
   <field number='918' name='AgreementCurrency' type='CURRENCY' />
   <field number='919' name='DeliveryType' type='INT'>
    <value enum='0' description='VERSUS_PAYMENT_DELIVER' />
+   <value enum='1' description='FREE_DELIVER' />
+   <value enum='2' description='TRI_PARTY' />
+   <value enum='3' description='HOLD_IN_CUSTODY' />
+  </field>
+  <field number='920' name='EndAccruedInterestAmt' type='AMT' />
+  <field number='921' name='StartCash' type='AMT' />
+  <field number='922' name='EndCash' type='AMT' />
+  <field number='923' name='UserRequestID' type='STRING' />
+  <field number='924' name='UserRequestType' type='INT'>
+   <value enum='1' description='LOG_ON_USER' />
+   <value enum='2' description='LOG_OFF_USER' />
+   <value enum='3' description='CHANGE_PASSWORD_FOR_USER' />
+   <value enum='4' description='REQUEST_INDIVIDUAL_USER_STATUS' />
+  </field>
+  <field number='925' name='NewPassword' type='STRING' />
+  <field number='926' name='UserStatus' type='INT'>
+   <value enum='1' description='LOGGED_IN' />
+   <value enum='2' description='NOT_LOGGED_IN' />
+   <value enum='3' description='USER_NOT_RECOGNISED' />
+   <value enum='4' description='PASSWORD_INCORRECT' />
+   <value enum='5' description='PASSWORD_CHANGED' />
+   <value enum='6' description='OTHER' />
+   <value enum='7' description='FORCED_USER_LOGOUT_BY_EXCHANGE' />
+   <value enum='8' description='SESSION_SHUTDOWN_WARNING' />
+  </field>
+  <field number='927' name='UserStatusText' type='STRING' />
+  <field number='928' name='StatusValue' type='INT'>
+   <value enum='1' description='CONNECTED' />
+   <value enum='2' description='NOT_CONNECTED_2' />
+   <value enum='3' description='NOT_CONNECTED_3' />
+   <value enum='4' description='IN_PROCESS' />
+  </field>
+  <field number='929' name='StatusText' type='STRING' />
+  <field number='930' name='RefCompID' type='STRING' />
+  <field number='931' name='RefSubID' type='STRING' />
+  <field number='932' name='NetworkResponseID' type='STRING' />
+  <field number='933' name='NetworkRequestID' type='STRING' />
+  <field number='934' name='LastNetworkResponseID' type='STRING' />
+  <field number='935' name='NetworkRequestType' type='INT'>
+   <value enum='1' description='SNAPSHOT' />
+   <value enum='2' description='SUBSCRIBE' />
+   <value enum='4' description='STOP_SUBSCRIBING' />
+   <value enum='8' description='LEVEL_OF_DETAIL_THEN_NOCOMPIDS_BECOMES_REQUIRED' />
+  </field>
+  <field number='936' name='NoCompIDs' type='NUMINGROUP' />
