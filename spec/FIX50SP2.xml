@@ -9264,3 +9264,39 @@
   </field>
   <field number='975' name='UnderlyingSettlementType' type='INT'>
    <value enum='2' description='T_PLUS_1' />
+   <value enum='4' description='T_PLUS_3' />
+   <value enum='5' description='T_PLUS_4' />
+  </field>
+  <field number='976' name='QuantityDate' type='LOCALMKTDATE' />
+  <field number='977' name='ContIntRptID' type='STRING' />
+  <field number='978' name='LateIndicator' type='BOOLEAN' />
+  <field number='979' name='InputSource' type='STRING' />
+  <field number='980' name='SecurityUpdateAction' type='CHAR'>
+   <value enum='A' description='ADD' />
+   <value enum='D' description='DELETE' />
+   <value enum='M' description='MODIFY' />
+  </field>
+  <field number='981' name='NoExpiration' type='NUMINGROUP' />
+  <field number='982' name='ExpirationQtyType' type='INT'>
+   <value enum='1' description='AUTO_EXERCISE' />
+   <value enum='2' description='NON_AUTO_EXERCISE' />
+   <value enum='3' description='FINAL_WILL_BE_EXERCISED' />
+   <value enum='4' description='CONTRARY_INTENTION' />
+   <value enum='5' description='DIFFERENCE' />
+  </field>
+  <field number='983' name='ExpQty' type='QTY' />
+  <field number='984' name='NoUnderlyingAmounts' type='NUMINGROUP' />
+  <field number='985' name='UnderlyingPayAmount' type='AMT' />
+  <field number='986' name='UnderlyingCollectAmount' type='AMT' />
+  <field number='987' name='UnderlyingSettlementDate' type='LOCALMKTDATE' />
+  <field number='988' name='UnderlyingSettlementStatus' type='STRING' />
+  <field number='989' name='SecondaryIndividualAllocID' type='STRING' />
+  <field number='990' name='LegReportID' type='STRING' />
+  <field number='991' name='RndPx' type='PRICE' />
+  <field number='992' name='IndividualAllocType' type='INT'>
+   <value enum='1' description='SUB_ALLOCATE' />
+   <value enum='2' description='THIRD_PARTY_ALLOCATION' />
+  </field>
+  <field number='993' name='AllocCustomerCapacity' type='STRING' />
+  <field number='994' name='TierCode' type='STRING' />
+  <field number='996' name='UnitOfMeasure' type='STRING'>
