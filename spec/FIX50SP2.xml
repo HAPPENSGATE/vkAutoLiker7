@@ -9186,3 +9186,43 @@
    <value enum='4' description='REJECTED' />
   </field>
   <field number='946' name='CollInquiryResult' type='INT'>
+   <value enum='0' description='SUCCESSFUL' />
+   <value enum='1' description='INVALID_OR_UNKNOWN_INSTRUMENT' />
+   <value enum='2' description='INVALID_OR_UNKNOWN_COLLATERAL_TYPE' />
+   <value enum='3' description='INVALID_PARTIES' />
+   <value enum='4' description='INVALID_TRANSPORT_TYPE_REQUESTED' />
+   <value enum='5' description='INVALID_DESTINATION_REQUESTED' />
+   <value enum='6' description='NO_COLLATERAL_FOUND_FOR_THE_TRADE_SPECIFIED' />
+   <value enum='7' description='NO_COLLATERAL_FOUND_FOR_THE_ORDER_SPECIFIED' />
+   <value enum='8' description='COLLATERAL_INQUIRY_TYPE_NOT_SUPPORTED' />
+   <value enum='9' description='UNAUTHORIZED_FOR_COLLATERAL_INQUIRY' />
+   <value enum='99' description='OTHER' />
+  </field>
+  <field number='947' name='StrikeCurrency' type='CURRENCY' />
+  <field number='948' name='NoNested3PartyIDs' type='NUMINGROUP' />
+  <field number='949' name='Nested3PartyID' type='STRING' />
+  <field number='950' name='Nested3PartyIDSource' type='CHAR' />
+  <field number='951' name='Nested3PartyRole' type='INT' />
+  <field number='952' name='NoNested3PartySubIDs' type='NUMINGROUP' />
+  <field number='953' name='Nested3PartySubID' type='STRING' />
+  <field number='954' name='Nested3PartySubIDType' type='INT' />
+  <field number='955' name='LegContractSettlMonth' type='MONTHYEAR' />
+  <field number='956' name='LegInterestAccrualDate' type='LOCALMKTDATE' />
+  <field number='957' name='NoStrategyParameters' type='NUMINGROUP' />
+  <field number='958' name='StrategyParameterName' type='STRING' />
+  <field number='959' name='StrategyParameterType' type='INT'>
+   <value enum='1' description='INT' />
+   <value enum='2' description='LENGTH' />
+   <value enum='3' description='NUMINGROUP' />
+   <value enum='4' description='SEQNUM' />
+   <value enum='5' description='TAGNUM' />
+   <value enum='6' description='FLOAT' />
+   <value enum='7' description='QTY' />
+   <value enum='8' description='PRICE' />
+   <value enum='9' description='PRICEOFFSET' />
+   <value enum='10' description='AMT' />
+   <value enum='11' description='PERCENTAGE' />
+   <value enum='12' description='CHAR' />
+   <value enum='13' description='BOOLEAN' />
+   <value enum='14' description='STRING' />
+   <value enum='15' description='MULTIPLECHARVALUE' />
