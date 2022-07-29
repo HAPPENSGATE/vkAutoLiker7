@@ -9226,3 +9226,41 @@
    <value enum='13' description='BOOLEAN' />
    <value enum='14' description='STRING' />
    <value enum='15' description='MULTIPLECHARVALUE' />
+   <value enum='16' description='CURRENCY' />
+   <value enum='17' description='EXCHANGE' />
+   <value enum='18' description='MONTHYEAR' />
+   <value enum='19' description='UTCTIMESTAMP' />
+   <value enum='20' description='UTCTIMEONLY' />
+   <value enum='21' description='LOCALMKTDATE' />
+   <value enum='22' description='UTCDATEONLY' />
+   <value enum='23' description='DATA' />
+   <value enum='24' description='MULTIPLESTRINGVALUE' />
+   <value enum='25' description='COUNTRY' />
+   <value enum='26' description='LANGUAGE' />
+   <value enum='27' description='TZTIMEONLY' />
+   <value enum='28' description='TZTIMESTAMP' />
+   <value enum='29' description='TENOR' />
+  </field>
+  <field number='960' name='StrategyParameterValue' type='STRING' />
+  <field number='961' name='HostCrossID' type='STRING' />
+  <field number='962' name='SideTimeInForce' type='UTCTIMESTAMP' />
+  <field number='963' name='MDReportID' type='INT' />
+  <field number='964' name='SecurityReportID' type='INT' />
+  <field number='965' name='SecurityStatus' type='STRING'>
+   <value enum='1' description='ACTIVE' />
+   <value enum='2' description='INACTIVE' />
+  </field>
+  <field number='966' name='SettleOnOpenFlag' type='STRING' />
+  <field number='967' name='StrikeMultiplier' type='FLOAT' />
+  <field number='968' name='StrikeValue' type='FLOAT' />
+  <field number='969' name='MinPriceIncrement' type='FLOAT' />
+  <field number='970' name='PositionLimit' type='INT' />
+  <field number='971' name='NTPositionLimit' type='INT' />
+  <field number='972' name='UnderlyingAllocationPercent' type='PERCENTAGE' />
+  <field number='973' name='UnderlyingCashAmount' type='AMT' />
+  <field number='974' name='UnderlyingCashType' type='STRING'>
+   <value enum='FIXED' description='FIXED' />
+   <value enum='DIFF' description='DIFF' />
+  </field>
+  <field number='975' name='UnderlyingSettlementType' type='INT'>
+   <value enum='2' description='T_PLUS_1' />
