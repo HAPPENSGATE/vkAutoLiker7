@@ -9300,3 +9300,49 @@
   <field number='993' name='AllocCustomerCapacity' type='STRING' />
   <field number='994' name='TierCode' type='STRING' />
   <field number='996' name='UnitOfMeasure' type='STRING'>
+   <value enum='MWh' description='MEGAWATT_HOURS' />
+   <value enum='MMBtu' description='ONE_MILLION_BTU' />
+   <value enum='Bbl' description='BARRELS' />
+   <value enum='Gal' description='GALLONS' />
+   <value enum='t' description='METRIC_TONS' />
+   <value enum='tn' description='TONS' />
+   <value enum='MMbbl' description='MILLION_BARRELS' />
+   <value enum='lbs' description='POUNDS' />
+   <value enum='oz_tr' description='TROY_OUNCES' />
+   <value enum='USD' description='US_DOLLARS' />
+   <value enum='Bcf' description='BILLION_CUBIC_FEET' />
+   <value enum='Bu' description='BUSHELS' />
+   <value enum='Alw' description='ALLOWANCES' />
+  </field>
+  <field number='997' name='TimeUnit' type='STRING'>
+   <value enum='S' description='SECOND' />
+   <value enum='Min' description='MINUTE' />
+   <value enum='H' description='HOUR' />
+   <value enum='D' description='DAY' />
+   <value enum='Wk' description='WEEK' />
+   <value enum='Mo' description='MONTH' />
+   <value enum='Yr' description='YEAR' />
+  </field>
+  <field number='998' name='UnderlyingUnitOfMeasure' type='STRING' />
+  <field number='999' name='LegUnitOfMeasure' type='STRING' />
+  <field number='1000' name='UnderlyingTimeUnit' type='STRING' />
+  <field number='1001' name='LegTimeUnit' type='STRING' />
+  <field number='1002' name='AllocMethod' type='INT'>
+   <value enum='1' description='AUTOMATIC' />
+   <value enum='2' description='GUARANTOR' />
+   <value enum='3' description='MANUAL' />
+  </field>
+  <field number='1003' name='TradeID' type='STRING' />
+  <field number='1005' name='SideTradeReportID' type='STRING' />
+  <field number='1006' name='SideFillStationCd' type='STRING' />
+  <field number='1007' name='SideReasonCd' type='STRING' />
+  <field number='1008' name='SideTrdSubTyp' type='INT' />
+  <field number='1009' name='SideLastQty' type='INT' />
+  <field number='1011' name='MessageEventSource' type='STRING' />
+  <field number='1012' name='SideTrdRegTimestamp' type='UTCTIMESTAMP' />
+  <field number='1013' name='SideTrdRegTimestampType' type='INT' />
+  <field number='1014' name='SideTrdRegTimestampSrc' type='STRING' />
+  <field number='1015' name='AsOfIndicator' type='CHAR'>
+   <value enum='0' description='FALSE' />
+   <value enum='1' description='TRUE' />
+  </field>
