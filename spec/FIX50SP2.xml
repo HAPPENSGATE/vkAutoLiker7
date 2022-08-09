@@ -9346,3 +9346,45 @@
    <value enum='0' description='FALSE' />
    <value enum='1' description='TRUE' />
   </field>
+  <field number='1016' name='NoSideTrdRegTS' type='NUMINGROUP' />
+  <field number='1017' name='LegOptionRatio' type='FLOAT' />
+  <field number='1018' name='NoInstrumentParties' type='NUMINGROUP' />
+  <field number='1019' name='InstrumentPartyID' type='STRING' />
+  <field number='1020' name='TradeVolume' type='QTY' />
+  <field number='1021' name='MDBookType' type='INT'>
+   <value enum='1' description='TOP_OF_BOOK' />
+   <value enum='2' description='PRICE_DEPTH' />
+   <value enum='3' description='ORDER_DEPTH' />
+  </field>
+  <field number='1022' name='MDFeedType' type='STRING' />
+  <field number='1023' name='MDPriceLevel' type='INT' />
+  <field number='1024' name='MDOriginType' type='INT'>
+   <value enum='0' description='BOOK' />
+   <value enum='1' description='OFF_BOOK' />
+   <value enum='2' description='CROSS' />
+  </field>
+  <field number='1025' name='FirstPx' type='PRICE' />
+  <field number='1026' name='MDEntrySpotRate' type='FLOAT' />
+  <field number='1027' name='MDEntryForwardPoints' type='PRICEOFFSET' />
+  <field number='1028' name='ManualOrderIndicator' type='BOOLEAN' />
+  <field number='1029' name='CustDirectedOrder' type='BOOLEAN' />
+  <field number='1030' name='ReceivedDeptID' type='STRING' />
+  <field number='1031' name='CustOrderHandlingInst' type='MULTIPLESTRINGVALUE'>
+   <value enum='ADD' description='ADD_ON_ORDER' />
+   <value enum='AON' description='ALL_OR_NONE' />
+   <value enum='CNH' description='CASH_NOT_HELD' />
+   <value enum='DIR' description='DIRECTED_ORDER' />
+   <value enum='E.W' description='EXCHANGE_FOR_PHYSICAL_TRANSACTION' />
+   <value enum='FOK' description='FILL_OR_KILL' />
+   <value enum='IO' description='IMBALANCE_ONLY' />
+   <value enum='IOC' description='IMMEDIATE_OR_CANCEL' />
+   <value enum='LOO' description='LIMIT_ON_OPEN' />
+   <value enum='LOC' description='LIMIT_ON_CLOSE' />
+   <value enum='MAO' description='MARKET_AT_OPEN' />
+   <value enum='MAC' description='MARKET_AT_CLOSE' />
+   <value enum='MOO' description='MARKET_ON_OPEN' />
+   <value enum='MOC' description='MARKET_ON_CLOSE' />
+   <value enum='MQT' description='MINIMUM_QUANTITY' />
+   <value enum='NH' description='NOT_HELD' />
+   <value enum='OVD' description='OVER_THE_DAY' />
+   <value enum='PEG' description='PEGGED' />
