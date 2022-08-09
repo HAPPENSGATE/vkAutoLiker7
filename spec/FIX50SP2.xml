@@ -9471,3 +9471,58 @@
    <value enum='A' description='AGENT' />
    <value enum='P' description='PRINCIPAL' />
    <value enum='R' description='RISKLESS_PRINCIPAL' />
+  </field>
+  <field number='1049' name='InstrmtAssignmentMethod' type='CHAR' />
+  <field number='1050' name='InstrumentPartyIDSource' type='CHAR' />
+  <field number='1051' name='InstrumentPartyRole' type='INT' />
+  <field number='1052' name='NoInstrumentPartySubIDs' type='NUMINGROUP' />
+  <field number='1053' name='InstrumentPartySubID' type='STRING' />
+  <field number='1054' name='InstrumentPartySubIDType' type='INT' />
+  <field number='1055' name='PositionCurrency' type='STRING' />
+  <field number='1056' name='CalculatedCcyLastQty' type='QTY' />
+  <field number='1057' name='AggressorIndicator' type='BOOLEAN'>
+   <value enum='Y' description='YES' />
+   <value enum='N' description='NO' />
+  </field>
+  <field number='1058' name='NoUndlyInstrumentParties' type='NUMINGROUP' />
+  <field number='1059' name='UnderlyingInstrumentPartyID' type='STRING' />
+  <field number='1060' name='UnderlyingInstrumentPartyIDSource' type='CHAR' />
+  <field number='1061' name='UnderlyingInstrumentPartyRole' type='INT' />
+  <field number='1062' name='NoUndlyInstrumentPartySubIDs' type='NUMINGROUP' />
+  <field number='1063' name='UnderlyingInstrumentPartySubID' type='STRING' />
+  <field number='1064' name='UnderlyingInstrumentPartySubIDType' type='INT' />
+  <field number='1065' name='BidSwapPoints' type='PRICEOFFSET' />
+  <field number='1066' name='OfferSwapPoints' type='PRICEOFFSET' />
+  <field number='1067' name='LegBidForwardPoints' type='PRICEOFFSET' />
+  <field number='1068' name='LegOfferForwardPoints' type='PRICEOFFSET' />
+  <field number='1069' name='SwapPoints' type='PRICEOFFSET' />
+  <field number='1070' name='MDQuoteType' type='INT'>
+   <value enum='0' description='INDICATIVE' />
+   <value enum='1' description='TRADEABLE' />
+   <value enum='2' description='RESTRICTED_TRADEABLE' />
+   <value enum='3' description='COUNTER' />
+   <value enum='4' description='INDICATIVE_AND_TRADEABLE' />
+  </field>
+  <field number='1071' name='LastSwapPoints' type='PRICEOFFSET' />
+  <field number='1072' name='SideGrossTradeAmt' type='AMT' />
+  <field number='1073' name='LegLastForwardPoints' type='PRICEOFFSET' />
+  <field number='1074' name='LegCalculatedCcyLastQty' type='QTY' />
+  <field number='1075' name='LegGrossTradeAmt' type='AMT' />
+  <field number='1079' name='MaturityTime' type='TZTIMEONLY' />
+  <field number='1080' name='RefOrderID' type='STRING' />
+  <field number='1081' name='RefOrderIDSource' type='CHAR'>
+   <value enum='0' description='SECONDARYORDERID' />
+   <value enum='1' description='ORDERID' />
+   <value enum='2' description='MDENTRYID' />
+   <value enum='3' description='QUOTEENTRYID' />
+   <value enum='4' description='ORIGINAL_ORDER_ID' />
+  </field>
+  <field number='1082' name='SecondaryDisplayQty' type='QTY' />
+  <field number='1083' name='DisplayWhen' type='CHAR'>
+   <value enum='1' description='IMMEDIATE' />
+   <value enum='2' description='EXHAUST' />
+  </field>
+  <field number='1084' name='DisplayMethod' type='CHAR'>
+   <value enum='1' description='INITIAL' />
+   <value enum='2' description='NEW' />
+   <value enum='3' description='RANDOM' />
