@@ -9430,3 +9430,44 @@
    <value enum='MOO' description='MARKET_ON_OPEN' />
    <value enum='MOC' description='MARKET_ON_CLOSE' />
    <value enum='MQT' description='MINIMUM_QUANTITY' />
+   <value enum='NH' description='NOT_HELD' />
+   <value enum='OVD' description='OVER_THE_DAY' />
+   <value enum='PEG' description='PEGGED' />
+   <value enum='RSV' description='RESERVE_SIZE_ORDER' />
+   <value enum='S.W' description='STOP_STOCK_TRANSACTION' />
+   <value enum='SCL' description='SCALE' />
+   <value enum='TMO' description='TIME_ORDER' />
+   <value enum='TS' description='TRAILING_STOP' />
+   <value enum='WRK' description='WORK' />
+  </field>
+  <field number='1036' name='ExecAckStatus' type='CHAR'>
+   <value enum='0' description='RECEIVED_NOT_YET_PROCESSED' />
+   <value enum='1' description='ACCEPTED' />
+   <value enum='2' description='DONT_KNOW' />
+  </field>
+  <field number='1037' name='UnderlyingDeliveryAmount' type='AMT' />
+  <field number='1038' name='UnderlyingCapValue' type='AMT' />
+  <field number='1039' name='UnderlyingSettlMethod' type='STRING' />
+  <field number='1040' name='SecondaryTradeID' type='STRING' />
+  <field number='1041' name='FirmTradeID' type='STRING' />
+  <field number='1042' name='SecondaryFirmTradeID' type='STRING' />
+  <field number='1043' name='CollApplType' type='INT'>
+   <value enum='0' description='SPECIFIC_DEPOSIT' />
+   <value enum='1' description='GENERAL' />
+  </field>
+  <field number='1044' name='UnderlyingAdjustedQuantity' type='QTY' />
+  <field number='1045' name='UnderlyingFXRate' type='FLOAT' />
+  <field number='1046' name='UnderlyingFXRateCalc' type='CHAR'>
+   <value enum='M' description='MULTIPLY' />
+   <value enum='D' description='DIVIDE' />
+  </field>
+  <field number='1047' name='AllocPositionEffect' type='CHAR'>
+   <value enum='O' description='OPEN' />
+   <value enum='C' description='CLOSE' />
+   <value enum='R' description='ROLLED' />
+   <value enum='F' description='FIFO' />
+  </field>
+  <field number='1048' name='DealingCapacity' type='CHAR'>
+   <value enum='A' description='AGENT' />
+   <value enum='P' description='PRINCIPAL' />
+   <value enum='R' description='RISKLESS_PRINCIPAL' />
