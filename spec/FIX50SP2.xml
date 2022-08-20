@@ -9576,3 +9576,44 @@
   <field number='1102' name='TriggerPrice' type='PRICE' />
   <field number='1103' name='TriggerSymbol' type='STRING' />
   <field number='1104' name='TriggerSecurityID' type='STRING' />
+  <field number='1105' name='TriggerSecurityIDSource' type='STRING' />
+  <field number='1106' name='TriggerSecurityDesc' type='STRING' />
+  <field number='1107' name='TriggerPriceType' type='CHAR'>
+   <value enum='1' description='BEST_OFFER' />
+   <value enum='2' description='LAST_TRADE' />
+   <value enum='3' description='BEST_BID' />
+   <value enum='4' description='BEST_BID_OR_LAST_TRADE' />
+   <value enum='5' description='BEST_OFFER_OR_LAST_TRADE' />
+   <value enum='6' description='BEST_MID' />
+  </field>
+  <field number='1108' name='TriggerPriceTypeScope' type='CHAR'>
+   <value enum='0' description='NONE' />
+   <value enum='1' description='LOCAL' />
+   <value enum='2' description='NATIONAL' />
+   <value enum='3' description='GLOBAL' />
+  </field>
+  <field number='1109' name='TriggerPriceDirection' type='CHAR'>
+   <value enum='U' description='TRIGGER_IF_THE_PRICE_OF_THE_SPECIFIED_TYPE_GOES_UP_TO_OR_THROUGH_THE_SPECIFIED_TRIGGER_PRICE' />
+   <value enum='D' description='TRIGGER_IF_THE_PRICE_OF_THE_SPECIFIED_TYPE_GOES_DOWN_TO_OR_THROUGH_THE_SPECIFIED_TRIGGER_PRICE' />
+  </field>
+  <field number='1110' name='TriggerNewPrice' type='PRICE' />
+  <field number='1111' name='TriggerOrderType' type='CHAR'>
+   <value enum='1' description='MARKET' />
+   <value enum='2' description='LIMIT' />
+  </field>
+  <field number='1112' name='TriggerNewQty' type='QTY' />
+  <field number='1113' name='TriggerTradingSessionID' type='STRING' />
+  <field number='1114' name='TriggerTradingSessionSubID' type='STRING' />
+  <field number='1115' name='OrderCategory' type='CHAR'>
+   <value enum='1' description='ORDER' />
+   <value enum='2' description='QUOTE' />
+   <value enum='3' description='PRIVATELY_NEGOTIATED_TRADE' />
+   <value enum='4' description='MULTILEG_ORDER' />
+   <value enum='5' description='LINKED_ORDER' />
+   <value enum='6' description='QUOTE_REQUEST' />
+   <value enum='7' description='IMPLIED_ORDER' />
+   <value enum='8' description='CROSS_ORDER' />
+   <value enum='9' description='STREAMING_PRICE' />
+  </field>
+  <field number='1116' name='NoRootPartyIDs' type='NUMINGROUP' />
+  <field number='1117' name='RootPartyID' type='STRING' />
