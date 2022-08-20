@@ -9526,3 +9526,53 @@
    <value enum='1' description='INITIAL' />
    <value enum='2' description='NEW' />
    <value enum='3' description='RANDOM' />
+   <value enum='4' description='UNDISCLOSED' />
+  </field>
+  <field number='1085' name='DisplayLowQty' type='QTY' />
+  <field number='1086' name='DisplayHighQty' type='QTY' />
+  <field number='1087' name='DisplayMinIncr' type='QTY' />
+  <field number='1088' name='RefreshQty' type='QTY' />
+  <field number='1089' name='MatchIncrement' type='QTY' />
+  <field number='1090' name='MaxPriceLevels' type='INT' />
+  <field number='1091' name='PreTradeAnonymity' type='BOOLEAN' />
+  <field number='1092' name='PriceProtectionScope' type='CHAR'>
+   <value enum='0' description='NONE' />
+   <value enum='1' description='LOCAL' />
+   <value enum='2' description='NATIONAL' />
+   <value enum='3' description='GLOBAL' />
+  </field>
+  <field number='1093' name='LotType' type='CHAR'>
+   <value enum='1' description='ODD_LOT' />
+   <value enum='2' description='ROUND_LOT' />
+   <value enum='3' description='BLOCK_LOT' />
+   <value enum='4' description='ROUND_LOT_BASED_UPON_UNITOFMEASURE' />
+  </field>
+  <field number='1094' name='PegPriceType' type='INT'>
+   <value enum='1' description='LAST_PEG' />
+   <value enum='2' description='MID_PRICE_PEG' />
+   <value enum='3' description='OPENING_PEG' />
+   <value enum='4' description='MARKET_PEG' />
+   <value enum='5' description='PRIMARY_PEG' />
+   <value enum='7' description='PEG_TO_VWAP' />
+   <value enum='8' description='TRAILING_STOP_PEG' />
+   <value enum='9' description='PEG_TO_LIMIT_PRICE' />
+  </field>
+  <field number='1095' name='PeggedRefPrice' type='PRICE' />
+  <field number='1096' name='PegSecurityIDSource' type='STRING' />
+  <field number='1097' name='PegSecurityID' type='STRING' />
+  <field number='1098' name='PegSymbol' type='STRING' />
+  <field number='1099' name='PegSecurityDesc' type='STRING' />
+  <field number='1100' name='TriggerType' type='CHAR'>
+   <value enum='1' description='PARTIAL_EXECUTION' />
+   <value enum='2' description='SPECIFIED_TRADING_SESSION' />
+   <value enum='3' description='NEXT_AUCTION' />
+   <value enum='4' description='PRICE_MOVEMENT' />
+  </field>
+  <field number='1101' name='TriggerAction' type='CHAR'>
+   <value enum='1' description='ACTIVATE' />
+   <value enum='2' description='MODIFY' />
+   <value enum='3' description='CANCEL' />
+  </field>
+  <field number='1102' name='TriggerPrice' type='PRICE' />
+  <field number='1103' name='TriggerSymbol' type='STRING' />
+  <field number='1104' name='TriggerSecurityID' type='STRING' />
