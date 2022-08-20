@@ -9617,3 +9617,39 @@
   </field>
   <field number='1116' name='NoRootPartyIDs' type='NUMINGROUP' />
   <field number='1117' name='RootPartyID' type='STRING' />
+  <field number='1118' name='RootPartyIDSource' type='CHAR' />
+  <field number='1119' name='RootPartyRole' type='INT' />
+  <field number='1120' name='NoRootPartySubIDs' type='NUMINGROUP' />
+  <field number='1121' name='RootPartySubID' type='STRING' />
+  <field number='1122' name='RootPartySubIDType' type='INT' />
+  <field number='1123' name='TradeHandlingInstr' type='CHAR'>
+   <value enum='0' description='TRADE_CONFIRMATION' />
+   <value enum='1' description='TWO_PARTY_REPORT' />
+   <value enum='2' description='ONE_PARTY_REPORT_FOR_MATCHING' />
+   <value enum='3' description='ONE_PARTY_REPORT_FOR_PASS_THROUGH' />
+   <value enum='4' description='AUTOMATED_FLOOR_ORDER_ROUTING' />
+   <value enum='5' description='TWO_PARTY_REPORT_FOR_CLAIM' />
+  </field>
+  <field number='1124' name='OrigTradeHandlingInstr' type='CHAR' />
+  <field number='1125' name='OrigTradeDate' type='LOCALMKTDATE' />
+  <field number='1126' name='OrigTradeID' type='STRING' />
+  <field number='1127' name='OrigSecondaryTradeID' type='STRING' />
+  <field number='1128' name='ApplVerID' type='STRING'>
+   <value enum='0' description='FIX27' />
+   <value enum='1' description='FIX30' />
+   <value enum='2' description='FIX40' />
+   <value enum='3' description='FIX41' />
+   <value enum='4' description='FIX42' />
+   <value enum='5' description='FIX43' />
+   <value enum='6' description='FIX44' />
+   <value enum='7' description='FIX50' />
+   <value enum='8' description='FIX50SP1' />
+   <value enum='9' description='FIX50SP2' />
+  </field>
+  <field number='1129' name='CstmApplVerID' type='STRING' />
+  <field number='1130' name='RefApplVerID' type='STRING' />
+  <field number='1131' name='RefCstmApplVerID' type='STRING' />
+  <field number='1132' name='TZTransactTime' type='TZTIMESTAMP' />
+  <field number='1133' name='ExDestinationIDSource' type='CHAR'>
+   <value enum='B' description='BIC' />
+   <value enum='C' description='GENERALLY_ACCEPTED_MARKET_PARTICIPANT_IDENTIFIER' />
