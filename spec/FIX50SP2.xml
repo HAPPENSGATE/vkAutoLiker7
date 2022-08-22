@@ -9653,3 +9653,45 @@
   <field number='1133' name='ExDestinationIDSource' type='CHAR'>
    <value enum='B' description='BIC' />
    <value enum='C' description='GENERALLY_ACCEPTED_MARKET_PARTICIPANT_IDENTIFIER' />
+   <value enum='D' description='PROPRIETARY' />
+   <value enum='E' description='ISO_COUNTRY_CODE' />
+   <value enum='G' description='MIC' />
+  </field>
+  <field number='1134' name='ReportedPxDiff' type='BOOLEAN' />
+  <field number='1135' name='RptSys' type='STRING' />
+  <field number='1136' name='AllocClearingFeeIndicator' type='STRING' />
+  <field number='1137' name='DefaultApplVerID' type='STRING' />
+  <field number='1138' name='DisplayQty' type='QTY' />
+  <field number='1139' name='ExchangeSpecialInstructions' type='STRING' />
+  <field number='1140' name='MaxTradeVol' type='QTY' />
+  <field number='1141' name='NoMDFeedTypes' type='NUMINGROUP' />
+  <field number='1142' name='MatchAlgorithm' type='STRING' />
+  <field number='1143' name='MaxPriceVariation' type='FLOAT' />
+  <field number='1144' name='ImpliedMarketIndicator' type='INT'>
+   <value enum='0' description='NOT_IMPLIED' />
+   <value enum='1' description='IMPLIED_IN' />
+   <value enum='2' description='IMPLIED_OUT' />
+   <value enum='3' description='BOTH_IMPLIED_IN_AND_IMPLIED_OUT' />
+  </field>
+  <field number='1145' name='EventTime' type='UTCTIMESTAMP' />
+  <field number='1146' name='MinPriceIncrementAmount' type='AMT' />
+  <field number='1147' name='UnitOfMeasureQty' type='QTY' />
+  <field number='1148' name='LowLimitPrice' type='PRICE' />
+  <field number='1149' name='HighLimitPrice' type='PRICE' />
+  <field number='1150' name='TradingReferencePrice' type='PRICE' />
+  <field number='1151' name='SecurityGroup' type='STRING' />
+  <field number='1152' name='LegNumber' type='INT' />
+  <field number='1153' name='SettlementCycleNo' type='INT' />
+  <field number='1154' name='SideCurrency' type='CURRENCY' />
+  <field number='1155' name='SideSettlCurrency' type='CURRENCY' />
+  <field number='1156' name='ApplExtID' type='INT' />
+  <field number='1157' name='CcyAmt' type='AMT' />
+  <field number='1158' name='NoSettlDetails' type='NUMINGROUP' />
+  <field number='1159' name='SettlObligMode' type='INT'>
+   <value enum='1' description='PRELIMINARY' />
+   <value enum='2' description='FINAL' />
+  </field>
+  <field number='1160' name='SettlObligMsgID' type='STRING' />
+  <field number='1161' name='SettlObligID' type='STRING' />
+  <field number='1162' name='SettlObligTransType' type='CHAR'>
+   <value enum='C' description='CANCEL' />
