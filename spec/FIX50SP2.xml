@@ -9695,3 +9695,61 @@
   <field number='1161' name='SettlObligID' type='STRING' />
   <field number='1162' name='SettlObligTransType' type='CHAR'>
    <value enum='C' description='CANCEL' />
+   <value enum='N' description='NEW' />
+   <value enum='R' description='REPLACE' />
+   <value enum='T' description='RESTATE' />
+  </field>
+  <field number='1163' name='SettlObligRefID' type='STRING' />
+  <field number='1164' name='SettlObligSource' type='CHAR'>
+   <value enum='1' description='INSTRUCTIONS_OF_BROKER' />
+   <value enum='2' description='INSTRUCTIONS_FOR_INSTITUTION' />
+   <value enum='3' description='INVESTOR' />
+  </field>
+  <field number='1165' name='NoSettlOblig' type='NUMINGROUP' />
+  <field number='1166' name='QuoteMsgID' type='STRING' />
+  <field number='1167' name='QuoteEntryStatus' type='INT'>
+   <value enum='0' description='ACCEPTED' />
+   <value enum='5' description='REJECTED' />
+   <value enum='6' description='REMOVED_FROM_MARKET' />
+   <value enum='7' description='EXPIRED' />
+   <value enum='12' description='LOCKED_MARKET_WARNING' />
+   <value enum='13' description='CROSS_MARKET_WARNING' />
+   <value enum='14' description='CANCELED_DUE_TO_LOCK_MARKET' />
+   <value enum='15' description='CANCELED_DUE_TO_CROSS_MARKET' />
+   <value enum='16' description='ACTIVE' />
+  </field>
+  <field number='1168' name='TotNoCxldQuotes' type='INT' />
+  <field number='1169' name='TotNoAccQuotes' type='INT' />
+  <field number='1170' name='TotNoRejQuotes' type='INT' />
+  <field number='1171' name='PrivateQuote' type='BOOLEAN' />
+  <field number='1172' name='RespondentType' type='INT'>
+   <value enum='1' description='ALL_MARKET_PARTICIPANTS' />
+   <value enum='2' description='SPECIFIED_MARKET_PARTICIPANTS' />
+   <value enum='3' description='ALL_MARKET_MAKERS' />
+   <value enum='4' description='PRIMARY_MARKET_MAKER' />
+  </field>
+  <field number='1173' name='MDSubBookType' type='INT' />
+  <field number='1174' name='SecurityTradingEvent' type='INT'>
+   <value enum='1' description='ORDER_IMBALANCE_AUCTION_IS_EXTENDED' />
+   <value enum='2' description='TRADING_RESUMES' />
+   <value enum='3' description='PRICE_VOLATILITY_INTERRUPTION' />
+   <value enum='4' description='CHANGE_OF_TRADING_SESSION' />
+   <value enum='5' description='CHANGE_OF_TRADING_SUBSESSION' />
+   <value enum='6' description='CHANGE_OF_SECURITY_TRADING_STATUS' />
+   <value enum='7' description='CHANGE_OF_BOOK_TYPE' />
+   <value enum='8' description='CHANGE_OF_MARKET_DEPTH' />
+  </field>
+  <field number='1175' name='NoStatsIndicators' type='NUMINGROUP' />
+  <field number='1176' name='StatsType' type='INT'>
+   <value enum='1' description='EXCHANGE_LAST' />
+   <value enum='2' description='HIGH' />
+   <value enum='3' description='AVERAGE_PRICE' />
+   <value enum='4' description='TURNOVER' />
+  </field>
+  <field number='1177' name='NoOfSecSizes' type='NUMINGROUP' />
+  <field number='1178' name='MDSecSizeType' type='INT'>
+   <value enum='1' description='CUSTOMER' />
+  </field>
+  <field number='1179' name='MDSecSize' type='QTY' />
+  <field number='1180' name='ApplID' type='STRING' />
+  <field number='1181' name='ApplSeqNum' type='SEQNUM' />
