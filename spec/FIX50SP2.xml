@@ -9753,3 +9753,37 @@
   <field number='1179' name='MDSecSize' type='QTY' />
   <field number='1180' name='ApplID' type='STRING' />
   <field number='1181' name='ApplSeqNum' type='SEQNUM' />
+  <field number='1182' name='ApplBegSeqNum' type='SEQNUM' />
+  <field number='1183' name='ApplEndSeqNum' type='SEQNUM' />
+  <field number='1184' name='SecurityXMLLen' type='LENGTH' />
+  <field number='1185' name='SecurityXML' type='XMLDATA' />
+  <field number='1186' name='SecurityXMLSchema' type='STRING' />
+  <field number='1187' name='RefreshIndicator' type='BOOLEAN' />
+  <field number='1188' name='Volatility' type='FLOAT' />
+  <field number='1189' name='TimeToExpiration' type='FLOAT' />
+  <field number='1190' name='RiskFreeRate' type='FLOAT' />
+  <field number='1191' name='PriceUnitOfMeasure' type='STRING' />
+  <field number='1192' name='PriceUnitOfMeasureQty' type='QTY' />
+  <field number='1193' name='SettlMethod' type='CHAR'>
+   <value enum='C' description='CASH_SETTLEMENT_REQUIRED' />
+   <value enum='P' description='PHYSICAL_SETTLEMENT_REQUIRED' />
+  </field>
+  <field number='1194' name='ExerciseStyle' type='INT'>
+   <value enum='0' description='EUROPEAN' />
+   <value enum='1' description='AMERICAN' />
+   <value enum='2' description='BERMUDA' />
+  </field>
+  <field number='1195' name='OptPayoutAmount' type='AMT' />
+  <field number='1196' name='PriceQuoteMethod' type='STRING'>
+   <value enum='STD' description='STANDARD' />
+   <value enum='INX' description='INDEX' />
+   <value enum='INT' description='INTEREST_RATE_INDEX' />
+   <value enum='PCTPAR' description='PERCENT_OF_PAR' />
+  </field>
+  <field number='1197' name='ValuationMethod' type='STRING'>
+   <value enum='EQTY' description='PREMIUM_STYLE' />
+   <value enum='FUT' description='FUTURES_STYLE_MARK_TO_MARKET' />
+   <value enum='FUTDA' description='FUTURES_STYLE_WITH_AN_ATTACHED_CASH_ADJUSTMENT' />
+   <value enum='CDS' description='CDS_STYLE_COLLATERALIZATION_OF_MARKET_TO_MARKET_AND_COUPON' />
+   <value enum='CDSD' description='CDS_IN_DELIVERY' />
+  </field>
