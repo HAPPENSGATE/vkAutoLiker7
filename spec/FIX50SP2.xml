@@ -9787,3 +9787,42 @@
    <value enum='CDS' description='CDS_STYLE_COLLATERALIZATION_OF_MARKET_TO_MARKET_AND_COUPON' />
    <value enum='CDSD' description='CDS_IN_DELIVERY' />
   </field>
+  <field number='1198' name='ListMethod' type='INT'>
+   <value enum='0' description='PRE_LISTED_ONLY' />
+   <value enum='1' description='USER_REQUESTED' />
+  </field>
+  <field number='1199' name='CapPrice' type='PRICE' />
+  <field number='1200' name='FloorPrice' type='PRICE' />
+  <field number='1201' name='NoStrikeRules' type='NUMINGROUP' />
+  <field number='1202' name='StartStrikePxRange' type='PRICE' />
+  <field number='1203' name='EndStrikePxRange' type='PRICE' />
+  <field number='1204' name='StrikeIncrement' type='FLOAT' />
+  <field number='1205' name='NoTickRules' type='NUMINGROUP' />
+  <field number='1206' name='StartTickPriceRange' type='PRICE' />
+  <field number='1207' name='EndTickPriceRange' type='PRICE' />
+  <field number='1208' name='TickIncrement' type='PRICE' />
+  <field number='1209' name='TickRuleType' type='INT'>
+   <value enum='0' description='REGULAR' />
+   <value enum='1' description='VARIABLE' />
+   <value enum='2' description='FIXED' />
+   <value enum='3' description='TRADED_AS_A_SPREAD_LEG' />
+   <value enum='4' description='SETTLED_AS_A_SPREAD_LEG' />
+  </field>
+  <field number='1210' name='NestedInstrAttribType' type='INT' />
+  <field number='1211' name='NestedInstrAttribValue' type='STRING' />
+  <field number='1212' name='LegMaturityTime' type='TZTIMEONLY' />
+  <field number='1213' name='UnderlyingMaturityTime' type='TZTIMEONLY' />
+  <field number='1214' name='DerivativeSymbol' type='STRING' />
+  <field number='1215' name='DerivativeSymbolSfx' type='STRING' />
+  <field number='1216' name='DerivativeSecurityID' type='STRING' />
+  <field number='1217' name='DerivativeSecurityIDSource' type='STRING' />
+  <field number='1218' name='NoDerivativeSecurityAltID' type='NUMINGROUP' />
+  <field number='1219' name='DerivativeSecurityAltID' type='STRING' />
+  <field number='1220' name='DerivativeSecurityAltIDSource' type='STRING' />
+  <field number='1221' name='SecondaryLowLimitPrice' type='PRICE' />
+  <field number='1222' name='MaturityRuleID' type='STRING' />
+  <field number='1223' name='StrikeRuleID' type='STRING' />
+  <field number='1224' name='LegUnitOfMeasureQty' type='QTY' />
+  <field number='1225' name='DerivativeOptPayAmount' type='AMT' />
+  <field number='1226' name='EndMaturityMonthYear' type='MONTHYEAR' />
+  <field number='1227' name='ProductComplex' type='STRING' />
