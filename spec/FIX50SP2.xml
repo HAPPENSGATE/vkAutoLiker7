@@ -9877,3 +9877,43 @@
   <field number='1278' name='DerivativeEncodedIssuer' type='DATA' />
   <field number='1279' name='DerivativeSecurityDesc' type='STRING' />
   <field number='1280' name='DerivativeEncodedSecurityDescLen' type='LENGTH' />
+  <field number='1281' name='DerivativeEncodedSecurityDesc' type='DATA' />
+  <field number='1282' name='DerivativeSecurityXMLLen' type='LENGTH' />
+  <field number='1283' name='DerivativeSecurityXML' type='DATA' />
+  <field number='1284' name='DerivativeSecurityXMLSchema' type='STRING' />
+  <field number='1285' name='DerivativeContractSettlMonth' type='MONTHYEAR' />
+  <field number='1286' name='NoDerivativeEvents' type='NUMINGROUP' />
+  <field number='1287' name='DerivativeEventType' type='INT' />
+  <field number='1288' name='DerivativeEventDate' type='LOCALMKTDATE' />
+  <field number='1289' name='DerivativeEventTime' type='UTCTIMESTAMP' />
+  <field number='1290' name='DerivativeEventPx' type='PRICE' />
+  <field number='1291' name='DerivativeEventText' type='STRING' />
+  <field number='1292' name='NoDerivativeInstrumentParties' type='NUMINGROUP' />
+  <field number='1293' name='DerivativeInstrumentPartyID' type='STRING' />
+  <field number='1294' name='DerivativeInstrumentPartyIDSource' type='STRING' />
+  <field number='1295' name='DerivativeInstrumentPartyRole' type='INT' />
+  <field number='1296' name='NoDerivativeInstrumentPartySubIDs' type='NUMINGROUP' />
+  <field number='1297' name='DerivativeInstrumentPartySubID' type='STRING' />
+  <field number='1298' name='DerivativeInstrumentPartySubIDType' type='INT' />
+  <field number='1299' name='DerivativeExerciseStyle' type='CHAR' />
+  <field number='1300' name='MarketSegmentID' type='STRING' />
+  <field number='1301' name='MarketID' type='EXCHANGE' />
+  <field number='1302' name='MaturityMonthYearIncrementUnits' type='INT'>
+   <value enum='0' description='MONTHS' />
+   <value enum='1' description='DAYS' />
+   <value enum='2' description='WEEKS' />
+   <value enum='3' description='YEARS' />
+  </field>
+  <field number='1303' name='MaturityMonthYearFormat' type='INT'>
+   <value enum='0' description='YEARMONTH_ONLY' />
+   <value enum='1' description='YEARMONTHDAY' />
+   <value enum='2' description='YEARMONTHWEEK' />
+  </field>
+  <field number='1304' name='StrikeExerciseStyle' type='INT' />
+  <field number='1305' name='SecondaryPriceLimitType' type='INT' />
+  <field number='1306' name='PriceLimitType' type='INT'>
+   <value enum='0' description='PRICE' />
+   <value enum='1' description='TICKS' />
+   <value enum='2' description='PERCENTAGE' />
+  </field>
+  <field number='1307' name='DerivativeSecurityListRequestType' type='INT'>
