@@ -9917,3 +9917,48 @@
    <value enum='2' description='PERCENTAGE' />
   </field>
   <field number='1307' name='DerivativeSecurityListRequestType' type='INT'>
+   <value enum='0' description='SYMBOL' />
+   <value enum='1' description='SECURITYTYPE_AND_OR_CFICODE' />
+   <value enum='2' description='PRODUCT' />
+   <value enum='3' description='TRADINGSESSIONID' />
+   <value enum='4' description='ALL_SECURITIES' />
+   <value enum='5' description='UNDELYINGSYMBOL' />
+   <value enum='6' description='UNDERLYING_SECURITYTYPE_AND_OR_CFICODE' />
+   <value enum='7' description='UNDERLYING_PRODUCT' />
+   <value enum='8' description='MARKETID_OR_MARKETID_PLUS_MARKETSEGMENTID' />
+  </field>
+  <field number='1308' name='ExecInstValue' type='CHAR' />
+  <field number='1309' name='NoTradingSessionRules' type='NUMINGROUP' />
+  <field number='1310' name='NoMarketSegments' type='NUMINGROUP' />
+  <field number='1311' name='NoDerivativeInstrAttrib' type='NUMINGROUP' />
+  <field number='1312' name='NoNestedInstrAttrib' type='NUMINGROUP' />
+  <field number='1313' name='DerivativeInstrAttribType' type='INT' />
+  <field number='1314' name='DerivativeInstrAttribValue' type='STRING' />
+  <field number='1315' name='DerivativePriceUnitOfMeasure' type='STRING' />
+  <field number='1316' name='DerivativePriceUnitOfMeasureQty' type='QTY' />
+  <field number='1317' name='DerivativeSettlMethod' type='CHAR' />
+  <field number='1318' name='DerivativePriceQuoteMethod' type='STRING' />
+  <field number='1319' name='DerivativeValuationMethod' type='STRING' />
+  <field number='1320' name='DerivativeListMethod' type='INT' />
+  <field number='1321' name='DerivativeCapPrice' type='PRICE' />
+  <field number='1322' name='DerivativeFloorPrice' type='PRICE' />
+  <field number='1323' name='DerivativePutOrCall' type='INT' />
+  <field number='1324' name='ListUpdateAction' type='CHAR' />
+  <field number='1325' name='ParentMktSegmID' type='STRING' />
+  <field number='1326' name='TradingSessionDesc' type='STRING' />
+  <field number='1327' name='TradSesUpdateAction' type='CHAR' />
+  <field number='1328' name='RejectText' type='STRING' />
+  <field number='1329' name='FeeMultiplier' type='FLOAT' />
+  <field number='1330' name='UnderlyingLegSymbol' type='STRING' />
+  <field number='1331' name='UnderlyingLegSymbolSfx' type='STRING' />
+  <field number='1332' name='UnderlyingLegSecurityID' type='STRING' />
+  <field number='1333' name='UnderlyingLegSecurityIDSource' type='STRING' />
+  <field number='1334' name='NoUnderlyingLegSecurityAltID' type='NUMINGROUP' />
+  <field number='1335' name='UnderlyingLegSecurityAltID' type='STRING' />
+  <field number='1336' name='UnderlyingLegSecurityAltIDSource' type='STRING' />
+  <field number='1337' name='UnderlyingLegSecurityType' type='STRING' />
+  <field number='1338' name='UnderlyingLegSecuritySubType' type='STRING' />
+  <field number='1339' name='UnderlyingLegMaturityMonthYear' type='MONTHYEAR' />
+  <field number='1340' name='UnderlyingLegStrikePrice' type='PRICE' />
+  <field number='1341' name='UnderlyingLegSecurityExchange' type='STRING' />
+  <field number='1342' name='NoOfLegUnderlyings' type='NUMINGROUP' />
