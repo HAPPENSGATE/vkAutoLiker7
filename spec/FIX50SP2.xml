@@ -10085,3 +10085,41 @@
    <value enum='11' description='UNSUPPORTED_ORDER_CHARACTERISTIC' />
    <value enum='99' description='OTHER' />
   </field>
+  <field number='1387' name='NoTrdRepIndicators' type='NUMINGROUP' />
+  <field number='1388' name='TrdRepPartyRole' type='INT' />
+  <field number='1389' name='TrdRepIndicator' type='BOOLEAN' />
+  <field number='1390' name='TradePublishIndicator' type='INT'>
+   <value enum='0' description='DO_NOT_PUBLISH_TRADE' />
+   <value enum='1' description='PUBLISH_TRADE' />
+   <value enum='2' description='DEFERRED_PUBLICATION' />
+  </field>
+  <field number='1391' name='UnderlyingLegOptAttribute' type='CHAR' />
+  <field number='1392' name='UnderlyingLegSecurityDesc' type='STRING' />
+  <field number='1393' name='MarketReqID' type='STRING' />
+  <field number='1394' name='MarketReportID' type='STRING' />
+  <field number='1395' name='MarketUpdateAction' type='CHAR'>
+   <value enum='A' description='ADD' />
+   <value enum='D' description='DELETE' />
+   <value enum='M' description='MODIFY' />
+  </field>
+  <field number='1396' name='MarketSegmentDesc' type='STRING' />
+  <field number='1397' name='EncodedMktSegmDescLen' type='LENGTH' />
+  <field number='1398' name='EncodedMktSegmDesc' type='DATA' />
+  <field number='1399' name='ApplNewSeqNum' type='SEQNUM' />
+  <field number='1400' name='EncryptedPasswordMethod' type='INT' />
+  <field number='1401' name='EncryptedPasswordLen' type='LENGTH' />
+  <field number='1402' name='EncryptedPassword' type='DATA' />
+  <field number='1403' name='EncryptedNewPasswordLen' type='LENGTH' />
+  <field number='1404' name='EncryptedNewPassword' type='DATA' />
+  <field number='1405' name='UnderlyingLegMaturityTime' type='TZTIMEONLY' />
+  <field number='1406' name='RefApplExtID' type='INT' />
+  <field number='1407' name='DefaultApplExtID' type='INT' />
+  <field number='1408' name='DefaultCstmApplVerID' type='STRING' />
+  <field number='1409' name='SessionStatus' type='INT'>
+   <value enum='0' description='SESSION_ACTIVE' />
+   <value enum='1' description='SESSION_PASSWORD_CHANGED' />
+   <value enum='2' description='SESSION_PASSWORD_DUE_TO_EXPIRE' />
+   <value enum='3' description='NEW_SESSION_PASSWORD_DOES_NOT_COMPLY_WITH_POLICY' />
+   <value enum='4' description='SESSION_LOGOUT_COMPLETE' />
+   <value enum='5' description='INVALID_USERNAME_OR_PASSWORD' />
+   <value enum='6' description='ACCOUNT_LOCKED' />
