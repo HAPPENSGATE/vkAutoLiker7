@@ -10123,3 +10123,33 @@
    <value enum='4' description='SESSION_LOGOUT_COMPLETE' />
    <value enum='5' description='INVALID_USERNAME_OR_PASSWORD' />
    <value enum='6' description='ACCOUNT_LOCKED' />
+   <value enum='7' description='LOGONS_ARE_NOT_ALLOWED_AT_THIS_TIME' />
+   <value enum='8' description='PASSWORD_EXPIRED' />
+  </field>
+  <field number='1410' name='DefaultVerIndicator' type='BOOLEAN' />
+  <field number='1411' name='Nested4PartySubIDType' type='INT' />
+  <field number='1412' name='Nested4PartySubID' type='STRING' />
+  <field number='1413' name='NoNested4PartySubIDs' type='NUMINGROUP' />
+  <field number='1414' name='NoNested4PartyIDs' type='NUMINGROUP' />
+  <field number='1415' name='Nested4PartyID' type='STRING' />
+  <field number='1416' name='Nested4PartyIDSource' type='CHAR' />
+  <field number='1417' name='Nested4PartyRole' type='INT' />
+  <field number='1418' name='LegLastQty' type='QTY' />
+  <field number='1419' name='UnderlyingExerciseStyle' type='INT' />
+  <field number='1420' name='LegExerciseStyle' type='INT' />
+  <field number='1421' name='LegPriceUnitOfMeasure' type='STRING' />
+  <field number='1422' name='LegPriceUnitOfMeasureQty' type='QTY' />
+  <field number='1423' name='UnderlyingUnitOfMeasureQty' type='QTY' />
+  <field number='1424' name='UnderlyingPriceUnitOfMeasure' type='STRING' />
+  <field number='1425' name='UnderlyingPriceUnitOfMeasureQty' type='QTY' />
+  <field number='1426' name='ApplReportType' type='INT'>
+   <value enum='0' description='RESET_APPLSEQNUM_TO_NEW_VALUE_SPECIFIED_IN_APPLNEWSEQNUM' />
+   <value enum='1' description='REPORTS_THAT_THE_LAST_MESSAGE_HAS_BEEN_SENT_FOR_THE_APPLIDS_REFER_TO_REFAPPLLASTSEQNUM' />
+   <value enum='2' description='HEARTBEAT_MESSAGE_INDICATING_THAT_APPLICATION_IDENTIFIED_BY_REFAPPLID' />
+   <value enum='3' description='APPLICATION_MESSAGE_RE_SEND_COMPLETED' />
+  </field>
+  <field number='1427' name='SideExecID' type='STRING' />
+  <field number='1428' name='OrderDelay' type='INT' />
+  <field number='1429' name='OrderDelayUnit' type='INT'>
+   <value enum='0' description='SECONDS' />
+   <value enum='1' description='TENTHS_OF_A_SECOND' />
