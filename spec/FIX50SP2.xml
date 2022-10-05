@@ -10153,3 +10153,52 @@
   <field number='1429' name='OrderDelayUnit' type='INT'>
    <value enum='0' description='SECONDS' />
    <value enum='1' description='TENTHS_OF_A_SECOND' />
+   <value enum='2' description='HUNDREDTHS_OF_A_SECOND' />
+   <value enum='3' description='MILLISECONDS' />
+   <value enum='4' description='MICROSECONDS' />
+   <value enum='5' description='NANOSECONDS' />
+   <value enum='10' description='MINUTES' />
+   <value enum='11' description='HOURS' />
+   <value enum='12' description='DAYS' />
+   <value enum='13' description='WEEKS' />
+   <value enum='14' description='MONTHS' />
+   <value enum='15' description='YEARS' />
+  </field>
+  <field number='1430' name='VenueType' type='CHAR'>
+   <value enum='E' description='ELECTRONIC' />
+   <value enum='P' description='PIT' />
+   <value enum='X' description='EX_PIT' />
+  </field>
+  <field number='1431' name='RefOrdIDReason' type='INT'>
+   <value enum='0' description='GTC_FROM_PREVIOUS_DAY' />
+   <value enum='1' description='PARTIAL_FILL_REMAINING' />
+   <value enum='2' description='ORDER_CHANGED' />
+  </field>
+  <field number='1432' name='OrigCustOrderCapacity' type='INT'>
+   <value enum='1' description='MEMBER_TRADING_FOR_THEIR_OWN_ACCOUNT' />
+   <value enum='2' description='CLEARING_FIRM_TRADING_FOR_ITS_PROPRIETARY_ACCOUNT' />
+   <value enum='3' description='MEMBER_TRADING_FOR_ANOTHER_MEMBER' />
+   <value enum='4' description='ALL_OTHER' />
+  </field>
+  <field number='1433' name='RefApplReqID' type='STRING' />
+  <field number='1434' name='ModelType' type='INT'>
+   <value enum='0' description='UTILITY_PROVIDED_STANDARD_MODEL' />
+   <value enum='1' description='PROPRIETARY' />
+  </field>
+  <field number='1435' name='ContractMultiplierUnit' type='INT'>
+   <value enum='0' description='SHARES' />
+   <value enum='1' description='HOURS' />
+   <value enum='2' description='DAYS' />
+  </field>
+  <field number='1436' name='LegContractMultiplierUnit' type='INT' />
+  <field number='1437' name='UnderlyingContractMultiplierUnit' type='INT' />
+  <field number='1438' name='DerivativeContractMultiplierUnit' type='INT' />
+  <field number='1439' name='FlowScheduleType' type='INT'>
+   <value enum='0' description='NERC_EASTERN_OFF_PEAK' />
+   <value enum='1' description='NERC_WESTERN_OFF_PEAK' />
+   <value enum='2' description='NERC_CALENDAR_ALL_DAYS_IN_MONTH' />
+   <value enum='3' description='NERC_EASTERN_PEAK' />
+   <value enum='4' description='NERC_WESTERN_PEAK' />
+  </field>
+  <field number='1440' name='LegFlowScheduleType' type='INT' />
+  <field number='1441' name='UnderlyingFlowScheduleType' type='INT' />
