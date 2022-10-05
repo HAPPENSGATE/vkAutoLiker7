@@ -10202,3 +10202,39 @@
   </field>
   <field number='1440' name='LegFlowScheduleType' type='INT' />
   <field number='1441' name='UnderlyingFlowScheduleType' type='INT' />
+  <field number='1442' name='DerivativeFlowScheduleType' type='INT' />
+  <field number='1443' name='FillLiquidityInd' type='INT' />
+  <field number='1444' name='SideLiquidityInd' type='INT' />
+  <field number='1445' name='NoRateSources' type='NUMINGROUP' />
+  <field number='1446' name='RateSource' type='INT'>
+   <value enum='0' description='BLOOMBERG' />
+   <value enum='1' description='REUTERS' />
+   <value enum='2' description='TELERATE' />
+   <value enum='99' description='OTHER' />
+  </field>
+  <field number='1447' name='RateSourceType' type='INT'>
+   <value enum='0' description='PRIMARY' />
+   <value enum='1' description='SECONDARY' />
+  </field>
+  <field number='1448' name='ReferencePage' type='STRING' />
+  <field number='1449' name='RestructuringType' type='STRING'>
+   <value enum='FR' description='FULL_RESTRUCTURING' />
+   <value enum='MR' description='MODIFIED_RESTRUCTURING' />
+   <value enum='MM' description='MODIFIED_MOD_RESTRUCTURING' />
+   <value enum='XR' description='NO_RESTRUCTURING_SPECIFIED' />
+  </field>
+  <field number='1450' name='Seniority' type='STRING'>
+   <value enum='SD' description='SENIOR_SECURED' />
+   <value enum='SR' description='SENIOR' />
+   <value enum='SB' description='SUBORDINATED' />
+  </field>
+  <field number='1451' name='NotionalPercentageOutstanding' type='PERCENTAGE' />
+  <field number='1452' name='OriginalNotionalPercentageOutstanding' type='PERCENTAGE' />
+  <field number='1453' name='UnderlyingRestructuringType' type='STRING' />
+  <field number='1454' name='UnderlyingSeniority' type='STRING' />
+  <field number='1455' name='UnderlyingNotionalPercentageOutstanding' type='PERCENTAGE' />
+  <field number='1456' name='UnderlyingOriginalNotionalPercentageOutstanding' type='PERCENTAGE' />
+  <field number='1457' name='AttachmentPoint' type='PERCENTAGE' />
+  <field number='1458' name='DetachmentPoint' type='PERCENTAGE' />
+  <field number='1459' name='UnderlyingAttachmentPoint' type='PERCENTAGE' />
+  <field number='1460' name='UnderlyingDetachmentPoint' type='PERCENTAGE' />
