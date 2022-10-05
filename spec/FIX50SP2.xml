@@ -10238,3 +10238,47 @@
   <field number='1458' name='DetachmentPoint' type='PERCENTAGE' />
   <field number='1459' name='UnderlyingAttachmentPoint' type='PERCENTAGE' />
   <field number='1460' name='UnderlyingDetachmentPoint' type='PERCENTAGE' />
+  <field number='1461' name='NoTargetPartyIDs' type='NUMINGROUP' />
+  <field number='1462' name='TargetPartyID' type='STRING' />
+  <field number='1463' name='TargetPartyIDSource' type='CHAR' />
+  <field number='1464' name='TargetPartyRole' type='INT' />
+  <field number='1465' name='SecurityListID' type='STRING' />
+  <field number='1466' name='SecurityListRefID' type='STRING' />
+  <field number='1467' name='SecurityListDesc' type='STRING' />
+  <field number='1468' name='EncodedSecurityListDescLen' type='LENGTH' />
+  <field number='1469' name='EncodedSecurityListDesc' type='DATA' />
+  <field number='1470' name='SecurityListType' type='INT'>
+   <value enum='1' description='INDUSTRY_CLASSIFICATION' />
+   <value enum='2' description='TRADING_LIST' />
+   <value enum='3' description='MARKET' />
+   <value enum='4' description='NEWSPAPER_LIST' />
+  </field>
+  <field number='1471' name='SecurityListTypeSource' type='INT'>
+   <value enum='1' description='ICB' />
+   <value enum='2' description='NAICS' />
+   <value enum='3' description='GICS' />
+  </field>
+  <field number='1472' name='NewsID' type='STRING' />
+  <field number='1473' name='NewsCategory' type='INT'>
+   <value enum='0' description='COMPANY_NEWS' />
+   <value enum='1' description='MARKETPLACE_NEWS' />
+   <value enum='2' description='FINANCIAL_MARKET_NEWS' />
+   <value enum='3' description='TECHNICAL_NEWS' />
+   <value enum='99' description='OTHER_NEWS' />
+  </field>
+  <field number='1474' name='LanguageCode' type='LANGUAGE' />
+  <field number='1475' name='NoNewsRefIDs' type='NUMINGROUP' />
+  <field number='1476' name='NewsRefID' type='STRING' />
+  <field number='1477' name='NewsRefType' type='INT'>
+   <value enum='0' description='REPLACEMENT' />
+   <value enum='1' description='OTHER_LANGUAGE' />
+   <value enum='2' description='COMPLIMENTARY' />
+  </field>
+  <field number='1478' name='StrikePriceDeterminationMethod' type='INT'>
+   <value enum='1' description='FIXED_STRIKE' />
+   <value enum='2' description='STRIKE_SET_AT_EXPIRATION_TO_UNDERLYING_OR_OTHER_VALUE' />
+   <value enum='3' description='STRIKE_SET_TO_AVERAGE_OF_UNDERLYING_SETTLEMENT_PRICE_ACROSS_THE_LIFE_OF_THE_OPTION' />
+   <value enum='4' description='STRIKE_SET_TO_OPTIMAL_VALUE' />
+  </field>
+  <field number='1479' name='StrikePriceBoundaryMethod' type='INT'>
+   <value enum='1' description='LESS_THAN_UNDERLYING_PRICE_IS_IN_THE_MONEY' />
