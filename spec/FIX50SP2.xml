@@ -10322,3 +10322,52 @@
   </field>
   <field number='1488' name='ComplexEventPriceBoundaryPrecision' type='PERCENTAGE' />
   <field number='1489' name='ComplexEventPriceTimeType' type='INT'>
+   <value enum='1' description='EXPIRATION' />
+   <value enum='2' description='IMMEDIATE' />
+   <value enum='3' description='SPECIFIED_DATE_TIME' />
+  </field>
+  <field number='1490' name='ComplexEventCondition' type='INT'>
+   <value enum='1' description='AND' />
+   <value enum='2' description='OR' />
+  </field>
+  <field number='1491' name='NoComplexEventDates' type='NUMINGROUP' />
+  <field number='1492' name='ComplexEventStartDate' type='UTCTIMESTAMP' />
+  <field number='1493' name='ComplexEventEndDate' type='UTCTIMESTAMP' />
+  <field number='1494' name='NoComplexEventTimes' type='NUMINGROUP' />
+  <field number='1495' name='ComplexEventStartTime' type='UTCTIMEONLY' />
+  <field number='1496' name='ComplexEventEndTime' type='UTCTIMEONLY' />
+  <field number='1497' name='StreamAsgnReqID' type='STRING' />
+  <field number='1498' name='StreamAsgnReqType' type='INT'>
+   <value enum='1' description='STREAM_ASSIGNMENT_FOR_NEW_CUSTOMER' />
+   <value enum='2' description='STREAM_ASSIGNMENT_FOR_EXISTING_CUSTOMER' />
+  </field>
+  <field number='1499' name='NoAsgnReqs' type='NUMINGROUP' />
+  <field number='1500' name='MDStreamID' type='STRING' />
+  <field number='1501' name='StreamAsgnRptID' type='STRING' />
+  <field number='1502' name='StreamAsgnRejReason' type='INT'>
+   <value enum='0' description='UNKNOWN_CLIENT' />
+   <value enum='1' description='EXCEEDS_MAXIMUM_SIZE' />
+   <value enum='2' description='UNKNOWN_OR_INVALID_CURRENCY_PAIR' />
+   <value enum='3' description='NO_AVAILABLE_STREAM' />
+   <value enum='99' description='OTHER' />
+  </field>
+  <field number='1503' name='StreamAsgnAckType' type='INT'>
+   <value enum='0' description='ASSIGNMENT_ACCEPTED' />
+   <value enum='1' description='ASSIGNMENT_REJECTED' />
+  </field>
+  <field number='1504' name='RelSymTransactTime' type='UTCTIMESTAMP' />
+  <field number='1505' name='PartyDetailsListRequestID' type='STRING' />
+  <field number='1506' name='NoPartyListResponseTypes' type='NUMINGROUP' />
+  <field number='1507' name='PartyListResponseType' type='INT'>
+   <value enum='0' description='RETURN_ALL_AVAILABLE_INFORMATION_ON_PARTIES_AND_RELATED_PARTIES' />
+   <value enum='1' description='RETURN_ONLY_PARTY_INFORMATION' />
+   <value enum='2' description='INCLUDE_INFORMATION_ON_RELATED_PARTIES' />
+   <value enum='3' description='INCLUDE_RISK_LIMIT_INFORMATION' />
+  </field>
+  <field number='1508' name='NoRequestedPartyRoles' type='NUMINGROUP' />
+  <field number='1509' name='RequestedPartyRole' type='INT' />
+  <field number='1510' name='PartyDetailsListReportID' type='STRING' />
+  <field number='1511' name='PartyDetailsRequestResult' type='INT'>
+   <value enum='0' description='VALID_REQUEST' />
+   <value enum='1' description='INVALID_OR_UNSUPPORTED_REQUEST' />
+   <value enum='2' description='NO_PARTIES_OR_PARTY_DETAILS_FOUND_THAT_MATCH_SELECTION_CRITERIA' />
