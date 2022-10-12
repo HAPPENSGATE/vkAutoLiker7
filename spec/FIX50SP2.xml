@@ -10371,3 +10371,44 @@
    <value enum='0' description='VALID_REQUEST' />
    <value enum='1' description='INVALID_OR_UNSUPPORTED_REQUEST' />
    <value enum='2' description='NO_PARTIES_OR_PARTY_DETAILS_FOUND_THAT_MATCH_SELECTION_CRITERIA' />
+   <value enum='3' description='UNSUPPORTED_PARTYLISTRESPONSETYPE' />
+   <value enum='4' description='NOT_AUTHORIZED_TO_RETRIEVE_PARTIES_OR_PARTY_DETAILS_DATA' />
+   <value enum='5' description='PARTIES_OR_PARTY_DETAILS_DATA_TEMPORARILY_UNAVAILABLE' />
+   <value enum='6' description='REQUEST_FOR_PARTIES_DATA_NOT_SUPPORTED' />
+   <value enum='99' description='OTHER' />
+  </field>
+  <field number='1512' name='TotNoPartyList' type='INT' />
+  <field number='1513' name='NoPartyList' type='NUMINGROUP' />
+  <field number='1514' name='NoPartyRelationships' type='NUMINGROUP' />
+  <field number='1515' name='PartyRelationship' type='INT'>
+   <value enum='0' description='IS_ALSO' />
+   <value enum='1' description='CLEARS_FOR' />
+   <value enum='2' description='CLEARS_THROUGH' />
+   <value enum='3' description='TRADES_FOR' />
+   <value enum='4' description='TRADES_THROUGH' />
+   <value enum='5' description='SPONSORS' />
+   <value enum='6' description='SPONSORED_THROUGH' />
+   <value enum='7' description='PROVIDES_GUARANTEE_FOR' />
+   <value enum='8' description='IS_GUARANTEED_BY' />
+   <value enum='9' description='MEMBER_OF' />
+   <value enum='10' description='HAS_MEMBERS' />
+   <value enum='11' description='PROVIDES_MARKETPLACE_FOR' />
+   <value enum='12' description='PARTICIPANT_OF_MARKETPLACE' />
+   <value enum='13' description='CARRIES_POSITIONS_FOR' />
+   <value enum='14' description='POSTS_TRADES_TO' />
+   <value enum='15' description='ENTERS_TRADES_FOR' />
+   <value enum='16' description='ENTERS_TRADES_THROUGH' />
+   <value enum='17' description='PROVIDES_QUOTES_TO' />
+   <value enum='18' description='REQUESTS_QUOTES_FROM' />
+   <value enum='19' description='INVESTS_FOR' />
+   <value enum='20' description='INVESTS_THROUGH' />
+   <value enum='21' description='BROKERS_TRADES_FOR' />
+   <value enum='22' description='BROKERS_TRADES_THROUGH' />
+   <value enum='23' description='PROVIDES_TRADING_SERVICES_FOR' />
+   <value enum='24' description='USES_TRADING_SERVICES_OF' />
+   <value enum='25' description='APPROVES_OF' />
+   <value enum='26' description='APPROVED_BY' />
+   <value enum='27' description='PARENT_FIRM_FOR' />
+   <value enum='28' description='SUBSIDIARY_OF' />
+   <value enum='29' description='REGULATORY_OWNER_OF' />
+   <value enum='30' description='OWNED_BY_30' />
