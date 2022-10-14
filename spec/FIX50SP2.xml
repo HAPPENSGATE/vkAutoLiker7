@@ -10412,3 +10412,49 @@
    <value enum='28' description='SUBSIDIARY_OF' />
    <value enum='29' description='REGULATORY_OWNER_OF' />
    <value enum='30' description='OWNED_BY_30' />
+   <value enum='31' description='CONTROLS' />
+   <value enum='32' description='IS_CONTROLLED_BY' />
+   <value enum='33' description='LEGAL' />
+   <value enum='34' description='OWNED_BY_34' />
+   <value enum='35' description='BENEFICIAL_OWNER_OF' />
+   <value enum='36' description='OWNED_BY_36' />
+  </field>
+  <field number='1516' name='NoPartyAltIDs' type='NUMINGROUP' />
+  <field number='1517' name='PartyAltID' type='STRING' />
+  <field number='1518' name='PartyAltIDSource' type='CHAR' />
+  <field number='1519' name='NoPartyAltSubIDs' type='NUMINGROUP' />
+  <field number='1520' name='PartyAltSubID' type='STRING' />
+  <field number='1521' name='PartyAltSubIDType' type='INT' />
+  <field number='1522' name='NoContextPartyIDs' type='NUMINGROUP' />
+  <field number='1523' name='ContextPartyID' type='STRING' />
+  <field number='1524' name='ContextPartyIDSource' type='CHAR' />
+  <field number='1525' name='ContextPartyRole' type='INT' />
+  <field number='1526' name='NoContextPartySubIDs' type='NUMINGROUP' />
+  <field number='1527' name='ContextPartySubID' type='STRING' />
+  <field number='1528' name='ContextPartySubIDType' type='INT' />
+  <field number='1529' name='NoRiskLimits' type='NUMINGROUP' />
+  <field number='1530' name='RiskLimitType' type='INT'>
+   <value enum='1' description='GROSS_LIMIT' />
+   <value enum='2' description='NET_LIMIT' />
+   <value enum='3' description='EXPOSURE' />
+   <value enum='4' description='LONG_LIMIT' />
+   <value enum='5' description='SHORT_LIMIT' />
+  </field>
+  <field number='1531' name='RiskLimitAmount' type='AMT' />
+  <field number='1532' name='RiskLimitCurrency' type='CURRENCY' />
+  <field number='1533' name='RiskLimitPlatform' type='STRING' />
+  <field number='1534' name='NoRiskInstruments' type='NUMINGROUP' />
+  <field number='1535' name='RiskInstrumentOperator' type='INT'>
+   <value enum='1' description='INCLUDE' />
+   <value enum='2' description='EXCLUDE' />
+  </field>
+  <field number='1536' name='RiskSymbol' type='STRING' />
+  <field number='1537' name='RiskSymbolSfx' type='STRING' />
+  <field number='1538' name='RiskSecurityID' type='STRING' />
+  <field number='1539' name='RiskSecurityIDSource' type='STRING' />
+  <field number='1540' name='NoRiskSecurityAltID' type='NUMINGROUP' />
+  <field number='1541' name='RiskSecurityAltID' type='STRING' />
+  <field number='1542' name='RiskSecurityAltIDSource' type='STRING' />
+  <field number='1543' name='RiskProduct' type='INT' />
+  <field number='1544' name='RiskProductComplex' type='STRING' />
+  <field number='1545' name='RiskSecurityGroup' type='STRING' />
