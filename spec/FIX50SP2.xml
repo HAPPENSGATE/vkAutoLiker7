@@ -10501,3 +10501,42 @@
   <field number='1586' name='RelationshipRiskLimitPlatform' type='STRING' />
   <field number='1587' name='NoRelationshipRiskInstruments' type='NUMINGROUP' />
   <field number='1588' name='RelationshipRiskInstrumentOperator' type='INT' />
+  <field number='1589' name='RelationshipRiskSymbol' type='STRING' />
+  <field number='1590' name='RelationshipRiskSymbolSfx' type='STRING' />
+  <field number='1591' name='RelationshipRiskSecurityID' type='STRING' />
+  <field number='1592' name='RelationshipRiskSecurityIDSource' type='STRING' />
+  <field number='1593' name='NoRelationshipRiskSecurityAltID' type='NUMINGROUP' />
+  <field number='1594' name='RelationshipRiskSecurityAltID' type='STRING' />
+  <field number='1595' name='RelationshipRiskSecurityAltIDSource' type='STRING' />
+  <field number='1596' name='RelationshipRiskProduct' type='INT' />
+  <field number='1597' name='RelationshipRiskProductComplex' type='STRING' />
+  <field number='1598' name='RelationshipRiskSecurityGroup' type='STRING' />
+  <field number='1599' name='RelationshipRiskCFICode' type='STRING' />
+  <field number='1600' name='RelationshipRiskSecurityType' type='STRING' />
+  <field number='1601' name='RelationshipRiskSecuritySubType' type='STRING' />
+  <field number='1602' name='RelationshipRiskMaturityMonthYear' type='MONTHYEAR' />
+  <field number='1603' name='RelationshipRiskMaturityTime' type='TZTIMEONLY' />
+  <field number='1604' name='RelationshipRiskRestructuringType' type='STRING' />
+  <field number='1605' name='RelationshipRiskSeniority' type='STRING' />
+  <field number='1606' name='RelationshipRiskPutOrCall' type='INT' />
+  <field number='1607' name='RelationshipRiskFlexibleIndicator' type='BOOLEAN' />
+  <field number='1608' name='RelationshipRiskCouponRate' type='PERCENTAGE' />
+  <field number='1609' name='RelationshipRiskSecurityExchange' type='EXCHANGE' />
+  <field number='1610' name='RelationshipRiskSecurityDesc' type='STRING' />
+  <field number='1611' name='RelationshipRiskInstrumentSettlType' type='STRING' />
+  <field number='1612' name='RelationshipRiskInstrumentMultiplier' type='FLOAT' />
+  <field number='1613' name='NoRelationshipRiskWarningLevels' type='NUMINGROUP' />
+  <field number='1614' name='RelationshipRiskWarningLevelPercent' type='PERCENTAGE' />
+  <field number='1615' name='RelationshipRiskWarningLevelName' type='STRING' />
+  <field number='1616' name='RiskSecurityExchange' type='EXCHANGE' />
+  <field number='1617' name='StreamAsgnType' type='INT'>
+   <value enum='1' description='ASSIGNMENT' />
+   <value enum='2' description='REJECTED' />
+   <value enum='3' description='TERMINATE_UNASSIGN' />
+  </field>
+  <field number='1618' name='RelationshipRiskEncodedSecurityDescLen' type='LENGTH' />
+  <field number='1619' name='RelationshipRiskEncodedSecurityDesc' type='DATA' />
+  <field number='1620' name='RiskEncodedSecurityDescLen' type='LENGTH' />
+  <field number='1621' name='RiskEncodedSecurityDesc' type='DATA' />
+ </fields>
+</fix>
