@@ -10458,3 +10458,46 @@
   <field number='1543' name='RiskProduct' type='INT' />
   <field number='1544' name='RiskProductComplex' type='STRING' />
   <field number='1545' name='RiskSecurityGroup' type='STRING' />
+  <field number='1546' name='RiskCFICode' type='STRING' />
+  <field number='1547' name='RiskSecurityType' type='STRING' />
+  <field number='1548' name='RiskSecuritySubType' type='STRING' />
+  <field number='1549' name='RiskMaturityMonthYear' type='MONTHYEAR' />
+  <field number='1550' name='RiskMaturityTime' type='TZTIMEONLY' />
+  <field number='1551' name='RiskRestructuringType' type='STRING' />
+  <field number='1552' name='RiskSeniority' type='STRING' />
+  <field number='1553' name='RiskPutOrCall' type='INT' />
+  <field number='1554' name='RiskFlexibleIndicator' type='BOOLEAN' />
+  <field number='1555' name='RiskCouponRate' type='PERCENTAGE' />
+  <field number='1556' name='RiskSecurityDesc' type='STRING' />
+  <field number='1557' name='RiskInstrumentSettlType' type='STRING' />
+  <field number='1558' name='RiskInstrumentMultiplier' type='FLOAT' />
+  <field number='1559' name='NoRiskWarningLevels' type='NUMINGROUP' />
+  <field number='1560' name='RiskWarningLevelPercent' type='PERCENTAGE' />
+  <field number='1561' name='RiskWarningLevelName' type='STRING' />
+  <field number='1562' name='NoRelatedPartyIDs' type='NUMINGROUP' />
+  <field number='1563' name='RelatedPartyID' type='STRING' />
+  <field number='1564' name='RelatedPartyIDSource' type='CHAR' />
+  <field number='1565' name='RelatedPartyRole' type='INT' />
+  <field number='1566' name='NoRelatedPartySubIDs' type='NUMINGROUP' />
+  <field number='1567' name='RelatedPartySubID' type='STRING' />
+  <field number='1568' name='RelatedPartySubIDType' type='INT' />
+  <field number='1569' name='NoRelatedPartyAltIDs' type='NUMINGROUP' />
+  <field number='1570' name='RelatedPartyAltID' type='STRING' />
+  <field number='1571' name='RelatedPartyAltIDSource' type='CHAR' />
+  <field number='1572' name='NoRelatedPartyAltSubIDs' type='NUMINGROUP' />
+  <field number='1573' name='RelatedPartyAltSubID' type='STRING' />
+  <field number='1574' name='RelatedPartyAltSubIDType' type='INT' />
+  <field number='1575' name='NoRelatedContextPartyIDs' type='NUMINGROUP' />
+  <field number='1576' name='RelatedContextPartyID' type='STRING' />
+  <field number='1577' name='RelatedContextPartyIDSource' type='CHAR' />
+  <field number='1578' name='RelatedContextPartyRole' type='INT' />
+  <field number='1579' name='NoRelatedContextPartySubIDs' type='NUMINGROUP' />
+  <field number='1580' name='RelatedContextPartySubID' type='STRING' />
+  <field number='1581' name='RelatedContextPartySubIDType' type='INT' />
+  <field number='1582' name='NoRelationshipRiskLimits' type='NUMINGROUP' />
+  <field number='1583' name='RelationshipRiskLimitType' type='INT' />
+  <field number='1584' name='RelationshipRiskLimitAmount' type='AMT' />
+  <field number='1585' name='RelationshipRiskLimitCurrency' type='CURRENCY' />
+  <field number='1586' name='RelationshipRiskLimitPlatform' type='STRING' />
+  <field number='1587' name='NoRelationshipRiskInstruments' type='NUMINGROUP' />
+  <field number='1588' name='RelationshipRiskInstrumentOperator' type='INT' />
