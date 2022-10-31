@@ -93,3 +93,39 @@ void Application::run()
 }
 
 void Application::queryEnterOrder()
+{
+  int version = queryVersion();
+  std::cout << "\nNewOrderSingle\n";
+  FIX::Message order;
+
+  switch ( version ) {
+  case 50:
+    order = queryNewOrderSingle50();
+    break;
+  default:
+    std::cerr << "No test for version " << version << std::endl;
+    break;
+  }
+
+  if ( queryConfirm( "Send order" ) )
+    FIX::Session::sendToTarget( order );
+}
+
+void Application::queryCancelOrder()
+{
+  int version = queryVersion();
+  std::cout << "\nOrderCancelRequest\n";
+  FIX::Message cancel;
+
+  switch ( version ) {
+  case 50:
+    cancel = queryOrderCancelRequest50();
+    break;
+  default:
+    std::cerr << "No test for version " << version << std::endl;
+    break;
+  }
+
+  if ( queryConfirm( "Send cancel" ) )
+    FIX::Session::sendToTarget( cancel );
+}
