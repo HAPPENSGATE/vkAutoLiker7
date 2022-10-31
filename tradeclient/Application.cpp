@@ -129,3 +129,48 @@ void Application::queryCancelOrder()
   if ( queryConfirm( "Send cancel" ) )
     FIX::Session::sendToTarget( cancel );
 }
+
+void Application::queryReplaceOrder()
+{
+  int version = queryVersion();
+  std::cout << "\nCancelReplaceRequest\n";
+  FIX::Message replace;
+
+  switch ( version ) {
+  case 50:
+    replace = queryCancelReplaceRequest50();
+    break;
+  default:
+    std::cerr << "No test for version " << version << std::endl;
+    break;
+  }
+
+  if ( queryConfirm( "Send replace" ) )
+    FIX::Session::sendToTarget( replace );
+}
+
+void Application::queryMarketDataRequest()
+{
+  int version = queryVersion();
+  std::cout << "\nMarketDataRequest\n";
+  FIX::Message md;
+
+  switch (version) {
+  case 50:
+    md = queryMarketDataRequest50();
+    break;
+  default:
+    std::cerr << "No test for version " << version << std::endl;
+    break;
+  }
+
+  FIX::Session::sendToTarget( md );
+}
+
+FIX50::NewOrderSingle Application::queryNewOrderSingle50()
+{
+  FIX::OrdType ordType;
+
+  FIX50::NewOrderSingle newOrderSingle(
+    queryClOrdID(), querySide(),
+    FIX::TransactTime(), ordType = queryOrdType() );
