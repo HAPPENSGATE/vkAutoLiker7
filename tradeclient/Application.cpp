@@ -51,3 +51,45 @@ throw(FIX::DoNotSend)
 {
   try
   {
+    FIX::PossDupFlag possDupFlag;
+    message.getHeader().getField( possDupFlag );
+    if ( possDupFlag ) throw FIX::DoNotSend();
+  }
+  catch ( FIX::FieldNotFound& ) {}
+
+  std::cout << std::endl
+  << "OUT: " << message << std::endl;
+}
+
+void Application::onMessage
+( const FIX50::ExecutionReport&, const FIX::SessionID& ) {}
+void Application::onMessage
+( const FIX50::OrderCancelReject&, const FIX::SessionID& ) {}
+
+void Application::run()
+{
+  while ( true )
+  {
+    try
+    {
+      char action = queryAction();
+
+      if ( action == '1' )
+        queryEnterOrder();
+      else if ( action == '2' )
+        queryCancelOrder();
+      else if ( action == '3' )
+        queryReplaceOrder();
+      else if ( action == '4' )
+        queryMarketDataRequest();
+      else if ( action == '5' )
+        break;
+    }
+    catch ( std::exception & e )
+    {
+      std::cout << "Message Not Sent: " << e.what();
+    }
+  }
+}
+
+void Application::queryEnterOrder()
