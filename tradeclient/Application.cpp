@@ -174,3 +174,49 @@ FIX50::NewOrderSingle Application::queryNewOrderSingle50()
   FIX50::NewOrderSingle newOrderSingle(
     queryClOrdID(), querySide(),
     FIX::TransactTime(), ordType = queryOrdType() );
+
+  newOrderSingle.set( FIX::HandlInst('1') );
+  newOrderSingle.set( querySymbol() );
+  newOrderSingle.set( queryOrderQty() );
+  newOrderSingle.set( queryTimeInForce() );
+  if ( ordType == FIX::OrdType_LIMIT || ordType == FIX::OrdType_STOP_LIMIT )
+    newOrderSingle.set( queryPrice() );
+  if ( ordType == FIX::OrdType_STOP || ordType == FIX::OrdType_STOP_LIMIT )
+    newOrderSingle.set( queryStopPx() );
+
+  queryHeader( newOrderSingle.getHeader() );
+  return newOrderSingle;
+}
+
+FIX50::OrderCancelRequest Application::queryOrderCancelRequest50()
+{
+  FIX50::OrderCancelRequest orderCancelRequest( queryOrigClOrdID(),
+      queryClOrdID(), querySide(), FIX::TransactTime() );
+
+  orderCancelRequest.set( querySymbol() );
+  orderCancelRequest.set( queryOrderQty() );
+  queryHeader( orderCancelRequest.getHeader() );
+  return orderCancelRequest;
+}
+
+FIX50::OrderCancelReplaceRequest Application::queryCancelReplaceRequest50()
+{
+  FIX50::OrderCancelReplaceRequest cancelReplaceRequest(
+    queryOrigClOrdID(), queryClOrdID(),
+    querySide(), FIX::TransactTime(), queryOrdType() );
+
+  cancelReplaceRequest.set( FIX::HandlInst('1') );
+  cancelReplaceRequest.set( querySymbol() );
+  if ( queryConfirm( "New price" ) )
+    cancelReplaceRequest.set( queryPrice() );
+  if ( queryConfirm( "New quantity" ) )
+    cancelReplaceRequest.set( queryOrderQty() );
+
+  queryHeader( cancelReplaceRequest.getHeader() );
+  return cancelReplaceRequest;
+}
+
+FIX50::MarketDataRequest Application::queryMarketDataRequest50()
+{
+  FIX::MDReqID mdReqID( "MARKETDATAID" );
+  FIX::SubscriptionRequestType subType( FIX::SubscriptionRequestType_SNAPSHOT );
