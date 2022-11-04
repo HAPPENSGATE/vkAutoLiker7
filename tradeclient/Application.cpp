@@ -418,3 +418,10 @@ FIX::TimeInForce Application::queryTimeInForce()
   switch ( value )
   {
     case '1': return FIX::TimeInForce( FIX::TimeInForce_DAY );
+    case '2': return FIX::TimeInForce( FIX::TimeInForce_IMMEDIATE_OR_CANCEL );
+    case '3': return FIX::TimeInForce( FIX::TimeInForce_AT_THE_OPENING );
+    case '4': return FIX::TimeInForce( FIX::TimeInForce_GOOD_TILL_CANCEL );
+    case '5': return FIX::TimeInForce( FIX::TimeInForce_GOOD_TILL_CROSSING );
+    default: throw std::exception();
+  }
+}
