@@ -220,3 +220,44 @@ FIX50::MarketDataRequest Application::queryMarketDataRequest50()
 {
   FIX::MDReqID mdReqID( "MARKETDATAID" );
   FIX::SubscriptionRequestType subType( FIX::SubscriptionRequestType_SNAPSHOT );
+  FIX::MarketDepth marketDepth( 0 );
+
+  FIX50::MarketDataRequest::NoMDEntryTypes marketDataEntryGroup;
+  FIX::MDEntryType mdEntryType( FIX::MDEntryType_BID );
+  marketDataEntryGroup.set( mdEntryType );
+
+  FIX50::MarketDataRequest::NoRelatedSym symbolGroup;
+  FIX::Symbol symbol( "LNUX" );
+  symbolGroup.set( symbol );
+
+  FIX50::MarketDataRequest message( mdReqID, subType, marketDepth );
+  message.addGroup( marketDataEntryGroup );
+  message.addGroup( symbolGroup );
+
+  queryHeader( message.getHeader() );
+
+  std::cout << message.toXML() << std::endl;
+  std::cout << message.toString() << std::endl;
+
+  return message;
+}
+
+void Application::queryHeader( FIX::Header& header )
+{
+  header.setField( querySenderCompID() );
+  header.setField( queryTargetCompID() );
+
+  if ( queryConfirm( "Use a TargetSubID" ) )
+    header.setField( queryTargetSubID() );
+}
+
+char Application::queryAction()
+{
+  char value;
+  std::cout << std::endl
+  << "1) Enter Order" << std::endl
+  << "2) Cancel Order" << std::endl
+  << "3) Replace Order" << std::endl
+  << "4) Market data test" << std::endl
+  << "5) Quit" << std::endl
+  << "Action: ";
