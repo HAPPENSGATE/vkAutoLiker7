@@ -300,3 +300,43 @@ FIX::TargetCompID Application::queryTargetCompID()
 }
 
 FIX::TargetSubID Application::queryTargetSubID()
+{
+  std::string value;
+  std::cout << std::endl << "TargetSubID: ";
+  std::cin >> value;
+  return FIX::TargetSubID( value );
+}
+
+FIX::ClOrdID Application::queryClOrdID()
+{
+  std::string value;
+  std::cout << std::endl << "ClOrdID: ";
+  std::cin >> value;
+  return FIX::ClOrdID( value );
+}
+
+FIX::OrigClOrdID Application::queryOrigClOrdID()
+{
+  std::string value;
+  std::cout << std::endl << "OrigClOrdID: ";
+  std::cin >> value;
+  return FIX::OrigClOrdID( value );
+}
+
+FIX::Symbol Application::querySymbol()
+{
+  std::string value;
+  std::cout << std::endl << "Symbol: ";
+  std::cin >> value;
+  return FIX::Symbol( value );
+}
+
+FIX::Side Application::querySide()
+{
+  char value;
+  std::cout << std::endl
+  << "1) Buy" << std::endl
+  << "2) Sell" << std::endl
+  << "3) Sell Short" << std::endl
+  << "4) Sell Short Exempt" << std::endl
+  << "5) Cross" << std::endl
