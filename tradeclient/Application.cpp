@@ -340,3 +340,49 @@ FIX::Side Application::querySide()
   << "3) Sell Short" << std::endl
   << "4) Sell Short Exempt" << std::endl
   << "5) Cross" << std::endl
+  << "6) Cross Short" << std::endl
+  << "7) Cross Short Exempt" << std::endl
+  << "Side: ";
+
+  std::cin >> value;
+  switch ( value )
+  {
+    case '1': return FIX::Side( FIX::Side_BUY );
+    case '2': return FIX::Side( FIX::Side_SELL );
+    case '3': return FIX::Side( FIX::Side_SELL_SHORT );
+    case '4': return FIX::Side( FIX::Side_SELL_SHORT_EXEMPT );
+    case '5': return FIX::Side( FIX::Side_CROSS );
+    case '6': return FIX::Side( FIX::Side_CROSS_SHORT );
+    case '7': return FIX::Side( 'A' );
+    default: throw std::exception();
+  }
+}
+
+FIX::OrderQty Application::queryOrderQty()
+{
+  long value;
+  std::cout << std::endl << "OrderQty: ";
+  std::cin >> value;
+  return FIX::OrderQty( value );
+}
+
+FIX::OrdType Application::queryOrdType()
+{
+  char value;
+  std::cout << std::endl
+  << "1) Market" << std::endl
+  << "2) Limit" << std::endl
+  << "3) Stop" << std::endl
+  << "4) Stop Limit" << std::endl
+  << "OrdType: ";
+
+  std::cin >> value;
+  switch ( value )
+  {
+    case '1': return FIX::OrdType( FIX::OrdType_MARKET );
+    case '2': return FIX::OrdType( FIX::OrdType_LIMIT );
+    case '3': return FIX::OrdType( FIX::OrdType_STOP );
+    case '4': return FIX::OrdType( FIX::OrdType_STOP_LIMIT );
+    default: throw std::exception();
+  }
+}
