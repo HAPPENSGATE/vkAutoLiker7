@@ -386,3 +386,35 @@ FIX::OrdType Application::queryOrdType()
     default: throw std::exception();
   }
 }
+
+FIX::Price Application::queryPrice()
+{
+  double value;
+  std::cout << std::endl << "Price: ";
+  std::cin >> value;
+  return FIX::Price( value );
+}
+
+FIX::StopPx Application::queryStopPx()
+{
+  double value;
+  std::cout << std::endl << "StopPx: ";
+  std::cin >> value;
+  return FIX::StopPx( value );
+}
+
+FIX::TimeInForce Application::queryTimeInForce()
+{
+  char value;
+  std::cout << std::endl
+  << "1) Day" << std::endl
+  << "2) IOC" << std::endl
+  << "3) OPG" << std::endl
+  << "4) GTC" << std::endl
+  << "5) GTX" << std::endl
+  << "TimeInForce: ";
+
+  std::cin >> value;
+  switch ( value )
+  {
+    case '1': return FIX::TimeInForce( FIX::TimeInForce_DAY );
