@@ -261,3 +261,42 @@ char Application::queryAction()
   << "4) Market data test" << std::endl
   << "5) Quit" << std::endl
   << "Action: ";
+  std::cin >> value;
+  switch ( value )
+  {
+    case '1': case '2': case '3': case '4': case '5': break;
+    default: throw std::exception();
+  }
+  return value;
+}
+
+int Application::queryVersion()
+{
+    return 50;
+}
+
+bool Application::queryConfirm( const std::string& query )
+{
+  std::string value;
+  std::cout << std::endl << query << "?: ";
+  std::cin >> value;
+  return toupper( *value.c_str() ) == 'Y';
+}
+
+FIX::SenderCompID Application::querySenderCompID()
+{
+  std::string value;
+  std::cout << std::endl << "SenderCompID: ";
+  std::cin >> value;
+  return FIX::SenderCompID( value );
+}
+
+FIX::TargetCompID Application::queryTargetCompID()
+{
+  std::string value;
+  std::cout << std::endl << "TargetCompID: ";
+  std::cin >> value;
+  return FIX::TargetCompID( value );
+}
+
+FIX::TargetSubID Application::queryTargetSubID()
