@@ -1,0 +1,5 @@
+
+MF=	Makefile
+
+CC=	g++
+

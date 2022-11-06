@@ -71,3 +71,21 @@ private:
 
   void queryHeader( FIX::Header& header );
   char queryAction();
+  int queryVersion();
+  bool queryConfirm( const std::string& query );
+
+  FIX::SenderCompID querySenderCompID();
+  FIX::TargetCompID queryTargetCompID();
+  FIX::TargetSubID queryTargetSubID();
+  FIX::ClOrdID queryClOrdID();
+  FIX::OrigClOrdID queryOrigClOrdID();
+  FIX::Symbol querySymbol();
+  FIX::Side querySide();
+  FIX::OrderQty queryOrderQty();
+  FIX::OrdType queryOrdType();
+  FIX::Price queryPrice();
+  FIX::StopPx queryStopPx();
+  FIX::TimeInForce queryTimeInForce();
+};
+
+#endif
