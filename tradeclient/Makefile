@@ -9,4 +9,10 @@ PREPROC=
 
 EXE=	prog
 SRC=	Application.cpp \
-		trade
+		tradeclient.cpp
+
+OBJ=	$(SRC:.cpp=.o)
+
+INC=
+
+.SUFFI
