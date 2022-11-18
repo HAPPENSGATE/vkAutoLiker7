@@ -5,4 +5,8 @@ CC=	g++
 
 CFLAGS=-I$(HOME)/local_software/include
 LFLAGS=-L$(HOME)/local_software/lib -lquickfix
-PREPROC
+PREPROC=
+
+EXE=	prog
+SRC=	Application.cpp \
+		trade
