@@ -32,4 +32,9 @@ clean:
 	rm -f *.o $(EXE) core
 
 relink:
-	rm -f $
+	rm -f $(EXE)
+	$(MAKE)
+
+run:
+	./prog
+
