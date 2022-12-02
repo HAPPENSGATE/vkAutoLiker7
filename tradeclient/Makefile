@@ -21,4 +21,7 @@ INC=
 all:	$(EXE)
 
 .cpp.o:
-	$(CC) $(CFLAGS) $(PREPR
+	$(CC) $(CFLAGS) $(PREPROC) -c $<
+
+$(EXE):	$(OBJ)
+	$(CC) $(CFLAGS) -o $@ $
