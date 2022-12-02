@@ -15,4 +15,7 @@ OBJ=	$(SRC:.cpp=.o)
 
 INC=
 
-.SUFFI
+.SUFFIXES:
+.SUFFIXES:	.cpp .o
+
+all:	$(EXE)
