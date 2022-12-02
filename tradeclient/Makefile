@@ -24,4 +24,6 @@ all:	$(EXE)
 	$(CC) $(CFLAGS) $(PREPROC) -c $<
 
 $(EXE):	$(OBJ)
-	$(CC) $(CFLAGS) -o $@ $
+	$(CC) $(CFLAGS) -o $@ $(OBJ) $(LFLAGS) 
+
+$(OBJ):	$(SRC) $(INC) $(
