@@ -26,4 +26,10 @@ all:	$(EXE)
 $(EXE):	$(OBJ)
 	$(CC) $(CFLAGS) -o $@ $(OBJ) $(LFLAGS) 
 
-$(OBJ):	$(SRC) $(INC) $(
+$(OBJ):	$(SRC) $(INC) $(MF)
+
+clean:
+	rm -f *.o $(EXE) core
+
+relink:
+	rm -f $
