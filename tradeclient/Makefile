@@ -19,3 +19,6 @@ INC=
 .SUFFIXES:	.cpp .o
 
 all:	$(EXE)
+
+.cpp.o:
+	$(CC) $(CFLAGS) $(PREPR
