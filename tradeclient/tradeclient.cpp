@@ -17,4 +17,6 @@
 **
 ****************************************************************************/
 
-#include "quickfix/FileStore.h
+#include "quickfix/FileStore.h"
+#include "quickfix/SocketInitiator.h"
+#i
