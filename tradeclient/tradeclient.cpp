@@ -19,4 +19,5 @@
 
 #include "quickfix/FileStore.h"
 #include "quickfix/SocketInitiator.h"
-#i
+#include "quickfix/SessionSettings.h"
+#include "A
