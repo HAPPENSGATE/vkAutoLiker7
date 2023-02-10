@@ -20,4 +20,6 @@
 #include "quickfix/FileStore.h"
 #include "quickfix/SocketInitiator.h"
 #include "quickfix/SessionSettings.h"
-#include "A
+#include "Application.h"
+#include <string>
+#include <iostream>
