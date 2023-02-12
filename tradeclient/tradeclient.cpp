@@ -29,4 +29,6 @@
 
 int main( int argc, char** argv )
 {
-  i
+  if ( argc != 2 )
+  {
+    std::cout <
