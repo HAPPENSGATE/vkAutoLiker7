@@ -41,4 +41,5 @@ int main( int argc, char** argv )
   {
     FIX::SessionSettings settings( file );
 
-    Appli
+    Application application;
+    FIX::FileStoreFactor
