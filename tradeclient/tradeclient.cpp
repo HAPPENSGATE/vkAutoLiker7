@@ -42,4 +42,5 @@ int main( int argc, char** argv )
     FIX::SessionSettings settings( file );
 
     Application application;
-    FIX::FileStoreFactor
+    FIX::FileStoreFactory storeFactory( settings );
+    FIX:
