@@ -43,4 +43,6 @@ int main( int argc, char** argv )
 
     Application application;
     FIX::FileStoreFactory storeFactory( settings );
-    FIX::SocketInitiator initiator( applica
+    FIX::SocketInitiator initiator( application, storeFactory, settings );
+
+    
