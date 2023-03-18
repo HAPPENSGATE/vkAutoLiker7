@@ -45,4 +45,5 @@ int main( int argc, char** argv )
     FIX::FileStoreFactory storeFactory( settings );
     FIX::SocketInitiator initiator( application, storeFactory, settings );
 
-    
+    initiator.start();
+    application.run()
