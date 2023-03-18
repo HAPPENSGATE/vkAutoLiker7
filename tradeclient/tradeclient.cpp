@@ -51,4 +51,6 @@ int main( int argc, char** argv )
 
     return 0;
   }
-  catch ( std
+  catch ( std::exception & e )
+  {
+    std::cout << e.w
