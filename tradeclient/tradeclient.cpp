@@ -46,4 +46,9 @@ int main( int argc, char** argv )
     FIX::SocketInitiator initiator( application, storeFactory, settings );
 
     initiator.start();
-    application.run()
+    application.run();
+    initiator.stop();
+
+    return 0;
+  }
+  catch ( std
